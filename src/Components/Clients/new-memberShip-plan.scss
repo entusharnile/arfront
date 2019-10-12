@@ -1,0 +1,72 @@
+.vert-middle{
+	align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    min-height:650px;
+    height: 100%;
+}
+.loyaltyMembership{
+	width:480px;
+	height:auto;
+	margin:auto;
+	display:table;
+	background:#ffffff;
+	@include border-radius(5px);
+	padding:25px;
+}
+.newPopupTitle{
+	width:100%;
+	float:left;
+	color:#444444;
+	font-size:22px;
+	font-weight:bold;
+	margin-bottom:25px;
+	position:relative;
+	padding-right:20px;
+
+	.popupClose{float:right;position:absolute;right:0px;top:0px;}
+}
+
+.membershipDetail{
+	float:left;
+	width:100%;
+	font-size:15px;
+	color:#444444;
+
+	.row{margin-bottom:10px;}
+}
+.newPopupSubTitle{
+	width:100%;
+	float:left;
+	color:#444444;
+	font-size:17px;
+	font-weight:600;
+	margin-bottom:10px;
+	text-transform:uppercase;
+}
+.waive-setup{
+	display:block;
+	color:#667680;
+	font-size:15px;
+	text-align:right;
+	line-height:17px;
+}
+.Recurrence-period{width:112px;}
+.simple-btn{
+	display:inline-block;
+	color:#ffffff;
+	background:$blue;
+	height:42px;
+	padding:12px 30px;
+	@include border-radius(3px);
+	font-size:15px;
+	font-weight:bold;
+	text-align:center;
+}
+.payment-field{
+	iframe{height:42px;margin-top:10px;
+		input{height:42px;}
+	}
+}
+.start-date-picker .react-datepicker-popper{margin-top:50px!important;}
+.saveed-card{line-height:33px;}

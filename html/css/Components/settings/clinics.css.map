@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,iBAAkB;EACd,aAAa,EAAE,eAAe;EAC9B,QAAQ,EAAE,IAAI",
+"sources": ["../../../sass/Components/settings/clinics.scss"],
+"names": [],
+"file": "clinics.css"
+}

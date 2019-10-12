@@ -1,0 +1,73 @@
+.header{padding:40px 0px;background:$white-color;
+		.logo {
+			float:left;
+			img{
+				margin-top:0px;
+				margin-bottom:0px;
+				height:50px;
+				}
+		}
+}
+.header-right{float:right;}
+.nav{
+	display:inline-block;
+	float:right;
+	list-style:none;
+	margin-top:10px;
+	
+	li{
+		display:inline-block;
+		margin-left:6px;
+	
+		a{
+			display:block;
+			font-size:16px;
+			color:#999;
+			margin:0px 4px;
+			padding-bottom:4px;
+		}
+		a:hover{
+			border-bottom:2px solid #fff;
+			color:#0075c0;
+			background:none;
+		}
+		a.login{
+			border:2px solid #999;
+			border-radius:30px;
+			padding:7px 18px;
+			background:none;
+		}
+		a.login:hover{
+			color:$login-blue-color;
+			border-color:#0075c0;
+		}
+	
+	}
+	
+}
+.top-phone-number { width:100%; float:left;}
+.Phone-no{
+	display: inline-block;
+    color: #fff;
+    background:$login-blue-color;
+    border-radius: 0px 0px 10px 10px;
+    padding: 5px 20px;
+    float: right;
+    margin-top: -47px;
+    padding-top: 12px;
+    font-size: 21px;
+	
+	a, .Phone-no a:hover{color:#fff;text-decoration:none;}
+	
+	i{
+		background: #1d659f;
+		border:1px solid rgba(255,255,255,0.5);
+		border-radius: 50%;
+		width: 26px;
+		height: 26px;
+		text-align: center;
+		font-size: 16px;
+		line-height: 28px;
+	}
+}
+

@@ -1,0 +1,84 @@
+.treatmentPlanTitle{
+	padding: 25px 30px;
+	font-size: 30px;
+	color: #404040;
+	font-weight: 600;
+	border-bottom:1px solid #dddddd;
+	float:left;
+	width:100%;
+	
+	span{vertical-align:top;display:inline-block;}
+	.line-btn, .blue-btn{width:auto;min-width:inherit;margin-top:7px;}
+}
+.treatment-timeline{
+	padding:18px 30px;
+	float:left;
+	
+	.TP-total{font-size:20px;}
+}
+.treatmentSection{
+	float:left;
+	width:100%;
+	
+	.procedureDate{
+		font-size:14px;
+		color:#404040;
+		float:left;
+		width:100%;
+		position:relative;
+		padding-left:30px;
+		margin:3px 0px;
+		
+		&:after{
+			position:absolute;
+			content:'';
+			width:12px;
+			height:12px;
+			background:$blue;
+			@include border-radius(30px);
+			left:-5px;
+			top:4px;
+		}
+	}
+	.treatmentContent{
+		border-left:2px solid $blue;
+		float:left;
+		width:100%;
+		padding:13px 30px;
+		
+		.treatmentDetails{
+			background:#e6eef2;
+			float:left;
+			width:100%;
+			font-size:20px;
+			color:#404040;
+			font-weight:bold;
+			padding:10px 20px;
+			@include border-radius(3px);
+			
+			> div{padding:5px 0px;}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

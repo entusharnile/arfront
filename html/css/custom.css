@@ -1,0 +1,143 @@
+﻿.caleran-container .caleran-input, .caleran-container-mobile .caleran-input{
+	width:330px!important;
+	max-width:100%;
+}
+.caleran-container .caleran-input .caleran-header .caleran-header-start{
+	margin-right:0px;
+}
+.caleran-container .caleran-input .caleran-header{
+	padding:20px 5px 10px 5px;
+}
+.caleran-container .caleran-input .caleran-header .caleran-header-separator{
+	padding:0px;
+}
+.caleran-header-start-day, .caleran-container .caleran-input .caleran-header .caleran-header-start .caleran-header-end-day, .caleran-container .caleran-input .caleran-header .caleran-header-end .caleran-header-start-day{
+	font-size: 33px;
+	margin-top: -6px!important;
+}
+.caleran-container .caleran-input .caleran-calendars .caleran-calendar .caleran-days-container .caleran-day.caleran-selected.caleran-disabled{
+	opacity:1;
+	background:#ffffff;
+	color: #1783FF;
+}
+.caleran-container .caleran-input .caleran-calendars .caleran-month-selector .caleran-ys-year, .caleran-container .caleran-input .caleran-calendars .caleran-month-selector .caleran-ys-year-next, .caleran-container .caleran-input .caleran-calendars .caleran-month-selector .caleran-ys-year-prev, .caleran-container .caleran-input .caleran-calendars .caleran-year-selector .caleran-ys-year, .caleran-container .caleran-input .caleran-calendars .caleran-year-selector .caleran-ys-year-next, .caleran-container .caleran-input .caleran-calendars .caleran-year-selector .caleran-ys-year-prev, .caleran-container-mobile .caleran-input .caleran-calendars .caleran-month-selector .caleran-ys-year, .caleran-container-mobile .caleran-input .caleran-calendars .caleran-month-selector .caleran-ys-year-next, .caleran-container-mobile .caleran-input .caleran-calendars .caleran-month-selector .caleran-ys-year-prev, .caleran-container-mobile .caleran-input .caleran-calendars .caleran-year-selector .caleran-ys-year, .caleran-container-mobile .caleran-input .caleran-calendars .caleran-year-selector .caleran-ys-year-next, .caleran-container-mobile .caleran-input .caleran-calendars .caleran-year-selector .caleran-ys-year-prev{
+	background:#fafafa;
+	font-size: 13px;
+}
+.caleran-container .caleran-input .caleran-calendars .caleran-month-selector .caleran-ms-month{
+	background:#fafafa;
+	font-size: 13px;
+}
+.caleran-container .caleran-input .caleran-ranges .caleran-range, .caleran-container-mobile .caleran-input .caleran-ranges .caleran-range{
+	color: #2682c5;
+}
+.caleran-container .caleran-input .caleran-ranges .caleran-range{
+	color: #2682c5;
+    padding: 1px 9px;
+    border: 1px solid #2682c5;
+    border-radius: 15px;
+    font-weight:normal;
+}
+.caleran-container .caleran-input .caleran-ranges .caleran-range:hover{
+	background:#2682c5;
+	color:#ffffff;
+	text-decoration:none;
+}
+.caleran-header-start-day, .caleran-container .caleran-input .caleran-header .caleran-header-start .caleran-header-end-day{
+	color: #2682c5!important;
+	font-size:30px!important;
+}
+.caleran-container .caleran-input .caleran-header .caleran-header-end .caleran-header-end-day{
+	color: #2682c5!important;
+	font-size:30px!important;
+}
+.caleran-header-start-day, .caleran-header-end-day{
+	margin-top: -2px!important;
+    margin-right: 3px!important;
+}
+.caleran-container .caleran-input .caleran-calendars .caleran-calendar .caleran-days-container .caleran-day.caleran-start:not(.caleran-hovered) span, .caleran-container-mobile .caleran-input .caleran-calendars .caleran-calendar .caleran-days-container .caleran-day.caleran-start:not(.caleran-hovered) span{
+	background:none;
+}
+.caleran-container .caleran-input .caleran-calendars .caleran-calendar .caleran-days-container .caleran-day.caleran-end:not(.caleran-hovered) span, .caleran-container-mobile .caleran-input .caleran-calendars .caleran-calendar .caleran-days-container .caleran-day.caleran-end:not(.caleran-hovered) span{
+	background:none;
+}
+.caleran-container .caleran-input .caleran-calendars .caleran-calendar .caleran-days-container .caleran-day.caleran-selected, .caleran-container .caleran-input .caleran-calendars .caleran-calendar .caleran-days-container .caleran-day.caleran-start, .caleran-container .caleran-input .caleran-calendars .caleran-calendar .caleran-days-container .caleran-day.caleran-end, .caleran-container-mobile .caleran-input .caleran-calendars .caleran-calendar .caleran-days-container .caleran-day.caleran-selected, .caleran-container-mobile .caleran-input .caleran-calendars .caleran-calendar .caleran-days-container .caleran-day.caleran-start, .caleran-container-mobile .caleran-input .caleran-calendars .caleran-calendar .caleran-days-container .caleran-day.caleran-end{
+	background: #fff;
+    color: #1783FF;
+    border-radius: 0;
+    border-top: 1px solid #2682c5;
+    border-bottom: 1px solid #2682c5;
+}
+.caleran-start{
+	border-left: 1px solid #2682c5;
+}
+.caleran-end{
+	border-right: 1px solid #2682c5;
+}
+.caleran-container .caleran-input .caleran-calendars .caleran-calendar .caleran-days-container .caleran-day, .caleran-container-mobile .caleran-input .caleran-calendars .caleran-calendar .caleran-days-container .caleran-day{
+	border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+.caleran-container .caleran-input .caleran-calendars .caleran-calendar .caleran-days-container .caleran-dayofweek, .caleran-container .caleran-input .caleran-calendars .caleran-calendar .caleran-days-container .caleran-day, .caleran-container .caleran-input .caleran-calendars .caleran-calendar .caleran-days-container .caleran-disabled, .caleran-container-mobile .caleran-input .caleran-calendars .caleran-calendar .caleran-days-container .caleran-dayofweek, .caleran-container-mobile .caleran-input .caleran-calendars .caleran-calendar .caleran-days-container .caleran-day, .caleran-container-mobile .caleran-input .caleran-calendars .caleran-calendar .caleran-days-container .caleran-disabled{
+	margin-bottom:3px;
+}
+.caleran-container .caleran-input .caleran-calendars .caleran-calendar .caleran-title .caleran-prev, .caleran-container .caleran-input .caleran-calendars .caleran-calendar .caleran-title .caleran-next, .caleran-container-mobile .caleran-input .caleran-calendars .caleran-calendar .caleran-title .caleran-prev, .caleran-container-mobile .caleran-input .caleran-calendars .caleran-calendar .caleran-title .caleran-next{
+	margin-top:0px;
+}
+.caleran-container .caleran-input .caleran-calendars .caleran-calendar .caleran-days-container .caleran-day.caleran-start:not(.caleran-hovered){
+	border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+.caleran-container .caleran-input .caleran-calendars .caleran-calendar .caleran-days-container .caleran-day.caleran-end:not(.caleran-hovered){
+	border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+.caleran-container .caleran-input .caleran-calendars .caleran-month-selector .caleran-ys-year.current, .caleran-container .caleran-input .caleran-calendars .caleran-month-selector .caleran-ys-year-next.current, .caleran-container .caleran-input .caleran-calendars .caleran-month-selector .caleran-ys-year-prev.current, .caleran-container .caleran-input .caleran-calendars .caleran-year-selector .caleran-ys-year.current, .caleran-container .caleran-input .caleran-calendars .caleran-year-selector .caleran-ys-year-next.current, .caleran-container .caleran-input .caleran-calendars .caleran-year-selector .caleran-ys-year-prev.current, .caleran-container-mobile .caleran-input .caleran-calendars .caleran-month-selector .caleran-ys-year.current, .caleran-container-mobile .caleran-input .caleran-calendars .caleran-month-selector .caleran-ys-year-next.current, .caleran-container-mobile .caleran-input .caleran-calendars .caleran-month-selector .caleran-ys-year-prev.current, .caleran-container-mobile .caleran-input .caleran-calendars .caleran-year-selector .caleran-ys-year.current, .caleran-container-mobile .caleran-input .caleran-calendars .caleran-year-selector .caleran-ys-year-next.current, .caleran-container-mobile .caleran-input .caleran-calendars .caleran-year-selector .caleran-ys-year-prev.current{
+	background:#2682c5!important;
+}
+.caleran-container .caleran-input .caleran-calendars .caleran-month-selector .caleran-ys-year:hover, .caleran-container .caleran-input .caleran-calendars .caleran-month-selector .caleran-ys-year-next:hover, .caleran-container .caleran-input .caleran-calendars .caleran-month-selector .caleran-ys-year-prev:hover, .caleran-container .caleran-input .caleran-calendars .caleran-year-selector .caleran-ys-year:hover, .caleran-container .caleran-input .caleran-calendars .caleran-year-selector .caleran-ys-year-next:hover, .caleran-container .caleran-input .caleran-calendars .caleran-year-selector .caleran-ys-year-prev:hover, .caleran-container-mobile .caleran-input .caleran-calendars .caleran-month-selector .caleran-ys-year:hover, .caleran-container-mobile .caleran-input .caleran-calendars .caleran-month-selector .caleran-ys-year-next:hover, .caleran-container-mobile .caleran-input .caleran-calendars .caleran-month-selector .caleran-ys-year-prev:hover, .caleran-container-mobile .caleran-input .caleran-calendars .caleran-year-selector .caleran-ys-year:hover, .caleran-container-mobile .caleran-input .caleran-calendars .caleran-year-selector .caleran-ys-year-next:hover, .caleran-container-mobile .caleran-input .caleran-calendars .caleran-year-selector .caleran-ys-year-prev:hover{
+	background:#2682c5!important;
+}
+.caleran-container .caleran-input .caleran-calendars .caleran-month-selector .caleran-ms-month.current, .caleran-container .caleran-input .caleran-calendars .caleran-year-selector .caleran-ms-month.current, .caleran-container-mobile .caleran-input .caleran-calendars .caleran-month-selector .caleran-ms-month.current, .caleran-container-mobile .caleran-input .caleran-calendars .caleran-year-selector .caleran-ms-month.current{
+	background:#2682c5!important;
+}
+.caleran-container .caleran-input .caleran-calendars .caleran-month-selector .caleran-ms-month:hover, .caleran-container .caleran-input .caleran-calendars .caleran-year-selector .caleran-ms-month:hover, .caleran-container-mobile .caleran-input .caleran-calendars .caleran-month-selector .caleran-ms-month:hover, .caleran-container-mobile .caleran-input .caleran-calendars .caleran-year-selector .caleran-ms-month:hover{
+	background:#2682c5!important;
+}
+.caleran-container .caleran-input .caleran-calendars .caleran-calendar .caleran-days-container .caleran-day.caleran-selected, .caleran-container .caleran-input .caleran-calendars .caleran-calendar .caleran-days-container .caleran-day.caleran-start, .caleran-container .caleran-input .caleran-calendars .caleran-calendar .caleran-days-container .caleran-day.caleran-end, .caleran-container-mobile .caleran-input .caleran-calendars .caleran-calendar .caleran-days-container .caleran-day.caleran-selected, .caleran-container-mobile .caleran-input .caleran-calendars .caleran-calendar .caleran-days-container .caleran-day.caleran-start, .caleran-container-mobile .caleran-input .caleran-calendars .caleran-calendar .caleran-days-container .caleran-day.caleran-end{
+	color:#2682c5!important;
+}
+.caleran-container .caleran-input .caleran-calendars .caleran-calendar .caleran-title .caleran-month-switch:hover, .caleran-container .caleran-input .caleran-calendars .caleran-calendar .caleran-title .caleran-year-switch:hover, .caleran-container-mobile .caleran-input .caleran-calendars .caleran-calendar .caleran-title .caleran-month-switch:hover, .caleran-container-mobile .caleran-input .caleran-calendars .caleran-calendar .caleran-title .caleran-year-switch:hover{
+	color:#2682c5;
+}
+
+.caleran-ranges .fa-retweet, .caleran-ranges .caleran-range-header{
+	display:none!important;
+}
+.caleran-container .caleran-input .caleran-ranges .caleran-range{
+	color: #2682c5;
+    padding: 4px 0px;
+    border: 1px solid #2682c5;
+    border-radius: 3px;
+    font-weight: normal;
+    width: 69px;
+    text-align: center;
+}
+.input-cal{
+	border: 1px solid #ddd;
+    height: 30px;
+    padding: 0px 10px;
+    border-radius: 3px;
+    font-size: 13px;
+    text-align: center;
+}
+.caleran-container .caleran-input .caleran-ranges .caleran-range.caleran-range-selected, .caleran-container-mobile .caleran-input .caleran-ranges .caleran-range.caleran-range-selected{
+	color:#ffffff;
+	background:#2682c5;
+}
+.caleran-container .caleran-input .caleran-calendars .caleran-calendar .caleran-days-container .caleran-today, .caleran-container-mobile .caleran-input .caleran-calendars .caleran-calendar .caleran-days-container .caleran-today{
+	font-weight:normal;
+}
+.caleran-popup {
+    margin-left: -45px!important;
+}

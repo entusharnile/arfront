@@ -1,0 +1,420 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="" name="description">
+<meta content="" name="author">
+<meta content="Page scroll animation using CSS animate" name="description">
+<meta content="css animation, loading effect, animate, scroll loading, scroll animation" 
+name="keywords">
+<meta content="Jinson Abraham" name="author">
+<title>AR-Patient Portal</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" 
+rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" 
+rel="stylesheet">
+<link href="css/common/bootstrap.css" rel="stylesheet">
+<link href="css/common/icons.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="main protected">
+	<header>
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
+					<span class="sr-only">Toggle navigation</span> 
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span><span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">
+					<img src="images/logo.png"/>
+				</a> 
+			</div>
+			
+			<div id="navbar" class="navbar-collapse collapse">
+				<div class="nav-outer">
+					<ul class="nav navbar-nav right-menus">
+						<li>
+							<a id="users-logs" class="users-logs show-desktop right-menus-a" href="/dashboard/user_logs" title="User Activities"></a>
+							<a id="users-logs" class="users-logs show-mobile" href="/dashboard/user_logs">View Users Activities</a>
+						</li>
+						<li>
+						<a id="noti-icon" class="noti-icon notification show-desktop right-menus-a" href="javascript:void(0);" title="Notifications"></a>
+						<a class="noti-icon notification show-mobile" href="/dashboard/notifications" title="Notifications">Notification</a>
+						<div id="popup" class="noti-popup no-display">
+							<div id="notty-title" class="noti-title">Notifications </div>
+							<div id="notty-content" class="noti-content">
+								<div class="read">
+									Your appointment on date 12/12/2017 01:00 PM 
+									with KProvider 1 is not synced
+								</div>
+								<div class="read">
+									Your appointment on date with is not synced
+								</div>
+								<div class="read">
+									Batch li-stock of <b>Have stocks</b> has hit 
+									low stock
+								</div>
+								<div class="read">
+									Batch ny-stock of <b>Have stocks</b> has hit 
+									low stock
+								</div>
+								<div class="read">
+									Batch 54545 of <b>Ttt</b> has hit low stock
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +19546637556
+								</div>
+								<div class="read">
+									New SMS received from +19546637556
+								</div>
+							</div>
+							<div id="notty-footer" class="noti-footer">
+								<a href="/dashboard/sms_notifications">See All</a>
+							</div>
+						</div>
+						</li>
+						<li class="arow-link-outer">
+							<span class="arow-link">
+								<div id="headerUserImage" class="user-picture"></div>
+								<span class="name-txt">Ganesh Kompella </span>
+							</span>
+						</li>
+						<li>
+							<a class="setting show-desktop right-menus-a" href="/settings/profile" title="Settings"></a>
+							<a class="setting show-mobile" href="/settings/profile">Settings</a> 
+						</li>
+						<li>
+							<a class="logout show-desktop right-menus-a" href="/accounts/logout" title="Logout"></a>
+							<a class="logout show-mobile" href="/accounts/logout"><i class="icon-Power-2"></i>Log Out</a> 
+						</li>
+					</ul>
+					<ul class="nav navbar-nav main-navbar">
+						<li class=""><a href="/dashboard">Dashboard</a></li>
+						<li class="active"><a href="/patients/manage">Clients</a> </li>
+						<li class=""><a href="/appointments/index">Appointments</a></li>
+						<li class=""><a href="/sales/index">Sales</a></li>
+						<li class=""><a href="/inventory/products/active">Inventory</a></li>
+						<li class=""><a href="/analytics/reports">Reports</a></li>
+						<li class=""><a href="/marketing/dashboard">Surveys</a></li>
+						<li class=""><a href="/MDRooms/pending">MD's Room</a></li>
+						<li class=""><a href="/ProvidersRooms/pending">Provider's Room</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	
+<div id="content">
+	<div class="container-fluid content setting-wrapper">
+
+		<div class="row duplicate-patient-title">
+			<div class="duplicate-patient-name">
+				<a class="pull-left go-back-arrow" id="go-back" data-url="/patients/manage"></a>
+				<span class="patient-count"> Merge Client: <b>First1 Import</b> </span>
+			</div>
+
+			<ul class="merge-steps">
+				<li id="step-one-li" data-popup-id="step-one" data-step-count="2" data-next-popup-id="step-two" class="step_tab"><a><span class="step-no">1</span><label class="step-name">Information</label></a></li>
+				<li id="step-two-li" class="step_tab" data-popup-id="step-two" data-step-count="3" data-next-popup-id="step-three"><a><span class="step-no">2</span><label class="step-name">Procedures</label></a></li>
+				<li id="step-three-li" class="step_tab" data-popup-id="step-three" data-step-count="4" data-next-popup-id="step-four"><a><span class="step-no">3</span><label class="step-name">Medical History</label></a></li>
+				<li id="step-four-li" class="merge-sel step_tab" data-popup-id="step-four" data-step-count="5" data-next-popup-id="step-five"><a><span class="step-no">4</span><label class="step-name">Review Merge</label></a></li>
+				<li id="step-five-li" class="next_step_tab" data-popup-id="step-five" data-step-count="5">
+				<a class="blue-btn next-step">Next Step</a>
+				</li>
+			</ul>
+		</div>
+		
+	
+			
+			
+		<div class="merge-outer row" id="step-four">
+	
+	<div class="col-md-4 merge-final-info">
+		<div class="merge-setion">
+			<div class="section-title section-tab-outer">
+				<a data-id="patient_profile_review" class="section-title-name review-left-side-tab section-tab sel-merge-tab">Profile Information</a>
+				<a data-id="medica_history_review" class="section-title-name review-left-side-tab section-tab">Medical History</a>
+			</div>
+			
+		<div class="merge-content new-popup-field-outer patient-info-review-left no-display" id="medica_history_review">
+				
+				<div class="col-sm-12 new-popup-form-section">
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="email" class="popup-input-field-name">Major Event</label>
+							<div class="popup-field-box" id="major_event-review-box">
+															</div>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="email" class="popup-input-field-name">Smoking Status</label>
+							<div class="popup-field-box" id="smoking_status-review-box">
+															</div>
+						</div>
+					</div>
+					
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="email" class="popup-input-field-name">ongoing medical problems</label>
+							<div class="popup-field-box" id="ongoing_medical_problems-review-box">
+															</div>
+						</div>
+					</div>
+					
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="email" class="popup-input-field-name">Social History</label>
+							<div class="popup-field-box" id="social_history-review-box">
+															</div>
+						</div>
+					</div>
+					
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="email" class="popup-input-field-name">Family Health History</label>
+							<div class="popup-field-box" id="family_health_history-review-box">
+															</div>
+						</div>
+					</div>
+					
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="email" class="popup-input-field-name">Nutrition History</label>
+							<div class="popup-field-box" id="nutrition_history-review-box">
+															</div>
+						</div>
+					</div>
+					
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="email" class="popup-input-field-name">Preventive Care</label>
+							<div class="popup-field-box" id="preventive_care-review-box">
+															</div>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="email" class="popup-input-field-name">Development History</label>
+							<div class="popup-field-box" id="development_history-review-box">
+															</div>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="email" class="popup-input-field-name">Drug Allergies</label>
+							<div class="popup-field-box" id="drug_allergies-review-box">
+															</div>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="email" class="popup-input-field-name">Environmental Allergies</label>
+							<div class="popup-field-box" id="environmental_allergies-review-box">
+															</div>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="email" class="popup-input-field-name">Food Allergies</label>
+							<div class="popup-field-box" id="food_allergies-review-box">
+															</div>
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>			
+			<div class="merge-content new-popup-field-outer patient-info-review-left" id="patient_profile_review" style="display:block;">
+				
+				<div class="col-sm-12 new-popup-form-section">
+					<div class="form-group row">
+						<div class="col-lg-5">
+							<div class="merge-pro-data-img" id="user_image-review-box" style="background-image: url(images/user.png);">
+								
+							</div>
+						</div>
+						<div class="col-lg-7">
+							<label for="email" class="popup-input-field-name">First Name</label>
+							<div class="popup-field-box" id="first_name-review-box">
+								First1							</div>
+						</div>
+						<div class="col-lg-7">
+							<label for="email" class="popup-input-field-name">Last Name</label>
+							<div class="popup-field-box" id="last_name-review-box">
+								Import							</div>
+						</div>
+					</div>
+					
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="email" class="popup-input-field-name">Date of Birth</label>
+							<div class="popup-field-box" id="date_of_birth-review-box">
+								30 November -0001							</div>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="email" class="popup-input-field-name">Gender</label>
+							<div class="popup-field-box" id="gender-review-box">
+								Not disclosed							</div>
+						</div>
+					</div>
+										<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="email" class="popup-input-field-name">Member Type</label>
+							<div class="popup-field-box" id="member_type-review-box">
+															</div>
+						</div>
+					</div>
+										<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="email" class="popup-input-field-name">Email</label>
+							<div class="popup-field-box" id="email-review-box">
+								new@mailforspam.com							</div>
+						</div>
+					</div>
+					
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="email" class="popup-input-field-name">Phone</label>
+							<div class="popup-field-box" id="phone-review-box">
+								+4915257157456							</div>
+						</div>
+					</div>
+					
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="email" class="popup-input-field-name">Address Line</label>
+							<div class="popup-field-box" id="address-review-box">
+								Line 1 1							</div>
+						</div>
+					</div>
+					
+					<div class="form-group row">
+						<div class="col-lg-6">
+							<label for="email" class="popup-input-field-name">City</label>
+							<div class="popup-field-box" id="city-review-box">
+															</div>
+						</div>
+						<div class="col-lg-6">
+							<label for="email" class="popup-input-field-name">State</label>
+							<div class="popup-field-box" id="state-review-box">
+															</div>
+						</div>
+						<div class="col-lg-6">
+							<label for="email" class="popup-input-field-name">Country</label>
+							<div class="popup-field-box" id="country-review-box">
+															</div>
+						</div>
+						<div class="col-lg-6">
+							<label for="email" class="popup-input-field-name">Zipcode</label>
+							<div class="popup-field-box" id="zip_code-review-box">
+								79000							</div>
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="col-md-8">
+		<div class="merge-setion">
+			<div class="section-title">
+				<span class="section-title-name"><span id="total_pro_count">5</span> Procedures Provided</span>
+			</div>
+			<div class="merge-content" style="padding:5px 15px;" id="review-right-side-procedure"><div class="pro-procedure-row merged-procedure">
+														<div class="pro-procedure-content">
+								<div class="pro-proc-title">HEALTH MULTIPLE SCALE RATING</div>
+								
+																		
+							</div>
+						</div><div class="pro-procedure-row merged-procedure">
+														<div class="pro-procedure-image">
+								<img src="http://beta.aestheticrecord.com/img/no-image-horizontal.png">
+							</div>
+														<div class="pro-procedure-content">
+								<div class="pro-proc-title">Procedure #1</div>
+								
+																		
+							</div>
+						</div><div class="pro-procedure-row merged-procedure">
+														<div class="pro-procedure-image">
+								<img src="http://beta.aestheticrecord.com/img/no-image-horizontal.png">
+							</div>
+														<div class="pro-procedure-content">
+								<div class="pro-proc-title">Procedure #2</div>
+								
+																		
+							</div>
+						</div><div class="pro-procedure-row merged-procedure">
+														<div class="pro-procedure-image">
+								<img src="http://beta.aestheticrecord.com/img/no-image-horizontal.png">
+							</div>
+														<div class="pro-procedure-content">
+								<div class="pro-proc-title">Procedure #5</div>
+								
+																		
+							</div>
+						</div><div class="pro-procedure-row merged-procedure">
+														<div class="pro-procedure-image">
+								<img src="http://beta.aestheticrecord.com/img/no-image-horizontal.png">
+							</div>
+														<div class="pro-procedure-content">
+								<div class="pro-proc-title">Procedure #1</div>
+								
+																		
+							</div>
+						</div></div>
+		</div>
+	</div>
+	
+	
+</div>
+
+	
+			
+			
+			
+
+
+	</div>
+</div>
+	
+
+<footer class="main-footer">
+	<div class="container-fluid">
+		<span class="pull-right">
+			©2018 Aesthetic Record. All Rights Reserved. 
+		</span>
+	</div>
+</footer>
+	
+	
+</div>
+
+</body>
+
+</html>

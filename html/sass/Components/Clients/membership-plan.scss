@@ -1,0 +1,53 @@
+.membership-plan{
+	.no-plan-available {
+		float: left;
+		width: 100%;
+		text-align: center;
+		font-size: 20px;
+		color: #777777;
+		margin: 20px 0px 25px;
+	}
+	.create-treat-btn {
+		font-size: 16px;
+		font-weight: 400;
+		color: #ffffff;
+		background: $blue;
+		display: inline-block;
+		padding: 10px 20px;
+		border-radius: 3px;
+		border: 1px solid $blue;
+		margin-left: 5px;
+		height: 40px;
+		line-height: 36px;
+		padding: 0px 20px;
+	}
+	.popup-form{
+		label{
+			font-size: 19px;
+			font-weight: 300;
+			color: #252525;
+		}
+		.report-input{font-weight:300;}
+		.select-selected {
+			background: url(/../images/arrow.png) no-repeat right center;
+			color: #aaaaaa;
+			padding: 14px 10px 14px 0px;
+			border: none;
+			border-bottom: 1px solid #dddddd;
+			border-color: #dddddd;
+			user-select: none;
+			border-radius: 0px;
+			height: 60px;
+			font-size: 22px;
+			font-weight: 300;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			margin-bottom:27px;
+			width:100%;
+			
+			option{font-weight:normal;font-size:15px;}
+		}
+		.cancelCreateForm{padding:9px 25px;}
+	}
+}

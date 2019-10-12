@@ -1,0 +1,26 @@
+.dash-access {
+    margin-right: 10px;
+    float: left;
+}
+.hide-pwd-outer {
+    position: relative;
+}
+#hidePassword {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background: #fff;
+    width: 21px;
+    text-align: right;
+}
+.passcode {
+    width: 35%;
+    display: inline-block;
+}
+#generate_number {
+    margin-top: 5px;
+}
+.gene-pascod {
+    padding: 7px 9px 4px;
+    font-size: 12px;
+}

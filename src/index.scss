@@ -1,0 +1,66 @@
+@import "~bootstrap/scss/bootstrap";
+@import './common.scss';
+@import './calendar-style.scss';
+@import './switchVersionNotification.scss';
+@import './browser-support.scss';
+.guest{
+	background:$white-color;
+	@import './Containers/Guest/header.scss';
+  @import './Containers/Guest/footer.scss';
+	// @import './Containers/Guest/form.scss';
+	@import './Components/Login/login.scss';
+  @import './Components/BlockIP/blockIp.scss';
+	// @import './Components/Signup/signup.scss';
+	 @import './Containers/Guest/responsive.scss';
+	 @import './Components/SignUp/signup.scss';
+
+
+}
+.protected{
+	background:$main-bg;
+	@import './Containers/Protected/header.scss';
+	@import './Containers/Protected/footer2.scss';
+	@import './Components/Dashboard/dashboard.scss';
+	@import './Components/Settings/Account/setting-profile.scss';
+	@import './Components/Settings/Teammates/UserRoles/user-role.scss';
+	@import './Components/Settings/Account/two-factor-authentication.scss';
+	@import './Components/Settings/ManageClinics/Clinics/clinics.scss';
+	@import './Components/Settings/ManageClinics/Clinics/edit-clinic.scss';
+	@import './Components/Settings/Account/ar-account.scss';
+	@import './Components/Settings/Pos/pos.scss';
+	@import './Components/Settings/Pos/PosDisputes/pos-dispute.scss';
+	@import './Components/Settings/YourBilling/Subscription/subscription.scss';
+	@import './Components/Settings/ManageClinics/Questionnaires/questionnaires.scss';
+	@import './Components/Settings/MembershipWallet/membership-wallet.scss';
+	//@import './Components/Settings/Clinics/Questionnaires/questionnaires.scss';
+	@import './Components/Rooms/pro-detail.scss';
+	@import './Components/Clients/client-profile.scss';
+	@import './Components/UserActivity/user-activities.scss';
+	@import './Components/Rooms/merge-clients.scss';
+	@import './Components/Rooms/customer-note.scss';
+	@import './ar-calendar.scss';
+	@import './Components/ProcedureNotes/procedure-notes.scss';
+	@import './Components/Survey/surveys.scss';
+	@import './Components/Clients/clients.scss';
+	@import './Components/Clients/new-memberShip-plan.scss';
+	@import './Components/Clients/new-treatmentPlan.scss';
+	@import './Components/Clients/treatmentPlanTimeline.scss';
+	// @import './Components/Settings/configure-url.scss';
+	@import './Containers/Protected/responsive2.scss';
+	@import './Components/Appointment/Calendar/create-appointment.scss';
+	@import './Components/Appointment/appointment-config.scss';
+	@import './Components/Appointment/new-appointment.scss';
+	@import './Components/Reports/reports.scss';
+	@import './Components/Reports/create-report.scss';
+	@import './Components/Appointment/Calendar/calendar.scss';
+	@import './Components/Appointment/ProviderSchedule/provider.scss';
+	@import './Components/Inventory/products.scss';
+	@import './Components/Sales/sales-reports.scss';
+	@import './Components/Sales/CashDrawer/cash-drawer.scss';
+	@import './Components/Clients/Documents/client-documents.scss';
+	@import './Components/Settings/ManageClinics/ProcedureTemplates/procedure-template.scss';
+	@import './Components/ProcedureConsents/procedure-consents.scss';
+	@import './Components/ProcedurePrescriptions/procedure-prescription.scss';
+	.provider-schedule-view{@import './cal-style.scss';}
+	@import './Components/ExportProcedures/export-procedure.scss';
+}

@@ -1,0 +1,155 @@
+.vert-middle{
+	align-items: center;
+    display: -webkit-flex;  
+    display: flex;
+    min-height:650px;
+    height: 100%;
+}
+.loyaltyMembership{
+	width:480px;
+	height:auto;
+	margin:auto;
+	display:table;
+	background:#ffffff;
+	@include border-radius(5px);
+	padding:25px;
+}
+.newPopupTitle{
+	width:100%;
+	float:left;
+	color:#444444;
+	font-size:22px;
+	font-weight:bold;
+	margin-bottom:25px;
+	position:relative;
+	padding-right:20px;
+	
+	.popupClose{float:right;position:absolute;right:0px;top:0px;}
+}
+
+.membershipDetail{
+	float:left;
+	width:100%;
+	font-size:15px;
+	color:#444444;
+	
+	.row{margin-bottom:10px;}
+}
+.newPopupSubTitle{
+	width:100%;
+	float:left;
+	color:#444444;
+	font-size:17px;
+	font-weight:600;
+	margin-bottom:20px;
+	text-transform:uppercase;
+}
+.waive-setup{
+	display:block;
+	color:#667680;
+	font-size:15px;
+	text-align:right;
+	line-height:17px;
+}
+.membershipLabel{
+	color:#444444;
+	font-size:15px;
+}
+
+.simpleField{
+	float:left;
+	width:100%;
+	position:relative;
+	margin-bottom:10px;
+	margin-top:5px;
+	
+	.simpleLabel{
+		float:left;
+		font-size:13px;
+		color:$blue;
+		background:#ffffff;
+		margin:0px 11px -8px;
+		position:absolute;
+		padding:0px 3px;
+		top: -9px;
+		z-index:1;
+		
+		.fieldRequired{color:$blue;}
+	}
+	
+	.simpleInput{
+		width:100%;
+		float:left;
+		color:#404040;
+		border:1px solid #cad2d6;
+		@include border-radius(3px);
+		height:36px;
+		padding:0px 15px;
+		font-size:14px;
+		background:#ffffff;
+	}
+	.simpleSelect{
+		width:100%;
+		float:left;
+		color:#404040;
+		border:1px solid #cad2d6;
+		@include border-radius(3px);
+		background-image:url(../images/select-arrow2.png);
+		background-repeat:no-repeat;
+		background-position:right 8px center;
+		background-size:10px auto;
+		background-color:#ffffff;
+		height:36px;
+		padding:0px 15px;
+		font-size:14px;
+	}
+	.simpleTextarea{
+		width:100%;
+		float:left;
+		color:#404040;
+		border:1px solid #cad2d6;
+		@include border-radius(3px);
+		height:150px;
+		padding:10px 15px;
+		font-size:14px;
+	}
+}
+.field-icon{
+	position:relative;
+	
+	a{position:absolute;right:7px;top:7px;}
+}
+.simple-cal-icon{
+	background-image:url(../images/appointment-hover.png);
+	width:19px;
+	height:19px;
+}
+.Recurrence-period{width:112px;}
+.simple-btn{
+	display:inline-block;
+	color:#ffffff;
+	background:$blue;
+	height:42px;
+	padding:12px 30px;
+	@include border-radius(3px);
+	font-size:15px;
+	font-weight:bold;
+	text-align:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

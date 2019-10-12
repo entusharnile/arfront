@@ -1,0 +1,488 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="" name="description">
+<meta content="" name="author">
+<meta content="Page scroll animation using CSS animate" name="description">
+<meta content="css animation, loading effect, animate, scroll loading, scroll animation" 
+name="keywords">
+<meta content="Jinson Abraham" name="author">
+<title>AR-Patient Portal</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" 
+rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" 
+rel="stylesheet">
+<link href="css/common/bootstrap.css" rel="stylesheet">
+<link href="css/common/icons.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="main protected">
+	<header>
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
+					<span class="sr-only">Toggle navigation</span> 
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span><span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">
+					<img src="images/logo.png"/>
+				</a> 
+			</div>
+			
+			<div id="navbar" class="navbar-collapse collapse">
+				<div class="nav-outer">
+					<ul class="nav navbar-nav right-menus">
+						<li>
+							<a id="users-logs" class="users-logs show-desktop right-menus-a" href="/dashboard/user_logs" title="User Activities"></a>
+							<a id="users-logs" class="users-logs show-mobile" href="/dashboard/user_logs">View Users Activities</a>
+						</li>
+						<li>
+						<a id="noti-icon" class="noti-icon notification show-desktop right-menus-a" href="javascript:void(0);" title="Notifications"></a>
+						<a class="noti-icon notification show-mobile" href="/dashboard/notifications" title="Notifications">Notification</a>
+						<div id="popup" class="noti-popup no-display">
+							<div id="notty-title" class="noti-title">Notifications </div>
+							<div id="notty-content" class="noti-content">
+								<div class="read">
+									Your appointment on date 12/12/2017 01:00 PM 
+									with KProvider 1 is not synced
+								</div>
+								<div class="read">
+									Your appointment on date with is not synced
+								</div>
+								<div class="read">
+									Batch li-stock of <b>Have stocks</b> has hit 
+									low stock
+								</div>
+								<div class="read">
+									Batch ny-stock of <b>Have stocks</b> has hit 
+									low stock
+								</div>
+								<div class="read">
+									Batch 54545 of <b>Ttt</b> has hit low stock
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +19546637556
+								</div>
+								<div class="read">
+									New SMS received from +19546637556
+								</div>
+							</div>
+							<div id="notty-footer" class="noti-footer">
+								<a href="/dashboard/sms_notifications">See All</a>
+							</div>
+						</div>
+						</li>
+						<li class="arow-link-outer">
+							<span class="arow-link">
+								<div id="headerUserImage" class="user-picture"></div>
+								<span class="name-txt">Ganesh Kompella </span>
+							</span>
+						</li>
+						<li>
+							<a class="setting show-desktop right-menus-a" href="/settings/profile" title="Settings"></a>
+							<a class="setting show-mobile" href="/settings/profile">Settings</a> 
+						</li>
+						<li>
+							<a class="logout show-desktop right-menus-a" href="/accounts/logout" title="Logout"></a>
+							<a class="logout show-mobile" href="/accounts/logout"><i class="icon-Power-2"></i>Log Out</a> 
+						</li>
+					</ul>
+					<ul class="nav navbar-nav main-navbar">
+						<li class="active"><a href="/dashboard">Dashboard</a></li>
+						<li class=""><a href="/patients/manage">Clients</a> </li>
+						<li class=""><a href="/appointments/index">Appointments</a></li>
+						<li class=""><a href="/sales/index">Sales</a></li>
+						<li class=""><a href="/inventory/products/active">Inventory</a></li>
+						<li class=""><a href="/analytics/reports">Reports</a></li>
+						<li class=""><a href="/marketing/dashboard">Surveys</a></li>
+						<li class=""><a href="/MDRooms/pending">MD's Room</a></li>
+						<li class=""><a href="/ProvidersRooms/pending">Provider's Room</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	
+<div id="content">
+	<div class="container-fluid content setting-wrapper">
+	
+	<div class="setting-left-menu">
+	<div class="setting-title">Settings</div>
+	<ul class="new-setting-tabs">
+		<li class="new-setting-tabs-li">
+		<a class="new-setting-tabs-a active-menu" href="javascript:void(0);">Account 
+		Information <i class="fas fa-angle-down"></i></a>
+		<ul class="setting-submenu">
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a" data-loading="false" 
+			data-title="Profile" data-url="/settings/profile" 
+			href="javascript:void(0);" onclick="setting_menu(this)">Profile </a>
+			</li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a" data-loading="false" 
+			data-title="two_factor" data-url="/settings/two_factor" 
+			href="javascript:void(0);" onclick="setting_menu(this)">2FA Authentication
+			</a></li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a sel-submenu" data-loading="false" 
+			data-title="Personal Information" 
+			data-url="/settings/account_information" href="javascript:void(0);" 
+			onclick="setting_menu(this)">AR Account</a> </li>
+		</ul>
+		</li>
+		<li class="new-setting-tabs-li"><a class="new-setting-tabs-a " 
+		href="javascript:void(0);">Manage Your Clinics
+		<i class="fas fa-angle-right"></i></a>
+		<ul class="setting-submenu no-display">
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="true" 
+			data-title="Manage Clinics" data-url="/settings/clinics" 
+			href="javascript:void(0);" onclick="setting_menu(this)">Clinics</a>
+			</li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="true" 
+			data-title="Questionnares" data-url="/settings/questionnaires" 
+			href="javascript:void(0);" onclick="setting_menu(this)">Questionnaires</a>
+			</li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="true" 
+			data-title="Consent" data-url="/settings/consents" 
+			href="javascript:void(0);" onclick="setting_menu(this)">Consents</a>
+			</li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-title="Procedure Templates" 
+			data-url="/settings/procedure_templates" href="javascript:void(0);" 
+			onclick="setting_menu(this)">Procedure Templates</a> </li>
+		</ul>
+		</li>
+		<li class="new-setting-tabs-li"><a class="new-setting-tabs-a " 
+		href="javascript:void(0);">Appointments <i class="fas fa-angle-right">
+		</i></a>
+		<ul class="setting-submenu no-display">
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-title="Post treatment instructions" 
+			data-url="/settings/appointments_ajax" href="javascript:void(0);" 
+			onclick="setting_menu(this)">Appointment Emails &amp; SMS</a> </li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-title="Post treatment instructions" 
+			data-url="/appointments/Survey_email_sms" 
+			href="javascript:void(0);" onclick="setting_menu(this)">Survey Settings</a>
+			</li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-title="Post treatment instructions" 
+			data-url="/appointments/configure_uri" href="javascript:void(0);" 
+			onclick="setting_menu(this)">Configure URL’s</a> </li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-title="Post treatment instructions" 
+			data-url="/appointments/cancellation_policy" 
+			href="javascript:void(0);" onclick="setting_menu(this)">Cancellation 
+			Policy</a> </li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-title="Patient Portal  Access" 
+			data-url="/appointments/patient_portal" href="javascript:void(0);" 
+			onclick="setting_menu(this)">Patient Portal Access</a> </li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-url="/settings/appointment_reminder" 
+			href="javascript:void(0);" onclick="setting_menu(this)">Patient Appointment 
+			Reminders</a> </li>
+		</ul>
+		</li>
+		<li class="new-setting-tabs-li patients"><a class="new-setting-tabs-a " 
+		data-loading="false" 
+		data-url="/appointments/membership_and_wallet_setting" 
+		href="javascript:void(0);" onclick="setting_menu(this)">Patients </a>
+		</li>
+		<li class="new-setting-tabs-li"><a class="new-setting-tabs-a " 
+		href="javascript:void(0);">Teammates <i class="fas fa-angle-right"></i>
+		</a>
+		<ul class="setting-submenu no-display">
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="true" 
+			data-title="Post treatment instructions" data-url="/settings/user" 
+			href="javascript:void(0);" onclick="setting_menu(this)">Users</a>
+			</li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-title="Post treatment instructions" data-url="/settings/roles" 
+			href="javascript:void(0);" onclick="setting_menu(this)">User Role</a>
+			</li>
+		</ul>
+		</li>
+		<li class="new-setting-tabs-li"><a class="new-setting-tabs-a " 
+		href="javascript:void(0);">POS <i class="fas fa-angle-right"></i></a>
+		<ul class="setting-submenu no-display">
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-url="/settings/pos_dashboard" href="javascript:void(0);" 
+			onclick="setting_menu(this)">Dashboard</a> </li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="true" 
+			data-url="/settings/payments" href="javascript:void(0);" 
+			onclick="setting_menu(this)">Payments</a> </li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="true" 
+			data-url="/settings/payouts" href="javascript:void(0);" 
+			onclick="setting_menu(this)">Payouts</a> </li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-url="/settings/pos" href="javascript:void(0);" 
+			onclick="setting_menu(this)">POS Settings</a> </li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-url="/settings/payment_settings" href="javascript:void(0);" 
+			onclick="setting_menu(this)">Payment Settings</a> </li>
+		</ul>
+		</li>
+	</ul>
+</div>
+
+
+
+
+
+
+<div class="setting-setion m-b-60">				
+	<div class="setting-container bg-white-scetion">
+		<div class="setting-title m-b-40">View Questionnaire
+			<a data-url="/settings/questionnaires" class="pull-right cancelAction"><img src="images/close.png"/></a>
+		 </div>
+		
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="setting-field-outer no-ques-margin">
+					<div class="new-field-label">Questionnaire Name <span class="setting-require">*</span></div>
+					<div class="setting-input-outer">
+						<input type="hidden" name="data[ConsultationList][id]" class="" id="consultation_id" value="243"/>						<input name="data[ConsultationList][consultation_title]" class="setting-input-box" id="consultation_title" value="ravi" type="text"/>				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+	<div class="setting-container bg-light-blue addHere">
+		<div class="setting-title m-b-40">Add New Question</div>
+		
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="setting-field-outer no-ques-margin">
+					<div class="new-field-label">Question<span class="setting-require">*</span></div>
+					<div class="setting-input-outer">
+						<input type="text" class="setting-input-box add-questions" id="add_question" name="data[Question][question]"/>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6">
+				<div class="setting-field-outer">
+					<div class="new-field-label">Select Question Type<span class="setting-require">*</span></div>
+					<div class="setting-input-outer">
+						<select name="data[Question][question_type]" class="question_type setting-select-box">
+							<option value="text">Yes/No</option>
+							<option value="multi-text">Multiple Selection - Text</option>
+							<option value="multi-images">Multiple Selection - Images</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			
+	
+			<div class="row add-questions-multi-text no-margin">
+				<div class="col-lg-6 col-xs-12">
+					<div class="settings-subtitle">Question Choices <a href="javascript:void(0)" onclick="javascript:appendNewLiText(this);" class="add-btn pull-right"><span>+</span> Add</a></div>
+					<div class="choice-question-outer ui-sortable" id="add_sortable_multi-text">
+						<div class="choice-question-row" data-order_by="0" id="add_multiTextRow_0">
+							<a class="drag-dots"></a>
+							<span class="choice-question-alpha">A</span>
+							<input type="text" class="setting-input-box add-questions" data-row-num="0" name="data[Question][text][]"/>
+							<a href="javascript:void(0)" data-row-num="0" onclick="javascript:removeLiText(this);" class="choice-question-cross"><img src="images/close.png"/></a>
+						</div>
+						
+					</div>
+				</div>
+				
+				<div class="col-lg-6 col-xs-12">
+					<div class="row ques-radio-right">
+						<div class="col-lg-7 col-md-12">
+							Select “Yes” if you want to allow multiple choices selection by customer
+						</div>
+						<div class="col-lg-5 col-md-12">
+							<div class="basic-checkbox-outer">
+								<input id="is_multiple_select_text_y" class="basic-form-checkbox" name="data[Question][is_multiple_select_text]" type="radio" value="1" checked=""/> 
+								<label class="basic-form-text" for="is_multiple_select_text_y">Yes</label> 
+							</div>
+							<div class="basic-checkbox-outer">
+								<input id="is_multiple_select_text_n" class="basic-form-checkbox" name="data[Question][is_multiple_select_text]" type="radio" value="0"/> 
+								<label class="basic-form-text" for="is_multiple_select_text_n">No</label> 
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="row add-questions-multi-images no-margin">
+				<div class="col-lg-6 col-xs-12">
+					<div class="settings-subtitle">Question Choices <a href="javascript:void(0)" onclick="javascript:appendNewLiText(this);" class="add-btn pull-right"><span>+</span> Add</a></div>
+					<div class="choice-question-outer ui-sortable" id="add_sortable_multi-images">
+						<div class="choice-question-row no-border no-margin">
+							<div class="qus-chice-label col-xs-6 no-padding quest-img-title">Image</div>
+							<div class="qus-chice-label col-xs-6 no-padding quest-label-title">Lable</div>
+						</div>
+
+						<div class="choice-question-row image-row" data-order_by="0" id="add_multiImageRow_0">
+							<a class="drag-dots"></a>
+							<span class="choice-question-alpha">A</span>
+							<div class="col-xs-6 no-padding dropzone-filename">
+								<div class="dropzone dropzone_0 new-white-btn choose-file dz-clickable">Choose file<div class="dz-default dz-message"><span>Drop files here to upload</span></div></div>
+								<span class="span_dropzone_0"> No file</span>
+								<input type="hidden" id="dropzone_0" data-row-num="0" class="add-questions"/>								
+								</div>
+							<input type="text" id="img_label_0" placeholder="label" class="col-xs-6 no-padding no-bg img-label"/>
+							<a href="javascript:void(0)" data-row-num="0" onclick="javascript:removeLiText(this);" class="choice-question-cross"><img src="images/close.png"/></a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-6 col-xs-12">
+					<div class="row ques-radio-right">
+						<div class="col-lg-7 col-md-12">
+							Select “Yes” if you want to allow multiple choices selection by Customer
+						</div>
+						<div class="col-lg-5 col-md-12">
+							<div class="basic-checkbox-outer">
+								<input id="is_multiple_select_image_y" class="basic-form-checkbox" name="data[Question][is_multiple_select_image]" value="1" type="radio" checked=""/> 
+								<label class="basic-form-text" for="is_multiple_select_image_y">Yes</label> 
+							</div>
+							<div class="basic-checkbox-outer">
+								<input id="is_multiple_select_image_n" class="basic-form-checkbox" name="data[Question][is_multiple_select_image]" value="0" type="radio"/> 
+								<label class="basic-form-text" for="is_multiple_select_image_n">No</label> 
+							</div>
+						</div>
+					</div>
+					<div class="row ques-radio-right">
+						<div class="col-lg-7 col-md-12">
+							Select “Yes” if you want to display labels with images
+						</div>
+						<div class="col-lg-5 col-md-12">
+							<div class="basic-checkbox-outer">
+								<input id="is_multiple_select_labels_y" class="basic-form-checkbox" name="data[Question][is_multiple_select_labels]" value="1" type="radio" checked=""/> 
+								<label class="basic-form-text" for="is_multiple_select_labels_y">Yes</label> 
+							</div>
+							<div class="basic-checkbox-outer">
+								<input id="is_multiple_select_labels_n" class="basic-form-checkbox" name="data[Question][is_multiple_select_labels]" value="0" type="radio"/> 
+								<label class="basic-form-text" for="is_multiple_select_labels_n">No</label> 
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-sm-12">
+				<a class="new-white-btn cancelAddAction">Cancel</a>
+				<a id="save_newQuestion" class="new-blue-btn">Add</a>
+			</div>
+		</div>
+	</div>
+		
+	<div class="table-responsive">
+		<table class="table-updated no-hover setting-table table-min-width">
+			<thead class="table-updated-thead">				
+				<tr>
+					<th class="col-xs-8 table-updated-th sorting">Questions</th>				
+					<th class="col-xs-2 table-updated-th sorting text-center">Type</th>
+					<th class="col-xs-2 table-updated-th sorting text-center">&nbsp;</th>
+				</tr>		
+			</thead>
+			<tbody id="questionList" class="ui-sortable">
+										<tr class="table-updated-tr" id="questionListID_732">
+							<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a> yes no</td>
+							<td class="col-xs-2 table-updated-td text-center">Yes/No</td>
+							<td class="col-xs-2 table-updated-td text-center "><a data-url="/questionnaires/edit_question/732" class="easy-link col-xs-6 edit_question">Edit</a><a class="easy-link col-xs-6 delete_question" data-url="/questionnaires/delete_question/732">Delete</a></td>
+						</tr>
+					
+										<tr class="table-updated-tr" id="questionListID_733">
+							<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>multi selection</td>
+							<td class="col-xs-2 table-updated-td text-center">Text</td>
+							<td class="col-xs-2 table-updated-td text-center "><a data-url="/questionnaires/edit_question/733" class="easy-link col-xs-6 edit_question">Edit</a><a class="easy-link col-xs-6 delete_question" data-url="/questionnaires/delete_question/733">Delete</a></td>
+						</tr>
+					
+										<tr class="table-updated-tr" id="questionListID_734">
+							<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>multiple single selection</td>
+							<td class="col-xs-2 table-updated-td text-center">Text</td>
+							<td class="col-xs-2 table-updated-td text-center "><a data-url="/questionnaires/edit_question/734" class="easy-link col-xs-6 edit_question">Edit</a><a class="easy-link col-xs-6 delete_question" data-url="/questionnaires/delete_question/734">Delete</a></td>
+						</tr>
+					
+										<tr class="table-updated-tr" id="questionListID_735">
+							<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>images multi choices</td>
+							<td class="col-xs-2 table-updated-td text-center">Image</td>
+							<td class="col-xs-2 table-updated-td text-center "><a data-url="/questionnaires/edit_question/735" class="easy-link col-xs-6 edit_question">Edit</a><a class="easy-link col-xs-6 delete_question" data-url="/questionnaires/delete_question/735">Delete</a></td>
+						</tr>
+					
+										<tr class="table-updated-tr" id="questionListID_736">
+							<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>image single choice</td>
+							<td class="col-xs-2 table-updated-td text-center">Image</td>
+							<td class="col-xs-2 table-updated-td text-center "><a data-url="/questionnaires/edit_question/736" class="easy-link col-xs-6 edit_question">Edit</a><a class="easy-link col-xs-6 delete_question" data-url="/questionnaires/delete_question/736">Delete</a></td>
+						</tr>
+					
+							</tbody>
+		</table>	
+	</div>
+	<div class="footer-static no-border">
+		<a data-message="Are you sure you want to delete this questionnaire?" data-confirm-url="/questionnaires/delete_questionnair/243" class="new-red-btn pull-left confirm-model">Delete</a>
+		<a id="saveConsultation" class="new-blue-btn pull-right">Save</a>
+		<a data-url="/settings/questionnaires" class="new-white-btn pull-right cancelAction">Cancel</a>
+	</div>
+</div>
+
+
+
+		
+		
+
+
+	</div>
+</div>
+	
+
+<footer class="main-footer">
+	<div class="container-fluid">
+		<span class="pull-right">
+			©2018 Aesthetic Record. All Rights Reserved. 
+		</span>
+	</div>
+</footer>	
+	
+	
+</div>
+
+</body>
+
+</html>

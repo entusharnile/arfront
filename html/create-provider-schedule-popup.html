@@ -1,0 +1,416 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="" name="description">
+<meta content="" name="author">
+<meta content="Page scroll animation using CSS animate" name="description">
+<meta content="css animation, loading effect, animate, scroll loading, scroll animation"
+name="keywords">
+<meta content="Jinson Abraham" name="author">
+<title>AR-Patient Portal</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+<link href="css/common/bootstrap.css" rel="stylesheet">
+<link href="css/common/icons.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<link href="css/index.css" rel="stylesheet" type="text/css"/>
+<link href="css/caleran.min.css" rel="stylesheet" type="text/css"/>
+<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+<link href="css/custom.css" rel="stylesheet"/>
+<script src="js/moment.min.js"></script>
+<script src="js/caleran.min.js"></script>
+<script type="text/javascript">
+	$(".caleran").caleran();
+</script>
+<script type="text/javascript">
+	$(".caleran").caleran({inline: true, startOnMonday: true});
+</script>
+<script type="text/javascript">
+	  $("#caleran-ex-1-1").caleran({showOn:"top",autoAlign:true});
+</script>
+</head>
+<body>
+
+<div class="main protected">
+	<header>
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span><span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">
+					<img src="images/logo.png"/>
+				</a>
+			</div>
+
+			<div id="navbar" class="navbar-collapse collapse">
+				<div class="nav-outer">
+					<ul class="nav navbar-nav right-menus">
+						<li>
+							<a id="users-logs" class="users-logs show-desktop right-menus-a" href="/dashboard/user_logs" title="User Activities"></a>
+							<a id="users-logs" class="users-logs show-mobile" href="/dashboard/user_logs">View Users Activities</a>
+						</li>
+						<li>
+						<a id="noti-icon" class="noti-icon notification show-desktop right-menus-a" href="javascript:void(0);" title="Notifications"></a>
+						<a class="noti-icon notification show-mobile" href="/dashboard/notifications" title="Notifications">Notification</a>
+						<div id="popup" class="noti-popup no-display">
+							<div id="notty-title" class="noti-title">Notifications </div>
+							<div id="notty-content" class="noti-content">
+								<div class="read">
+									Your appointment on date 12/12/2017 01:00 PM
+									with KProvider 1 is not synced
+								</div>
+								<div class="read">
+									Your appointment on date with is not synced
+								</div>
+								<div class="read">
+									Batch li-stock of <b>Have stocks</b> has hit
+									low stock
+								</div>
+								<div class="read">
+									Batch ny-stock of <b>Have stocks</b> has hit
+									low stock
+								</div>
+								<div class="read">
+									Batch 54545 of <b>Ttt</b> has hit low stock
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +19546637556
+								</div>
+								<div class="read">
+									New SMS received from +19546637556
+								</div>
+							</div>
+							<div id="notty-footer" class="noti-footer">
+								<a href="/dashboard/sms_notifications">See All</a>
+							</div>
+						</div>
+						</li>
+						<li class="arow-link-outer">
+							<span class="arow-link">
+								<div id="headerUserImage" class="user-picture"></div>
+								<span class="name-txt">Ganesh Kompella </span>
+							</span>
+						</li>
+						<li>
+							<a class="setting show-desktop right-menus-a" href="/settings/profile" title="Settings"></a>
+							<a class="setting show-mobile" href="/settings/profile">Settings</a>
+						</li>
+						<li>
+							<a class="logout show-desktop right-menus-a" href="/accounts/logout" title="Logout"></a>
+							<a class="logout show-mobile" href="/accounts/logout"><i class="icon-Power-2"></i>Log Out</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav main-navbar">
+						<li class=""><a href="/dashboard">Dashboard</a></li>
+						<li class=""><a href="/patients/manage">Clients</a> </li>
+						<li class=""><a href="/appointments/index">Appointments</a></li>
+						<li class="active"><a href="/sales/index">Sales</a></li>
+						<li class=""><a href="/inventory/products/active">Inventory</a></li>
+						<li class=""><a href="/analytics/reports">Reports</a></li>
+						<li class=""><a href="/marketing/dashboard">Surveys</a></li>
+						<li class=""><a href="/MDRooms/pending">MD's Room</a></li>
+						<li class=""><a href="/ProvidersRooms/pending">Provider's Room</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+<div id="content">
+	<div class="container-fluid content setting-wrapper">
+
+
+
+
+
+	<div class="modalOverlay">
+	<div class="small-popup-outer">
+		<div class="small-popup-header">
+			<div class="popup-name">Create Provider Schedule</div>
+			<a href="#" class="small-cross">×</a>
+		</div>
+		<div class="small-popup-content">
+
+			<div class="juvly-container no-padding-bottom">
+			<div class="row">
+
+
+				<div class="col-xs-6">
+					<div class="setting-field-outer">
+						<div class="new-field-label">Date <span class="required">*</span></div>
+						<div class="setting-input-outer">
+							<input class="setting-input-box p-r-40" type="text"/>
+							<i class="fas fa-calendar-alt client-treat-cal"></i>
+							<i class="fas fa-times client-treat-reset"></i>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-6">
+					<div class="setting-field-outer">
+						<div class="new-field-label">Repeat this till <span class="required">*</span></div>
+						<div class="setting-input-outer">
+							<input class="setting-input-box p-r-40" type="text">
+							<i class="fas fa-calendar-alt client-treat-cal"></i>
+							<i class="fas fa-times client-treat-reset"></i>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+
+
+
+
+
+				<div class="business-hours-outer m-t-20">
+				<div class="row">
+					<div class="col-xs-4">&nbsp;</div>
+					<div class="col-xs-4"><div class="new-field-label">Open Hours</div></div>
+					<div class="col-xs-4"><div class="new-field-label">Close Hours</div></div>
+				</div>
+				<div class="row datetimeparent">
+					<div class="col-xs-4">
+						<label class="setting-week" for="Monday">Downtoen Columbus</label>
+					</div>
+					<div class="fromandtoTime">
+					<div class="col-xs-4">
+						<input type="text" name="from_time[Monday][]" value="00:00" class="setting-input-box hours-time from-time-input" placeholder="00:00">						<select class="setting-select-box hours-pm from_time_option" name="form_time_session[Monday][]">
+						<option value="AM">AM</option><option value="PM">PM</option>						</select>
+					</div>
+					<div class="col-xs-4">
+						<input type="text" name="to_time[Monday][]" value="00:00" class="setting-input-box hours-time to-time-input" placeholder="00:00">						<select class="setting-select-box hours-pm to_time_option" name="to_time_session[Monday][]">
+						<option value="AM">AM</option><option value="PM">PM</option>						</select>
+					</div>
+					</div>
+				</div>
+				<div class="row datetimeparent">
+					<div class="col-xs-4">
+						<label class="setting-week" for="Tuesday">Cincinnati</label>
+					</div>
+					<div class="fromandtoTime">
+					<div class="col-xs-4">
+						<input type="text" name="from_time[Tuesday][]" value="00:00" class="setting-input-box hours-time from-time-input" placeholder="00:00">						<select class="setting-select-box hours-pm from_time_option" name="form_time_session[Tuesday][]">
+						<option value="AM">AM</option><option value="PM">PM</option>						</select>
+					</div>
+					<div class="col-xs-4">
+						<input type="text" name="to_time[Tuesday][]" value="00:00" class="setting-input-box hours-time to-time-input" placeholder="00:00">						<select class="setting-select-box hours-pm to_time_option" name="to_time_session[Tuesday][]">
+						<option value="AM">AM</option><option value="PM">PM</option>						</select>
+					</div>
+					<a href="#" class="add-round-btn"><span>+</span></a>
+					</div>
+				</div>
+
+				<div class="row datetimeparent">
+					<div class="col-xs-4">
+						<label class="setting-week" for="Wednesday">Newyork Clinic</label>
+					</div>
+					<div class="fromandtoTime">
+					<div class="col-xs-4">
+						<input type="text" name="from_time[Wednesday][]" value="00:00" class="setting-input-box hours-time from-time-input" placeholder="00:00">						<select class="setting-select-box hours-pm from_time_option" name="form_time_session[Wednesday][]">
+						<option value="AM">AM</option><option value="PM">PM</option>						</select>
+					</div>
+					<div class="col-xs-4">
+						<input type="text" name="to_time[Wednesday][]" value="00:00" class="setting-input-box hours-time to-time-input" placeholder="00:00">						<select class="setting-select-box hours-pm to_time_option" name="to_time_session[Wednesday][]">
+						<option value="AM">AM</option><option value="PM">PM</option>						</select>
+					</div>
+					<a href="#" class="add-round-btn"><span>+</span></a>
+					</div>
+				</div>
+				<div class="row datetimeparent">
+					<div class="col-xs-4">
+					</div>
+					<div class="fromandtoTime">
+					<div class="col-xs-4">
+						<input type="text" name="from_time[Wednesday][]" value="00:00" class="setting-input-box hours-time from-time-input" placeholder="00:00">						<select class="setting-select-box hours-pm from_time_option" name="form_time_session[Wednesday][]">
+						<option value="AM">AM</option><option value="PM">PM</option>						</select>
+					</div>
+					<div class="col-xs-4">
+						<input type="text" name="to_time[Wednesday][]" value="00:00" class="setting-input-box hours-time to-time-input" placeholder="00:00">						<select class="setting-select-box hours-pm to_time_option" name="to_time_session[Wednesday][]">
+						<option value="AM">AM</option><option value="PM">PM</option>						</select>
+					</div>
+					<a href="#" class="add-round-btn"><span>-</span></a>
+					</div>
+				</div>
+				<div class="row datetimeparent">
+					<div class="col-xs-4">
+					</div>
+					<div class="fromandtoTime">
+					<div class="col-xs-4">
+						<input type="text" name="from_time[Wednesday][]" value="00:00" class="setting-input-box hours-time from-time-input" placeholder="00:00">						<select class="setting-select-box hours-pm from_time_option" name="form_time_session[Wednesday][]">
+						<option value="AM">AM</option><option value="PM">PM</option>						</select>
+					</div>
+					<div class="col-xs-4">
+						<input type="text" name="to_time[Wednesday][]" value="00:00" class="setting-input-box hours-time to-time-input" placeholder="00:00">						<select class="setting-select-box hours-pm to_time_option" name="to_time_session[Wednesday][]">
+						<option value="AM">AM</option><option value="PM">PM</option>						</select>
+					</div>
+					<a href="#" class="add-round-btn"><span>-</span></a>
+					</div>
+				</div>
+				<div class="row datetimeparent">
+					<div class="col-xs-4">
+						<label class="setting-week" for="Thursday">Chandigarh Clinic</label>
+					</div>
+					<div class="fromandtoTime disable ">
+					<div class="col-xs-4">
+						<input type="text" name="from_time[Thursday][]" value="00:00" class="setting-input-box hours-time from-time-input" placeholder="00:00">						<select class="setting-select-box hours-pm from_time_option" name="form_time_session[Thursday][]">
+						<option value="AM">AM</option><option value="PM">PM</option>						</select>
+					</div>
+					<div class="col-xs-4">
+						<input type="text" name="to_time[Thursday][]" value="00:00" class="setting-input-box hours-time to-time-input" placeholder="00:00">						<select class="setting-select-box hours-pm to_time_option" name="to_time_session[Thursday][]">
+						<option value="AM">AM</option><option value="PM">PM</option>						</select>
+					</div>
+					</div>
+				</div>
+				<div class="row datetimeparent">
+					<div class="col-xs-4">
+						<label class="setting-week" for="Friday">Mohali Clinic</label>
+					</div>
+					<div class="fromandtoTime disable ">
+					<div class="col-xs-4">
+						<input type="text" name="from_time[Friday][]" value="00:00" class="setting-input-box hours-time from-time-input" placeholder="00:00">						<select class="setting-select-box hours-pm from_time_option" name="form_time_session[Friday][]">
+						<option value="AM">AM</option><option value="PM">PM</option>						</select>
+					</div>
+					<div class="col-xs-4">
+						<input type="text" name="to_time[Friday][]" value="00:00" class="setting-input-box hours-time to-time-input" placeholder="00:00">						<select class="setting-select-box hours-pm to_time_option" name="to_time_session[Friday][]">
+						<option value="AM">AM</option><option value="PM">PM</option>						</select>
+					</div>
+					</div>
+				</div>
+				<div class="row datetimeparent">
+					<div class="col-xs-4">
+						<label class="setting-week" for="Saturday">City Clinic</label>
+					</div>
+					<div class="fromandtoTime disable ">
+					<div class="col-xs-4">
+						<input type="text" name="from_time[Saturday][]" value="00:00" class="setting-input-box hours-time from-time-input" placeholder="00:00">						<select class="setting-select-box hours-pm from_time_option" name="form_time_session[Saturday][]">
+						<option value="AM">AM</option><option value="PM">PM</option>						</select>
+					</div>
+					<div class="col-xs-4">
+						<input type="text" name="to_time[Saturday][]" value="00:00" class="setting-input-box hours-time to-time-input" placeholder="00:00">						<select class="setting-select-box hours-pm to_time_option" name="to_time_session[Saturday][]">
+						<option value="AM">AM</option><option value="PM">PM</option>						</select>
+					</div>
+					</div>
+				</div>
+				<div class="row datetimeparent">
+					<div class="col-xs-4">
+						<label class="setting-week" for="Sunday">Local Clinic</label>
+					</div>
+					<div class="fromandtoTime">
+					<div class="col-xs-4">
+						<input type="text" name="from_time[Sunday][]" value="00:00" class="setting-input-box hours-time from-time-input" placeholder="00:00">						<select class="setting-select-box hours-pm from_time_option" name="form_time_session[Sunday][]">
+						<option value="AM">AM</option><option value="PM">PM</option>						</select>
+					</div>
+					<div class="col-xs-4">
+						<input type="text" name="to_time[Sunday][]" value="00:00" class="setting-input-box hours-time to-time-input" placeholder="00:00">						<select class="setting-select-box hours-pm to_time_option" name="to_time_session[Sunday][]">
+						<option value="AM">AM</option><option value="PM">PM</option>						</select>
+					</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="footer-static">
+			<a href="#" class="new-blue-btn pull-right">Save</a>
+			<a href="#" class="new-white-btn pull-right">Cancel</a>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+	</div>
+</div>
+
+<footer class="main-footer">
+	<div class="container-fluid">
+		<span class="pull-right">
+			©2018 Aesthetic Record. All Rights Reserved.
+		</span>
+	</div>
+</footer>
+</div>
+
+
+
+
+ <script type="text/javascript">
+    $("#caleran-ex-7").caleran();
+    $(".caleran-type-selector").click(function(){
+      $("#caleran-ex-7").data("caleran").destroy();
+      $("#caleran-ex-7").caleran({
+        singleDate: $("input[name='caleran-type-selector']:checked").val() == "single" ? true : false
+      });
+    });
+  </script>
+
+   <script type="text/javascript">
+          $("#caleran-ex-7").caleran({ranges: [
+              {
+                  title: "Today",
+                  startDate: moment(),
+                  endDate: moment()
+              },
+              {
+                  title: "Yesterday",
+                  startDate: moment().subtract(1,"days"),
+                  endDate: moment().subtract(1,"days")
+              },
+              {
+                  title: "This week",
+                  startDate: moment().startOf("week"),
+                  endDate: moment().endOf("week")
+              },
+              {
+                  title: "Last week",
+                  startDate: moment().subtract(1,"weeks").startOf("week"),
+                  endDate: moment().subtract(1,"weeks").endOf("week")
+              },
+              {
+                  title: "This month",
+                  startDate: moment().startOf("month"),
+                  endDate: moment().endOf("month")
+              },
+              {
+                  title: "Last month",
+                  startDate: moment().subtract(1,"months").startOf("month"),
+                  endDate: moment().subtract(1,"months").endOf("month")
+              },
+              {
+                  title: "This year",
+                  startDate: moment().startOf("year"),
+                  endDate: moment().endOf("year")
+              },
+              {
+                  title: "Last year",
+                  startDate: moment().subtract(1,"years").startOf("year"),
+                  endDate: moment().subtract(1,"years").endOf("year")
+              }
+          ]});
+      </script>
+</body>
+</html>

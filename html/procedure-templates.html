@@ -1,0 +1,460 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="" name="description">
+<meta content="" name="author">
+<meta content="Page scroll animation using CSS animate" name="description">
+<meta content="css animation, loading effect, animate, scroll loading, scroll animation" 
+name="keywords">
+<meta content="Jinson Abraham" name="author">
+<title>AR-Patient Portal</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" 
+rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" 
+rel="stylesheet">
+<link href="css/common/bootstrap.css" rel="stylesheet">
+<link href="css/common/icons.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="main protected">
+	<header>
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
+					<span class="sr-only">Toggle navigation</span> 
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span><span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">
+					<img src="images/logo.png">
+				</a> 
+			</div>
+			
+			<div id="navbar" class="navbar-collapse collapse">
+				<div class="nav-outer">
+					<ul class="nav navbar-nav right-menus">
+						<li>
+							<a id="users-logs" class="users-logs show-desktop right-menus-a" href="/dashboard/user_logs" title="User Activities"></a>
+							<a id="users-logs" class="users-logs show-mobile" href="/dashboard/user_logs">View Users Activities</a>
+						</li>
+						<li>
+						<a id="noti-icon" class="noti-icon notification show-desktop right-menus-a" href="javascript:void(0);" title="Notifications"></a>
+						<a class="noti-icon notification show-mobile" href="/dashboard/notifications" title="Notifications">Notification</a>
+						<div id="popup" class="noti-popup no-display">
+							<div id="notty-title" class="noti-title">Notifications </div>
+							<div id="notty-content" class="noti-content">
+								<div class="read">
+									Your appointment on date 12/12/2017 01:00 PM 
+									with KProvider 1 is not synced
+								</div>
+								<div class="read">
+									Your appointment on date with is not synced
+								</div>
+								<div class="read">
+									Batch li-stock of <b>Have stocks</b> has hit 
+									low stock
+								</div>
+								<div class="read">
+									Batch ny-stock of <b>Have stocks</b> has hit 
+									low stock
+								</div>
+								<div class="read">
+									Batch 54545 of <b>Ttt</b> has hit low stock
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +19546637556
+								</div>
+								<div class="read">
+									New SMS received from +19546637556
+								</div>
+							</div>
+							<div id="notty-footer" class="noti-footer">
+								<a href="/dashboard/sms_notifications">See All</a>
+							</div>
+						</div>
+						</li>
+						<li class="arow-link-outer">
+							<span class="arow-link">
+								<div id="headerUserImage" class="user-picture"></div>
+								<span class="name-txt">Ganesh Kompella </span>
+							</span>
+						</li>
+						<li>
+							<a class="setting show-desktop right-menus-a" href="/settings/profile" title="Settings"></a>
+							<a class="setting show-mobile" href="/settings/profile">Settings</a> 
+						</li>
+						<li>
+							<a class="logout show-desktop right-menus-a" href="/accounts/logout" title="Logout"></a>
+							<a class="logout show-mobile" href="/accounts/logout"><i class="icon-Power-2"></i>Log Out</a> 
+						</li>
+					</ul>
+					<ul class="nav navbar-nav main-navbar">
+						<li class="active"><a href="/dashboard">Dashboard</a></li>
+						<li class=""><a href="/patients/manage">Clients</a> </li>
+						<li class=""><a href="/appointments/index">Appointments</a></li>
+						<li class=""><a href="/sales/index">Sales</a></li>
+						<li class=""><a href="/inventory/products/active">Inventory</a></li>
+						<li class=""><a href="/analytics/reports">Reports</a></li>
+						<li class=""><a href="/marketing/dashboard">Surveys</a></li>
+						<li class=""><a href="/MDRooms/pending">MD's Room</a></li>
+						<li class=""><a href="/ProvidersRooms/pending">Provider's Room</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	
+<div id="content">
+	<div class="container-fluid content setting-wrapper">
+	
+	<div class="setting-left-menu">
+	<div class="setting-title">Settings</div>
+	<ul class="new-setting-tabs">
+		<li class="new-setting-tabs-li">
+		<a class="new-setting-tabs-a active-menu" href="javascript:void(0);">Account 
+		Information <i class="fas fa-angle-down"></i></a>
+		<ul class="setting-submenu">
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a" data-loading="false" 
+			data-title="Profile" data-url="/settings/profile" 
+			href="javascript:void(0);" onclick="setting_menu(this)">Profile </a>
+			</li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a" data-loading="false" 
+			data-title="two_factor" data-url="/settings/two_factor" 
+			href="javascript:void(0);" onclick="setting_menu(this)">2FA Authentication
+			</a></li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a sel-submenu" data-loading="false" 
+			data-title="Personal Information" 
+			data-url="/settings/account_information" href="javascript:void(0);" 
+			onclick="setting_menu(this)">AR Account</a> </li>
+		</ul>
+		</li>
+		<li class="new-setting-tabs-li"><a class="new-setting-tabs-a " 
+		href="javascript:void(0);">Manage Your Clinics
+		<i class="fas fa-angle-right"></i></a>
+		<ul class="setting-submenu no-display">
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="true" 
+			data-title="Manage Clinics" data-url="/settings/clinics" 
+			href="javascript:void(0);" onclick="setting_menu(this)">Clinics</a>
+			</li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="true" 
+			data-title="Questionnares" data-url="/settings/questionnaires" 
+			href="javascript:void(0);" onclick="setting_menu(this)">Questionnaires</a>
+			</li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="true" 
+			data-title="Consent" data-url="/settings/consents" 
+			href="javascript:void(0);" onclick="setting_menu(this)">Consents</a>
+			</li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-title="Procedure Templates" 
+			data-url="/settings/procedure_templates" href="javascript:void(0);" 
+			onclick="setting_menu(this)">Procedure Templates</a> </li>
+		</ul>
+		</li>
+		<li class="new-setting-tabs-li"><a class="new-setting-tabs-a " 
+		href="javascript:void(0);">Appointments <i class="fas fa-angle-right">
+		</i></a>
+		<ul class="setting-submenu no-display">
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-title="Post treatment instructions" 
+			data-url="/settings/appointments_ajax" href="javascript:void(0);" 
+			onclick="setting_menu(this)">Appointment Emails &amp; SMS</a> </li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-title="Post treatment instructions" 
+			data-url="/appointments/Survey_email_sms" 
+			href="javascript:void(0);" onclick="setting_menu(this)">Survey Settings</a>
+			</li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-title="Post treatment instructions" 
+			data-url="/appointments/configure_uri" href="javascript:void(0);" 
+			onclick="setting_menu(this)">Configure URL’s</a> </li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-title="Post treatment instructions" 
+			data-url="/appointments/cancellation_policy" 
+			href="javascript:void(0);" onclick="setting_menu(this)">Cancellation 
+			Policy</a> </li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-title="Patient Portal  Access" 
+			data-url="/appointments/patient_portal" href="javascript:void(0);" 
+			onclick="setting_menu(this)">Patient Portal Access</a> </li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-url="/settings/appointment_reminder" 
+			href="javascript:void(0);" onclick="setting_menu(this)">Patient Appointment 
+			Reminders</a> </li>
+		</ul>
+		</li>
+		<li class="new-setting-tabs-li patients"><a class="new-setting-tabs-a " 
+		data-loading="false" 
+		data-url="/appointments/membership_and_wallet_setting" 
+		href="javascript:void(0);" onclick="setting_menu(this)">Patients </a>
+		</li>
+		<li class="new-setting-tabs-li"><a class="new-setting-tabs-a " 
+		href="javascript:void(0);">Teammates <i class="fas fa-angle-right"></i>
+		</a>
+		<ul class="setting-submenu no-display">
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="true" 
+			data-title="Post treatment instructions" data-url="/settings/user" 
+			href="javascript:void(0);" onclick="setting_menu(this)">Users</a>
+			</li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-title="Post treatment instructions" data-url="/settings/roles" 
+			href="javascript:void(0);" onclick="setting_menu(this)">User Role</a>
+			</li>
+		</ul>
+		</li>
+		<li class="new-setting-tabs-li"><a class="new-setting-tabs-a " 
+		href="javascript:void(0);">POS <i class="fas fa-angle-right"></i></a>
+		<ul class="setting-submenu no-display">
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-url="/settings/pos_dashboard" href="javascript:void(0);" 
+			onclick="setting_menu(this)">Dashboard</a> </li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="true" 
+			data-url="/settings/payments" href="javascript:void(0);" 
+			onclick="setting_menu(this)">Payments</a> </li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="true" 
+			data-url="/settings/payouts" href="javascript:void(0);" 
+			onclick="setting_menu(this)">Payouts</a> </li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-url="/settings/pos" href="javascript:void(0);" 
+			onclick="setting_menu(this)">POS Settings</a> </li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-url="/settings/payment_settings" href="javascript:void(0);" 
+			onclick="setting_menu(this)">Payment Settings</a> </li>
+		</ul>
+		</li>
+	</ul>
+</div>
+
+
+<div class="setting-setion">
+	
+	<div class="setting-search-outer">
+		<div class="search-bg col-xs-5">
+			<i class="fas fa-search"></i>
+			<input class="setting-search-input search-key" data-url="/settings/procedure_templates" placeholder="Search" value=""> 
+		</div>
+		<a href="#" class="new-blue-btn pull-right" data-url="/ProcedureTemplates/add">Create Template</a>
+<!--
+		<a data-url="/ProcedureTemplates/add" class="new-blue-btn pull-right edit_setting">Create Template</a>
+-->
+	</div>
+	
+	<div class="table-responsive">
+		<textarea name="data[ProcedureTemplate][]" id="template9" class="col-sm-12 question-field hide" readonly="readonly" rows="0" cols="0">9</textarea><textarea name="data[ProcedureTemplate][]" id="template1" class="col-sm-12 question-field hide" readonly="readonly" rows="0" cols="0">1</textarea><textarea name="data[ProcedureTemplate][]" id="template2" class="col-sm-12 question-field hide" readonly="readonly" rows="0" cols="0">2</textarea><textarea name="data[ProcedureTemplate][]" id="template5" class="col-sm-12 question-field hide" readonly="readonly" rows="0" cols="0">5</textarea><textarea name="data[ProcedureTemplate][]" id="template8" class="col-sm-12 question-field hide" readonly="readonly" rows="0" cols="0">8</textarea><textarea name="data[ProcedureTemplate][]" id="template6" class="col-sm-12 question-field hide" readonly="readonly" rows="0" cols="0">6</textarea><textarea name="data[ProcedureTemplate][]" id="template7" class="col-sm-12 question-field hide" readonly="readonly" rows="0" cols="0">7</textarea><textarea name="data[ProcedureTemplate][]" id="template11" class="col-sm-12 question-field hide" readonly="readonly" rows="0" cols="0">11</textarea><textarea name="data[ProcedureTemplate][]" id="template12" class="col-sm-12 question-field hide" readonly="readonly" rows="0" cols="0">12</textarea><textarea name="data[ProcedureTemplate][]" id="template13" class="col-sm-12 question-field hide" readonly="readonly" rows="0" cols="0">13</textarea><textarea name="data[ProcedureTemplate][]" id="template14" class="col-sm-12 question-field hide" readonly="readonly" rows="0" cols="0">14</textarea><textarea name="data[ProcedureTemplate][]" id="template15" class="col-sm-12 question-field hide" readonly="readonly" rows="0" cols="0">15</textarea><textarea name="data[ProcedureTemplate][]" id="template16" class="col-sm-12 question-field hide" readonly="readonly" rows="0" cols="0">16</textarea><textarea name="data[ProcedureTemplate][]" id="template17" class="col-sm-12 question-field hide" readonly="readonly" rows="0" cols="0">17</textarea><textarea name="data[ProcedureTemplate][]" id="template18" class="col-sm-12 question-field hide" readonly="readonly" rows="0" cols="0">18</textarea><textarea name="data[ProcedureTemplate][]" id="template19" class="col-sm-12 question-field hide" readonly="readonly" rows="0" cols="0">19</textarea><textarea name="data[ProcedureTemplate][]" id="template21" class="col-sm-12 question-field hide" readonly="readonly" rows="0" cols="0">21</textarea><textarea name="data[ProcedureTemplate][]" id="template20" class="col-sm-12 question-field hide" readonly="readonly" rows="0" cols="0">20</textarea><textarea name="data[ProcedureTemplate][]" id="template22" class="col-sm-12 question-field hide" readonly="readonly" rows="0" cols="0">22</textarea><textarea name="data[ProcedureTemplate][]" id="template23" class="col-sm-12 question-field hide" readonly="readonly" rows="0" cols="0">23</textarea><table class="table-updated setting-table">
+			<thead class="table-updated-thead">				
+				<tr>
+					<th class="col-xs-8 table-updated-th sorting">Templates</th>				
+					<th class="col-xs-4 table-updated-th sorting text-center">Added By</th>
+				</tr>		
+			</thead>
+			<tbody id="sortable3" class="ajax_body ui-sortable">
+								
+		<tr style="cursor:pointer;" class="table-updated-tr modal-link profile" id="liTemplateDivId_9" data-order_by="1" data-url="/ProcedureTemplates/add/9">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>Basic Soap Note</td>
+			<td class="col-xs-4 table-updated-td text-center">Ganesh Kompella</td>
+		</tr>			
+						
+					
+						
+		<tr style="cursor:pointer;" class="table-updated-tr modal-link profile" id="liTemplateDivId_1" data-order_by="2" data-url="/ProcedureTemplates/add/1">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>Test Procedure Template</td>
+			<td class="col-xs-4 table-updated-td text-center">Ganesh Kompella</td>
+		</tr>			
+						
+					
+						
+		<tr style="cursor:pointer;" class="table-updated-tr modal-link profile" id="liTemplateDivId_2" data-order_by="3" data-url="/ProcedureTemplates/add/2">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>test temp 2</td>
+			<td class="col-xs-4 table-updated-td text-center">Ganesh Kompella</td>
+		</tr>			
+						
+					
+						
+		<tr style="cursor:pointer;" class="table-updated-tr modal-link profile" id="liTemplateDivId_5" data-order_by="4" data-url="/ProcedureTemplates/add/5">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>SAFARI TEST</td>
+			<td class="col-xs-4 table-updated-td text-center">Ganesh Kompella</td>
+		</tr>			
+						
+					
+						
+		<tr style="cursor:pointer;" class="table-updated-tr modal-link profile" id="liTemplateDivId_8" data-order_by="5" data-url="/ProcedureTemplates/add/8">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>final test</td>
+			<td class="col-xs-4 table-updated-td text-center">Ganesh Kompella</td>
+		</tr>			
+						
+					
+						
+		<tr style="cursor:pointer;" class="table-updated-tr modal-link profile" id="liTemplateDivId_6" data-order_by="6" data-url="/ProcedureTemplates/add/6">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>ie</td>
+			<td class="col-xs-4 table-updated-td text-center">Ganesh Kompella</td>
+		</tr>			
+						
+					
+						
+		<tr style="cursor:pointer;" class="table-updated-tr modal-link profile" id="liTemplateDivId_7" data-order_by="7" data-url="/ProcedureTemplates/add/7">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>questionnairs test</td>
+			<td class="col-xs-4 table-updated-td text-center">Ganesh Kompella</td>
+		</tr>			
+						
+					
+						
+		<tr style="cursor:pointer;" class="table-updated-tr modal-link profile" id="liTemplateDivId_11" data-order_by="8" data-url="/ProcedureTemplates/add/11">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>Untitled Procedure Templatch eh</td>
+			<td class="col-xs-4 table-updated-td text-center">Ganesh Kompella</td>
+		</tr>			
+						
+					
+						
+		<tr style="cursor:pointer;" class="table-updated-tr modal-link profile" id="liTemplateDivId_12" data-order_by="9" data-url="/ProcedureTemplates/add/12">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>test consent</td>
+			<td class="col-xs-4 table-updated-td text-center">Ganesh Kompella</td>
+		</tr>			
+						
+					
+						
+		<tr style="cursor:pointer;" class="table-updated-tr modal-link profile" id="liTemplateDivId_13" data-order_by="10" data-url="/ProcedureTemplates/add/13">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>test</td>
+			<td class="col-xs-4 table-updated-td text-center">Ganesh Kompella</td>
+		</tr>			
+						
+					
+						
+		<tr style="cursor:pointer;" class="table-updated-tr modal-link profile" id="liTemplateDivId_14" data-order_by="11" data-url="/ProcedureTemplates/add/14">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>dinesh test</td>
+			<td class="col-xs-4 table-updated-td text-center">Ganesh Kompella</td>
+		</tr>			
+						
+					
+						
+		<tr style="cursor:pointer;" class="table-updated-tr modal-link profile" id="liTemplateDivId_15" data-order_by="12" data-url="/ProcedureTemplates/add/15">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>aaabb</td>
+			<td class="col-xs-4 table-updated-td text-center">Ganesh Kompella</td>
+		</tr>			
+						
+					
+						
+		<tr style="cursor:pointer;" class="table-updated-tr modal-link profile" id="liTemplateDivId_16" data-order_by="13" data-url="/ProcedureTemplates/add/16">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>Normal Health Check Up Details</td>
+			<td class="col-xs-4 table-updated-td text-center">Ganesh Kompella</td>
+		</tr>			
+						
+					
+						
+		<tr style="cursor:pointer;" class="table-updated-tr modal-link profile" id="liTemplateDivId_17" data-order_by="14" data-url="/ProcedureTemplates/add/17">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>mtest</td>
+			<td class="col-xs-4 table-updated-td text-center">Ganesh Kompella</td>
+		</tr>			
+						
+					
+						
+		<tr style="cursor:pointer;" class="table-updated-tr modal-link profile" id="liTemplateDivId_18" data-order_by="15" data-url="/ProcedureTemplates/add/18">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>TestLong TestLong TestLong TestLong TestLong TestLong TestLong TestLong TestLong TestLong TestLong TestLong TestLong TestLong TestLong TestLong TestLong TestLong TestLong TestLong TestLong TestLong TestLong TestLong TestLong TestLong</td>
+			<td class="col-xs-4 table-updated-td text-center">Ganesh Kompella</td>
+		</tr>			
+						
+					
+						
+		<tr style="cursor:pointer;" class="table-updated-tr modal-link profile" id="liTemplateDivId_19" data-order_by="16" data-url="/ProcedureTemplates/add/19">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>Long</td>
+			<td class="col-xs-4 table-updated-td text-center">Ganesh Kompella</td>
+		</tr>			
+						
+					
+						
+		<tr style="cursor:pointer;" class="table-updated-tr modal-link profile" id="liTemplateDivId_21" data-order_by="17" data-url="/ProcedureTemplates/add/21">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>my</td>
+			<td class="col-xs-4 table-updated-td text-center">Ramsayqq Boltonqq</td>
+		</tr>			
+						
+					
+						
+		<tr style="cursor:pointer;" class="table-updated-tr modal-link profile" id="liTemplateDivId_20" data-order_by="18" data-url="/ProcedureTemplates/add/20">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>Untitled Procedure Template</td>
+			<td class="col-xs-4 table-updated-td text-center">Ganesh Kompella</td>
+		</tr>			
+						
+					
+						
+		<tr style="cursor:pointer;" class="table-updated-tr modal-link profile" id="liTemplateDivId_22" data-order_by="19" data-url="/ProcedureTemplates/add/22">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>HEALTH MULTIPLE SCALE RATING</td>
+			<td class="col-xs-4 table-updated-td text-center">Ganesh Kompella</td>
+		</tr>			
+						
+					
+						
+		<tr style="cursor:pointer;" class="table-updated-tr modal-link profile" id="liTemplateDivId_23" data-order_by="20" data-url="/ProcedureTemplates/add/23">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>qqqqq</td>
+			<td class="col-xs-4 table-updated-td text-center">Ganesh Kompella</td>
+		</tr>			
+						
+					
+					</tbody>
+		</table>	
+		<div class="no-record" style="display:none">
+			<div class="" style="float: left; width: 100%; font-size: 13px; text-align: center; margin-top: 0px; padding: 0px;">Sorry, No record found</div>
+		</div>
+	</div>
+	
+</div>
+		
+		
+
+
+	</div>
+</div>
+	
+
+<footer class="main-footer">
+	<div class="container-fluid">
+		<span class="pull-right">
+			©2018 Aesthetic Record. All Rights Reserved. 
+		</span>
+	</div>
+</footer>	
+	
+	
+</div>
+
+</body>
+
+</html>

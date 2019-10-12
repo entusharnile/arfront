@@ -1,0 +1,60 @@
+@import './common.scss';
+@import './variables.scss';
+
+.guest{
+	@import './Containers/Guest/footer.scss';
+	@import './Containers/Guest/header.scss';
+	@import './Containers/Guest/form.scss';
+	@import './Components/Login/login.scss';
+	@import './Components/Signup/signup.scss';
+	@import './Containers/Guest/responsive.scss';	
+}
+.protected{
+	@import './Containers/Protected/header.scss';
+	@import './Containers/Protected/footer2.scss';
+	@import './Components/Dashboard/user-activities.scss';
+	@import './Components/Dashboard/dashboard.scss';
+	@import './Components/Settings/setting-profile.scss';
+	@import './Components/Settings/two-factor-authentication.scss';
+	@import './Components/Settings/clinics.scss';
+	@import './Components/Settings/edit-clinic.scss';
+	@import './Components/Settings/ar-account.scss';
+	@import './Components/Settings/questionnaires.scss';
+	@import './Components/Settings/configure-url.scss';
+	@import './Components/Settings/patient-portal-access.scss';
+	@import './Components/Settings/patients.scss';
+	@import './Components/Settings/create-user.scss';
+	@import './Components/Settings/user-role.scss';
+	@import './Components/Settings/pos.scss';
+	@import './Components/Settings/pos-dashboard.scss';
+	@import './Components/Settings/pos-dispute.scss';
+	@import './Components/Settings/subscription-details.scss';
+	@import './Components/Settings/procedure-template.scss';
+	@import './Components/Settings/membershipWallet.scss';
+	@import './Components/Clients/clients.scss';
+	@import './Components/Clients/merge-clients.scss';
+	@import './Components/Clients/client-profile.scss';
+	@import './Components/Clients/customer-note.scss';
+	@import './Components/Clients/export-procedure.scss';
+	@import './Components/Clients/traceability-info.scss';
+	@import './Components/Clients/membership-plan.scss';
+	@import './Components/Clients/new-memberShip-plan.scss';
+	@import './Components/Clients/new-treatmentPlan.scss';
+	@import './Components/Clients/treatmentPlanTimeline.scss';
+	@import './Components/Appointment/create-service.scss';
+	@import './Components/Appointment/calendar.scss';
+	@import './Components/Appointment/provider-services.scss';
+	@import './Components/Appointment/create-appointment.scss';
+	@import './Components/Appointment/new-appointment.scss';
+	@import './Components/Reports/reports.scss';
+	@import './Components/Reports/create-report.scss';
+	@import './Components/Surveys/surveys.scss';
+	@import './Components/Inventory/products.scss';
+	@import './Components/Provider-room/provider-room.scss';
+	@import './Components/Sales/sales-reports.scss';
+	@import './Components/Sales/cash-drawer.scss';
+	@import './Components/Sales/frontdesk-checkout.scss';
+	@import './Components/Browser-support/browser-support.scss';
+	@import './Containers/Protected/responsive2.scss';
+}
+

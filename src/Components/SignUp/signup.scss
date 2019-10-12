@@ -1,0 +1,132 @@
+.sign-up-main, .login-policy-wrapper{
+	.login-title {
+    position: relative;
+    margin-bottom: 26px;
+		font-size: 22px;
+		font-weight: 500;
+    margin-top: 12px;
+	}
+	.login-title::after {
+    width: 135px;
+    height: 2px;
+    position: absolute;
+    content: '';
+    background: #0075c0;
+    left: 0px;
+    bottom: -9px;
+	}
+	.banner-image{
+		margin-top: 50px;
+		margin-bottom:130px;
+	}
+	input, select, .form-control, .form-control.card-details {
+    border: 1px solid #aaa;
+	}
+	.field_error,.form-control.field_error, .form-control.card-details.field_error {
+  	border: 1px solid #e74c3c !important;
+	}
+	.premium-btn {
+    width: 170px!important;
+    height: 46px!important;
+    margin-top: 0px!important;
+    float: right;
+	}
+	.btn-success {
+    color: #ffffff;
+    background-color: #008bf3!important;
+    border-color: #008bf3!important;
+	}
+	button[type=submit], a.back-btn, .ar-login-btn {
+    background: #0075c0;
+    border-radius: 5px;
+    border: none;
+    width: 293px;
+    height: 53px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin: auto;
+    display: inherit;
+    margin-top: 40px;
+	}
+	.card-block{
+		clear: both;
+	}
+	.hippa-block, .bba-block{
+		padding: 20px !important;
+	}
+	.login-main-policy {
+    display: table;
+    width: 100%;
+    padding: 20px 0px;
+	}
+	.member-section {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 8px 0px 20px;
+    padding: 0px;
+		width:100%;
+	}
+	.member-section-title {
+    border-bottom: 1px solid #ddd;
+    font-size: 15px;
+    padding: 10px 15px;
+    float: left;
+    width: 100%;
+    margin-bottom: 0px!important;
+    background: #f5f5f5;
+		margin-bottom:10px!important;
+	}
+	.term-policy-div {
+    display: block;
+    padding: 15px !important;
+    clear: both;
+		max-height: 400px;
+		position: relative;
+	}
+	.member-section-footer {
+    display: block;
+    padding: 10px 15px;
+    border-top: 1px solid #ddd;
+    text-align: right;
+	}
+	.member-section-footer label {
+    float: left;
+    font-size: 14px;
+		text-align:left;
+	}
+	.member-section-footer button.agree-btn {
+    background: #0075c0;
+    border-radius: 3px;
+    width: auto;
+    height: 30px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: top;
+    padding: 4px 30px;
+    color: #ffffff;
+    background-color: #5cb85c;
+    border: none;
+	}
+	.member-section-footer button.agree-btn.disable {
+    background: #eeeeee;
+    color: #444444;
+    border: none;
+	}
+	.selected-flag{margin:6px;}
+	.terms, .member-section-footer{
+		input{margin-top:1px;vertical-align:top;margin-right:3px;}
+		a{color:$blue;text-decoration:inherit;}
+	}
+	.form-group label{font-weight:normal;}
+	select{background: url(/../images/arrow.png) no-repeat right 10px center;}
+	.policy-info .col-sm-12{padding:0px;}
+}
+.sign-up-account-setup{
+	.static-line{
+		margin-top: 30px;
+	}
+}

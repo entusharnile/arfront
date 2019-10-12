@@ -1,0 +1,933 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="" name="description">
+<meta content="" name="author">
+<meta content="Page scroll animation using CSS animate" name="description">
+<meta content="css animation, loading effect, animate, scroll loading, scroll animation" 
+name="keywords">
+<meta content="Jinson Abraham" name="author">
+<title>AR-Patient Portal</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" 
+rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" 
+rel="stylesheet">
+<link href="css/common/bootstrap.css" rel="stylesheet">
+<link href="css/common/icons.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="main protected">
+	<header>
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
+					<span class="sr-only">Toggle navigation</span> 
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span><span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">
+					<img src="images/logo.png"/>
+				</a> 
+			</div>
+			
+			<div id="navbar" class="navbar-collapse collapse">
+				<div class="nav-outer">
+					<ul class="nav navbar-nav right-menus">
+						<li>
+							<a id="users-logs" class="users-logs show-desktop right-menus-a" href="/dashboard/user_logs" title="User Activities"></a>
+							<a id="users-logs" class="users-logs show-mobile" href="/dashboard/user_logs">View Users Activities</a>
+						</li>
+						<li>
+						<a id="noti-icon" class="noti-icon notification show-desktop right-menus-a" href="javascript:void(0);" title="Notifications"></a>
+						<a class="noti-icon notification show-mobile" href="/dashboard/notifications" title="Notifications">Notification</a>
+						<div id="popup" class="noti-popup no-display">
+							<div id="notty-title" class="noti-title">Notifications </div>
+							<div id="notty-content" class="noti-content">
+								<div class="read">
+									Your appointment on date 12/12/2017 01:00 PM 
+									with KProvider 1 is not synced
+								</div>
+								<div class="read">
+									Your appointment on date with is not synced
+								</div>
+								<div class="read">
+									Batch li-stock of <b>Have stocks</b> has hit 
+									low stock
+								</div>
+								<div class="read">
+									Batch ny-stock of <b>Have stocks</b> has hit 
+									low stock
+								</div>
+								<div class="read">
+									Batch 54545 of <b>Ttt</b> has hit low stock
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +19546637556
+								</div>
+								<div class="read">
+									New SMS received from +19546637556
+								</div>
+							</div>
+							<div id="notty-footer" class="noti-footer">
+								<a href="/dashboard/sms_notifications">See All</a>
+							</div>
+						</div>
+						</li>
+						<li class="arow-link-outer">
+							<span class="arow-link">
+								<div id="headerUserImage" class="user-picture"></div>
+								<span class="name-txt">Ganesh Kompella </span>
+							</span>
+						</li>
+						<li>
+							<a class="setting show-desktop right-menus-a" href="/settings/profile" title="Settings"></a>
+							<a class="setting show-mobile" href="/settings/profile">Settings</a> 
+						</li>
+						<li>
+							<a class="logout show-desktop right-menus-a" href="/accounts/logout" title="Logout"></a>
+							<a class="logout show-mobile" href="/accounts/logout"><i class="icon-Power-2"></i>Log Out</a> 
+						</li>
+					</ul>
+					<ul class="nav navbar-nav main-navbar">
+						<li class="active"><a href="/dashboard">Dashboard</a></li>
+						<li class=""><a href="/patients/manage">Clients</a> </li>
+						<li class=""><a href="/appointments/index">Appointments</a></li>
+						<li class=""><a href="/sales/index">Sales</a></li>
+						<li class=""><a href="/inventory/products/active">Inventory</a></li>
+						<li class=""><a href="/analytics/reports">Reports</a></li>
+						<li class=""><a href="/marketing/dashboard">Surveys</a></li>
+						<li class=""><a href="/MDRooms/pending">MD's Room</a></li>
+						<li class=""><a href="/ProvidersRooms/pending">Provider's Room</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	
+<div id="content">
+	<div class="container-fluid content setting-wrapper">
+	
+	<div class="setting-left-menu">
+	<div class="setting-title">Settings</div>
+	<ul class="new-setting-tabs">
+		<li class="new-setting-tabs-li">
+		<a class="new-setting-tabs-a active-menu" href="javascript:void(0);">Account 
+		Information <i class="fas fa-angle-down"></i></a>
+		<ul class="setting-submenu">
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a" data-loading="false" 
+			data-title="Profile" data-url="/settings/profile" 
+			href="javascript:void(0);" onclick="setting_menu(this)">Profile </a>
+			</li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a" data-loading="false" 
+			data-title="two_factor" data-url="/settings/two_factor" 
+			href="javascript:void(0);" onclick="setting_menu(this)">2FA Authentication
+			</a></li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a sel-submenu" data-loading="false" 
+			data-title="Personal Information" 
+			data-url="/settings/account_information" href="javascript:void(0);" 
+			onclick="setting_menu(this)">AR Account</a> </li>
+		</ul>
+		</li>
+		<li class="new-setting-tabs-li"><a class="new-setting-tabs-a " 
+		href="javascript:void(0);">Manage Your Clinics
+		<i class="fas fa-angle-right"></i></a>
+		<ul class="setting-submenu no-display">
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="true" 
+			data-title="Manage Clinics" data-url="/settings/clinics" 
+			href="javascript:void(0);" onclick="setting_menu(this)">Clinics</a>
+			</li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="true" 
+			data-title="Questionnares" data-url="/settings/questionnaires" 
+			href="javascript:void(0);" onclick="setting_menu(this)">Questionnaires</a>
+			</li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="true" 
+			data-title="Consent" data-url="/settings/consents" 
+			href="javascript:void(0);" onclick="setting_menu(this)">Consents</a>
+			</li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-title="Procedure Templates" 
+			data-url="/settings/procedure_templates" href="javascript:void(0);" 
+			onclick="setting_menu(this)">Procedure Templates</a> </li>
+		</ul>
+		</li>
+		<li class="new-setting-tabs-li"><a class="new-setting-tabs-a " 
+		href="javascript:void(0);">Appointments <i class="fas fa-angle-right">
+		</i></a>
+		<ul class="setting-submenu no-display">
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-title="Post treatment instructions" 
+			data-url="/settings/appointments_ajax" href="javascript:void(0);" 
+			onclick="setting_menu(this)">Appointment Emails &amp; SMS</a> </li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-title="Post treatment instructions" 
+			data-url="/appointments/Survey_email_sms" 
+			href="javascript:void(0);" onclick="setting_menu(this)">Survey Settings</a>
+			</li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-title="Post treatment instructions" 
+			data-url="/appointments/configure_uri" href="javascript:void(0);" 
+			onclick="setting_menu(this)">Configure URL’s</a> </li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-title="Post treatment instructions" 
+			data-url="/appointments/cancellation_policy" 
+			href="javascript:void(0);" onclick="setting_menu(this)">Cancellation 
+			Policy</a> </li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-title="Patient Portal  Access" 
+			data-url="/appointments/patient_portal" href="javascript:void(0);" 
+			onclick="setting_menu(this)">Patient Portal Access</a> </li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-url="/settings/appointment_reminder" 
+			href="javascript:void(0);" onclick="setting_menu(this)">Patient Appointment 
+			Reminders</a> </li>
+		</ul>
+		</li>
+		<li class="new-setting-tabs-li patients"><a class="new-setting-tabs-a " 
+		data-loading="false" 
+		data-url="/appointments/membership_and_wallet_setting" 
+		href="javascript:void(0);" onclick="setting_menu(this)">Patients </a>
+		</li>
+		<li class="new-setting-tabs-li"><a class="new-setting-tabs-a " 
+		href="javascript:void(0);">Teammates <i class="fas fa-angle-right"></i>
+		</a>
+		<ul class="setting-submenu no-display">
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="true" 
+			data-title="Post treatment instructions" data-url="/settings/user" 
+			href="javascript:void(0);" onclick="setting_menu(this)">Users</a>
+			</li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-title="Post treatment instructions" data-url="/settings/roles" 
+			href="javascript:void(0);" onclick="setting_menu(this)">User Role</a>
+			</li>
+		</ul>
+		</li>
+		<li class="new-setting-tabs-li"><a class="new-setting-tabs-a " 
+		href="javascript:void(0);">POS <i class="fas fa-angle-right"></i></a>
+		<ul class="setting-submenu no-display">
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-url="/settings/pos_dashboard" href="javascript:void(0);" 
+			onclick="setting_menu(this)">Dashboard</a> </li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="true" 
+			data-url="/settings/payments" href="javascript:void(0);" 
+			onclick="setting_menu(this)">Payments</a> </li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="true" 
+			data-url="/settings/payouts" href="javascript:void(0);" 
+			onclick="setting_menu(this)">Payouts</a> </li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-url="/settings/pos" href="javascript:void(0);" 
+			onclick="setting_menu(this)">POS Settings</a> </li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-url="/settings/payment_settings" href="javascript:void(0);" 
+			onclick="setting_menu(this)">Payment Settings</a> </li>
+		</ul>
+		</li>
+	</ul>
+</div>
+
+
+<div class="setting-setion">
+				
+				<div class="setting-container">
+				
+						<div class="setting-title m-b-60">Customer Portal</div>
+												<div class="row m-b-20" id="editmode">
+							<div class="col-lg-4 col-xs-12">
+								<div class="setting-field-outer no-margin">
+									<div class="new-field-label">Url <span class="setting-require">*</span></div>
+									<div>											http://<input type="text" id="pportal_subdomain" name="pportal_subdomain" class="setting-input-box ar-url" value="customers"/>.estheticrecord.com																		</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-xs-12">
+								<button class="new-blue-btn url-save m-r-5" id="saveurl">Save</button>
+								<button class="new-white-btn url-save" id="cancelurl">Cancel</button>
+							</div>
+						</div>
+						
+						<div class="row no-display" id="viewmode">
+							<div class="col-lg-4 col-xs-12">
+								<div class="setting-field-outer">
+									<div class="new-field-label">Url <span class="setting-require">*</span></div>
+									<div>
+									<a target="_blank" href="http://customers.estheticrecord.com" class="setting-input-box">http://customers.estheticrecord.com</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-xs-12">
+																<button class="new-blue-btn url-save" id="editurl">Edit</button>
+															</div>
+						</div>
+
+						<div class="setting-title">Appointment Booking</div>
+														<div class="row">
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">All Clinics</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">Url <span class="setting-require">*</span></div>
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments" class="setting-input-box">http://customers.estheticrecord.com/book/appointments</a>
+										</div>
+									</div>
+									
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">New York Clinic</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/gYeV4mlDanyoGqao9PkJQ3E8WvZBK0/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/gYeV4mlDanyoGqao9PkJQ3E8WvZBK0/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">hospital</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/wg5Y0GWLknpmb9VZ9Kv4lNBAojMaJQ/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/wg5Y0GWLknpmb9VZ9Kv4lNBAojMaJQ/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">Likarnya</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/XQ5MG2P8nwVgYq3Y9lNE3yvAkD4jJp/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/XQ5MG2P8nwVgYq3Y9lNE3yvAkD4jJp/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">ajay</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/rOeW34RN7kvVYqOrd0gD68bGjl15JQ/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/rOeW34RN7kvVYqOrd0gD68bGjl15JQ/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">5 clinic 5 clinic 5 clinic 5 clinic</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/R5LJaBEw3vjmXdGod4KYGMnZA67lxk/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/R5LJaBEw3vjmXdGod4KYGMnZA67lxk/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">demo clinic2</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/aBbYxp4j3K6rAz0NdkP8RnwWOGJlQv/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/aBbYxp4j3K6rAz0NdkP8RnwWOGJlQv/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">demo clinic2</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/1NmG5YObkalvEdmX9yPw64oMWgQx2j/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/1NmG5YObkalvEdmX9yPw64oMWgQx2j/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">demo clinic3</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/JmXYb87GpBZEVdxW9PNvoDxn2ay6l0/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/JmXYb87GpBZEVdxW9PNvoDxn2ay6l0/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">test46</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/BnDEe3xAJwMXLdk8qgQyZj2Ga8oOr7/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/BnDEe3xAJwMXLdk8qgQyZj2Ga8oOr7/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">Hospital2</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/MGxDQWABgpr3KqyQq5n6koNRmya2PZ/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/MGxDQWABgpr3KqyQq5n6koNRmya2PZ/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">Hospital Lviv Laurel Craycraft Laurel Craycraft Laurel Craycraft</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/2BYnXly0gZWRvzewdO6AwxLoQKpENj/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/2BYnXly0gZWRvzewdO6AwxLoQKpENj/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">QA Clinic</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/jaMWJ7wnGOrpk95Dz35LD0oRBY1XQN/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/jaMWJ7wnGOrpk95Dz35LD0oRBY1XQN/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">Hospital3</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/Ymr4ebN5EkPRj9gPdv3pMnA0JGZ6K2/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/Ymr4ebN5EkPRj9gPdv3pMnA0JGZ6K2/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">VK</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/8AMLNeRj0P2m6zAj95BygxXGkv3JrZ/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/8AMLNeRj0P2m6zAj95BygxXGkv3JrZ/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">Hospital4</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/Y1RrxnwGZpW3Vz74G9mDokN05va4Q6/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/Y1RrxnwGZpW3Vz74G9mDokN05va4Q6/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">Sharma Ji Clinic</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/GZBgnJ0Qr4poRzb7B96NEemx7wYLDa/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/GZBgnJ0Qr4poRzb7B96NEemx7wYLDa/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">New Clinic</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/mJROlK1AprNnkqWQX94PXMxBQj2eZy/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/mJROlK1AprNnkqWQX94PXMxBQj2eZy/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">new Tester</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/2B6b70JvGVEeOqZEad1jNgWakQDnPK/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/2B6b70JvGVEeOqZEad1jNgWakQDnPK/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">abc</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/8jogQXMYVmN5GqQBezlpvOk6nw0y42/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/8jogQXMYVmN5GqQBezlpvOk6nw0y42/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">test</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/ZbG25eEnl1m4adNbRdyMP7W0YwpX3V/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/ZbG25eEnl1m4adNbRdyMP7W0YwpX3V/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">Testing</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/KZDP78w0aWklx9Ljaq4rGpngLY2B6v/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/KZDP78w0aWklx9Ljaq4rGpngLY2B6v/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">test123</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/2gWYbEy5XZ8LRzBXxdNvaPljQoAxB1/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/2gWYbEy5XZ8LRzBXxdNvaPljQoAxB1/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">clinic 123</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/JmXYb87GpBZEVdxbWzPNvoDxn2ay6l/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/JmXYb87GpBZEVdxbWzPNvoDxn2ay6l/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">latest</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/X2ZverAQ5EN0R980X9MK3GDkpl46Jo/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/X2ZverAQ5EN0R980X9MK3GDkpl46Jo/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">zxc</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/Ymr4ebN5EkPRj9gbPzv3pMnA0JGZ6K/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/Ymr4ebN5EkPRj9gbPzv3pMnA0JGZ6K/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">iop</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/OPXJ3yAGLpnmj9nVl9xRrV1loNw8b6/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/OPXJ3yAGLpnmj9nVl9xRrV1loNw8b6/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">Hospital555</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/8AMLNeRj0P2m6zAYjz5BygxXGkv3Jr/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/8AMLNeRj0P2m6zAYjz5BygxXGkv3Jr/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">Clinic for auto tests DO NOT DELETE</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/wg5Y0GWLknpmb9VZZ9Kv4lNBAojMaJ/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/wg5Y0GWLknpmb9VZZ9Kv4lNBAojMaJ/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">Your Demo Clinic</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/XQ5MG2P8nwVgYq3DYzlNE3yvAkD4jJ/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/XQ5MG2P8nwVgYq3DYzlNE3yvAkD4jJ/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">Lviv Clinic</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/N04ObQakJgryAd40VdVLGDB63vYKl7/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/N04ObQakJgryAd40VdVLGDB63vYKl7/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">bbs</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/GAbkjm4ZrN0QaqKya9gMLBXp6y1DVe/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/GAbkjm4ZrN0QaqKya9gMLBXp6y1DVe/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">A-Clinic</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/1MBol4P6KrWGEqMbLzn02jLp3JbRYk/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/1MBol4P6KrWGEqMbLzn02jLp3JbRYk/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">Hospital6</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/XQ5MG2P8nwVgYq3DOzlNE3yvAkD4jJ/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/XQ5MG2P8nwVgYq3DOzlNE3yvAkD4jJ/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">clinic_for_tax_test_10</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/mGE5JvrYpnNjxdYvMqPDoBMeQ3blX2/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/mGE5JvrYpnNjxdYvMqPDoBMeQ3blX2/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">Anup clinic</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/N04ObQakJgryAd40DdVLGDB63vYKl7/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/N04ObQakJgryAd40DdVLGDB63vYKl7/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">Employee clinic</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/4gyXrWnoVw0A39renzvKGjBZk2OQDN/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/4gyXrWnoVw0A39renzvKGjBZk2OQDN/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">gmch 32</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/GAbkjm4ZrN0QaqKyP9gMLBXp6y1DVe/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/GAbkjm4ZrN0QaqKyP9gMLBXp6y1DVe/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">Hospital7</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/Y1RrxnwGZpW3Vz7NrqmDokN05va4Q6/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/Y1RrxnwGZpW3Vz7NrqmDokN05va4Q6/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">Hospital8</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/1MBol4P6KrWGEqMb5zn02jLp3JbRYk/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/1MBol4P6KrWGEqMb5zn02jLp3JbRYk/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">Morgan's clinic</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/wv506L4kjPxmOqDk8dKG3nrpg8YAEN/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/wv506L4kjPxmOqDk8dKG3nrpg8YAEN/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">Hospital9</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/rOeW34RN7kvVYqOGAq0gD68bGjl15J/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/rOeW34RN7kvVYqOGAq0gD68bGjl15J/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">SURVEY</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/Mjbl3mLaGX52oqvLW91BwJ6QZknpWy/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/Mjbl3mLaGX52oqvLW91BwJ6QZknpWy/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">Survey check</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/K8YQly5Dj3ZxR9wXadvP6GBLV7Nw4g/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/K8YQly5Dj3ZxR9wXadvP6GBLV7Nw4g/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">invalidska</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/mJROlK1AprNnkqW5O94PXMxBQj2eZy/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/mJROlK1AprNnkqW5O94PXMxBQj2eZy/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">admi</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/2B6b70JvGVEeOqZYld1jNgWakQDnPK/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/2B6b70JvGVEeOqZYld1jNgWakQDnPK/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">a</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/8jogQXMYVmN5GqQYGqlpvOk6nw0y42/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/8jogQXMYVmN5GqQYGqlpvOk6nw0y42/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">invalid</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/54GjnN1gXoR3wqXNo987O6EK2kQJWp/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/54GjnN1gXoR3wqXNo987O6EK2kQJWp/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">testdrawer</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/ZbG25eEnl1m4adNEo9yMP7W0YwpX3V/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/ZbG25eEnl1m4adNEo9yMP7W0YwpX3V/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">new_clinic_lviv</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/KZDP78w0aWklx9LArd4rGpngLY2B6v/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/KZDP78w0aWklx9LArd4rGpngLY2B6v/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">testdrawer2</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/2gWYbEy5XZ8LRzBLPdNvaPljQoAxB1/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/2gWYbEy5XZ8LRzBLPdNvaPljQoAxB1/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">W17081158</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/4DoOy1KLkZ2Mw9jGldWbg3QGn6Ax85/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/4DoOy1KLkZ2Mw9jGldWbg3QGn6Ax85/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">parus</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/aBbYxp4j3K6rAz0lLzkP8RnwWOGJlQ/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/aBbYxp4j3K6rAz0lLzkP8RnwWOGJlQ/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">ww</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/1NmG5YObkalvEdmaOdyPw64oMWgQx2/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/1NmG5YObkalvEdmaOdyPw64oMWgQx2/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">1</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/JmXYb87GpBZEVdx2OzPNvoDxn2ay6l/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/JmXYb87GpBZEVdx2OzPNvoDxn2ay6l/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">new clinic</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/BnDEe3xAJwMXLdkDjqgQyZj2Ga8oOr/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/BnDEe3xAJwMXLdkDjqgQyZj2Ga8oOr/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">asas</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/VR0abMLZE6pkg917vqWG53xJnA1eOw/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/VR0abMLZE6pkg917vqWG53xJnA1eOw/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">gdfg</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/8PxLbJeQo0VwRq6KQzM3vNkpmrBO65/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/8PxLbJeQo0VwRq6KQzM3vNkpmrBO65/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">fox</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/MGxDQWABgpr3KqyVez5n6koNRmya2P/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/MGxDQWABgpr3KqyVez5n6koNRmya2P/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">Hospital Lviv Laurel Craycraft Laurel Craycraft Laurel Craycraftqwqwqwqw</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/2BYnXly0gZWRvzexMqO6AwxLoQKpEN/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/2BYnXly0gZWRvzexMqO6AwxLoQKpEN/clinics</a>
+										</div>
+									</div>
+																		
+									<div class="col-sm-6">
+										<div class="instruction-subtitle">Hospital Lviv Laurel Craycraft Laurel Craycraft Laurel CraycraftHospital Lviv Laurel Craycraft Laurel Craycraft Laurel Craycraft1222233333333333eerrtfghhj112</div>
+										<div class="setting-field-outer">
+											<div class="new-field-label">URL</div>
+
+											<a target="_blank" href="http://customers.estheticrecord.com/book/appointments/jaMWJ7wnGOrpk95vvd35LD0oRBY1XQ/clinics" class="setting-input-box">http://customers.estheticrecord.com/book/appointments/jaMWJ7wnGOrpk95vvd35LD0oRBY1XQ/clinics</a>
+										</div>
+									</div>
+																		</div>
+						
+							<div class="setting-title ">Customize Appointment Booking</div>
+												<div class="row"  id="edit_time_box">
+							<div class="col-lg-8 col-xs-12">
+								<div class="setting-field-outer m-t-15">
+
+																	<div>
+										Time slots for appointment booking: 
+										<select name="booking_time_interval" id="booking_time_interval" class="setting-select-box ar-url" value="60">
+										<option value="">Select </option>
+																					
+											<option value="5"> 5</option>
+																					
+											<option value="10"> 10</option>
+																					
+											<option value="15"> 15</option>
+																					
+											<option value="20"> 20</option>
+																					
+											<option value="25"> 25</option>
+																					
+											<option value="30"> 30</option>
+																					
+											<option value="35"> 35</option>
+																					
+											<option value="40"> 40</option>
+																					
+											<option value="45"> 45</option>
+																					
+											<option value="50"> 50</option>
+																					
+											<option value="55"> 55</option>
+																						<option value="60" selected=""> 60</option>
+																				</select>
+										mins increments
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-xs-12">
+								<button class="new-blue-btn url-save m-r-5" id="save_time">Save</button>
+								<button class="new-white-btn url-save" id="cancel_time">Cancel</button>
+							</div>
+						</div>
+						
+						<div class="row no-display" id="print_time_box">
+							<div class="col-lg-8 col-xs-12">
+								<div class="setting-field-outer m-t-15">
+
+									<div>
+									Time slots for appointment booking <span id="seltime">60</span> mins increments
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-xs-12">
+																<button class="new-blue-btn url-save" id="edit_time">Edit</button>
+															</div>
+						</div>
+				
+							</div>
+							</div>
+		
+		
+
+
+	</div>
+</div>
+	
+
+<footer class="main-footer">
+	<div class="container-fluid">
+		<span class="pull-right">
+			©2018 Aesthetic Record. All Rights Reserved. 
+		</span>
+	</div>
+</footer>	
+	
+	
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+.card-exp-date{
+  width: 45%;
+  float: left;
+}
+.text-left.data-usage{
+  .dash-box{
+    box-shadow: none;
+  }
+  .sales-goal-legend{
+    height: auto;
+    position: absolute;
+    right: -19px;
+    top: 70px;
+    width:174px;
+
+
+    .legend-group{width:100%;
+      .legend-dot {
+          width: 12px;
+          height: 12px;
+          position: absolute;
+          left:0px;
+          top: 2px;
+          border-radius: 20px;
+          background: #047ec3;
+      }
+      .legend-price{
+        font-size: 18px;
+        color: #404040;
+        font-family: 'Lato', sans-serif;
+        font-weight: normal;
+        line-height: 14px;
+      }
+      .legend-clinic{
+          font-size: 14px;
+          color: #667680;
+          display: block;
+          margin-top: 10px;
+          font-weight: normal;
+          font-family: 'Lato', sans-serif;
+          margin-bottom: 20px;
+      }
+    }
+  }
+}
+.billing-stats {
+    text-align: center;
+}
+.billing-stats .portal-numbers {
+    margin-top: 0px;
+    font-size: 30px;
+}
+.data-usage .dash-box{padding-left:0px!important;margin-left:-30px!important;}
+.data-usage .dash-box-content{margin:0px!important;}
+.data-usage .sales-date-price{left:62px!important;top: 100px;}
+.data-usage .sale-goal-date{display: block;font-size: 18px;color:#667680;}
+.data-usage .sale-goal-price{display: block;margin-top: 0px;font-size: 14px;color:#667680;}
+.accordian-section svg{color:$blue!important;margin-right:5px;}
+.data-usage .highcharts-container{margin-left: -14px!important;}
+.popup-accordian-section-head {
+    padding: 13px;
+    background: #f0f1f2;
+    font-weight: 600;
+    color: #404040;
+    font-size: 14px;
+    width:100%;
+    display:table;
+}
+.subscription-popup{width:740px;}
+.accordion-table .plan-estimate-block{display: table-row-group;}

@@ -1,0 +1,277 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="" name="description">
+<meta content="" name="author">
+<meta content="Page scroll animation using CSS animate" name="description">
+<meta content="css animation, loading effect, animate, scroll loading, scroll animation" 
+name="keywords">
+<meta content="Jinson Abraham" name="author">
+<title>AR-Patient Portal</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet"> 
+<link href="css/common/bootstrap.css" rel="stylesheet">
+<link href="css/common/icons.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="main protected">
+	<header>
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
+					<span class="sr-only">Toggle navigation</span> 
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span><span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">
+					<img src="images/logo.png"/>
+				</a> 
+			</div>
+			
+			<div id="navbar" class="navbar-collapse collapse">
+				<div class="nav-outer">
+					<ul class="nav navbar-nav right-menus">
+						<li>
+							<a id="users-logs" class="users-logs show-desktop right-menus-a" href="/dashboard/user_logs" title="User Activities"></a>
+							<a id="users-logs" class="users-logs show-mobile" href="/dashboard/user_logs">View Users Activities</a>
+						</li>
+						<li>
+						<a id="noti-icon" class="noti-icon notification show-desktop right-menus-a" href="javascript:void(0);" title="Notifications"></a>
+						<a class="noti-icon notification show-mobile" href="/dashboard/notifications" title="Notifications">Notification</a>
+						<div id="popup" class="noti-popup no-display">
+							<div id="notty-title" class="noti-title">Notifications </div>
+							<div id="notty-content" class="noti-content">
+								<div class="read">
+									Your appointment on date 12/12/2017 01:00 PM 
+									with KProvider 1 is not synced
+								</div>
+								<div class="read">
+									Your appointment on date with is not synced
+								</div>
+								<div class="read">
+									Batch li-stock of <b>Have stocks</b> has hit 
+									low stock
+								</div>
+								<div class="read">
+									Batch ny-stock of <b>Have stocks</b> has hit 
+									low stock
+								</div>
+								<div class="read">
+									Batch 54545 of <b>Ttt</b> has hit low stock
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +19546637556
+								</div>
+								<div class="read">
+									New SMS received from +19546637556
+								</div>
+							</div>
+							<div id="notty-footer" class="noti-footer">
+								<a href="/dashboard/sms_notifications">See All</a>
+							</div>
+						</div>
+						</li>
+						<li class="arow-link-outer">
+							<span class="arow-link">
+								<div id="headerUserImage" class="user-picture"></div>
+								<span class="name-txt">Ganesh Kompella </span>
+							</span>
+						</li>
+						<li>
+							<a class="setting show-desktop right-menus-a" href="/settings/profile" title="Settings"></a>
+							<a class="setting show-mobile" href="/settings/profile">Settings</a> 
+						</li>
+						<li>
+							<a class="logout show-desktop right-menus-a" href="/accounts/logout" title="Logout"></a>
+							<a class="logout show-mobile" href="/accounts/logout"><i class="icon-Power-2"></i>Log Out</a> 
+						</li>
+					</ul>
+					<ul class="nav navbar-nav main-navbar">
+						<li class=""><a href="/dashboard">Dashboard</a></li>
+						<li class="active"><a href="/patients/manage">Clients</a> </li>
+						<li class=""><a href="/appointments/index">Appointments</a></li>
+						<li class=""><a href="/sales/index">Sales</a></li>
+						<li class=""><a href="/inventory/products/active">Inventory</a></li>
+						<li class=""><a href="/analytics/reports">Reports</a></li>
+						<li class=""><a href="/marketing/dashboard">Surveys</a></li>
+						<li class=""><a href="/MDRooms/pending">MD's Room</a></li>
+						<li class=""><a href="/ProvidersRooms/pending">Provider's Room</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	
+<div id="content">
+	<div class="container-fluid content setting-wrapper">
+
+
+		
+	
+			
+<div class="row duplicate-patient-title">
+	<div class="col-sm-3">
+		<a class="pull-left go-back go-back-arrow" id="go-back"></a>
+		<span class="patient-count">Patient Profile</span>
+	</div>
+	<div class="right-create-patient col-sm-9 profile-right">
+		<div class="dropdown pull-right more-info-profile-dropdown">
+			<button class="line-btn pull-right" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">More Info
+				<i class="fas fa-angle-down"></i>
+			</button>
+			<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+				<li><a class="header-unselect-btn modal-link" data-izimodal-transitionin="fadeInRight" data-url="/patients/export_procedures/1984">Export Procedures</a></li>			
+				<li><a href="javascript:void(0);" class="header-unselect-btn setting" id="up_appoint" data-url="/patients/upcoming_appointments/1984">Upcoming Appointments (1)</a></li>
+				<li><a class="header-unselect-btn setting modal-link" data-izimodal-transitionin="fadeInRight" data-url="/patients/medical_history/1984">Medical History</a></li>
+				<li><a class="header-unselect-btn setting modal-link" data-izimodal-transitionin="fadeInRight" data-url="/patients/documents/1984">Documents</a></li>
+				<li><a class="header-unselect-btn setting modal-link" data-izimodal-transitionin="fadeInRight" data-url="/patients/purchase_history/1984">Payment History</a></li>
+			</ul>
+		</div>
+		
+		<a href="javascript:void(0);" class="blue-btn pull-right modal-link" data-url="/patients/notes/1984">Customer Notes</a>
+		<a id="Cosmetic_Timeline_Create_Procedure" class="blue-btn pull-right modal-link" data-url="/patients/add_procedure/1984">Create Procedure</a>
+		<a id="Health_Timeline_Create_Procedure" class="blue-btn pull-right modal-link no-display" data-url="/patients/add_procedure_health_timeline/1984">Create Procedure</a>
+		<a href="javascript:void(0);" class="blue-btn pull-right modal-link" data-url="/patients/client_wallet/1984">Client Wallet</a>
+		<a href="javascript:void(0);" class="blue-btn pull-right modal-link" data-url="/patients/get_patient_treatment_plans/1984">Treatment Plan</a>
+		<a href="javascript:void(0);" class="blue-btn pull-right open_appointment_popup_create" data-patient_id="1984">Create Appointment</a>
+			
+		<div id="main_form_copy no-display">
+			<form id="app_form_copy" action="/appointments/index" method="post" target="_blank">
+				<input type="hidden" id="create_app_patient_id" name="patient_id_for_open_poupup"/>
+			</form> 
+		</div>		
+	</div>
+</div>
+
+	
+			
+			
+<div class="merge-outer">	
+	<div class="merge-setion">
+					
+	
+	<div class="juvly-container">
+		<div class="juvly-title m-b-20">Dinesh Shimar - Export Procedures
+			<a data-url="/settings/user" class="pull-right"><img src="images/close.png"/></a>
+		</div>
+	
+	
+	
+		<div class="table export-procedure">
+			<div class="table-row">
+				<div class="table-cell export-input">
+					<input type="checkbox"/>
+				</div>
+				<div class="table-cell">
+					<div class="export-pro-image">
+						<img src="http://beta.aestheticrecord.com/media/juvlystorage/procedureImages/thumb_photo1542026322514.jpg"/>
+					</div>
+				</div>
+				<div class="table-cell">
+					<div class="pro-proc-title">Procedure 1</div>	
+					<div class="export-pro-time">15/11/2018 at 08:09 PM</div>	
+					<span class="juvly-subtitle no-margin">Notes:</span>
+					<div class="export-pro-note">
+						<div class="p-text">Maecenas tempus enim vitae dapibus pellentesque. Nunc imperdiet arcu sit amet malesuada volutpat. Aenean pharetra risus at mauris porta, ut ornare purus ultricies.</div>
+						<span class="hashTag">Procedure</span>                                             
+						<span class="hashTag">Note</span>                                             
+					</div>
+				</div>
+			</div>
+			<div class="table-row">
+				<div class="table-cell export-input">
+					<input type="checkbox"/>
+				</div>
+				<div class="table-cell">
+					<div class="export-pro-image">
+						<img src="http://beta.aestheticrecord.com/media/juvlystorage/procedureImages/thumb_photo1542292774840.jpg"/>
+					</div>
+				</div>
+				<div class="table-cell">
+					<div class="pro-proc-title">Procedure 1</div>	
+					<div class="export-pro-time">15/11/2018 at 08:09 PM</div>	
+					<span class="juvly-subtitle no-margin">Notes:</span>
+					<div class="export-pro-note">
+						<div class="p-text">Maecenas tempus enim vitae dapibus pellentesque. Nunc imperdiet arcu sit amet malesuada volutpat. Aenean pharetra risus at mauris porta, ut ornare purus ultricies.</div>
+						<span class="hashTag">Procedure</span>                                             
+						<span class="hashTag">Note</span>                                             
+					</div>
+				</div>
+			</div>
+			<div class="table-row">
+				<div class="table-cell export-input">
+					<input type="checkbox"/>
+				</div>
+				<div class="table-cell">
+					<div class="export-pro-image">
+						<img src="http://beta.aestheticrecord.com/media/juvlystorage/procedureImages/thumb_photo1542292331978.jpg"/>
+					</div>
+				</div>
+				<div class="table-cell">
+					<div class="pro-proc-title">Procedure 1</div>	
+					<div class="export-pro-time">15/11/2018 at 08:09 PM</div>	
+					<span class="juvly-subtitle no-margin">Notes:</span>
+					<div class="export-pro-note">
+						<div class="p-text">Maecenas tempus enim vitae dapibus pellentesque. Nunc imperdiet arcu sit amet malesuada volutpat. Aenean pharetra risus at mauris porta, ut ornare purus ultricies.</div>
+						<span class="hashTag">Procedure</span>                                             
+						<span class="hashTag">Note</span>                                             
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	</div>
+		
+	
+		
+	<div class="footer-static">
+		<a id="saveConsultation" class="new-blue-btn pull-right">Export</a>
+		<a data-url="/settings/questionnaires" class="new-white-btn pull-right cancelAction">Cancel</a>
+	</div>
+	
+	</div>
+</div>			
+			
+			
+			
+
+
+</div>
+</div>
+	
+
+<footer class="main-footer">
+	<div class="container-fluid">
+		<span class="pull-right">
+			©2018 Aesthetic Record. All Rights Reserved. 
+		</span>
+	</div>
+</footer>
+	
+	
+</div>
+
+</body>
+</html>

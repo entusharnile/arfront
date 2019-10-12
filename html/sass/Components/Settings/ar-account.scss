@@ -1,0 +1,49 @@
+.busines-detail-left {
+    position: relative;
+}
+.business-logo {
+    width: 100%;
+    background-size: auto 318px;
+    height: 318px;
+    border: 1px solid #ddd;
+    background-color: #f7f9fa;
+    background-repeat: no-repeat;
+    float: left;
+    @include border-radius(5px);
+    text-align: center;
+    background-position: center;
+	
+	
+	.dropzone {
+		min-height: inherit;
+		right: 0px;
+		height: auto;
+		@include border-radius(5px);
+		width: 100%;
+		background-image: inherit;
+		color: #047ec3;
+		font-size: 16px !important;
+		line-height: 31px !important;
+		position:relative;
+		
+		#defaultImg {
+			width: auto;
+			height: 310px;
+			display:inline-block;
+		}
+		.camra-icon{
+			right: 10px;
+			bottom: 10px;
+			position: absolute;
+			z-index: 9;
+			background: #fff;
+			height: 30px;
+			width: 30px;
+			border-radius: 50px;
+			box-shadow: 0px 2px 1px #ddd;
+			-moz-box-shadow: 0px 2px 1px #ddd;
+			-webkit-box-shadow: 0px 2px 1px #ddd;
+		}
+	}
+
+}

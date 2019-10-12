@@ -1,0 +1,91 @@
+.memberWalletOuter{
+	height:auto;
+	min-height:inherit;
+	width:76%;
+	float:left;
+	
+	.setting-setion{width:100%;min-height:inherit;}
+}
+.membership-title{
+	font-size:20px;
+	color:#404040;
+	width:100%;
+	float:left;
+	padding:15px 20px;
+}
+.membershipSectionTitle{
+	float:left;
+	width:100%;
+	padding:15px;
+	font-size:13px;
+	color:#404040;
+	border-bottom:1px solid #dddddd;
+}
+.membershipSectionContent{
+	float:left;
+	width:100%;
+	padding:15px;
+	font-size:13px;
+	color:#404040;
+}
+.memberPoint{
+	width:auto;
+	float:left;
+	position:relative;
+	padding-left:20px;
+	
+	svg{color:$blue;position:absolute;left:0px;top:3px;}
+}
+.memberProgram-right{padding-left:0px;}
+.membership-type-table{width:100%;
+	td{padding:5px 0px;}
+}
+.noShadow{box-shadow:inherit!important;}
+.memberDiscount{
+	input{width:70%!important;}
+}
+.memberprice{
+	.TP-discount-outer{position:relative;max-width:inherit;}
+	input{width:100%!important;}
+	.TP-discount-type{position:absolute;right:3px;top:3px;}
+}
+.membershipTypeTitle{
+	font-weight:normal!important;
+	width: 100%;
+    float: left;
+    color: #444444;
+    font-size: 20px;
+    margin-bottom: 25px;
+    position: relative;
+    padding-right: 20px;
+    
+    .popupClose{
+		float: right;
+		position: absolute;
+		right: 0px;
+		top: 0px;
+    }
+}
+.units{float:left;height:30px;border:1px solid #dddddd;@include border-radius(3px);width:60px;padding:0px 10px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

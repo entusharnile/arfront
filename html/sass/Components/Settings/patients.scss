@@ -1,0 +1,35 @@
+.setting-custom-switch {
+    margin-top: 6px;
+}
+.member-program {
+    padding-right: 25px;
+}
+.wallet-setting {
+    padding-left: 25px;
+}
+#membership_lable {
+    padding-right: 10px;
+}
+.member-program .setting-switch {
+    margin-top: -2px;
+}
+.ar-url {
+    width: 150px;
+    display: inline-block;
+    float: none;
+}
+.wallet-switch {
+    float: left;
+    width: 100%;
+    padding-right: 60px;
+    position: relative;
+    border-top: 1px dotted #ececec;
+    padding: 33px 60px 33px 0px;
+	
+	.setting-switch {
+		position: absolute;
+		right: 0px;
+		top: 50%;
+		margin-top: -12px;
+	}
+}

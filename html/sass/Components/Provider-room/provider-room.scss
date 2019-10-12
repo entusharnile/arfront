@@ -1,0 +1,17 @@
+.pro-info{color:#667680;font-size:14px;display:block; white-space: nowrap; overflow: hidden;text-overflow: ellipsis;}
+.pro-date{color:#667680;font-size:12px;display:block;white-space: nowrap; overflow: hidden;text-overflow: ellipsis;}
+.dropsown-btn .dropdown-toggle{border:1px solid $blue!important;color: $blue;padding:6px 8px 6px 15px;background:none;}
+.dropsown-btn .dropdown-toggle:hover, .dropsown-btn .dropdown-toggle:focus{border-color: $blue;color:#ffffff;background:$blue;}
+.dropsown-btn .dropdown-menu a{font-size:15px;}
+.dropsown-btn .dropdown-menu{left:inherit;right:0px;margin:0px;padding:0px;overflow:hidden;}
+.dropsown-btn .dropdown-menu a:hover{color:#ffffff;}
+.dropsown-btn .dropdown{visibility:hidden;}
+.table-updated-tr:hover .dropsown-btn .dropdown{visibility:visible;}
+.dropsown-btn .dropdown-toggle svg{margin-left:6px;}
+.setting-table tr:nth-last-child(2) .dropsown-btn .dropdown-menu{top: inherit;bottom: 35px;}
+.setting-table tr:last-child .dropsown-btn .dropdown-menu{top: inherit;bottom: 35px;}
+.setting-table tr:first-child .dropsown-btn .dropdown-menu{top: 35;bottom: inherit;}
+.dropsown-btn .dropdown-menu{top:35px;}
+.dropsown-btn .dropdown-menu a{font-size: 14px;font-family: 'Lato', sans-serif;color: #667680!important;}
+.dropsown-btn .dropdown-menu a:hover{color:#ffffff!important;}
+a.sign-procedure-class {padding: 5px 10px!important;}

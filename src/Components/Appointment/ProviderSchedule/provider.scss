@@ -1,0 +1,53 @@
+.calendar-provider-schedule {
+	.rbc-calendar{
+		min-height: 600px;
+		.rbc-toolbar{
+			.rbc-btn-group{
+				display: block;
+			}
+		}
+
+	}
+}
+.cal-month-week-day-outer{
+	text-align:center;padding:0px;
+	.btn-week,.btn-day{
+		min-width: 70px;
+    border-radius: 3px 0px 0px 3px;
+    margin-right: -2px;
+    display: inline-block;
+    border-right: 1px solid #ececec;
+		text-align:center;
+	}
+	.btn-week.selected,.btn-day.selected{
+		background: #d2e2ea;
+		color: #404040
+	}
+}
+.provider-cal-filter{float:right;margin-right:15px;}
+.provider-m-d-w{max-width: 250px;width: 250px;}
+.provider-schedule-view .rbc-day-slot .rbc-event {
+    border:none!important;
+ }
+.provider-schedule-popup-height{height: 4000px;max-height: 400px;}
+.conflict-date{color:#404040;font-size:14px;}
+.conflict-date-footer{padding: 10px 0px;}
+.editSchedulePop {min-height: 326px!important;
+max-height: 326px!important;}
+.back-txt{
+		color: #047ec3;
+    float: left;
+
+		img{
+			display: inline-block;
+			vertical-align: top;
+			margin-top: 2px;
+			margin-right: 5px;
+		}
+	}
+#business_time.providerName{margin-bottom: 17px;}
+
+.privider-calender-popup{width:80%;
+	.small-popup-header .popup-name{font-size: 18px;text-transform: inherit;}
+	.privider-calender-content{padding:30px;background:#e6eef2;float:left;width:100%;}
+}

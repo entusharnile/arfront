@@ -1,0 +1,393 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="" name="description">
+<meta content="" name="author">
+<meta content="Page scroll animation using CSS animate" name="description">
+<meta content="css animation, loading effect, animate, scroll loading, scroll animation" 
+name="keywords">
+<meta content="Jinson Abraham" name="author">
+<title>AR-Patient Portal</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet"> 
+<link href="css/common/bootstrap.css" rel="stylesheet">
+<link href="css/common/icons.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<link href="css/index.css" rel="stylesheet" type="text/css"/>
+<link href="css/caleran.min.css" rel="stylesheet" type="text/css"/>
+<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+<link href="css/custom.css" rel="stylesheet"/>
+<script src="js/moment.min.js"></script>
+<script src="js/caleran.min.js"></script>
+<script type="text/javascript">
+	$(".caleran").caleran();
+</script>
+<script type="text/javascript">
+	$(".caleran").caleran({inline: true, startOnMonday: true});
+</script>
+<script type="text/javascript">
+	  $("#caleran-ex-1-1").caleran({showOn:"top",autoAlign:true});
+</script>
+</head>
+<body>
+
+<div class="main protected">
+	<header>
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
+					<span class="sr-only">Toggle navigation</span> 
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span><span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">
+					<img src="images/logo.png"/>
+				</a> 
+			</div>
+			
+			<div id="navbar" class="navbar-collapse collapse">
+				<div class="nav-outer">
+					<ul class="nav navbar-nav right-menus">
+						<li>
+							<a id="users-logs" class="users-logs show-desktop right-menus-a" href="/dashboard/user_logs" title="User Activities"></a>
+							<a id="users-logs" class="users-logs show-mobile" href="/dashboard/user_logs">View Users Activities</a>
+						</li>
+						<li>
+						<a id="noti-icon" class="noti-icon notification show-desktop right-menus-a" href="javascript:void(0);" title="Notifications"></a>
+						<a class="noti-icon notification show-mobile" href="/dashboard/notifications" title="Notifications">Notification</a>
+						<div id="popup" class="noti-popup no-display">
+							<div id="notty-title" class="noti-title">Notifications </div>
+							<div id="notty-content" class="noti-content">
+								<div class="read">
+									Your appointment on date 12/12/2017 01:00 PM 
+									with KProvider 1 is not synced
+								</div>
+								<div class="read">
+									Your appointment on date with is not synced
+								</div>
+								<div class="read">
+									Batch li-stock of <b>Have stocks</b> has hit 
+									low stock
+								</div>
+								<div class="read">
+									Batch ny-stock of <b>Have stocks</b> has hit 
+									low stock
+								</div>
+								<div class="read">
+									Batch 54545 of <b>Ttt</b> has hit low stock
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +19546637556
+								</div>
+								<div class="read">
+									New SMS received from +19546637556
+								</div>
+							</div>
+							<div id="notty-footer" class="noti-footer">
+								<a href="/dashboard/sms_notifications">See All</a>
+							</div>
+						</div>
+						</li>
+						<li class="arow-link-outer">
+							<span class="arow-link">
+								<div id="headerUserImage" class="user-picture"></div>
+								<span class="name-txt">Ganesh Kompella </span>
+							</span>
+						</li>
+						<li>
+							<a class="setting show-desktop right-menus-a" href="/settings/profile" title="Settings"></a>
+							<a class="setting show-mobile" href="/settings/profile">Settings</a> 
+						</li>
+						<li>
+							<a class="logout show-desktop right-menus-a" href="/accounts/logout" title="Logout"></a>
+							<a class="logout show-mobile" href="/accounts/logout"><i class="icon-Power-2"></i>Log Out</a> 
+						</li>
+					</ul>
+					<ul class="nav navbar-nav main-navbar">
+						<li class=""><a href="/dashboard">Dashboard</a></li>
+						<li class=""><a href="/patients/manage">Clients</a> </li>
+						<li class=""><a href="/appointments/index">Appointments</a></li>
+						<li class="active"><a href="/sales/index">Sales</a></li>
+						<li class=""><a href="/inventory/products/active">Inventory</a></li>
+						<li class=""><a href="/analytics/reports">Reports</a></li>
+						<li class=""><a href="/marketing/dashboard">Surveys</a></li>
+						<li class=""><a href="/MDRooms/pending">MD's Room</a></li>
+						<li class=""><a href="/ProvidersRooms/pending">Provider's Room</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	
+<div id="content">
+	<div class="container-fluid content setting-wrapper">
+
+
+	<div class="wide-popup">
+		<div class="modal-blue-header">
+			<a href="#" class="popup-cross">×</a>
+			
+<!--
+			<i class="fas fa-angle-left slide-arrows"></i>
+-->
+			<span class="popup-blue-name">Patient 693 - test base 2</span>
+<!--
+			<i class="fas fa-angle-right slide-arrows"></i>
+-->
+			
+			<div class="popup-new-btns">
+<!--
+				<a href="#" class="new-blue-btn">Sign</a>
+-->
+			</div>
+		</div>
+		
+		<div class="wide-popup-wrapper time-line">
+			<div class="settings-subtitle m-b-20">Procedure Details</div>
+		
+		
+		<div class="timeline-outer row procedure-popup no-margin no-bg">	
+			
+			
+			<div class="col-md-12 procedure-name-time-top popup-pro-name-outer">
+				
+					<div class="procedure-name-time">
+							<div class="pro-name-section">
+								<a class="modal-link  pro-name" data-url="/patients/add_procedure/1984/10179"><h4>Procedure #6</h4></a>
+								<p class="pro-time">12/11/2018 at 06:02 PM</p>
+							</div>
+						</div>
+						<h5 class="proc-cost">$9.15</h5>
+					</div>
+			
+				
+					<div class="col-md-6 timeline-left">
+						<center>
+							<a class="example-image-link left-big-img" href="http://beta.aestheticrecord.com/media/juvlystorage/procedureImages/photo1542292774840.jpg" data-lightbox="10252_front_image">								
+								<img src="http://beta.aestheticrecord.com/media/juvlystorage/procedureImages/thumb_photo1542292774840.jpg">
+							</a>
+						</center>
+						<div class="timeline-detail">
+							<h4>Treatment Summary</h4>
+							<ul class="treat-sumry profile-treat-sumry no-padding">
+								<li><label class="sorry-no-record">Sorry, No record found </label></li>
+							</ul>
+							<div class="tracbi-outer">
+								<div class="provder-md">
+									<h5><label class="popup-input-field-name">Provider</label> <span class="popup-field-box"> A Provider</span></h5>
+								</div>
+							</div>
+						<div>
+						<a class="pull-left sign-fill line-btn" data-url="">Consents Signed <img src="images/cross-icon-new.png"></a>
+						<a class="pull-right sign-fill line-btn" data-url="">Questionnaires Filled<img src="images/cross-icon-new.png"></a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-6 timeline-right">
+				<div id="10252" class="carousel slide" data-ride="carousel" data-interval="false">
+					<div class="carousel-inner">
+						<div class="item active">
+							<div class="right-images">
+								<div class="images-half">
+									<a class="example-image-link" href="/img/no-image-vertical.png" data-lightbox="10252_left_image_45">
+										<img src="images/no-image-vertical.png">
+									</a>
+								</div>
+								<div class="images-half pull-right">
+									<a class="example-image-link" href="/img/no-image-vertical.png" data-lightbox="10252_right_image_45">
+										<img src="images/no-image-vertical.png">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="right-images">
+								<div class="images-half">
+									<a class="example-image-link" href="/img/no-image-vertical.png" data-lightbox="10252_left_image">
+										<img src="images/no-image-vertical.png">
+									</a>
+								</div>
+								<div class="images-half pull-right">
+									<a class="example-image-link" href="/img/no-image-vertical.png" data-lightbox="10252_right_image">
+										<img src="images/no-image-vertical.png">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="right-images">
+								<div class="images-half">
+									<a class="example-image-link" href="/img/no-image-vertical.png" data-lightbox="10252_left_image">
+										<img src="images/no-image-vertical.png">
+									</a>
+								</div>
+								<div class="images-half pull-right">
+									<a class="example-image-link" href="/img/no-image-vertical.png" data-lightbox="10252_right_image">
+										<img src="images/no-image-vertical.png">
+									</a>
+								</div>
+								<div class="images-full">
+									<a class="example-image-link" href="/img/no-image-horizontal.png" data-lightbox="10252_pro_image">
+										<img src="images/no-image-horizontal.png">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+						
+				<div class="trac-right-btn-outer">
+					<a class="modal-link line-btn pull-left" data-url="/patients/procedure_notes/1984/10252">View Notes (0)</a>
+					<a class="line-btn pull-right" href="javascript:void(0)">More Photos (0)</a>
+					<a class="line-btn marketing-photo modal-link " data-url="/patients/view_treatment_marking_images/10252" href="javascript:void(0);">View treatment markings</a>				
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<div class="settings-subtitle m-b-20">Traceability Details</div>
+		
+		<p class="no-record">No Injection Found</p>
+		
+		<div class="settings-subtitle m-b-20">Notes <a href="#" class="new-blue-btn pull-right">Add/Edit Notes</a></div>
+		
+		<div class="note-timeline">
+			
+			<div class="row">
+				<div class="circle"></div>
+				<div class="col-sm-4 col-xs-12 note-subject">
+					<h4>Ganesh Kompella left a note</h4>
+					<p>10 Dec 2018 06:04 am</p>
+				</div>
+				<div class="col-sm-6 col-xs-12" id="note-content">
+					<div class="note-content">"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum sit amet justo ac laoreet. Vivamus a ex at sem rutrum viverra. Vivamus non pellentesque sem. Nunc ac ultrices urna, sed malesuada elit. Phasellus vitae diam felis. Nunc vestibulum justo id ligula hendrerit, faucibus placerat nunc laoreet. Ut fringilla lectus orci, a vulputate ante ornare eget. Donec fringilla vel libero a mattis.<br><span class="hashTag">test1</span> <span class="hashTag">procedure2</span> <span class="hashTag">customer</span> <span class="hashTag">note</span> 
+					</div>
+					<textarea class="no-display">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+					"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum sit amet justo ac laoreet. Vivamus a ex at sem rutrum viverra. Vivamus non pellentesque sem. Nunc ac ultrices urna, sed malesuada elit. Phasellus vitae diam felis. Nunc vestibulum justo id ligula hendrerit, faucibus placerat nunc laoreet. Ut fringilla lectus orci, a vulputate ante ornare eget. Donec fringilla vel libero a mattis.</textarea>
+				</div>
+				<div class="col-sm-2 col-xs-12 no-padding">
+					<a id="edit-note" class="easy-link">Edit</a>
+					<a id="delete-note" class="easy-link">Delete</a>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="circle"></div>
+				<div class="col-sm-4 col-xs-12 note-subject">
+					<h4>Ganesh Kompella left a note</h4>
+					<p>10 Dec 2018 06:04 am</p>
+				</div>
+				<div class="col-sm-6 col-xs-12" id="note-content">
+					<div class="note-content">"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum sit amet justo ac laoreet. Vivamus a ex at sem rutrum viverra. Vivamus non pellentesque sem. Nunc ac ultrices urna, sed malesuada elit. Phasellus vitae diam felis. Nunc vestibulum justo id ligula hendrerit, faucibus placerat nunc laoreet. Ut fringilla lectus orci, a vulputate ante ornare eget. Donec fringilla vel libero a mattis.<br><span class="hashTag">test1</span> <span class="hashTag">procedure2</span> <span class="hashTag">customer</span> <span class="hashTag">note</span> 
+					</div>
+					<textarea class="no-display">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+					"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum sit amet justo ac laoreet. Vivamus a ex at sem rutrum viverra. Vivamus non pellentesque sem. Nunc ac ultrices urna, sed malesuada elit. Phasellus vitae diam felis. Nunc vestibulum justo id ligula hendrerit, faucibus placerat nunc laoreet. Ut fringilla lectus orci, a vulputate ante ornare eget. Donec fringilla vel libero a mattis.</textarea>
+				</div>
+				<div class="col-sm-2 col-xs-12 no-padding">
+					<a id="edit-note" class="easy-link">Edit</a>
+					<a id="delete-note" class="easy-link">Delete</a>
+				</div>
+			</div>
+			
+			
+		</div>
+		
+		
+		</div>
+		
+		
+	</div>
+
+		
+	</div>			
+</div>
+
+<footer class="main-footer">
+	<div class="container-fluid">
+		<span class="pull-right">
+			©2018 Aesthetic Record. All Rights Reserved. 
+		</span>
+	</div>
+</footer>
+</div>
+
+
+
+
+ <script type="text/javascript">
+    $("#caleran-ex-7").caleran();
+    $(".caleran-type-selector").click(function(){
+      $("#caleran-ex-7").data("caleran").destroy();
+      $("#caleran-ex-7").caleran({
+        singleDate: $("input[name='caleran-type-selector']:checked").val() == "single" ? true : false
+      });
+    });
+  </script>
+  
+   <script type="text/javascript">
+          $("#caleran-ex-7").caleran({ranges: [
+              {
+                  title: "Today",
+                  startDate: moment(),
+                  endDate: moment()
+              },
+              {
+                  title: "Yesterday",
+                  startDate: moment().subtract(1,"days"),
+                  endDate: moment().subtract(1,"days")
+              },
+              {
+                  title: "This week",
+                  startDate: moment().startOf("week"),
+                  endDate: moment().endOf("week")
+              },
+              {
+                  title: "Last week",
+                  startDate: moment().subtract(1,"weeks").startOf("week"),
+                  endDate: moment().subtract(1,"weeks").endOf("week")
+              },
+              {
+                  title: "This month",
+                  startDate: moment().startOf("month"),
+                  endDate: moment().endOf("month")
+              },
+              {
+                  title: "Last month",
+                  startDate: moment().subtract(1,"months").startOf("month"),
+                  endDate: moment().subtract(1,"months").endOf("month")
+              },
+              {
+                  title: "This year",
+                  startDate: moment().startOf("year"),
+                  endDate: moment().endOf("year")
+              },
+              {
+                  title: "Last year",
+                  startDate: moment().subtract(1,"years").startOf("year"),
+                  endDate: moment().subtract(1,"years").endOf("year")
+              }
+          ]});
+      </script>
+</body>
+</html>

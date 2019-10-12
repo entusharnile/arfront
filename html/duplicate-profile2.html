@@ -1,0 +1,440 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="" name="description">
+<meta content="" name="author">
+<meta content="Page scroll animation using CSS animate" name="description">
+<meta content="css animation, loading effect, animate, scroll loading, scroll animation" 
+name="keywords">
+<meta content="Jinson Abraham" name="author">
+<title>AR-Patient Portal</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" 
+rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" 
+rel="stylesheet">
+<link href="css/common/bootstrap.css" rel="stylesheet">
+<link href="css/common/icons.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="main protected">
+	<header>
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
+					<span class="sr-only">Toggle navigation</span> 
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span><span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">
+					<img src="images/logo.png"/>
+				</a> 
+			</div>
+			
+			<div id="navbar" class="navbar-collapse collapse">
+				<div class="nav-outer">
+					<ul class="nav navbar-nav right-menus">
+						<li>
+							<a id="users-logs" class="users-logs show-desktop right-menus-a" href="/dashboard/user_logs" title="User Activities"></a>
+							<a id="users-logs" class="users-logs show-mobile" href="/dashboard/user_logs">View Users Activities</a>
+						</li>
+						<li>
+						<a id="noti-icon" class="noti-icon notification show-desktop right-menus-a" href="javascript:void(0);" title="Notifications"></a>
+						<a class="noti-icon notification show-mobile" href="/dashboard/notifications" title="Notifications">Notification</a>
+						<div id="popup" class="noti-popup no-display">
+							<div id="notty-title" class="noti-title">Notifications </div>
+							<div id="notty-content" class="noti-content">
+								<div class="read">
+									Your appointment on date 12/12/2017 01:00 PM 
+									with KProvider 1 is not synced
+								</div>
+								<div class="read">
+									Your appointment on date with is not synced
+								</div>
+								<div class="read">
+									Batch li-stock of <b>Have stocks</b> has hit 
+									low stock
+								</div>
+								<div class="read">
+									Batch ny-stock of <b>Have stocks</b> has hit 
+									low stock
+								</div>
+								<div class="read">
+									Batch 54545 of <b>Ttt</b> has hit low stock
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +19546637556
+								</div>
+								<div class="read">
+									New SMS received from +19546637556
+								</div>
+							</div>
+							<div id="notty-footer" class="noti-footer">
+								<a href="/dashboard/sms_notifications">See All</a>
+							</div>
+						</div>
+						</li>
+						<li class="arow-link-outer">
+							<span class="arow-link">
+								<div id="headerUserImage" class="user-picture"></div>
+								<span class="name-txt">Ganesh Kompella </span>
+							</span>
+						</li>
+						<li>
+							<a class="setting show-desktop right-menus-a" href="/settings/profile" title="Settings"></a>
+							<a class="setting show-mobile" href="/settings/profile">Settings</a> 
+						</li>
+						<li>
+							<a class="logout show-desktop right-menus-a" href="/accounts/logout" title="Logout"></a>
+							<a class="logout show-mobile" href="/accounts/logout"><i class="icon-Power-2"></i>Log Out</a> 
+						</li>
+					</ul>
+					<ul class="nav navbar-nav main-navbar">
+						<li class=""><a href="/dashboard">Dashboard</a></li>
+						<li class="active"><a href="/patients/manage">Clients</a> </li>
+						<li class=""><a href="/appointments/index">Appointments</a></li>
+						<li class=""><a href="/sales/index">Sales</a></li>
+						<li class=""><a href="/inventory/products/active">Inventory</a></li>
+						<li class=""><a href="/analytics/reports">Reports</a></li>
+						<li class=""><a href="/marketing/dashboard">Surveys</a></li>
+						<li class=""><a href="/MDRooms/pending">MD's Room</a></li>
+						<li class=""><a href="/ProvidersRooms/pending">Provider's Room</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	
+<div id="content">
+	<div class="container-fluid content setting-wrapper">
+
+		<div class="row duplicate-patient-title">
+			<div class="duplicate-patient-name">
+				<a class="pull-left go-back-arrow" id="go-back" data-url="/patients/manage"></a>
+				<span class="patient-count"> Merge Client: <b>First1 Import</b> </span>
+			</div>
+
+			<ul class="merge-steps">
+				<li id="step-one-li" data-popup-id="step-one" data-step-count="2" data-next-popup-id="step-two" class="merge-sel step_tab"><a><span class="step-no">1</span><label class="step-name">Information</label></a></li>
+				<li id="step-two-li" class="step_tab" data-popup-id="step-two" data-step-count="3" data-next-popup-id="step-three"><a><span class="step-no">2</span><label class="step-name">Procedures</label></a></li>
+				<li id="step-three-li" class="step_tab" data-popup-id="step-three" data-step-count="4" data-next-popup-id="step-four"><a><span class="step-no">3</span><label class="step-name">Medical History</label></a></li>
+				<li id="step-four-li" class="step_tab" data-popup-id="step-four" data-step-count="5" data-next-popup-id="step-five"><a><span class="step-no">4</span><label class="step-name">Review Merge</label></a></li>
+				<li id="step-five-li" class="next_step_tab" data-popup-id="step-five" data-step-count="5">
+				<a class="blue-btn next-step">Next Step</a>
+				</li>
+			</ul>
+		</div>
+		
+	
+			
+			
+			
+			
+			
+			
+			
+			<div class="merge-outer row" id="step-one">
+	
+	<div class="col-md-8">
+		<div class="merge-setion">
+			<div class="section-title">
+				<span class="section-title-name">Profiles Data</span>
+				<p class="section-title-p">Please select right info you want to keep in merged data</p>
+			</div>
+			<div class="merge-content">
+				
+				<div class="row merge-form-row">
+					<div class="col-sm-12">
+						<label class="merge-form-label">Profile Photo</label>
+						<div class="profile-images">
+							<div class="set_right_info merge-pic"></div>
+							<div class="set_right_info merge-pic"></div>
+							<div class="set_right_info merge-pic"></div>
+							<div class="set_right_info merge-pic"></div>
+							<div class="set_right_info merge-pic"></div>
+							<div class="set_right_info merge-pic"></div>
+							<div class="set_right_info merge-pic"></div>
+							<div class="set_right_info merge-pic"></div>
+							<div class="set_right_info merge-pic"></div>
+							<input type="hidden" class="access_portal" value="0"/>							
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-sm-6">
+					<div class="row merge-form-row">
+						<label class="merge-form-label">First name</label>
+						<div class="merge-field-outer" id="first_name_outer_box">
+							<div class="merge-plus" id="first_name" data-id="first_name">+</div>
+							<div data-value="First1" id="first_name_new_added_element1" data-id="first_name" class="set_right_info custom-input">First1</div>
+							<div data-value="First1" id="first_name_new_added_element2" data-id="first_name" class="set_right_info default-input">First1</div>
+							<div data-value="First1" id="first_name_new_added_element3" data-id="first_name" class="set_right_info default-input">First1</div>
+							<div data-value="First1" id="first_name_new_added_element4" data-id="first_name" class="set_right_info default-input">First1</div>
+							<div data-value="First1" id="first_name_new_added_element5" data-id="first_name" class="set_right_info default-input">First1</div>
+							<div data-value="First1" id="first_name_new_added_element6" data-id="first_name" class="set_right_info default-input">First1</div>
+							<div data-value="First1" id="first_name_new_added_element7" data-id="first_name" class="set_right_info default-input">First1</div>
+							<div data-value="First1" id="first_name_new_added_element8" data-id="first_name" class="set_right_info default-input">First1</div>
+							<div data-value="First1" id="first_name_new_added_element9" data-id="first_name" class="set_right_info default-input">First1</div>
+							<input type="hidden" id="first_name_ele_count" value="9"/> 
+						</div>
+					</div>
+				
+					<div class="row merge-form-row">
+						<label class="merge-form-label">last name</label>
+						<div class="merge-field-outer" id="last_name_outer_box">
+							<div class="merge-plus" id="last_name" data-id="last_name">+</div>				
+							<div data-value="Import" id="last_name_new_added_element1" data-id="last_name" class="set_right_info custom-input">Import</div>
+							<div data-value="Import" id="last_name_new_added_element2" data-id="last_name" class="set_right_info default-input">Import</div>
+							<div data-value="Import" id="last_name_new_added_element3" data-id="last_name" class="set_right_info default-input">Import</div>
+							<div data-value="Import" id="last_name_new_added_element4" data-id="last_name" class="set_right_info default-input">Import</div>
+							<div data-value="Import" id="last_name_new_added_element5" data-id="last_name" class="set_right_info default-input">Import</div>
+							<div data-value="Import" id="last_name_new_added_element6" data-id="last_name" class="set_right_info default-input">Import</div>
+							<div data-value="Import" id="last_name_new_added_element7" data-id="last_name" class="set_right_info default-input">Import</div>
+							<div data-value="Import" id="last_name_new_added_element8" data-id="last_name" class="set_right_info default-input">Import</div>
+							<div data-value="Import" id="last_name_new_added_element9" data-id="last_name" class="set_right_info default-input">Import</div>
+							<input type="hidden" id="last_name_ele_count" value="9"/> 							
+						</div>
+					</div>
+					<div class="row merge-form-row">
+						<label class="merge-form-label">Gender</label>
+						<div class="merge-field-outer" id="gender_outer_box">
+							<div class="merge-plus" id="gender" data-id="gender">+</div>			
+							<div data-value="Not disclosed" id="gender_new_added_element1" data-id="gender" class="set_right_info custom-input">Not disclosed</div>
+							<div data-value="Female" id="gender_new_added_element2" data-id="gender" class="set_right_info default-input">Female</div>
+							<input type="hidden" id="gender_ele_count" value="2"/> 							
+						</div>
+					</div>
+					<div class="row merge-form-row">
+						<label class="merge-form-label">Member Type</label>
+						<div class="merge-field-outer" id="member_type_outer_box">
+							<div class="merge-plus" id="member_type" data-id="member_type">+</div>				
+							<input type="hidden" id="member_type_ele_count" value="2"/> 							
+						</div>
+					</div>
+					<div class="row merge-form-row">
+						<label class="merge-form-label">Date of Birth</label>
+						<div class="merge-field-outer" id="date_of_birth_outer_box">
+							<div class="merge-plus" id="date_of_birth" data-id="date_of_birth">+</div>									
+							<div data-value="30 November -0001" id="date_of_birth_new_added_element1" data-id="date_of_birth" class="set_right_info custom-input">30 November -0001</div>
+							<div data-value="30 November -0001" id="date_of_birth_new_added_element2" data-id="date_of_birth" class="set_right_info default-input">30 November -0001</div>
+							<div data-value="30 November -0001" id="date_of_birth_new_added_element3" data-id="date_of_birth" class="set_right_info default-input">30 November -0001</div>
+							<input type="hidden" id="date_of_birth_ele_count" value="3"/> 
+						</div>
+					</div>
+					<div class="row merge-form-row">
+						<label class="merge-form-label">Email</label>
+						<div class="merge-field-outer" id="email_outer_box">
+							<div class="merge-plus" id="email" data-id="email">+</div>									
+								<div data-value="new@mailforspam.com" id="email_new_added_element1" data-id="email" class="set_right_info default-input full-input-width">
+									<input checked="checked" type="checkbox" data-id="email" data-value="new@mailforspam.com" class="email-input"/>
+									<div class="email-body-content">new@mailforspam.com</div>
+									<div class="check-outer">
+										<i title="Click to set as default" data-id="email" data-value="new@mailforspam.com" class="set_default_element fa fa-check email-check-green"></i>
+									</div>
+								</div>
+								<input type="hidden" id="email_ele_count" value="1"/> 
+								<input type="hidden" id="patient_emails_data" value="new@mailforspam.com"/> 
+						</div>
+					</div>
+				
+					<div class="row merge-form-row">
+						<label class="merge-form-label">Phone</label>
+						<div class="merge-field-outer" id="phone_outer_box">
+							<div class="merge-plus" id="phone" data-id="phone">+</div>
+							<div data-value="+4915257157456" id="phone_new_added_element1" data-id="phone" class="set_right_info default-input full-input-width">
+								<input checked="checked" type="checkbox" data-id="phone" data-value="+4915257157456" class="phone-input"/><div class="phone-body-content">+4915257157456</div>
+								<div class="check-outer">
+									<i title="Click to set as default" data-id="phone" data-value="+4915257157456" class="set_default_element_phone fa fa-check phone-check-green"></i>
+								</div>
+							</div>								
+							<div data-value="+14915257157456" id="phone_new_added_element2" data-id="phone" class="set_right_info default-input full-input-width">
+								<input checked="checked" type="checkbox" data-id="phone" data-value="+14915257157456" class="phone-input"/><div class="phone-body-content">+14915257157456</div>
+								<div class="check-outer">
+									<i title="Click to set as default" data-id="phone" data-value="+14915257157456" class="set_default_element_phone fa fa-check phone-check-gray"></i>
+								</div>
+							</div>
+							<input type="hidden" id="phone_ele_count" value="2"/> 
+							<input type="hidden" id="patient_phone_data" value="+4915257157456,+14915257157456"/> 
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="col-sm-6">
+					<div class="row merge-form-row">
+						<label class="merge-form-label">Address Line</label>
+						<div class="merge-field-outer" id="address_outer_box">
+							<div class="merge-plus" id="address" data-id="address">+</div>					
+							<div data-value="Line 1 1" id="address_new_added_element1" data-id="address" class="set_right_info custom-input">Line 1 1</div>
+							<div data-value="Line 1 1" id="address_new_added_element2" data-id="address" class="set_right_info default-input">Line 1 1</div>
+							<input type="hidden" id="address_ele_count" value="2"/> 
+						</div>
+					</div>
+					<div class="row merge-form-row">
+						<label class="merge-form-label">City</label>
+						<div class="merge-field-outer" id="city_outer_box">
+							<div class="merge-plus" id="city" data-id="city">+</div>
+							<input type="hidden" id="city_ele_count" value="2"/> 
+						</div>
+					</div>
+					<div class="row merge-form-row">
+						<label class="merge-form-label">State</label>
+						<div class="merge-field-outer" id="state_outer_box">
+							<div class="merge-plus" id="state" data-id="state">+</div>
+							<input type="hidden" id="state_ele_count" value="2"/> 
+						</div>
+					</div>
+					<div class="row merge-form-row">
+						<label class="merge-form-label">Country</label>
+						<div class="merge-field-outer" id="country_outer_box">
+							<div class="merge-plus" id="country" data-id="country">+</div>
+							<input type="hidden" id="country_ele_count" value="2"/> 
+						</div>
+					</div>
+					<div class="row merge-form-row">
+						<label class="merge-form-label">Zip Code</label>
+						<div class="merge-field-outer" id="zip_code_outer_box">
+							<div class="merge-plus" id="zip_code" data-id="zip_code">+</div>									
+								<div data-value="79000" id="zip_code_new_added_element1" data-id="zip_code" class="set_right_info custom-input">79000</div>
+								<div data-value="79000" id="zip_code_new_added_element2" data-id="zip_code" class="set_right_info default-input">79000</div>
+								<input type="hidden" id="zip_code_ele_count" value="2"/> 
+							</div>
+						</div>
+					</div>
+				
+				
+			</div>
+		</div>
+	</div>
+	
+	<div class="col-md-4 merge-info">
+		<div class="merge-setion">
+			<div class="section-title header-blue">
+				<span class="section-title-name">Merged Profile Data</span>
+				<input type="hidden" id="all_patient_ids" value="1858,1998,2004,2010,2016,2022,2032,2036,2047"/>
+				<input type="hidden" id="selected_pic_name" value=""/>
+				<input type="hidden" id="user_image_url" value="images/user.png"/>
+				<input type="hidden" id="step_visited" value="1"/>
+			</div>
+			<div class="merge-content new-popup-field-outer ">
+				<div class="col-sm-12 new-popup-form-section">
+					<div class="form-group row">
+						<div class="col-lg-5">
+							<div class="merge-pro-data-img" id="user_image-right-box" style="background-image: url(images/user.png)"></div>
+						</div>
+						<div class="col-lg-7">
+							<label for="email" class="popup-input-field-name">First Name</label>
+							<div class="popup-field-box" id="first_name-right-box">First1</div>
+						</div>
+						<div class="col-lg-7">
+							<label for="email" class="popup-input-field-name">Last Name</label>
+							<div class="popup-field-box" id="last_name-right-box">Import</div>
+						</div>
+					</div>
+					
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="email" class="popup-input-field-name">Gender</label>
+							<div class="popup-field-box" id="gender-right-box">Not disclosed</div>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="email" class="popup-input-field-name">Member Type</label>
+							<div class="popup-field-box" id="member_type-right-box"></div>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="email" class="popup-input-field-name">Date of Birth</label>
+							<div class="popup-field-box" id="date_of_birth-right-box">30 November -0001</div>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="email" class="popup-input-field-name">Email</label>
+							<div class="popup-field-box" id="email-right-box">new@mailforspam.com</div>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="email" class="popup-input-field-name">Phone</label>
+							<div class="popup-field-box" id="phone-right-box">+4915257157456</div>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="email" class="popup-input-field-name">Address Line</label>
+							<div class="popup-field-box" id="address-right-box">Line 1 1</div>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-lg-6">
+							<label for="email" class="popup-input-field-name">City</label>
+							<div class="popup-field-box" id="city-right-box"></div>
+						</div>
+						<div class="col-lg-6">
+							<label for="email" class="popup-input-field-name">State</label>
+							<div class="popup-field-box" id="state-right-box"></div>
+						</div>
+						<div class="col-lg-6">
+							<label for="email" class="popup-input-field-name">Country</label>
+							<div class="popup-field-box" id="country-right-box"></div>
+						</div>
+						<div class="col-lg-6">
+							<label for="email" class="popup-input-field-name">Zipcode</label>
+							<div class="popup-field-box" id="zip_code-right-box">79000</div>
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+	
+</div>
+			
+			
+			
+
+
+	</div>
+</div>
+	
+
+<footer class="main-footer">
+	<div class="container-fluid">
+		<span class="pull-right">
+			©2018 Aesthetic Record. All Rights Reserved. 
+		</span>
+	</div>
+</footer>
+	
+	
+</div>
+
+</body>
+
+</html>

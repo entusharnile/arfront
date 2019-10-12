@@ -1,0 +1,344 @@
+.cal-search{
+	background:#f7fbfd;
+
+	svg{margin-left:9px;}
+	.setting-search-input{padding-left:31px;}
+}
+.calendar-btn{
+	border: none;
+    padding:0px;
+    height: 32px;
+    font-size: 13px;
+    color:$blue;
+    background-color: #fff;
+    @include border-radius(3px);
+	@include box-shadow(0, 1px, 2px, 0, rgba(0,0,0,0.15));
+	display:inline-block;
+	vertical-align:top;
+	line-height:33px;
+
+	&.today-btn{min-width:100px;@include border-radius(3px 0px 0px 3px);margin-right:-2px;display: inline-block;
+    border-right: 1px solid #ececec;}
+	&.cal-date-btn{min-width:100px;@include border-radius(0px 3px 3px 0px);min-width:200px;color:#404040;}
+}
+.cal-arrow{
+	height: 32px;
+	display:inline-block;
+	vertical-align:top;
+	padding:0px 6px;
+	line-height:30px;
+}
+.calendar-dropdown{
+	border: none;
+    padding:0px 16px 0px 13px;
+    height: 32px;
+    font-size: 13px;
+    color:#404040;;
+    background-color: #fff;
+    @include border-radius(3px);
+	@include box-shadow(0, 1px, 2px, 0, rgba(0,0,0,0.15));
+	display:inline-block;
+	vertical-align:top;
+	line-height:33px;
+	margin-left:11px;
+	margin-bottom:10px;
+	text-align:left;
+	min-width:127px;
+	position:relative;
+	float:right;
+
+	a{padding:0px 0px 0px 10px;}
+	a.cal-arrow{position: absolute;top: 0px;right: 6px;}
+	&.show ul{display:block;}
+	.cal-filter-outer{float: left;width: 100%;padding: 7px 15px;border-bottom: 1px solid #ececec;}
+	.line-btn{line-height: 28px!important;padding: 0px 10px;min-width:inherit;}
+
+	.filter-wid-apply-btn{
+		width: auto;
+	    position: absolute;
+	    right: 0px;
+	    top: 45px;
+	    background: #ffffff;
+	    border-radius: 3px;
+    	@include border-radius(3px);
+    	@include box-shadow(0, 1px, 2px, 0, rgba(0,0,0,0.15));
+    	z-index:9;
+
+    	ul.cal-dropdown{top:0px;position:relative;}
+	}
+}
+ul.cal-dropdown{
+	width:600px;
+	position:absolute;
+	right:0px;
+	top:45px;
+	background:#ffffff;
+	@include box-shadow(0, 1px, 2px, 0, rgba(0,0,0,0.15));
+    @include border-radius(3px);
+    z-index:9;
+    max-height: 306px;
+    overflow-y: auto;
+
+    li{
+		width:33%;
+		display:inline-block;
+		cursor:pointer;
+		vertical-align:top;
+
+		a{
+			padding: 0px 10px;
+			outline: none;
+			display: block;
+			cursor:pointer;
+
+			label{
+				margin:0px;
+				color:#667680;
+				font-weight:normal;
+				padding-left: 24px;
+				padding-right:20px;
+				border-bottom:1px solid #ececec;
+				cursor:pointer;
+				white-space: nowrap;
+				 overflow: hidden;
+				 text-overflow: ellipsis;
+
+
+				input{
+					margin-left:0px!important;
+					display: inline-block;
+					vertical-align: top;
+					margin-top: 7px;
+					position: absolute!important;
+					left: 0px;
+				}
+				span{
+					position: absolute;
+					right: 0px;
+					top: 9px;
+					height: 15px;
+					width: 15px;
+				}
+			}
+
+			&:hover input{visibility:visible;}
+		}
+    }
+}
+ul.cal-dropdown.cal-service-dropdown{
+	li{width:49.5%;}
+}
+.cal-date-btn-outer{text-align:center;padding:0px;}
+.cal-filter{padding-left:0px;text-align:right;}
+.cal-title{
+	float: left;
+    font-size: 20px;
+    font-weight: 400;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 26px;
+    margin-top: 10px;
+}
+.clinicname-dropdown{
+	width:197px!important;
+	left:0px;
+	right:inherit;
+
+	li{
+		width:100%!important;
+
+		label{padding:0px!important;}
+	}
+}
+
+.existing-user{
+	width:100%;
+	display:block;
+
+	a{margin-top:2px;}
+	img{height:22px;}
+	img.male-model{height:20px;}
+}
+.appo-booking-info{
+	width:100%;
+	display:block;
+
+	span{
+		color:#667680;
+	}
+}
+.medical-pro-color {
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    right:0px;
+    top: 4px;
+    background: #ddd;
+}
+.Dynamic-Ordering{
+	margin-top:5px;
+	margin-left:5px;
+	input{visibility:hidden;}
+}
+
+.react-datepicker-popper{z-index: 5 !important;}
+.appoint-pro-edit {
+    position: absolute;
+    left: 0px;
+    right: 15px!important;
+    top: 40px;
+    background: #ffffff;
+    max-height: 354px;
+    z-index: 100;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px 0px #aaa;
+    -moz-box-shadow: 0px 1px 3px 0px #aaa;
+    -webkit-box-shadow: 0px 1px 3px 0px #aaa;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.log-appoint-his li {
+    display: block;
+    padding: 5px 12px;
+    padding-left: 21px;
+    position: relative;
+}
+.popup-input-box {
+    font-size: 14px;
+    color: #404040;
+    display: block;
+    border-bottom: 1px dotted #a3bccc;
+    background: none;
+    width: 100%;
+    font-weight: normal;
+    padding-bottom: 5px;
+    min-height: 26px;
+}
+.popup-input-label {
+    font-size: 11px!important;
+    color: #667680!important;
+    display: block;
+    text-transform: uppercase;
+}
+.popup-form label {
+    font-weight: 100;
+    font-size: 19px;
+}
+.right-field-outer .popup-input-box {
+    height: auto;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid #bfc9ce!important;
+    padding: 0px!important;
+    color: #0472b3!important;
+    border-radius: 0px;
+}
+#savedCC {
+    font-size: 14px;
+    color: #0472b3;
+}
+.cal-clinic{width:148px;
+	 > span{white-space: nowrap;overflow: hidden;text-overflow: ellipsis;width: 100%;display: block;}
+}
+#juvly-section{margin-bottom:0px;}
+.printable-img-title {
+    font-size: 16px;
+    font-weight: 300;
+    color: #252525;
+    margin: -10px 0px 15px;
+}
+.printable-img {
+    text-align: center;
+    width: 100%;
+    border: 1px solid #dddddd;
+    margin-bottom:5px;
+    float: left;
+    padding-top: 17px;
+
+    img {
+	    max-width: 100%;
+	    height: 250px;
+	}
+
+    &.active, &:hover {
+	    border: 1px solid #2682c5;
+	}
+
+	> div{
+		margin-bottom: 5px;
+		font-size: 12px;
+		color: #2682c5;
+	}
+}
+
+.setting-field-outer .tag-auto-select {
+	width: 100%;
+	.field_error{border:none!important;
+		> div:first-child{border-bottom: 1px solid #e74c3c !important;}
+	}
+	svg{width:16px;}
+}
+.no-popup-scroll{overflow:inherit;display:table;
+	.small-popup-content{max-height:inherit;overflow:inherit;}
+}
+.allTimeDisplay{
+	width: 100%;
+	text-align: right;
+	margin-right: 5px;
+	margin-top: 2px;
+	float: right;
+
+	img{
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.allTimeLabel{
+		display: inline-block;
+		padding-left: 5px;
+
+		#timezone_after_calendar{
+			font-weight: 400;
+			display: inline-block;
+			color: #000;
+		}
+	}
+}
+#business_time{
+	width: 100%;
+	display: block;
+	margin: -35px 0px 0px;
+	text-align: center;
+	text-indent: 0px;
+	height: 20px;
+	font-size: 14px;
+	float: left;
+
+	&.providerName{margin:-11px 0px 0px;}
+}
+#business_time.providerName{font-size:16px;}
+.logout:hover {color:#000000;}
+.fullscreen-enabled {
+  background: #e6eef2 !important;
+  padding:20px;
+  padding-top: 50px;
+}
+.fullscreen .new-loader{z-index:11000;}
+.fullscreen-enabled{
+	.week-view-calendar {height: 90% !important}
+	.day-view-calendar {height: 90% !important}
+	.calender-btns{display:none;}
+	.cal-filter{float:right;padding-right:18px;}
+}
+.goFullScreen{
+	margin:-11px 0px 11px;
+	padding:3px 10px;
+	font-size:13px;
+
+	svg{
+		position: static;
+		display: inline-block;
+		margin-right:3px;
+	}
+}

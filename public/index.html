@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <meta name="description" content="Searching For Hipaa compliance secure photo storage app ? Visit now For Medical Photography Software, Secure Photo Storage App, Medical Imaging Cloud Storage">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <script src="%PUBLIC_URL%/uaparser.js"></script>
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    
+    <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+    <title>Aesthetic Record</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+    <script id="stripe-js" src="https://js.stripe.com/v3/" async></script>
+    <script src="%PUBLIC_URL%/intercom.js" async></script>
+    
+    <script>
+    if (typeof Object.assign != 'function') {
+      Object.assign = function(target) {
+        'use strict';
+        if (target == null) {
+          throw new TypeError('Cannot convert undefined or null to object');
+        }
+
+        target = Object(target);
+        for (var index = 1; index < arguments.length; index++) {
+          var source = arguments[index];
+          if (source != null) {
+            for (var key in source) {
+              if (Object.prototype.hasOwnProperty.call(source, key)) {
+                target[key] = source[key];
+              }
+            }
+          }
+        }
+        return target;
+      };
+    }
+    </script>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="container-id"></div>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <script type="text/javascript">
+      var IEhtml="";
+      var parser = new UAParser();
+      var result = parser.getResult();
+
+      var name = result.browser.name;
+      var version = result.browser.version;
+
+      function isIE(){
+        return name == 'IE' || name == 'Edge'
+      }
+
+      if (isIE ()) {
+         IEhtml = '<div class="browser-support"><img src="images/logo.png" class="browser-ar-logo"/><div class="browser-support-wrapper"><div class="browse-title">You seem to be using an unsupported browser</div><p>To get the most out of using the new Aesthetic Record<br/> please login to the new experience with a supported browser.</p><ul><li><a href="https://www.google.com/chrome/"><img src="images/chrome.png"/><span>Chrome</span></a></li><li><a href="https://www.mozilla.org/en-US/firefox/new/"><img src="images/firefox.png"/><span>Firefox</span></a></li><li><a href="https://support.apple.com/downloads"><img src="images/Safari.png"/><span>Safari</span></a></li><li><a href="https://www.opera.com/download"><img src="images/opera.png"/><span>Opera</span></a></li></ul><p>Click on supported browser to download instantly.</p></div></div>';
+          
+      }
+      if(IEhtml !== '') {
+        document.getElementById('container-id').innerHTML = IEhtml;
+        document.getElementById('root').style.display = "none";       
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+.prod-price-clinic-name{margin:15px 0px;}
+.custom-txt-rule-left-padding{padding-left:50px;}
+.product-list-outer{border-left:1px solid #e6e9eb;border-right:1px solid #e6e9eb;}
+.product-list-outer td{padding:7px 10px 7px 15px!important;}
+.new-gift-card {
+    float: left;
+    width: 100%;
+    height: auto;
+    max-width:320px;
+    background-size: 100%;
+    background-position: left top;
+    position:relative;
+    @include border-radius(5px);
+    border:1px solid #ececec;
+    margin-bottom:10px;
+    
+    .gift-card{
+		width: 100%;
+		float:left;
+	}
+	.gift-card-logo{
+		position: absolute;
+		top: 102px;
+		text-align: center;
+		width: 100%;
+		left:0px;
+		
+		img{
+			max-height:40px;
+		}
+	}
+	.gift-amount{
+		position: absolute;
+		right: 0px;
+		top: 14px;
+		width: 89px;
+		font-family:'lato', Open Sans;
+		
+		.gift-amount-span{
+			float: left;
+			font-size: 15px;
+			font-weight: bold;
+			color:#0080c9;
+		}
+		.gift-amount-label{
+			float: left;
+			font-size: 30px;
+			margin: 0px;
+			line-height: 37px;
+			font-weight: bold;
+			color:#0080c9;
+		}
+	}
+}

@@ -1,0 +1,300 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="" name="description">
+<meta content="" name="author">
+<meta content="Page scroll animation using CSS animate" name="description">
+<meta content="css animation, loading effect, animate, scroll loading, scroll animation" 
+name="keywords">
+<meta content="Jinson Abraham" name="author">
+<title>AR-Patient Portal</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet"> 
+<link href="css/common/bootstrap.css" rel="stylesheet">
+<link href="css/common/icons.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<link href="css/index.css" rel="stylesheet" type="text/css"/>
+<link href="css/caleran.min.css" rel="stylesheet" type="text/css"/>
+<link href="css/custom.css" rel="stylesheet" type="text/css"/>
+<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+<link href="css/custom.css" rel="stylesheet"/>
+<script src="js/moment.min.js"></script>
+<script src="js/caleran.min.js"></script>
+<script type="text/javascript">
+	$(".caleran").caleran();
+</script>
+<script type="text/javascript">
+	$(".caleran").caleran({inline: true, startOnMonday: true});
+</script>
+<script type="text/javascript">
+	  $("#caleran-ex-1-1").caleran({showOn:"top",autoAlign:true});
+</script>
+</head>
+<body>
+
+<div class="main protected">
+	<header>
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
+					<span class="sr-only">Toggle navigation</span> 
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span><span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">
+					<img src="images/logo.png"/>
+				</a> 
+			</div>
+			
+			<div id="navbar" class="navbar-collapse collapse">
+				<div class="nav-outer">
+					<ul class="nav navbar-nav right-menus">
+						<li>
+							<a id="users-logs" class="users-logs show-desktop right-menus-a" href="/dashboard/user_logs" title="User Activities"></a>
+							<a id="users-logs" class="users-logs show-mobile" href="/dashboard/user_logs">View Users Activities</a>
+						</li>
+						<li>
+						<a id="noti-icon" class="noti-icon notification show-desktop right-menus-a" href="javascript:void(0);" title="Notifications"></a>
+						<a class="noti-icon notification show-mobile" href="/dashboard/notifications" title="Notifications">Notification</a>
+						<div id="popup" class="noti-popup no-display">
+							<div id="notty-title" class="noti-title">Notifications </div>
+							<div id="notty-content" class="noti-content">
+								<div class="read">
+									Your appointment on date 12/12/2017 01:00 PM 
+									with KProvider 1 is not synced
+								</div>
+								<div class="read">
+									Your appointment on date with is not synced
+								</div>
+								<div class="read">
+									Batch li-stock of <b>Have stocks</b> has hit 
+									low stock
+								</div>
+								<div class="read">
+									Batch ny-stock of <b>Have stocks</b> has hit 
+									low stock
+								</div>
+								<div class="read">
+									Batch 54545 of <b>Ttt</b> has hit low stock
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +19546637556
+								</div>
+								<div class="read">
+									New SMS received from +19546637556
+								</div>
+							</div>
+							<div id="notty-footer" class="noti-footer">
+								<a href="/dashboard/sms_notifications">See All</a>
+							</div>
+						</div>
+						</li>
+						<li class="arow-link-outer">
+							<span class="arow-link">
+								<div id="headerUserImage" class="user-picture"></div>
+								<span class="name-txt">Ganesh Kompella </span>
+							</span>
+						</li>
+						<li>
+							<a class="setting show-desktop right-menus-a" href="/settings/profile" title="Settings"></a>
+							<a class="setting show-mobile" href="/settings/profile">Settings</a> 
+						</li>
+						<li>
+							<a class="logout show-desktop right-menus-a" href="/accounts/logout" title="Logout"></a>
+							<a class="logout show-mobile" href="/accounts/logout"><i class="icon-Power-2"></i>Log Out</a> 
+						</li>
+					</ul>
+					<ul class="nav navbar-nav main-navbar">
+						<li class=""><a href="/dashboard">Dashboard</a></li>
+						<li class=""><a href="/patients/manage">Clients</a> </li>
+						<li class=""><a href="/appointments/index">Appointments</a></li>
+						<li class="active"><a href="/sales/index">Sales</a></li>
+						<li class=""><a href="/inventory/products/active">Inventory</a></li>
+						<li class=""><a href="/analytics/reports">Reports</a></li>
+						<li class=""><a href="/marketing/dashboard">Surveys</a></li>
+						<li class=""><a href="/MDRooms/pending">MD's Room</a></li>
+						<li class=""><a href="/ProvidersRooms/pending">Provider's Room</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	
+<div id="content">
+	<div class="container-fluid content setting-wrapper">
+		<ul class="sub-menu">
+			<li><a href="#">Reports</a></li>
+			<li><a href="#" class="active">Invoices</a></li>
+			<li><a href="#">Invoice Disclaimer Text</a></li>
+			<li><a href="#">Cash Drawer</a></li>
+			<li><a href="#">Office Sales Goals</a></li>
+		</ul>
+		
+		
+		<div class="juvly-section full-width">
+			<div class="setting-search-outer">
+				
+				<div class="search-bg new-search">
+					<i class="fas fa-search"></i>
+					<input class="setting-search-input chart_search" placeholder="Search" value=""> 
+				</div>
+				
+				<div class="new-calender pull-left">
+					<img src="images/calender.svg"/>
+					<input type="text" class="input-cal setting-search-input" id="caleran-ex-7" data-plugin-options='{"calendarCount":1,"showHeader":true,"showFooter":true}' name="calendar-input" type="text" value=""/>
+				</div>
+				
+				<div class="export pull-right gray-export">
+					<div class="dropdown pull-left">
+					<button class="btn btn-default dropdown-toggle" type="" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+						Export		
+					<i class="stack-down-open"></i>
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+						<li><a href="javascript:void(0);" onclick="javascript:export_patient('csv');">Export as CSV</a></li>
+						<li><a href="javascript:void(0);" onclick="javascript:export_patient('excel');">Export as Excel</a></li>
+					</ul>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="table-responsive">
+					<table class="table-updated setting-table min-w-1000">
+						<thead class="table-updated-thead">				
+							<tr>
+								<th class="col-xs-1 table-updated-th">Date</th>				
+								<th class="col-xs-1 table-updated-th">Client</th>				
+								<th class="col-xs-2 table-updated-th">Invoice No.</th>				
+								<th class="col-xs-1 table-updated-th">Employee</th>				
+								<th class="col-xs-1 table-updated-th">Items</th>				
+								<th class="col-xs-1 table-updated-th text-right">Status</th>				
+								<th class="col-xs-1 table-updated-th text-right">Net Sale</th>				
+								<th class="col-xs-1 table-updated-th text-right">Tax</th>				
+								<th class="col-xs-1 table-updated-th text-right">Tip</th>				
+								<th class="col-xs-1 table-updated-th text-right no-padding-left">Processing Fee</th>				
+								<th class="col-xs-1 table-updated-th text-right no-padding-left">Total Collected</th>				
+							</tr>		
+						</thead>
+						<tbody class="ajax_body">
+							<tr class="table-updated-tr">
+								<td class="col-xs-1 table-updated-td">12/28/2018 8:48 AM</td>
+								<td class="col-xs-1 table-updated-td">Jen Parker</td>
+								<td class="col-xs-2 table-updated-td">JR0011546004866664</td>
+								<td class="col-xs-1 table-updated-td">Ajay Verma</td>
+								<td class="col-xs-1 table-updated-td">Botox</td>
+								<td class="col-xs-1 table-updated-td text-right">Paid</td>
+								<td class="col-xs-1 table-updated-td text-right">$3.00</td>
+								<td class="col-xs-1 table-updated-td text-right">$0.15</td>
+								<td class="col-xs-1 table-updated-td text-right">$0.00</td>
+								<td class="col-xs-1 table-updated-td text-right">$0.11</td>
+								<td class="col-xs-1 table-updated-td text-right">$3.15</td>
+							</tr>
+
+
+
+
+							<tr>
+								<tr class="table-updated-tr">
+									<td class="no-record no-float" colspan="11">Sorry, No record found</td>
+								</tr>
+							</tr>
+
+						</tbody>
+					</table>	
+				</div>
+			
+			
+			
+			
+		</div>
+		
+	</div>			
+</div>
+
+<footer class="main-footer">
+	<div class="container-fluid">
+		<span class="pull-right">
+			©2018 Aesthetic Record. All Rights Reserved. 
+		</span>
+	</div>
+</footer>
+</div>
+
+
+
+
+ <script type="text/javascript">
+    $("#caleran-ex-7").caleran();
+    $(".caleran-type-selector").click(function(){
+      $("#caleran-ex-7").data("caleran").destroy();
+      $("#caleran-ex-7").caleran({
+        singleDate: $("input[name='caleran-type-selector']:checked").val() == "single" ? true : false
+      });
+    });
+  </script>
+  
+   <script type="text/javascript">
+          $("#caleran-ex-7").caleran({ranges: [
+              {
+                  title: "Today",
+                  startDate: moment(),
+                  endDate: moment()
+              },
+              {
+                  title: "Yesterday",
+                  startDate: moment().subtract(1,"days"),
+                  endDate: moment().subtract(1,"days")
+              },
+              {
+                  title: "This week",
+                  startDate: moment().startOf("week"),
+                  endDate: moment().endOf("week")
+              },
+              {
+                  title: "Last week",
+                  startDate: moment().subtract(1,"weeks").startOf("week"),
+                  endDate: moment().subtract(1,"weeks").endOf("week")
+              },
+              {
+                  title: "This month",
+                  startDate: moment().startOf("month"),
+                  endDate: moment().endOf("month")
+              },
+              {
+                  title: "Last month",
+                  startDate: moment().subtract(1,"months").startOf("month"),
+                  endDate: moment().subtract(1,"months").endOf("month")
+              },
+              {
+                  title: "This year",
+                  startDate: moment().startOf("year"),
+                  endDate: moment().endOf("year")
+              },
+              {
+                  title: "Last year",
+                  startDate: moment().subtract(1,"years").startOf("year"),
+                  endDate: moment().subtract(1,"years").endOf("year")
+              }
+          ]});
+      </script>
+</body>
+</html>

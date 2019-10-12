@@ -1,0 +1,1141 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta content="" name="description">
+	<meta content="" name="author">
+	<meta content="Page scroll animation using CSS animate" name="description">
+	<meta content="css animation, loading effect, animate, scroll loading, scroll animation" name="keywords">
+	<meta content="Jinson Abraham" name="author">
+	<title>AR-Patient Portal</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
+		rel="stylesheet">
+	<link href="css/common/bootstrap.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<link href="css/index.css" rel="stylesheet" type="text/css">
+	<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"
+		integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0"
+		crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+	<div class="main protected">
+		<header>
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed"
+						data-target="#navbar" data-toggle="collapse" type="button">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span><span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/">
+						<img src="images/logo.png" />
+					</a>
+				</div>
+
+				<div id="navbar" class="navbar-collapse collapse">
+					<div class="nav-outer">
+						<ul class="nav navbar-nav right-menus">
+							<li>
+								<a id="users-logs" class="users-logs show-desktop right-menus-a"
+									href="/dashboard/user_logs" title="User Activities"></a>
+								<a id="users-logs" class="users-logs show-mobile" href="/dashboard/user_logs">View Users
+									Activities</a>
+							</li>
+							<li>
+								<a id="noti-icon" class="noti-icon notification show-desktop right-menus-a"
+									href="javascript:void(0);" title="Notifications"></a>
+								<a class="noti-icon notification show-mobile" href="/dashboard/notifications"
+									title="Notifications">Notification</a>
+								<div id="popup" class="noti-popup no-display">
+									<div id="notty-title" class="noti-title">Notifications </div>
+									<div id="notty-content" class="noti-content">
+										<div class="read">
+											Your appointment on date 12/12/2017 01:00 PM
+											with KProvider 1 is not synced
+										</div>
+										<div class="read">
+											Your appointment on date with is not synced
+										</div>
+										<div class="read">
+											Batch li-stock of <b>Have stocks</b> has hit
+											low stock
+										</div>
+										<div class="read">
+											Batch ny-stock of <b>Have stocks</b> has hit
+											low stock
+										</div>
+										<div class="read">
+											Batch 54545 of <b>Ttt</b> has hit low stock
+										</div>
+										<div class="read">
+											New SMS received from +14156972918
+										</div>
+										<div class="read">
+											New SMS received from +14156972918
+										</div>
+										<div class="read">
+											New SMS received from +14156972918
+										</div>
+										<div class="read">
+											New SMS received from +19546637556
+										</div>
+										<div class="read">
+											New SMS received from +19546637556
+										</div>
+									</div>
+									<div id="notty-footer" class="noti-footer">
+										<a href="/dashboard/sms_notifications">See All</a>
+									</div>
+								</div>
+							</li>
+							<li class="arow-link-outer">
+								<span class="arow-link">
+									<div id="headerUserImage" class="user-picture"></div>
+									<span class="name-txt">Ganesh Kompella </span>
+								</span>
+							</li>
+							<li>
+								<a class="setting show-desktop right-menus-a" href="/settings/profile"
+									title="Settings"></a>
+								<a class="setting show-mobile" href="/settings/profile">Settings</a>
+							</li>
+							<li>
+								<a class="logout show-desktop right-menus-a" href="/accounts/logout" title="Logout"></a>
+								<a class="logout show-mobile" href="/accounts/logout"><i class="icon-Power-2"></i>Log
+									Out</a>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav main-navbar">
+							<li class="active"><a href="/dashboard">Dashboard</a></li>
+							<li class=""><a href="/patients/manage">Clients</a> </li>
+							<li class=""><a href="/appointments/index">Appointments</a></li>
+							<li class=""><a href="/sales/index">Sales</a></li>
+							<li class=""><a href="/inventory/products/active">Inventory</a></li>
+							<li class=""><a href="/analytics/reports">Reports</a></li>
+							<li class=""><a href="/marketing/dashboard">Surveys</a></li>
+							<li class=""><a href="/MDRooms/pending">MD's Room</a></li>
+							<li class=""><a href="/ProvidersRooms/pending">Provider's Room</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+
+
+		<div id="content">
+			<div class="container-fluid content setting-wrapper">
+
+				<div class="setting-left-menu">
+					<div class="setting-title">Settings</div>
+					<ul class="new-setting-tabs">
+						<li class="new-setting-tabs-li">
+							<a class="new-setting-tabs-a active-menu" href="javascript:void(0);">Account
+								Information <i class="fa fa-angle-down"></i></a>
+							<ul class="setting-submenu">
+								<li class="new-setting-subtabs-li">
+									<a class="new-setting-subtabs-a " data-loading="false" data-title="Profile"
+										data-url="/settings/profile" href="javascript:void(0);"
+										onclick="setting_menu(this)">Profile </a>
+								</li>
+								<li class="new-setting-subtabs-li">
+									<a class="new-setting-subtabs-a " data-loading="false" data-title="two_factor"
+										data-url="/settings/two_factor" href="javascript:void(0);"
+										onclick="setting_menu(this)">2FA Authentication
+									</a></li>
+								<li class="new-setting-subtabs-li">
+									<a class="new-setting-subtabs-a " data-loading="false"
+										data-title="Personal Information" data-url="/settings/account_information"
+										href="javascript:void(0);" onclick="setting_menu(this)">AR Account</a> </li>
+								<li class="new-setting-subtabs-li">
+									<a class="new-setting-subtabs-a sel-submenu" data-loading="false"
+										data-title="Personal Information" data-url="/settings/account_information"
+										href="javascript:void(0);" onclick="setting_menu(this)">POS</a> </li>
+							</ul>
+						</li>
+						<li class="new-setting-tabs-li"><a class="new-setting-tabs-a " href="javascript:void(0);">Manage
+								Your Clinics
+								<i class="fa fa-angle-right"></i></a>
+							<ul class="setting-submenu no-display">
+								<li class="new-setting-subtabs-li">
+									<a class="new-setting-subtabs-a " data-loading="true" data-title="Manage Clinics"
+										data-url="/settings/clinics" href="javascript:void(0);"
+										onclick="setting_menu(this)">Clinics</a>
+								</li>
+								<li class="new-setting-subtabs-li">
+									<a class="new-setting-subtabs-a " data-loading="true" data-title="Questionnares"
+										data-url="/settings/questionnaires" href="javascript:void(0);"
+										onclick="setting_menu(this)">Questionnaires</a>
+								</li>
+								<li class="new-setting-subtabs-li">
+									<a class="new-setting-subtabs-a " data-loading="true" data-title="Consent"
+										data-url="/settings/consents" href="javascript:void(0);"
+										onclick="setting_menu(this)">Consents</a>
+								</li>
+								<li class="new-setting-subtabs-li">
+									<a class="new-setting-subtabs-a " data-loading="false"
+										data-title="Procedure Templates" data-url="/settings/procedure_templates"
+										href="javascript:void(0);" onclick="setting_menu(this)">Procedure Templates</a>
+								</li>
+							</ul>
+						</li>
+						<li class="new-setting-tabs-li"><a class="new-setting-tabs-a "
+								href="javascript:void(0);">Appointments <i class="fa fa-angle-right">
+								</i></a>
+							<ul class="setting-submenu no-display">
+								<li class="new-setting-subtabs-li">
+									<a class="new-setting-subtabs-a " data-loading="false"
+										data-title="Post treatment instructions" data-url="/settings/appointments_ajax"
+										href="javascript:void(0);" onclick="setting_menu(this)">Appointment Emails &amp;
+										SMS</a> </li>
+								<li class="new-setting-subtabs-li">
+									<a class="new-setting-subtabs-a " data-loading="false"
+										data-title="Post treatment instructions"
+										data-url="/appointments/Survey_email_sms" href="javascript:void(0);"
+										onclick="setting_menu(this)">Survey Settings</a>
+								</li>
+								<li class="new-setting-subtabs-li">
+									<a class="new-setting-subtabs-a " data-loading="false"
+										data-title="Post treatment instructions" data-url="/appointments/configure_uri"
+										href="javascript:void(0);" onclick="setting_menu(this)">Configure URL’s</a>
+								</li>
+								<li class="new-setting-subtabs-li">
+									<a class="new-setting-subtabs-a " data-loading="false"
+										data-title="Post treatment instructions"
+										data-url="/appointments/cancellation_policy" href="javascript:void(0);"
+										onclick="setting_menu(this)">Cancellation
+										Policy</a> </li>
+								<li class="new-setting-subtabs-li">
+									<a class="new-setting-subtabs-a " data-loading="false"
+										data-title="Patient Portal  Access" data-url="/appointments/patient_portal"
+										href="javascript:void(0);" onclick="setting_menu(this)">Patient Portal
+										Access</a> </li>
+								<li class="new-setting-subtabs-li">
+									<a class="new-setting-subtabs-a " data-loading="false"
+										data-url="/settings/appointment_reminder" href="javascript:void(0);"
+										onclick="setting_menu(this)">Patient Appointment
+										Reminders</a> </li>
+							</ul>
+						</li>
+						<li class="new-setting-tabs-li patients"><a class="new-setting-tabs-a " data-loading="false"
+								data-url="/appointments/membership_and_wallet_setting" href="javascript:void(0);"
+								onclick="setting_menu(this)">Patients </a>
+						</li>
+						<li class="new-setting-tabs-li"><a class="new-setting-tabs-a "
+								href="javascript:void(0);">Teammates <i class="fa fa-angle-right"></i>
+							</a>
+							<ul class="setting-submenu no-display">
+								<li class="new-setting-subtabs-li">
+									<a class="new-setting-subtabs-a " data-loading="true"
+										data-title="Post treatment instructions" data-url="/settings/user"
+										href="javascript:void(0);" onclick="setting_menu(this)">Users</a>
+								</li>
+								<li class="new-setting-subtabs-li">
+									<a class="new-setting-subtabs-a " data-loading="false"
+										data-title="Post treatment instructions" data-url="/settings/roles"
+										href="javascript:void(0);" onclick="setting_menu(this)">User Role</a>
+								</li>
+							</ul>
+						</li>
+						<li class="new-setting-tabs-li"><a class="new-setting-tabs-a " href="javascript:void(0);">POS <i
+									class="fa fa-angle-right"></i></a>
+							<ul class="setting-submenu no-display">
+								<li class="new-setting-subtabs-li">
+									<a class="new-setting-subtabs-a " data-loading="false"
+										data-url="/settings/pos_dashboard" href="javascript:void(0);"
+										onclick="setting_menu(this)">Dashboard</a> </li>
+								<li class="new-setting-subtabs-li">
+									<a class="new-setting-subtabs-a " data-loading="true" data-url="/settings/payments"
+										href="javascript:void(0);" onclick="setting_menu(this)">Payments</a> </li>
+								<li class="new-setting-subtabs-li">
+									<a class="new-setting-subtabs-a " data-loading="true" data-url="/settings/payouts"
+										href="javascript:void(0);" onclick="setting_menu(this)">Payouts</a> </li>
+								<li class="new-setting-subtabs-li">
+									<a class="new-setting-subtabs-a " data-loading="false" data-url="/settings/pos"
+										href="javascript:void(0);" onclick="setting_menu(this)">POS Settings</a> </li>
+								<li class="new-setting-subtabs-li">
+									<a class="new-setting-subtabs-a " data-loading="false"
+										data-url="/settings/payment_settings" href="javascript:void(0);"
+										onclick="setting_menu(this)">Payment Settings</a> </li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+
+				<div class="setting-setion">
+					<div class="setting-container">
+						<div class="setting-title">Your current account usage</div>
+						<div class="row">
+							<div class="col-md-6 billing-stats">
+								<div class="settings-subtitle text-left">Account Usage:</div>
+								<div class="col-sm-6">
+									<div class="portal-numbers">41</div>
+									<div class="patient-portal-label">Users in Your Account</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="portal-numbers">97</div>
+									<div class="patient-portal-label">Procedures in Your Account</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="portal-numbers">9</div>
+									<div class="patient-portal-label">Total SMS Used This Month</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="portal-numbers">322</div>
+									<div class="patient-portal-label">Total Emails Used This Month</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 billing-stats">
+								<div class="settings-subtitle text-left">Data Usage:</div>
+								<div class="text-left data-usage">
+									<div class="text-center" id="chartContainer">
+										<div class="setting-total-useage-label-outer">
+											<span class="setting-total-useage" id="return-cust-center">0.02/74.47
+												GB</span>
+											<span class="setting-total-useage-label">Total</span>
+										</div>
+										<div id="data-usage-container" data-highcharts-chart="0">
+											<div id="highcharts-bedpaqz-0" class="highcharts-container "
+												style="position: relative; overflow: hidden; width: 400px; height: 230px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+												<svg version="1.1" class="highcharts-root"
+													style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;"
+													xmlns="http://www.w3.org/2000/svg" width="400" height="230"
+													viewBox="0 0 400 230">
+													<desc>Created with Highcharts 5.0.12</desc>
+													<defs>
+														<clipPath id="highcharts-bedpaqz-1">
+															<rect x="0" y="0" width="590" height="230" fill="none">
+															</rect>
+														</clipPath>
+													</defs>
+													<rect fill="#ffffff" class="highcharts-background" x="0" y="0"
+														width="400" height="230" rx="0" ry="0"></rect>
+													<rect fill="none" class="highcharts-plot-background" x="-190" y="0"
+														width="590" height="230"></rect>
+													<rect fill="none" class="highcharts-plot-border" x="-190" y="0"
+														width="590" height="230"></rect>
+													<g class="highcharts-series-group">
+														<g class="highcharts-series highcharts-series-0 highcharts-pie-series highcharts-color-undefined highcharts-tracker"
+															transform="translate(-190,0) scale(1 1)"
+															style="cursor:pointer;">
+															<path fill="#0066B4"
+																d="M 294.9805492090471 19.50000198080248 A 95.5 95.5 0 0 1 295.07604920087505 19.500030280009796 L 295.0608393607 38.600024224007825 A 76.4 76.4 0 0 0 294.9844393672377 38.60000158464197 Z"
+																transform="translate(0,0)" stroke="#ffffff"
+																stroke-width="1" stroke-linejoin="round"
+																class="highcharts-point highcharts-color-0"></path>
+															<path fill="#C7E3F5"
+																d="M 295.17154911665375 19.50015407917887 A 95.5 95.5 0 1 1 294.8673524159142 19.500092122460998 L 294.89388193273135 38.60007369796878 A 76.4 76.4 0 1 0 295.13723929332303 38.60012326334309 Z"
+																transform="translate(0,0)" stroke="#ffffff"
+																stroke-width="1" stroke-linejoin="round"
+																class="highcharts-point highcharts-color-1"></path>
+														</g>
+														<g class="highcharts-markers highcharts-series-0 highcharts-pie-series highcharts-color-undefined "
+															transform="translate(-190,0) scale(1 1)"></g>
+													</g><text x="200" text-anchor="middle" class="highcharts-title"
+														style="color:#333333;font-size:18px;fill:#333333;"
+														y="24"></text><text x="200" text-anchor="middle"
+														class="highcharts-subtitle" style="color:#666666;fill:#666666;"
+														y="24"></text>
+													<g class="highcharts-legend" transform="translate(211,64)">
+														<rect fill="none" class="highcharts-legend-box" rx="0" ry="0"
+															x="0" y="0" width="174" height="137" visibility="visible">
+														</rect>
+														<g>
+															<g>
+																<g class="highcharts-legend-item highcharts-pie-series highcharts-color-0"
+																	transform="translate(3,-2)">
+																	<rect x="2" y="9" width="12" height="12"
+																		fill="#0066B4" rx="6" ry="6"
+																		class="highcharts-point"></rect>
+																</g>
+																<g class="highcharts-legend-item highcharts-pie-series highcharts-color-1"
+																	transform="translate(3,66)">
+																	<rect x="2" y="9" width="12" height="12"
+																		fill="#C7E3F5" rx="6" ry="6"
+																		class="highcharts-point"></rect>
+																</g>
+															</g>
+														</g>
+													</g>
+												</svg>
+												<div class="highcharts-legend"
+													style="position: absolute; left: 211px; top: 64px; opacity: 1;">
+													<div style="position: absolute; left: 0px; top: 0px; opacity: 1;">
+														<div
+															style="position: absolute; left: 0px; top: 0px; opacity: 1;">
+															<div class="highcharts-legend-item highcharts-pie-series highcharts-color-0"
+																style="position: absolute; left: 3px; top: -2px; opacity: 1;">
+																<span
+																	style="font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif; font-size: 12px; position: absolute; white-space: nowrap; color: rgb(51, 51, 51); font-weight: bold; text-overflow: ellipsis; cursor: pointer; line-height: 14px; overflow: hidden; margin-left: 0px; margin-top: 0px; left: 21px; top: 8px; fill: rgb(51, 51, 51);"
+																	transform="translate(0,0)">
+																	<div class="setting-data-usage">0.02 GB / 0.03%
+																	</div>
+																	<div class="setting-free-used">Used</div>
+																</span></div>
+															<div class="highcharts-legend-item highcharts-pie-series highcharts-color-1"
+																style="position: absolute; left: 3px; top: 66px; opacity: 1;">
+																<span
+																	style="font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif; font-size: 12px; position: absolute; white-space: nowrap; color: rgb(51, 51, 51); font-weight: bold; text-overflow: ellipsis; cursor: pointer; line-height: 14px; overflow: hidden; margin-left: 0px; margin-top: 0px; left: 21px; top: 8px; fill: rgb(51, 51, 51);"
+																	transform="translate(0,0)">
+																	<div class="setting-data-usage">74.45 GB / 99.97%
+																	</div>
+																	<div class="setting-free-used">Free</div>
+																</span></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="setting-container border-top" style="display:block">
+						<div class="setting-title">Your Estimated Bill
+							<div class=" credit-balance col-sm-6 pull-right no-padding">
+								<div class="pull-right credit-text">$0.00</div>
+								<div class="pull-right credit-text">Credit Balance: &nbsp;&nbsp;</div>
+							</div>
+						</div>
+						<div class="accordion-table your-billing">
+							<div class="accordion-row accordion-head">
+								<div class="accordian-section col-xs-6 text-left">Your billing cycle (11/19/2018 -
+									12/19/2018)</div>
+								<div class="accordian-section col-xs-6 text-right">Your Expected bill for this month
+									$218.60</div>
+							</div>
+							<div class="accordion-row">
+								<div class="accordion-title profile" id="category1" data-icon="1" data-id="category1"
+									data-toggle-id="CategoryData1">
+									<div class="accordian-section col-xs-6 text-left inner-box"><i id="icon-1"
+											class="fa dasdasd fa-angle-right"></i> Your monthly subscription for 32
+										users</div>
+									<div class="accordian-section col-xs-6 text-right">$191.60</div>
+								</div>
+								<div id="CategoryData1" style="display: none;">
+									<div class="accordion-discription-row" id="CategoryData1">
+										<div class="accordian-section col-xs-6 text-left dash-icon">Deepika Attri</div>
+										<div class="accordian-section col-xs-6 text-right">$12.00</div>
+									</div>
+									<div class="accordion-discription-row" id="CategoryData1">
+										<div class="accordian-section col-xs-6 text-left dash-icon">Heena Nazz</div>
+										<div class="accordian-section col-xs-6 text-right">$12.00</div>
+									</div>
+									<div class="accordion-discription-row" id="CategoryData1">
+										<div class="accordian-section col-xs-6 text-left dash-icon">Test Admin</div>
+										<div class="accordian-section col-xs-6 text-right">$12.00</div>
+									</div>
+									<div class="accordion-discription-row" id="CategoryData1">
+										<div class="accordian-section col-xs-6 text-left dash-icon">Test Admin</div>
+										<div class="accordian-section col-xs-6 text-right">$12.00</div>
+									</div>
+									<div class="accordion-discription-row" id="CategoryData1">
+										<div class="accordian-section col-xs-6 text-left dash-icon">nidhi thakur</div>
+										<div class="accordian-section col-xs-6 text-right">$12.00</div>
+									</div>
+									<div class="accordion-discription-row" id="CategoryData1">
+										<div class="accordian-section col-xs-6 text-left dash-icon">swsprovider1 one
+										</div>
+										<div class="accordian-section col-xs-6 text-right">$12.00</div>
+									</div>
+									<div class="accordion-discription-row" id="CategoryData1">
+										<div class="accordian-section col-xs-6 text-left dash-icon">swsMd1 one</div>
+										<div class="accordian-section col-xs-6 text-right">$12.00</div>
+									</div>
+									<div class="accordion-discription-row" id="CategoryData1">
+										<div class="accordian-section col-xs-6 text-left dash-icon">swsfrontuser1 one
+										</div>
+										<div class="accordian-section col-xs-6 text-right">$12.00</div>
+									</div>
+									<div class="accordion-discription-row" id="CategoryData1">
+										<div class="accordian-section col-xs-6 text-left dash-icon">rahul ar</div>
+										<div class="accordian-section col-xs-6 text-right">$12.00</div>
+									</div>
+									<div class="accordion-discription-row" id="CategoryData1">
+										<div class="accordian-section col-xs-6 text-left dash-icon">swsadmin1 one</div>
+										<div class="accordian-section col-xs-6 text-right">$12.00</div>
+									</div>
+									<div class="accordion-discription-row" id="CategoryData1">
+										<div class="accordian-section col-xs-6 text-left dash-icon">zzzzz
+											zzzzzzzzzzzzzzzz</div>
+										<div class="accordian-section col-xs-6 text-right">$12.00</div>
+									</div>
+									<div class="accordion-discription-row" id="CategoryData1">
+										<div class="accordian-section col-xs-6 text-left dash-icon">Bat Man</div>
+										<div class="accordian-section col-xs-6 text-right">$12.00</div>
+									</div>
+									<div class="accordion-discription-row" id="CategoryData1">
+										<div class="accordian-section col-xs-6 text-left dash-icon">user11 one</div>
+										<div class="accordian-section col-xs-6 text-right">$12.00</div>
+									</div>
+									<div class="accordion-discription-row" id="CategoryData1">
+										<div class="accordian-section col-xs-6 text-left dash-icon">gaurav1 handa121 (19
+											days)</div>
+										<div class="accordian-section col-xs-6 text-right">$7.60</div>
+									</div>
+									<div class="accordion-discription-row" id="CategoryData1">
+										<div class="accordian-section col-xs-6 text-left dash-icon">sara sikhaman (19
+											days)</div>
+										<div class="accordian-section col-xs-6 text-right">$7.60</div>
+									</div>
+									<div class="accordion-discription-row" id="CategoryData1">
+										<div class="accordian-section col-xs-6 text-left dash-icon">user1test 1 (13
+											days)</div>
+										<div class="accordian-section col-xs-6 text-right">$5.20</div>
+									</div>
+									<div class="accordion-discription-row" id="CategoryData1">
+										<div class="accordian-section col-xs-6 text-left dash-icon">Rahul Sati (12 days)
+										</div>
+										<div class="accordian-section col-xs-6 text-right">$4.80</div>
+									</div>
+									<div class="accordion-discription-row" id="CategoryData1">
+										<div class="accordian-section col-xs-6 text-left dash-icon">Rahul Sati (12 days)
+										</div>
+										<div class="accordian-section col-xs-6 text-right">$4.80</div>
+									</div>
+									<div class="accordion-discription-row" id="CategoryData1">
+										<div class="accordian-section col-xs-6 text-left dash-icon">Alex Smith (1 days)
+										</div>
+										<div class="accordian-section col-xs-6 text-right">$0.40</div>
+									</div>
+									<div class="accordion-discription-row" id="CategoryData1">
+										<div class="accordian-section col-xs-6 text-left dash-icon">Antonio Miller (1
+											days)</div>
+										<div class="accordian-section col-xs-6 text-right">$0.40</div>
+									</div>
+									<div class="accordion-discription-row" id="CategoryData1">
+										<div class="accordian-section col-xs-6 text-left dash-icon">Andrew Johnson (1
+											days)</div>
+										<div class="accordian-section col-xs-6 text-right">$0.40</div>
+									</div>
+									<div class="accordion-discription-row" id="CategoryData1">
+										<div class="accordian-section col-xs-6 text-left dash-icon">Emma Gibbs (1 days)
+										</div>
+										<div class="accordian-section col-xs-6 text-right">$0.40</div>
+									</div>
+									<div class="accordion-discription-row" id="CategoryData1">
+										<div class="accordian-section col-xs-6 text-left dash-icon">Amy Warner (1 days)
+										</div>
+										<div class="accordian-section col-xs-6 text-right">$0.40</div>
+									</div>
+									<div class="accordion-discription-row" id="CategoryData1">
+										<div class="accordian-section col-xs-6 text-left dash-icon">Ajan Mike (1 days)
+										</div>
+										<div class="accordian-section col-xs-6 text-right">$0.40</div>
+									</div>
+									<div class="accordion-discription-row" id="CategoryData1">
+										<div class="accordian-section col-xs-6 text-left dash-icon">Gram Smith (1 days)
+										</div>
+										<div class="accordian-section col-xs-6 text-right">$0.40</div>
+									</div>
+									<div class="accordion-discription-row" id="CategoryData1">
+										<div class="accordian-section col-xs-6 text-left dash-icon">zz z (1 days)</div>
+										<div class="accordian-section col-xs-6 text-right">$0.40</div>
+									</div>
+									<div class="accordion-discription-row" id="CategoryData1">
+										<div class="accordian-section col-xs-6 text-left dash-icon">Geena Stroat (1
+											days)</div>
+										<div class="accordian-section col-xs-6 text-right">$0.40</div>
+									</div>
+									<div class="accordion-discription-row" id="CategoryData1">
+										<div class="accordian-section col-xs-6 text-left dash-icon">as dsad (1 days)
+										</div>
+										<div class="accordian-section col-xs-6 text-right">$0.40</div>
+									</div>
+									<div class="accordion-discription-row" id="CategoryData1">
+										<div class="accordian-section col-xs-6 text-left dash-icon">as dsad (1 days)
+										</div>
+										<div class="accordian-section col-xs-6 text-right">$0.40</div>
+									</div>
+									<div class="accordion-discription-row" id="CategoryData1">
+										<div class="accordian-section col-xs-6 text-left dash-icon">as dsad (1 days)
+										</div>
+										<div class="accordian-section col-xs-6 text-right">$0.40</div>
+									</div>
+									<div class="accordion-discription-row" id="CategoryData1">
+										<div class="accordian-section col-xs-6 text-left dash-icon">aaaa sa (1 days)
+										</div>
+										<div class="accordian-section col-xs-6 text-right">$0.40</div>
+									</div>
+									<div class="accordion-discription-row" id="CategoryData1">
+										<div class="accordian-section col-xs-6 text-left dash-icon">fgjgh hjkhg (1 days)
+										</div>
+										<div class="accordian-section col-xs-6 text-right">$0.40</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-row">
+								<div class="accordion-title profile" id="category11" data-icon="11" data-id="category11"
+									data-toggle-id="CategoryData11">
+									<div class="accordian-section col-xs-6 text-left inner-box">
+										<i id="icon-11" class="fas dasdasd fa-angle-down"></i> Email Charges for
+										additional purchase 500 Email</div>
+									<div class="accordian-section col-xs-6 text-right">$15.00</div>
+								</div>
+								<div id="CategoryData11" style="display: block;">
+									<div class="accordion-discription-row" id="CategoryData11">
+										<div class="accordian-section col-xs-6 text-left dash-icon">500 email purchased
+											on 12/15/2018</div>
+										<div class="accordian-section col-xs-6 text-right">15.00</div>
+									</div>
+								</div>
+								<div class="accordion-title profile" id="category12" data-icon="12" data-id="category12"
+									data-toggle-id="CategoryData12">
+									<div class="accordian-section col-xs-6 text-left inner-box">
+										<i id="icon-12" class="fas dasdasd fa-angle-right"></i> SMS Charges for
+										additional purchase 250 SMS</div>
+									<div class="accordian-section col-xs-6 text-right">$10.00</div>
+								</div>
+								<div id="CategoryData12" style="display: none;">
+									<div class="accordion-discription-row" id="CategoryData12">
+										<div class="accordian-section col-xs-6 text-left dash-icon">250 sms purchased on
+											12/13/2018</div>
+										<div class="accordian-section col-xs-6 text-right">10.00</div>
+									</div>
+								</div>
+								<div class="accordion-title profile" id="category13" data-icon="13" data-id="category13"
+									data-toggle-id="CategoryData13">
+									<div class="accordian-section col-xs-6 text-left inner-box">
+										<i id="icon-13" class="fas dasdasd fa-angle-right"></i> Storage Charges for
+										additional purchase 2 GB </div>
+									<div class="accordian-section col-xs-6 text-right">$2.00</div>
+								</div>
+								<div id="CategoryData13" style="display: none;">
+									<div class="accordion-discription-row" id="CategoryData13">
+										<div class="accordian-section col-xs-6 text-left dash-icon">2 storage purchased
+											on 12/17/2018</div>
+										<div class="accordian-section col-xs-6 text-right">2.00</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="setting-container border-top">
+						<div class="setting-title">Subscription Details
+							<input class="save-profile confirm-model new-blue-btn pull-right"
+								data-message="Are you sure you want to cancel your subscription ?"
+								data-confirm-url="/ar-new-layout/subscriptions/cancel_subscription" id="cancel_plan"
+								value="Cancel Plan" type="button" />
+						</div>
+
+						<div class="settings-subtitle">Plan</div>
+
+						<div class="row">
+							<div class="col-lg-3 col-md-6 col-sm-12">
+								<div class="setting-field-outer">
+									<div class="new-field-label">Subscription start date</div>
+									<div class="setting-input-box">19 December 2018</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-12">
+								<div class="setting-field-outer">
+									<div class="new-field-label">Subscription Type</div>
+									<div class="setting-input-box">Monthly</div>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-6 col-sm-12">
+								<div class="setting-field-outer">
+									<div class="new-field-label">Status</div>
+									<div class="setting-input-box">Active</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="settings-subtitle">Limits</div>
+
+						<div class="row">
+							<div class="col-lg-3 col-md-6 col-sm-12">
+								<div class="setting-field-outer">
+									<div class="new-field-label">SMS IN plan</div>
+									<div class="setting-input-box">3722 SMS/Month</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-12">
+								<div class="setting-field-outer">
+									<div class="new-field-label">Addon SMS (This Month)</div>
+									<div class="setting-input-box">5265</div>
+								</div>
+							</div>
+							<div class="buy-more-sms-div" style="display:block">
+								<div class="col-lg-3 col-md-6 col-sm-12">
+									<div class="setting-field-outer">
+										<div class="new-field-label">Buy more SMS</div>
+										<div class="setting-input-outer">
+											<form id="add-sms-form" name="add-sms-form"
+												action="/ar-new-layout//subscriptions/add_on_sms" method="post"
+												accept-charset="utf-8">
+												<select class="setting-select-box" name="addon_sms" id="addon_sms">
+													<option value="250">250 SMS - $10.00</option>
+													<option value="500">500 SMS - $15.00</option>
+													<option value="1000">1,000 SMS - $25.00</option>
+													<option value="2500">2,500 SMS - $55.00</option>
+													<option value="5000">5,000 SMS - $100.00</option>
+													<option value="10000">10,000 SMS - $200.00</option>
+												</select>
+											</form>
+										</div>
+										<div class="important-instruction m-t-10">Current SMS Limit: Up to 8987 SMS
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-6 col-sm-12 no-padding-right">
+									<input type="button" id="addon-sms-btn" value="Buy SMS"
+										class="new-blue-btn sms-btn m-l-0 m-t-10" />
+									<a href="javascript:void(0)"
+										class="new-white-btn sms-btn m-l-10 m-t-10 cancel-buy-div"
+										data-div_to_show="add-more-sms-div"
+										data-div_to_hide="buy-more-sms-div">Cancel</a>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-12 add-more-sms-div hide" style="display:block">
+								<a href="javascript:void(0)" class="new-white-btn sms-btn m-l-0 m-t-10 show-buy-div"
+									data-div_to_show="buy-more-sms-div" data-div_to_hide="add-more-sms-div">Add More</a>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-lg-3 col-md-4 col-sm-12">
+								<div class="setting-field-outer">
+									<div class="new-field-label">Emails in plan</div>
+									<div class="setting-input-box">11170 Emails/Month</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-12">
+								<div class="setting-field-outer">
+									<div class="new-field-label">Addon Emails (This Month)</div>
+									<div class="setting-input-box">0</div>
+								</div>
+							</div>
+							<div class="buy-more-email-div hide" style="display:block">
+								<div class="col-lg-3 col-md-6 col-sm-12">
+									<div class="setting-field-outer">
+										<div class="new-field-label">Buy more emails</div>
+										<form id="add-email-form" name="add-email-form"
+											action="/ar-new-layout//subscriptions/add_on_email" method="post"
+											accept-charset="utf-8">
+											<div class="setting-input-outer">
+												<select class="setting-select-box" name="addon_email" id="addon_email">
+													<option value="500">500 Email - $15.00</option>
+													<option value="1000">1,000 Email - $20.00</option>
+													<option value="2500">2,500 Email - $25.00</option>
+													<option value="5000">5,000 Email - $40.00</option>
+													<option value="10000">10,000 Email - $60.00</option>
+													<option value="25000">25,000 Email - $100.00</option>
+												</select>
+											</div>
+										</form>
+										<div class="important-instruction m-t-10">Current Email Limit: Up to 11170
+											Emails</div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-6 col-sm-12 no-padding-right">
+									<input type="button" id="addon-email-btn" value="Buy Email"
+										class="new-blue-btn sms-btn m-l-0 m-t-10" />
+									<a href="javascript:void(0)"
+										class="new-white-btn sms-btn m-l-10 m-t-10 cancel-buy-div"
+										data-div_to_show="add-more-email-div"
+										data-div_to_hide="buy-more-email-div">Cancel</a>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-12 add-more-email-div">
+								<a href="javascript:void(0)" class="new-white-btn sms-btn m-l-0 m-t-10 show-buy-div"
+									data-div_to_show="buy-more-email-div" data-div_to_hide="add-more-email-div">Add
+									More</a>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-lg-3 col-md-4 col-sm-12">
+								<div class="setting-field-outer">
+									<div class="new-field-label">Data in plan</div>
+									<div class="setting-input-box">74.47 GB</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-12">
+							</div>
+							<div class="buy-more-data-div hide">
+								<div class="col-lg-3 col-md-6 col-sm-12">
+									<div class="setting-field-outer">
+										<div class="new-field-label">Buy more data</div>
+										<form id="add-data-form" name="add-data-form"
+											action="/ar-new-layout//subscriptions/add_on_data" method="post"
+											accept-charset="utf-8">
+											<div class="setting-input-outer">
+												<select class="setting-select-box" name="addon_data" id="addon_data">
+													<option value="1">1 GB</option>
+													<option value="2">2 GB</option>
+													<option value="3">3 GB</option>
+													<option value="4">4 GB</option>
+													<option value="5">5 GB</option>
+													<option value="10">10 GB</option>
+													<option value="20">20 GB</option>
+													<option value="30">30 GB</option>
+													<option value="40">40 GB</option>
+													<option value="50">50 GB</option>
+													<option value="60">60 GB</option>
+													<option value="70">70 GB</option>
+													<option value="80">80 GB</option>
+													<option value="90">90 GB</option>
+													<option value="100">100 GB</option>
+												</select>
+											</div>
+										</form>
+										<div class="important-instruction m-t-10" id="add-data-sub">You will be charged
+											<span class="new_amount"><b>$1.00</b></span> one-time from Credit Card you
+											have in file.</div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-6 col-sm-12 no-padding-right">
+									<input type="button" id="addon-data-btn" value="Buy Data"
+										class="new-blue-btn sms-btn m-l-0 m-t-10" />
+									<a href="javascript:void(0)"
+										class="new-white-btn sms-btn m-l-10 m-t-10 cancel-buy-div reset-to-first"
+										data-div_to_show="add-more-data-div"
+										data-div_to_hide="buy-more-data-div">Cancel</a>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-12 add-more-data-div">
+								<a href="javascript:void(0)" class="new-white-btn sms-btn m-l-0 m-t-10 show-buy-div"
+									data-div_to_show="buy-more-data-div" data-div_to_hide="add-more-data-div">Add
+									More</a>
+							</div>
+						</div>
+
+
+					</div>
+
+
+
+
+
+
+					<div class="bg-light-blue setting-container setting-credit-card" style="display:block">
+						<div class="setting-title">Credit Card
+							<span class="setting-custom-switch pull-right">Edit Card &nbsp;
+								<label class="setting-switch pull-right">
+									<input type="checkbox" class="setting-custom-switch-input edit-cc-toggle"
+										value="1" />
+									<span class="setting-slider"></span>
+								</label><br><br>
+							</span>
+						</div>
+
+						<div class="card-edit-mode">
+							<form id="CardChangeCardForm" name="CardChangeCardForm"
+								action="/ar-new-layout//subscriptions/change_card" method="post" accept-charset="utf-8"
+								novalidate="novalidate">
+								<div class="row">
+									<div class="col-lg-3 col-md-4 col-sm-12">
+										<div class="setting-field-outer">
+											<div class="new-field-label">Credit card number</div>
+											<div class="setting-input-outer">
+												<input class="setting-input-box" name="data[Card][cardnumber]"
+													placeholder="Card Number" id="CardCardnumber" type="text" />
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-4 col-sm-12">
+										<div class="setting-field-outer">
+											<div class="new-field-label">Security code </div>
+											<div class="setting-input-outer">
+												<input class="setting-input-box" name="data[Card][cvc]"
+													placeholder="Security Code" id="CardCvc" type="password"
+													autocomplete="new-password" />
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-3 col-md-4 col-sm-12">
+										<div class="setting-field-outer">
+											<div class="new-field-label">Expiration date</div>
+											<div class="setting-input-outer">
+												<div class="card-exp-date">
+													<select class="setting-select-box" name="month" id="month">
+														<option value="">Month</option>
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+														<option value="4">4</option>
+														<option value="5">5</option>
+														<option value="6">6</option>
+														<option value="7">7</option>
+														<option value="8">8</option>
+														<option value="9">9</option>
+														<option value="10">10</option>
+														<option value="11">11</option>
+														<option value="12">12</option>
+													</select>
+												</div>
+												<div class="card-exp-date pull-right">
+													<select class="setting-select-box" name="year" id="year">
+														<option value="">Year</option>
+														<option value="2018">2018</option>
+														<option value="2019">2019</option>
+														<option value="2020">2020</option>
+														<option value="2021">2021</option>
+														<option value="2022">2022</option>
+														<option value="2023">2023</option>
+														<option value="2024">2024</option>
+														<option value="2025">2025</option>
+														<option value="2026">2026</option>
+														<option value="2027">2027</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<a href="javascript:void(0)" class="new-white-btn cancel-edit-cc">Cancel</a>
+								<input type="submit" id="update_Credit_Card" value="Save Card" class="new-blue-btn" />
+							</form>
+						</div>
+
+						<div class="card-view-mode hide">
+							<div class="row">
+								<div class="col-lg-3 col-md-4 col-sm-12">
+									<div class="setting-field-outer">
+										<div class="new-field-label">Credit card number</div>
+										<div class="setting-input-box" id="Card_Number_label">Visa ending 1111</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<form id="auto_refill_form" name="auto-refill-form"
+						action="/ar-new-layout//subscriptions/auto_refill_plan_settings" method="post"
+						accept-charset="utf-8">
+						<div class="setting-container">
+							<div class="setting-title">Auto Refill Settings</div>
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="important-instruction m-t-0">
+										<span style="color:red;">Note:</span> To avoid disruption with emails, texts or
+										storage please keep these on. If you wish to disable the auto refill feature
+										please turn off the specific feature.
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-3 col-xs-5">
+									<div class="setting-field-outer">
+										<div class="new-field-label">Refill SMS package</div>
+										<div class="setting-input-outer">
+											<select name="data[AccountSubscription][refill_sms_value]"
+												class="setting-select-box">
+												<option value="250" selected="selected">250 (SMS)</option>
+												<option value="500">500 (SMS)</option>
+												<option value="1000">1,000 (SMS)</option>
+												<option value="2500">2,500 (SMS)</option>
+												<option value="5000">5,000 (SMS)</option>
+												<option value="10000">10,000 (SMS)</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 col-xs-5">
+									<div class="setting-field-outer">
+										<div class="new-field-label">If SMS balance goes below</div>
+										<div class="setting-input-outer">
+											<select name="data[AccountSubscription][refill_sms_limit]"
+												class="setting-select-box">
+												<option value="50" selected="selected">50 (SMS)</option>
+												<option value="60">60 (SMS)</option>
+												<option value="70">70 (SMS)</option>
+												<option value="80">80 (SMS)</option>
+												<option value="90">90 (SMS)</option>
+												<option value="100">100 (SMS)</option>
+												<option value="200">200 (SMS)</option>
+												<option value="300">300 (SMS)</option>
+												<option value="400">400 (SMS)</option>
+												<option value="500">500 (SMS)</option>
+												<option value="600">600 (SMS)</option>
+												<option value="700">700 (SMS)</option>
+												<option value="800">800 (SMS)</option>
+												<option value="900">900 (SMS)</option>
+												<option value="1000">1,000 (SMS)</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 col-xs-2">
+									<label class="setting-switch m-t-20">
+										<input type="checkbox" id="refill_sms_status"
+											name="data[AccountSubscription][refill_sms_status]" value="0"
+											checked="checked" class="refill-status setting-custom-switch-input"
+											data-message="If you set Auto refill settings for SMS to Off, then we will not send any SMS from your account if you have no balance. So, you and your clients will not receive important SMS notifications. Are you sure you want to continue?">
+										<span class="setting-slider"></span>
+									</label>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-3 col-xs-5">
+									<div class="setting-field-outer">
+										<div class="new-field-label">Refill Emails package</div>
+										<div class="setting-input-outer">
+											<select name="data[AccountSubscription][refill_email_value]"
+												class="setting-select-box">
+												<option value="500" selected="selected">500 (Email)</option>
+												<option value="1000">1,000 (Email)</option>
+												<option value="2500">2,500 (Email)</option>
+												<option value="5000">5,000 (Email)</option>
+												<option value="10000">10,000 (Email)</option>
+												<option value="25000">25,000 (Email)</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 col-xs-5">
+									<div class="setting-field-outer">
+										<div class="new-field-label">If Emails balance goes below</div>
+										<div class="setting-input-outer">
+											<select name="data[AccountSubscription][refill_email_limit]"
+												class="setting-select-box">
+												<option value="50" selected="selected">50 (Email)</option>
+												<option value="60">60 (Email)</option>
+												<option value="70">70 (Email)</option>
+												<option value="80">80 (Email)</option>
+												<option value="90">90 (Email)</option>
+												<option value="100">100 (Email)</option>
+												<option value="200">200 (Email)</option>
+												<option value="300">300 (Email)</option>
+												<option value="400">400 (Email)</option>
+												<option value="500">500 (Email)</option>
+												<option value="600">600 (Email)</option>
+												<option value="700">700 (Email)</option>
+												<option value="800">800 (Email)</option>
+												<option value="900">900 (Email)</option>
+												<option value="1000">1,000 (Email)</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 col-xs-2">
+									<label class="setting-switch m-t-20">
+										<input type="checkbox" id="refill_email_status"
+											name="data[AccountSubscription][refill_email_status]" value="1"
+											checked="checked" class="refill-status setting-custom-switch-input"
+											data-message="If you set Auto refill settings for Email to Off, then we will not send any Emails from your account if you have no balance. So, you and your clients will not receive important Emails notifications. Are you sure you want to continue?" />
+										<span class="setting-slider"></span>
+									</label>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-3 col-xs-5">
+									<div class="setting-field-outer">
+										<div class="new-field-label">Refill data package</div>
+										<div class="setting-input-outer">
+											<select name="data[AccountSubscription][refill_data_value]"
+												class="setting-select-box">
+												<option value="1" selected="selected">1 (GB)</option>
+												<option value="2">2 (GB)</option>
+												<option value="3">3 (GB)</option>
+												<option value="4">4 (GB)</option>
+												<option value="5">5 (GB)</option>
+												<option value="10">10 (GB)</option>
+												<option value="20">20 (GB)</option>
+												<option value="30">30 (GB)</option>
+												<option value="40">40 (GB)</option>
+												<option value="50">50 (GB)</option>
+												<option value="60">60 (GB)</option>
+												<option value="70">70 (GB)</option>
+												<option value="80">80 (GB)</option>
+												<option value="90">90 (GB)</option>
+												<option value="100">100 (GB)</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 col-xs-5">
+									<div class="setting-field-outer">
+										<div class="new-field-label">If data goes below</div>
+										<div class="setting-input-outer">
+											<select name="data[AccountSubscription][refill_data_limit]"
+												class="setting-select-box">
+												<option value="1" selected="selected">1 (GB)</option>
+												<option value="2">2 (GB)</option>
+												<option value="3">3 (GB)</option>
+												<option value="4">4 (GB)</option>
+												<option value="5">5 (GB)</option>
+												<option value="10">10 (GB)</option>
+												<option value="20">20 (GB)</option>
+												<option value="30">30 (GB)</option>
+												<option value="40">40 (GB)</option>
+												<option value="50">50 (GB)</option>
+												<option value="60">60 (GB)</option>
+												<option value="70">70 (GB)</option>
+												<option value="80">80 (GB)</option>
+												<option value="90">90 (GB)</option>
+												<option value="100">100 (GB)</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 col-xs-2">
+									<label class="setting-switch m-t-20">
+										<input type="checkbox" id="refill_data_status"
+											name="data[AccountSubscription][refill_data_status]" value="1"
+											checked="checked" class="refill-status setting-custom-switch-input"
+											data-message="If you set Auto refill settings for Storage Data to Off, then users in your account will not be able to login if data limit is exhausted. Are you sure you want to continue?" />
+										<span class="setting-slider"></span>
+									</label>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="footer-static">
+							<input class="new-blue-btn pull-right" id="saveAutoRefill" value="Save" type="button" />
+						</div>
+					</form>
+
+
+
+
+				</div>
+
+
+
+
+			</div>
+		</div>
+
+
+		<footer class="main-footer">
+			<div class="container-fluid">
+				<span class="pull-right">
+					©2018 Aesthetic Record. All Rights Reserved.
+				</span>
+			</div>
+		</footer>
+
+
+	</div>
+
+</body>
+
+</html>

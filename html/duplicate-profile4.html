@@ -1,0 +1,389 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="" name="description">
+<meta content="" name="author">
+<meta content="Page scroll animation using CSS animate" name="description">
+<meta content="css animation, loading effect, animate, scroll loading, scroll animation" 
+name="keywords">
+<meta content="Jinson Abraham" name="author">
+<title>AR-Patient Portal</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" 
+rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" 
+rel="stylesheet">
+<link href="css/common/bootstrap.css" rel="stylesheet">
+<link href="css/common/icons.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="main protected">
+	<header>
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
+					<span class="sr-only">Toggle navigation</span> 
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span><span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">
+					<img src="images/logo.png"/>
+				</a> 
+			</div>
+			
+			<div id="navbar" class="navbar-collapse collapse">
+				<div class="nav-outer">
+					<ul class="nav navbar-nav right-menus">
+						<li>
+							<a id="users-logs" class="users-logs show-desktop right-menus-a" href="/dashboard/user_logs" title="User Activities"></a>
+							<a id="users-logs" class="users-logs show-mobile" href="/dashboard/user_logs">View Users Activities</a>
+						</li>
+						<li>
+						<a id="noti-icon" class="noti-icon notification show-desktop right-menus-a" href="javascript:void(0);" title="Notifications"></a>
+						<a class="noti-icon notification show-mobile" href="/dashboard/notifications" title="Notifications">Notification</a>
+						<div id="popup" class="noti-popup no-display">
+							<div id="notty-title" class="noti-title">Notifications </div>
+							<div id="notty-content" class="noti-content">
+								<div class="read">
+									Your appointment on date 12/12/2017 01:00 PM 
+									with KProvider 1 is not synced
+								</div>
+								<div class="read">
+									Your appointment on date with is not synced
+								</div>
+								<div class="read">
+									Batch li-stock of <b>Have stocks</b> has hit 
+									low stock
+								</div>
+								<div class="read">
+									Batch ny-stock of <b>Have stocks</b> has hit 
+									low stock
+								</div>
+								<div class="read">
+									Batch 54545 of <b>Ttt</b> has hit low stock
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +19546637556
+								</div>
+								<div class="read">
+									New SMS received from +19546637556
+								</div>
+							</div>
+							<div id="notty-footer" class="noti-footer">
+								<a href="/dashboard/sms_notifications">See All</a>
+							</div>
+						</div>
+						</li>
+						<li class="arow-link-outer">
+							<span class="arow-link">
+								<div id="headerUserImage" class="user-picture"></div>
+								<span class="name-txt">Ganesh Kompella </span>
+							</span>
+						</li>
+						<li>
+							<a class="setting show-desktop right-menus-a" href="/settings/profile" title="Settings"></a>
+							<a class="setting show-mobile" href="/settings/profile">Settings</a> 
+						</li>
+						<li>
+							<a class="logout show-desktop right-menus-a" href="/accounts/logout" title="Logout"></a>
+							<a class="logout show-mobile" href="/accounts/logout"><i class="icon-Power-2"></i>Log Out</a> 
+						</li>
+					</ul>
+					<ul class="nav navbar-nav main-navbar">
+						<li class=""><a href="/dashboard">Dashboard</a></li>
+						<li class="active"><a href="/patients/manage">Clients</a> </li>
+						<li class=""><a href="/appointments/index">Appointments</a></li>
+						<li class=""><a href="/sales/index">Sales</a></li>
+						<li class=""><a href="/inventory/products/active">Inventory</a></li>
+						<li class=""><a href="/analytics/reports">Reports</a></li>
+						<li class=""><a href="/marketing/dashboard">Surveys</a></li>
+						<li class=""><a href="/MDRooms/pending">MD's Room</a></li>
+						<li class=""><a href="/ProvidersRooms/pending">Provider's Room</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	
+<div id="content">
+	<div class="container-fluid content setting-wrapper">
+
+		<div class="row duplicate-patient-title">
+			<div class="duplicate-patient-name">
+				<a class="pull-left go-back-arrow" id="go-back" data-url="/patients/manage"></a>
+				<span class="patient-count"> Merge Client: <b>First1 Import</b> </span>
+			</div>
+
+			<ul class="merge-steps">
+				<li id="step-one-li" data-popup-id="step-one" data-step-count="2" data-next-popup-id="step-two" class="step_tab"><a><span class="step-no">1</span><label class="step-name">Information</label></a></li>
+				<li id="step-two-li" class="step_tab" data-popup-id="step-two" data-step-count="3" data-next-popup-id="step-three"><a><span class="step-no">2</span><label class="step-name">Procedures</label></a></li>
+				<li id="step-three-li" class="step_tab" data-popup-id="step-three" data-step-count="4" data-next-popup-id="step-four"><a><span class="step-no">3</span><label class="step-name">Medical History</label></a></li>
+				<li id="step-four-li" class="merge-sel step_tab" data-popup-id="step-four" data-step-count="5" data-next-popup-id="step-five"><a><span class="step-no">4</span><label class="step-name">Review Merge</label></a></li>
+				<li id="step-five-li" class="next_step_tab" data-popup-id="step-five" data-step-count="5">
+				<a class="blue-btn next-step">Next Step</a>
+				</li>
+			</ul>
+		</div>
+		
+	
+			
+			
+			
+	<div class="merge-outer row" id="step-three">
+	<input type="hidden" id="total_medical_histories_ids" value="Łukasz">
+	<div class="col-md-8">
+		<div class="merge-setion">
+			<div class="section-title">
+				<span class="section-title-name">Medical History</span>
+				<p class="section-title-p">Please select right info you want to keep in merged data</p>
+			</div>
+			<div class="merge-content">
+				
+				<div class="col-sm-6">
+					<div class="row merge-form-row">
+						<label class="merge-form-label">Major Events</label>
+							<div class="merge-field-outer" id="major_event_outer_box"> 
+								<div class="merge-plus" data-id="major_event">+</div>									
+								<div data-value="Łukasz" id="major_event_new_added_element1" data-id="major_event" class="set_right_info custom-input">Łukasz</div>
+								<input type="hidden" id="major_event_ele_count" value="1"/> 
+							</div>
+					</div>
+					<div class="row merge-form-row">
+						<label class="merge-form-label">Smoking Status</label>
+							<div class="merge-field-outer" id="smoking_status_outer_box">
+								<div class="merge-plus" data-id="smoking_status">+</div>										
+								<div data-value="Łukasz" id="smoking_status_new_added_element1" data-id="smoking_status" class="set_right_info custom-input">Łukasz</div>
+								<input type="hidden" id="smoking_status_ele_count" value="1"/> 
+							</div>
+					</div>
+				
+					<div class="row merge-form-row">
+							<label class="merge-form-label">Ongoing Medical Problems</label>
+							<div class="merge-field-outer" id="ongoing_medical_problems_outer_box">
+								<div class="merge-plus" data-id="ongoing_medical_problems">+</div>
+								<div data-value="Łukasz" id="ongoing_medical_problems_new_added_element1" data-id="ongoing_medical_problems" class="set_right_info custom-input">Łukasz</div>
+								<input type="hidden" id="ongoing_medical_problems_ele_count" value="1"/>
+							</div>
+					</div>
+				
+					<div class="row merge-form-row">
+							<label class="merge-form-label">Social History</label>
+							<div class="merge-field-outer" id="social_history_outer_box">
+								<div class="merge-plus" data-id="social_history">+</div>
+								<div data-value="Łukasz" id="social_history_new_added_element1" data-id="social_history" class="set_right_info custom-input">Łukasz</div>
+								<input type="hidden" id="social_history_ele_count" value="1"/>
+							</div>
+					</div>
+				
+					<div class="row merge-form-row">
+							<label class="merge-form-label">Family Health History</label>
+							<div class="merge-field-outer" id="family_health_history_outer_box">
+								<div class="merge-plus" data-id="family_health_history">+</div>
+								<div data-value="Łukasz" id="family_health_history_new_added_element1" data-id="family_health_history" class="set_right_info custom-input">Łukasz</div>
+								<input type="hidden" id="family_health_history_ele_count" value="1"/>
+							</div>
+					</div>
+					
+					<div class="row merge-form-row">
+							<label class="merge-form-label">Nutrition History</label>
+							<div class="merge-field-outer" id="nutrition_history_outer_box">
+								<div class="merge-plus" data-id="nutrition_history">+</div>
+								<div data-value="Łukasz" id="nutrition_history_new_added_element1" data-id="nutrition_history" class="set_right_info custom-input">Łukasz</div>
+								<input type="hidden" id="nutrition_history_ele_count" value="1"/>
+							</div>
+					</div>
+				</div>
+				
+				
+				<div class="col-sm-6">
+					<div class="row merge-form-row">
+							<label class="merge-form-label">Preventive Care</label>
+							<div class="merge-field-outer" id="preventive_care_outer_box">
+								<div class="merge-plus" data-id="preventive_care">+</div>
+								<div data-value="Łukasz" id="preventive_care_new_added_element1" data-id="preventive_care" class="set_right_info custom-input">Łukasz</div>
+								<input type="hidden" id="preventive_care_ele_count" value="1"/>
+							</div>
+					</div>
+					
+					<div class="row merge-form-row">
+							<label class="merge-form-label">Development History</label>
+							<div class="merge-field-outer" id="development_history_outer_box">
+								<div class="merge-plus" data-id="development_history">+</div>
+								<div data-value="Łukasz" id="development_history_new_added_element1" data-id="development_history" class="set_right_info custom-input">Łukasz</div>
+								<input type="hidden" id="development_history_ele_count" value="1"/>
+							</div>
+					</div>
+				
+					<div class="row merge-form-row">
+							<label class="merge-form-label">Drug Allergies</label>
+							<div class="merge-field-outer" id="drug_allergies_outer_box">
+								<div class="merge-plus" data-id="drug_allergies">+</div>
+								<input type="hidden" id="drug_allergies_ele_count" value="1"/>
+							</div>
+					</div>
+					<div class="row merge-form-row">
+							<label class="merge-form-label">Environmental Allergies</label>
+							<div class="merge-field-outer" id="environmental_allergies_outer_box">
+								<div class="merge-plus" data-id="environmental_allergies">+</div>
+								<input type="hidden" id="environmental_allergies_ele_count" value="1"/>
+							</div>
+					</div>
+					<div class="row merge-form-row">
+							<label class="merge-form-label">Food Allergies</label>
+							<div class="merge-field-outer" id="food_allergies_outer_box">
+								<div class="merge-plus" data-id="food_allergies">+</div>
+								<input type="hidden" id="food_allergies_ele_count" value="1"/>
+							</div>
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+	</div>
+	
+	<div class="col-md-4 merge-info">
+		<div class="merge-setion">
+			<div class="section-title header-blue">
+				<span class="section-title-name">Merged Medical History Data</span>
+			</div>
+			<div class="merge-content new-popup-field-outer ">
+				
+				<div class="col-sm-12 new-popup-form-section">
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="email" class="popup-input-field-name">Major Event</label>
+							<div class="popup-field-box" id="major_event-right-box">
+								Łukasz							</div>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="email" class="popup-input-field-name">Smoking Status</label>
+							<div class="popup-field-box" id="smoking_status-right-box">
+								Łukasz							</div>
+						</div>
+					</div>
+					
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="email" class="popup-input-field-name">ongoing medical problems</label>
+							<div class="popup-field-box" id="ongoing_medical_problems-right-box">
+								Łukasz							</div>
+						</div>
+					</div>
+					
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="email" class="popup-input-field-name">Social History</label>
+							<div class="popup-field-box" id="social_history-right-box">
+								Łukasz							</div>
+						</div>
+					</div>
+					
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="email" class="popup-input-field-name">Family Health History</label>
+							<div class="popup-field-box" id="family_health_history-right-box">
+								Łukasz							</div>
+						</div>
+					</div>
+					
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="email" class="popup-input-field-name">Nutrition History</label>
+							<div class="popup-field-box" id="nutrition_history-right-box">
+								Łukasz							</div>
+						</div>
+					</div>
+					
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="email" class="popup-input-field-name">Preventive Care</label>
+							<div class="popup-field-box" id="preventive_care-right-box">
+								Łukasz							</div>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="email" class="popup-input-field-name">Development History</label>
+							<div class="popup-field-box" id="development_history-right-box">
+								Łukasz							</div>
+						</div>
+					</div>	
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="email" class="popup-input-field-name">Drug Allergies</label>
+							<div class="popup-field-box" id="drug_allergies-right-box">
+															</div>
+						</div>						
+					</div>	
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="email" class="popup-input-field-name">Environmental Allergies</label>
+							<div class="popup-field-box" id="environmental_allergies-right-box">
+															</div>
+						</div>
+					</div>	
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="email" class="popup-input-field-name">Food Allergies</label>
+							<div class="popup-field-box" id="food_allergies-right-box">
+															</div>
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+		
+</div>
+			
+			
+			
+	
+			
+			
+			
+
+
+	</div>
+</div>
+	
+
+<footer class="main-footer">
+	<div class="container-fluid">
+		<span class="pull-right">
+			©2018 Aesthetic Record. All Rights Reserved. 
+		</span>
+	</div>
+</footer>
+	
+	
+</div>
+
+</body>
+
+</html>

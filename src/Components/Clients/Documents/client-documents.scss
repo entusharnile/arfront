@@ -1,0 +1,31 @@
+.content-client-documents{
+  table td[class*="col-"], table th[class*="col-"]{float:left;}
+  .text-ellipsis{float:left!important;max-width:400px;}
+  .easy-link{padding: 0px 10px;}
+  .setting-table .table-updated-tr .table-updated-td, .juvly-table .table-updated-tr .table-updated-td, .table-updated .table-updated-tr .table-updated-td{    padding: 15px 10px 15px 15px;}
+  .manage-document{width: 100%!important;display: block!important;}
+  .add-doc-section{
+  	padding-top:40px;
+  	padding-bottom:40px;
+  	border-bottom: 1px solid #ececec;
+  	float: left;
+  	width: 100%;
+    margin:0px;
+  }
+  .main-profile-picture{left:0px;}
+  .add-document-btns{
+    float:left;
+    width:100%;
+    padding-top:40px;
+
+    .new-blue-btn{margin:0px 0px 10px;;}
+  }
+  .add-doc-serach-dropdown ul{top:26px;}
+  .file-upload-img.field_error{
+    border: 1px solid #e74c3c;
+
+    .upload{
+      border-top: 1px solid #e74c3c;
+    }
+  }
+}

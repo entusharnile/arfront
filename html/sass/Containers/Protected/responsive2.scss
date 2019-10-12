@@ -1,0 +1,715 @@
+/****** form-builder-start ********/
+@media only screen and (max-height: 510px){
+	.report-question-outer{opacity:0;padding:100px 0px;}
+	.multisel{width: 100%;}
+}
+@media only screen and (min-height: 600px) {
+	.report-question-outer{opacity:0;padding:160px 0px;}
+}
+@media only screen and (min-height: 700px) {
+	.report-question-outer{opacity:0;padding:180px 0px;}
+}
+/****** form-builder-end ********/
+
+@media(max-width:1366px){
+	.cash-drawer-history {float: left!important;width: 100%;margin-top: 30px;}
+	.calendar-provider-schedule .rbc-calendar{min-height: 500px!important;}
+}
+@media(max-width:1250px){
+	.setting i{margin-left:-6px;}
+	.patient-right .title span{width:100%;}
+	.app-history{margin-top:24px;}
+	.patient-right .title{border:none;}
+	.line-btn.sign-fill{width:100%; text-align:center;margin-bottom:5px;margin-left:0px;}
+	.timeline-left img{height:auto;}
+	.treat-sumry {width:100%;}
+	.pro-name-section{width:224px;}
+	.trac-info{width: 100%;text-align: center;margin-bottom: 5px;}
+	.merge-steps li a {display: block;padding: 0 10px 16px;}
+	.default-input, .custom-input, .removable-input{width:47.4%;}
+	.trac-info{margin-top:15px!important;}
+	.right-menus-a{width: 29px!important;}
+	.access-portal-label{min-width: 82px;}
+	.filter-multiselect ul.multiselect-container{max-width:962px!important;}
+	.proc-action-div-outer{overflow-x:auto;overflow-y:hidden;}
+	.setting-container, .juvly-container{padding:35px;}
+	.small-popup-content .juvly-container{padding:30px;}
+	.crossIcon{right:-13px;}
+	.stats-outer{padding:35px;}
+	.calendar-dropdown{min-width:117px;}
+	.custom-txt-rule-left-padding{padding-left:35px;}
+	/****** form-builder-start ********/
+	.half-preview .multisel{width: 100%;}
+	/****** form-builder-end ********/
+	.cal-filter{width: 410px;float: right;	margin-right: 15px;}
+	.cal-month-week-day-outer{width: 176px;}
+	.cal-date-btn-outer{width: 315px;}
+	.calender-btns{width:100%;}
+	.cal-date-btn-outer .new-calender{min-width:34px;}
+	.send-instruction{width:100%;text-align:center;margin-left:0px;}
+	.privider-calender-popup{width:90%!important;}
+}
+@media(max-width:1200px){
+	.profile-detail-left{margin-bottom:50px;}
+	.setting-left-menu{width: 20%;}
+	.setting-setion, .juvly-section{width: 76%;}
+	.select-authentiation-label{margin-bottom:20px;}
+	.barcode-img, .authe-icons{width:100%!important;}
+	.proc-action-div-outer{overflow-x:auto;overflow-y:hidden;}
+	.member-program{padding-right:15px!important;}
+	.wallet-setting{padding-left:15px!important;}
+	.client-filter{width:100%;left:0px;margin-left:0px;}
+	.cal-date-btn-outer{text-align:left;padding:0px 15px;}
+	.cal-search{margin-bottom:10px;width:50%;}
+	.add-services select{width:59%;}
+	.barcode-title{display:table;margin:auto;}
+	.content-ar-terms-of-use{background-size: 100% auto;background-position:center top;}
+	ul.tabWithSwitch li {width:100%!important;display:block;}
+	ul.tabWithSwitch li a {padding: 10px 0px 10px 0px!important;border-bottom: 2px solid #dddddd!important;}
+	.more-info-profile-dropdown ul{transform:translate3d(0px, 30px, 0px)!important;-webkit-transform:translate3d(0px, 30px, 0px)!important;}
+}
+
+@media (min-width:991px) and (max-width:1200px){
+	.gift-amount{top: 6px;width: 72px;}
+	.gift-amount-span{font-size:14px;}
+	.gift-amount-label{font-size:26px;}
+	.gift-card-logo{top:72px;}
+	.text-left.data-usage .sales-goal-legend {position:relative;top:0px;}
+}
+
+@media(max-width:1150px){
+	.pro-name-section{width:182px;}
+	.right-menus .setting i{margin-left:0px;}
+	.right-menus .setting span{display:none;}
+	.right-menus .header-unselect-btn{padding:0px 0px!important;width:42px;text-align:center;}
+	.right-menus .header-select-btn.logout{padding:0px 13px !important;}
+	ul.nav li a{padding:18px 10px 10px 10px;}
+	.main-filter .title > span{width:100%;}
+	.main-filter .title > form{padding:0px;}
+	.merge-steps{clear:both;padding-top:10px;}
+	.merge-pro-data-img{margin-bottom:15px;}
+	.pro-pic-outer img{margin-right:0px;max-width: 100%;}
+	.add-field-list{height:300px;overflow:auto;}
+	.setting-tabs a{padding: 15px 7px;}
+	.setting-setion, .juvly-section{min-height:inherit;}
+	.client-filter{top: 112px;}
+	.patient-responsive {padding-top: 125px;}
+	.pro-pic-outer img{position:static;}
+	.pro-pic-outer{padding-left:24px;}
+	.create-appoint-popup{padding-top:110px;}
+	.create-appoint-title{top:112px;}
+}
+
+@media(min-width:768px) and (max-width:1150px){
+	.main-navbar{position:absolute;left:0px;right:0px;top:56px;background:#fff;border-top:1px solid #ececec;border-bottom:1px solid #ececec;
+	padding-left: 30px !important;padding-right: 30px !important;}
+	.main-navbar{text-align:right;}
+	.main-navbar li{float:none;display:inline-block!important;}
+	ul.nav > li > a{font-size:13px;}
+	ul.nav > li > a:hover{background:none;}
+	#content {padding-top: 127px!important;}
+	.main-filter{top:109px!important;}
+	.profile-title{top:110px;}
+	.total-patients{width:100%;}
+	.right-create-patient{float:right;}
+	.srch-outer{text-align:left;padding-left:5px;}
+	.srch-outer{width:64%;}
+	.right-create-patient{padding-left:0px;}
+	.navbar-form.search{margin-right:0px;}
+	.filter-count{margin-right:3px;}
+	.filter-outer #apply-filter i{display:none;}
+	.duplicate-patient-title{padding-top:10px;}
+	.duplicate-patient-title .srch-outer {width:inherit;text-align: right;float: right;}
+	.default-input, .custom-input, .removable-input{width:100%;margin-right:0px;}
+	.patient-alpha{top:209px;margin-bottom:0px;}
+	.right-menus-a{width:40px!important;}
+}
+
+@media(max-width:1050px){
+	.main-filter{position: static!important;}
+	.main-filter .filter-outer {padding: 13px 0!important;}
+	.main-filter .title {padding: 5px 0!important;}
+	header{margin-bottom:0px;position:static!important;}
+	.desktop-patient-head, .inventory-desktop-th{display:none;}
+	.patient-responsive, .inverntory-main-table{padding-top:0px!important;}
+	.table-responsive {padding-top:0px!important;}
+	.main-filter{padding-top:0px!important;}
+	.inventory-menu-fixed{margin-bottom:0px!important;padding-top:0px!important;}
+	.popup-title{right:0px;}
+	.trac-right-btn-outer a {display: block;margin-bottom: 10px;text-align: center;width: 100%;margin-left:0px;}
+	.procedure-name-time{width:70%;}
+	.pro-name-section{widtH:85%;max-width: 163px;}
+	.pro-name-section h4{  white-space: nowrap;  overflow: hidden;text-overflow: ellipsis; }
+	.profile-title{background: #fff none repeat scroll 0 0;padding-top:0px;position: static;width: 100%;}
+	.profile-wrapper{padding-top:0px;}
+	.subs-section{width:100%!important;}
+	.all-patient-indent{text-indent: -408px!important;display: inline-block;}
+	.main-filter .title > span{width:100%;}
+	.main-filter .title > form{padding:0px;}
+	.patient-list{min-width:1050px;}
+	.profile-img-info{float:left;width:100%;}
+	.right-create-patient{width:35%;}
+	.profile-right{width:inherit;}
+	.add-field{bottom: inherit;margin-top:48px;margin-right:2px;position:absolute;z-index:98;}
+	.add-field ul.dropdown-menu{bottom:0px;top:inherit;}
+	.right-create-patient{width:34%;}
+	.patient-alpha{position:static;padding:0px;}
+	.profile-right{width:inherit;}
+	.access-portal-label{width:100%;color:#222222;display:block;}
+	.access-portal-content{display:block;}
+	.pull-i{margin-left:0px!important;float:left;}
+	.setting-flag {width: 24%;}
+	.setting-flag-no {width: 70%;}
+	.stats-section{border-bottom: 1px solid #ececec;display: inline-block;width: 33%;}
+	.sales-accordian .accordion-head .accordian-section{height:auto;}
+	.client-filter{position:inherit;padding:0px 0px 13px;float:left;}
+	.access-portal-allrow .access-portal-row .access-portal-label{width:82px;}
+	.new-all-stats .stats-section {border-bottom: 1px solid #ececec;display: inline-block;width: 33%;}
+	/****** form-builder-start ********/
+	.half-preview, .servy-preview{padding:0px 14px 0px 47px;}
+	.title-half-preview.servy-title-preview{padding:33px 14px 33px 47px;}
+	/****** form-builder-end ********/
+	.create-appoint-popup{top:0px;padding-top:50px;}
+	.create-appoint-title{top:0px;}
+	.popup-right-section .popup-right-form-outer{width:90%!important;}
+	.dash-access-outer{margin-top:20px;}
+	.multi-sel-btn, .new-search, .new-calender{margin-bottom:5px;}
+	.restPasPtn{padding:4px 10px!important;font-size:13px!important;}
+	.choose-payment-outer{width:100%;}
+	.take-payment-right .juvly-title{font-size:18px;}
+}
+
+@media (min-width:768px) and (max-width:991px){
+	.right-menu{display:block;margin-right:0px;margin-top:20px;}
+	.notification{padding:0px 20px!important;font-size:13px!important;text-align:left;}
+	.navbar-right i{display:none;}
+	.right-menus .header-unselect-btn.setting{padding: 0 13px !important;width:42px;}
+	ul.nav li a{padding:18px 6px 10px 6px;}
+	ul.main-navbar li a{padding:18px 6px 10px!important;}
+	ul.sub-menu li a{padding:15px 7px 15px 6px!important; letter-spacing:-0.2px;}
+	.logout {margin-left: 5px;}
+	.right-menus .header-unselect-btn.setting span{display:none;}
+	.noti-icon.notification i{font-size:17px;}
+	.noti-icon.notification, .right-menus .header-unselect-btn.setting{padding: 0 13px !important;width:50px;}
+	.notification span{top:8px;right:4px;}
+	.notification{padding:0px 0px!important;font-size:18px!important;text-align:center;}
+	.navbar-brand{width:auto!important;}
+	.right-menus .noti-icon{padding:18px 9px 17px 9px!important;}
+	.search{margin-right:5px;}
+	.calender-filter-no-outer-style li input{width:auto;}
+	#resource_schedule #add-more-form{padding:0px;}
+	#resource_schedule #add-more-form input{padding:7px 8px 8px;}
+	.procedure-popup-edit-timeline .timeline-left, .procedure-popup-edit-timeline .timeline-right{border:none;}
+	.procedure-popup-edit-timeline .dot{display:none;}
+	.procedure-popup-edit-timeline .timeline-left img{width:auto;}
+	.procedure-name-time{min-width: 265px;}
+	.sales-left{width:220px;min-width:220px;}
+	ul.sales-menus{padding:5px 20px 10px 0px;}
+	/****** form-builder-start ********/
+	.survey-middle, .survey-right{min-width: 50%;}
+	.survey-middle{top:60px;}
+	/****** form-builder-end ********/
+	ul.right-menus li > div{padding:18px 11px 18px!important;margin-top:0px!important;}
+	ul.cal-dropdown{width:273px!important;}
+	ul.cal-dropdown li{width:100%!important;}
+}
+
+/****** form-builder-start ********/
+@media only screen and (min-width:991px){
+	.survey-middle{padding-bottom:15px;padding-top:50px;}
+	.survey-right{padding-top:50px;}
+}
+/****** form-builder-end ********/
+
+@media(max-width:991px){
+	.patinet-logo img{height:100px;margin:0px auto 50px;}
+	.popup-white .form-group{margin-bottom:10px;padding-bottom:10px;}
+	.popup-white{padding:20px;}
+	.popup-edit-form{width:90%;}
+	.title > span{margin-bottom:10px;margin-right:5px;}
+	.search{padding:0px;}
+	.go-back{margin-right:4px;margin-bottom:10px;}
+	.go-back span{display:none;}
+	.timeline-left{text-align:left;}
+	.right-images{max-width:100%;}
+	.right-images > div img{max-width:100%;width:100%;}
+	.title > span.date{width:auto!important;}
+	.pt-clone .form-sel{position:relative;}
+	.pt-clone .sub-col span.caret-pos{position:absolute;top:6px!important;right:0px;}
+	.pt-clone .sub-col{padding:15px 10px;}
+	.procedure-popup-edit-timeline{width:90%!important;}
+	.filter-outer.calender-filter label{padding-left:0px!important;}
+	.chng-plan .subs-box {width: 47.5%!important;}
+	.pro-time span { position:static;}
+	.time-line div.timeline-outer:first-child .procedure-name-time, .time-line div.timeline-outer .procedure-name-time{background:none;}
+	.procedure-name-time{position:static;margin:0px;padding:0px;display: inline-block;}
+	.procedure-name-time-top {margin-bottom: 0px;margin-top: 0;padding: 0 20px!important;}
+	.timeline-left, .timeline-right{padding-bottom:20px!important;}
+	.timeline-outer{background:none;}
+	.timeline-detail{margin:20px 0 0px;}
+	.trac-right-btn-outer{max-width:100%;}
+	.timeline-outer{margin-bottom:47px;border-bottom:2px solid $blue;}
+	.procedure-name-time {width:78%;}
+	.pro-name-section {max-width:213px;}
+	.proc-cost{position: static;text-align:left;margin-left:0px;}
+	ul.setting-menus li{display:block;border-bottom:1px solid #ddd;}
+	ul.setting-menus{border:none;}
+	.procedure-popup-edit-timeline .carousel.slide{width:100%!important;}
+	.right-menus .header-user-outer{padding-right: 10px !important;}
+	.left-new-menu{min-height:inherit!important;}
+	.duplicate-patient-list{min-width:991px;}
+	.merge-info{display:none;}
+	.merge-final-info{margin-bottom:15px;float:left;width:100%;}
+	.left-new-menu{min-height:inherit!important;}
+	.setting-tabs a{padding:15px 5px;}
+	.proc-cost{width:auto;}
+	.timeline-left, .timeline-right{border:none;}
+	.patient-left, .patient-right{display:block;float:left;width:100%;margin-bottom:20px;}
+	.Merge-Duplicate-Profiles{margin-left:10px!important;}
+	.title.dashboard-title .hello-text{width:100%!important;float:left;}
+	.search{width:auto;}
+	.patient-alpha{float:right;margin-top:0px}
+	.pull-i{margin-left:0px!important;float:right;}
+	.user-activity-filter{width:100%;}
+	.user-activity-filter .search{padding:0px;}
+	.search{width:auto;}
+	.patient-alpha{float:right;margin-top:0px}
+	#returning-customers {margin: 6px 0 -125px -6px;width:330px;}
+	.Returning-date-price {left: 220px;}
+	.wallet-wrapper{width:90%;}
+	.market-stats-heading{text-align:left!important;}
+	.profile-right .blue-btn{padding:0px 10px!important;}
+	.access-portal-allrow .access-portal-row, .access-portal-row .access-portal-label, .access-portal-allrow .access-portal-row .access-portal-content{display:table!important;width: 100%!important;clear: both;}
+	#resend_portal_mail {width: 100%;}
+	.access-portal-allrow .access-portal-row .setting-switch{float:none;}
+	.health-name-top{display:none;}
+	#Health_Timeline {padding-left: 24px;padding-top: 0px;}
+	.health-trac-right{margin-top:30px;}
+	#Health_Timeline .timeline-right {padding-bottom:20px!important;}
+	.hlth-outer{background-image:inherit!important;margin-bottom:20px;}
+	.profile-right .header-select-btn{padding: 0px 10px!important;}
+	.add-prcedure-fixed{right: 0px;width: 90%;margin-right: 5%;}
+	.filter-multiselect ul.multiselect-container{max-width:490px!important;}
+	.time-line .timeline-outer .procedure-name-time-top{margin-bottom: 0px;margin-top: 0px;}
+	.time-line .timeline-outer .procedure-name-time-top .procedure-name-time{position:static;padding-left:17px;display: initial;}
+	.time-line .timeline-outer, .time-line .timeline-outer .procedure-name-time-top .procedure-name-time{background:none;}
+	.health-links, .health-trac-right{margin-top:0px;}
+	/****** new setting *********/
+	.cancel-fee{text-align:left;margin-bottom:10px;}
+	.main-profile-picture{position:relative;margin-bottom:40px;left:0px;}
+	.profile-detail-left{padding-left:15px;}
+	.setting-left-menu{width:27%;}
+	.setting-setion, .juvly-section{width:70%;}
+	.busines-detail-left{margin-bottom:40px;}
+	.table-min-width{min-width:600px;}
+	.accord-min-width{min-width:900px;}
+	.portal-numbers{font-size:40px!important;}
+	.sms-btn{margin-bottom: 49px;margin-top: -10px!important;float: left;}
+	.gift-card-logo{top: 92px;}
+	.gift-card-logo img{max-height:50px;}
+	.gift-amount{right: 0px;top: 11px;width: 100px;}
+	.gift-amount-span{font-size: 15px;}
+	.gift-amount-label{font-size: 34px;line-height: 37px;}
+	.profile-right .header-select-btn{padding: 0px 10px!important;}
+	.add-prcedure-fixed{right: 0px;width: 90%;margin-right: 5%;}
+	/****** new survey *********/
+	.stats-section{border-bottom: 1px solid #ececec;display: inline-block;width: 50%;}
+	.cashdrawer-submenu{margin-bottom:50px;padding-right:0px;}
+	.invoice-discraimer{padding-right:15px;}
+	.multiselect-container li{width:33%!important;}
+	.drop--down-outer{margin-bottom:5px!important;}
+	/**************** new pos ****************/
+	.bank-account, .edit-account{margin-top:20px;float:none;}
+	.pos-enable-disable{margin:11px 0px 11px;width:100%;}
+	.pos-enable-disable > span{width:80%;}
+	/***** POS details ********/
+	.payout-bank-account{float:left!important;}
+	.main-profile-picture{height:auto;}
+	.service-hours-outer{max-width:75%;}
+	.setting-custom-switch #enabled-text, .setting-custom-switch #disabled-text{letter-spacing: -0.2px;}
+	.wide-popup-wrapper{width:90%!important;}
+	.header-select select{width:98px;}
+	.new-all-stats .stats-section {border-bottom: 1px solid #ececec;display: inline-block;width: 50%;}
+	.cal-date-btn-outer{margin-bottom:10px;}
+	.cal-date-btn-outer{min-width: 333px;padding-right: 0px;text-align:right;padding-right:15px;}
+	.cal-filter{float:right;width:100%;}
+	.cal-search{width:100%;}
+	.cal-title{display:none;}
+	.cal-clinic{float:left;}
+	.new-dropdown-menu li{width:33%!important;}
+	.new-dropdown-menu{margin-top:52px;}
+	/****** form-builder-start ********/
+	.survey-outer{position:static;display:block;}
+	.survey-left{float:left!important;width:250px!important;height:100%;position:fixed;top:0px;padding-top:50px!important;left:0px;bottom:0px;z-index:10;}
+	.survey-middle{display: block;float:left;width: 50%;height:100%;position: absolute;top: 0px;padding:50px 15px 75px;left:0px;}
+	.survey-right{display: block;float: left;width: 50%;height: 100%;position: absolute;top: 0px;padding-top: 50px;right:0px;}
+	.property-option{width:100%;}
+	.arrow-slide-right{top:60px;}
+	.servy-preview, .servy-title-preview{max-width:630px;}
+	/****** form-builder-end ********/
+	.provider-schedule-popup-title{height:52px;text-align:left;padding-left:50px;}
+	.calender-btns{width:auto;}
+	.cal-filter{width:auto;float:left;margin-left:8px;}
+	.calender-btns .new-blue-btn{padding:4px 13px 4px;}
+	.cash-out-save{margin-top:0px!important;}
+	.client-filter-popup{width:90%;}
+	#print_area table, #print_area{width:100%;}
+	.equip-field-outer .newInputLabel{margin:0px 2px -3px;}
+	.equip-field-outer.newInputFileldOuter .setting-input-box{width:74px!important;}
+	.bankdrop-save{margin-top: 0px!important;}
+	.fullscreen-enabled .cal-filter {float: left;}
+	#content .fullscreen-enabled .day-view-calendar {height:85% !important;min-height:inherit!important;}
+	#content .fullscreen-enabled .week-view-calendar {height:85% !important;min-height:inherit!important;}
+	.right-create-patient .blue-btn{margin-bottom:5px;}
+	.health-smry-outer{min-height:inherit;}
+	.churnFilterExport{margin-bottom:5px;}
+	.payment-wallet, .take-payment-right, .take-payment-right{display:block!important;float:left;width:100%!important;}
+	.choose-payment-outer .payment-methods{width:100%!important;margin-bottom:15px;}
+	.memberWalletOuter{width:100%;}
+	.activateEmail{margin-top:20px!important;}
+}
+/****** form-builder-start ********/
+@media only screen and (min-width:767px) {
+	.survey-middle{position: fixed;top: 0px;bottom: 0px;overflow-y:auto;width:40%;}
+	.survey-right{position: fixed;top:0px;bottom: 0px;overflow-y:auto;right:0px;width:40%;}
+}
+/****** form-builder-end ********/
+@media(max-width:767px){
+	.navbar-brand{width:auto!important;}
+	.navbar-collapse{background:#fff;position:relative;z-index:100;}
+	ul.nav {margin-top: 0px;margin-bottom:0px;float:none;}
+	ul.nav > li{border-bottom: 1px solid #ddd;}
+	ul.nav > li:hover {background: #e9f4f9!important;}
+	ul.nav li a {padding: 9px 4px 9px 15px!important;height:auto!important;}
+	ul.nav li a.setting, ul.nav li a.logout, ul.nav li a.notification{text-align:left;width:auto;border:none;font-size:13px!important;text-transform: inherit;width:100%;}
+	ul.nav .arow-link, .arow-link-outer{display:none!important;}
+	.setting i, .logout i, .notification i{display:none;}
+	.notification span{top:12px;}
+	.navbar-right{display:block;}
+	.right-menus{float:none;}
+	.noti-popup{display:none!important;}
+	header ul.right-menus li .show-desktop{display:none!important;}
+	header ul.right-menus li .show-mobile{display:block!important;}
+	header .navbar-header .navbar-toggle{display:block!important;margin-top: 11px;}
+	header ul.nav li a:hover, header ul.nav > li.active a{background:none!important;border:none!important;color:$blue;}
+	.nav-outer{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;flex-direction:column;}
+	.right-menus{-webkit-box-ordinal-group: 2;-moz-box-ordinal-group: 2;-ms-flex-order: 2;-webkit-order: 2;order: 2;}
+	.main-navbar{-webkit-box-ordinal-group: 1;-moz-box-ordinal-group: 1;-ms-flex-order: 1;-webkit-order: 1;order: 1;}
+	ul.sub-menu{border:none;}
+	ul.sub-menu li{display:block;border-bottom:1px solid #ddd;}
+	ul.sub-menu li a{padding: 10px 0;}
+	#content {padding-top: 12px !important;clear:both;}
+	#ProductAddProductForm{display:block!important;}
+	.arow-link-outer > ul{position:static;border:none;width:auto;}
+	.header-user-dropdown{display:block;}
+	.export-pro .read-only p{width:100%;}
+	.main-eror{top:0px;}
+	.navbar-form.search.search{float:left; width:100%; margin-bottom:10px;padding:0px 15px;}
+	.navbar-form{padding:0px;}
+	.field-outer{display:table; width:100%;}
+	 .field-outer i{width:40px;text-align:center;}
+	.field-outer .form-control, .field-outer i{display:table-cell;}
+	.title > span{margin-bottom:10px;}
+	.header-select-btn{margin-left:0px;}
+	.title .header-select-btn{margin-left:5px;}
+	.content {padding:0 30px 20px;}
+	footer span{width:100%;text-align:center;}
+	.profile-outer, .patient-left, .patient-right{display:block;width:100%;padding:10px 0px;}
+	header img{margin:0 auto 0px;}
+	.calender-form-icon{display:none;}
+	.time-line{height:auto;}
+	select#product_type, input#custom_time{width:100%!important;}
+	#main_content_area{float:left;width:100%;}
+	.returning-customers #container{margin-left:-30px;}
+	.returning-customers #chartContainer{overflow:hidden;}
+	.search #sel-clini{width:100%;}
+	.title > span{margin-bottom:10px;width:100%;}
+	.checktoallow{width:87%!important;font-weight:normal!important;}
+	.total-patients, .srch-outer, .right-create-patient, .right-create-patient > div{width:100%;float:left;}
+	.right-create-patient a{margin-left:5px;}
+	.profile-right .blue-btn, .profile-right .more-info-profile-dropdown button{width:100%;text-align:center;margin-bottom:2px;}
+	.profile-right .more-info-profile-dropdown{width:100%!important;}
+	.duplicate-search{margin-top:5px;}
+	.duplicate-search .navbar-form.search{padding: 0px 0px 0px 15px;}
+	.filter-or{margin:10px 0px;}
+	.new-small-model{width:93%;}
+	ul.merge-steps{text-align:left;padding-top:20px;position:relative}
+	ul.merge-steps li a{display:none;padding: 0 10px 10px;}
+	ul.merge-steps li.merge-sel a{display:inline-block;}
+	ul.merge-steps li .next-step{display:inline-block;position: absolute;right: 0;top: 17px;}
+	.section-title-p{margin-left:0px;padding-left:0px;margin-top:3px;display: block;border:none;}
+	.or-left{padding-left:15px;}
+	.or-right{padding-right:15px;}
+	.pro-procedure-image{float:none;display: block;margin-bottom:7px;}
+	.xs-popup{width:400px;}
+	.cus-pro-match{width:100%!important;}
+	.pro-procedure-content {padding-left: 0px;}
+	.setting-tabs{border:none;height:auto;float:left;width:100%;}
+	.setting-tabs li {display: block;float: left;width: 100%;}
+	.setting-tabs li a{text-align:left;border-bottom:1px solid #dddddd;float:left;width:100%;}
+	.more-info-profile-dropdown{width:auto!important;margin-left:5px;}
+	.profile-outer, .patient-left, .patient-right{display:block;width:100%;padding:10px;float:left;}
+	.search{width:100%;}
+	.srch-wid-alpha{text-align:left;}
+	.srch-wid-alpha .filter-count{margin-left:15px;}
+	.right-create-patient{float:right;width:auto;margin-top:0px;}
+	ul.patient-alpha{text-align:center;margin-bottom:0px;}
+	.patient-alpha li{width:7%;}
+	.search-popup{width:auto;}
+	.add-field{bottom: inherit;margin-top:77px;margin-right: -11px;}
+	.date.this-month{font-size:14px;margin-top:3px;float:left!important;margin-top:-127px;font-size:14px!important;padding:13px!important;}
+	.dashboard-title #reportrange{margin-top:0px;margin-bottom: 12px!important;}
+	.right-menus-a{width:100%!important;height:auto!important;}
+	.start-program{width: 90%;left: 5%;margin-left: 0px;}
+	.no-ques-margin{margin-bottom:30px;}
+	.setting-flag, .setting-flag-no{float:none; display:inline-block;}
+	.setting-left-menu, .setting-setion, .juvly-section{width:100%;}
+	.min-width-767{min-width:750px;}
+	.card-exp-date{ display:inline-block;}
+	.work_as_provider_container{padding:20px 15px 20px!important;}
+	.change-pwd-outer{padding-left:15px;}
+	.stats-section{display:block; width:100%;float:left;border-left:none;}
+	.multiselect-container li{width:50%!important;}
+	.drawer-history-field{width:49%;}
+	.cash-drawer-title, .cash-history-btn{margin-bottom:10px;}
+	.search-right{margin:10px 0px 0px!important;}
+	.table-responsive{margin:0px;}
+	.note-timeline > div{padding-left:25px;}
+	.note-timeline > div .note-subject{padding-left:15px;}
+	.export-procedure .export-pro-image{width:150px;}
+	.sales-relation{width:100%;margin-top:0px;margin-bottom:20px;font-size:15px;}
+	.activity-menu{padding:0px 15px;}
+	.sub-menu.text-right{text-align:left;}
+	.setting-setion, .juvly-section{min-height:500px;}
+	.row.relative{margin-top:30px;margin-bottom:30px;}
+	.service-hours-outer{max-width:100%;}
+	.resource-type-field{margin:30px 0px;}
+	.add-category-outer{padding:0px 15px;margin-top:10px;}
+	ul.new-setting-tabs.salestab > li > a{padding:10px 0px;}
+	.report-menu-section{margin-bottom:20px;}
+	.small-stripe-btn{margin-bottom:10px;}
+	.filter-type{float:left;}
+	.activity-row .user-status{position:initial;margin-right:10px;}
+	.activity-row .activity-detail{float:left;width:100%;padding:5px 0px;}
+	.activity-detail > div:first-child{margin-bottom:5px;}
+	.new-all-stats .stats-section {display: block;width: 100%;float: left;border-left: none;}
+	ul.cal-dropdown.cal-service-dropdown li{width:100%!important;}
+	.cal-date-btn-outer{text-align:center;}
+	.new-dropdown-menu li{width:50%!important;}
+	.pay-as-you-go{margin-bottom:10px;}
+	/****** form-builder-start ********/
+	.survey-outer{position:fixed;}
+	.survey-left{float:left;width:250px;height:100%;position:fixed;top:0px;padding-top:50px;left:0px;bottom:0px;z-index:1000;}
+	.survey-middle{overflow-y:scroll;display:block;float:left;width:100%!important;height:50%;position:absolute;top:0px;padding:0px 12px 15px;}
+	.survey-right{overflow-y:scroll;display: block;float: left;width: 100%!important;height: 50%;position: absolute;bottom: 0px;top:50%;padding-top:0px;padding-bottom:50px;}
+	.property-option{width:100%;}
+	.half-preview{margin:auto;display:table;width:100%;}
+	.full-view{display:none;}
+	.arrow-slide-right{top:0px;}
+	.front-end-popup-title{height: 52px;text-align:left;padding-left:60px;}
+	/****** form-builder-end ********/
+	.popup-left-section{display:none!important;}
+	.popup-right-section{border-radius:10px;-webkit-border-radius:10px;}
+	.appointment-detail-main{width:90%!important;}
+	.appointment-detail-main .small-popup-content{max-height:250px;}
+	.appointment-detail-main .footer-static a{width:100%!important;margin-bottom:4px!important;}
+	.dashboard-title .search-bg.new-calender{margin-bottom:10px;margin-top:27px;}
+	.sales-goal-legend{max-height:480px;height:auto;}
+	.subscription-popup{width:90%;}
+	ul.right-menus li > div{padding:0px!important;}
+	.sm-btn{margin-top:4px!important;}
+	.add-mon-mem-btn{margin-top:10px!important;}
+	.cal-month-week-day-outer, .cal-date-btn-outer{float:left;}
+	.dash-filter-outer .new-calender, .dashboard-wrapper .new-dash-sel{width:100%!important;}
+	.popup-right-section{border-radius:10px;-webkit-border-radius:10px;}
+	.no-sales-goal{height:100px;}
+	.custom-select{width:100%;}
+	.no-popup-scroll .small-popup-content{max-height: 383px!important;overflow:auto!important;}
+	.table-fixed-top-header{display:none;}
+	.client-filter-popup .small-popup-content{max-height:383px;overflow:auto;}
+	.healthtimeline{padding:0px;}
+	ul.appointment-config-link{margin-bottom:40px;}
+	.loyaltyMembership{width:90%;}
+	.appointment-container{padding:20px 20px 30px;}
+	.appTimeSetting{width:90%;}
+	ul.appointment-tabs li{display:block;}
+	ul.appointment-tabs li a{border-bottom:2px solid #dddddd;padding:10px 0px 10px}
+	.product-row .remove-product{right:-3px;}
+	.product-row {position: relative; border-bottom: 1px solid #ccc; padding-bottom: 10px;margin-bottom: 31px;}
+	.juvly-title, .setting-title{font-size:20px;}
+	.setting-title .cancelAction{position:absolute!important;right:-8px!important;top: -27px!important;}
+	.new-line-btn, .new-blue-btn{padding:5px 10px 4px;}
+	.invoice-preview-outer table#print_area{width:614px;}
+	.cash-history-btn{margin-top:5px!important;}
+	#content .fullscreen-enabled .day-view-calendar {height:52% !important;min-height:inherit!important;}
+	#content .fullscreen-enabled .week-view-calendar {height:52% !important;min-height:inherit!important;}
+	.payg-dosage{padding:0px 15px!important;}
+	.resource-survey-outer{margin-top:10px!important;}
+	.goFullScreen{display:none;}
+	.treatment-timeline{margin-top:10px;}
+	.treatmentPlanTitle span{font-size:22px;margin-top:6px;}
+	.memberProgram-right{padding-left:15px;}
+}
+
+@media(max-width:600px){
+	.main-profile{padding:0px 0px 25px;}
+	.profile-pic{margin:20px;}
+	.header-btns{width:100%;text-align:right;}
+	.content{padding:0px 15px 20px;overflow:hidden;}
+	.popup-edit-dp{margin:0px 20px 0px 0px;}
+	.total-patients{margin-top:3px;}
+	.total-patients span{display:block;margin-left:0px;}
+	.filter-outer .add-field{width:auto;}
+	.total-patients span{margin-top:0px;}
+	#provider_schedule .pt-clone input{margin-bottom:10px;background:none;}
+	#sig-div canvas {height: 150px;width: 100%;}
+	.clr-rest {bottom: -99px;position: absolute;right: -6px;width: 50%;}
+	.pop-detail-text{margin-top: 34px;}
+	.appointment-outer > div{display:block!important;}
+	.appoint-right {padding-left:0px!important;margin-top:20px;}
+	.appoint-left {width: 220px;text-align: center;margin: auto;}
+	.popup-title{position:relative;}
+	.iziModal-content{padding-top:0px!important;}
+	.all-patient-indent{text-indent:0px!important;display: inline-block;}
+	.appoint-pro-edit{max-height: 230px;}
+	.sales-right .sales-calender-button{width:100%;}
+	.employee_dropdown .ms-options-wrap{position:inherit!important;}
+	body .employee_dropdown .ms-options {width: 100%!important;left:0px;right:0px;}
+	/****** new setting *********/
+	.search-bg{width:100%; margin-bottom:10px;}
+	.setting-custom-switch{width:100%;margin-top:10px;}
+	.setting-container, .juvly-container{padding:25px 15px 35px;}
+	.crossIcon{right:-7px;}
+	.setting-wrapper{padding:0px 15px 20px!important;}
+	.switch-accordian-row{padding:17px 65px 17px 15px;}
+	.switch-accordian-row .setting-switch{right:15px;}
+	.choice-question-row{width:100%;margin-left:-13px;}
+	.quest-img-title{margin-left:-13px!important;}
+	.modal-blue-header{height:auto;}
+	.popup-new-btns{position:static;}
+	.export, .new-calender{margin-bottom:5px;}
+	.filter-type{margin-bottom:10px;}
+	.chat-txt-gray, .chat-txt-gray{max-width:90%;}
+	.right-chat-outer .chat-txt-gray, .right-chat-outer .chat-txt-gray {max-width: 90%;}
+	.small-popup-outer{width:90%!important;margin-top:40px;}
+	.filter-table .Questionnaire-name{padding-left:15px!important;}
+	.filter-table svg{display:none;}
+	.filter-table a{visibility:visible;}
+	.small-popup-outer .footer-static a{width:auto;margin-bottom:0px;}
+	.product-active{widtH:auto;}
+	/****** form-builder-start ********/
+	.survey-left, .survey-middle{flex:100%;}
+	.popup-title{position: absolute!important;}
+	/****** form-builder-end ********/
+	.data-usage .dash-box{margin-left:0px!important;}
+	.cal-date-btn-outer .new-calender{width:34px;}
+	.cal-month-week-day-outer, .protected .cal-date-btn-outer{max-width:inherit;width:100%;margin-bottom:10px;}
+	.cal-date-btn-outer{padding-left:18px!important;}
+	.cal-filter{margin-left:18px;width:100%;padding-right:15px;padding-left: 18px!important;margin:0px;}
+	.calendar-dropdown, ul.cal-dropdown, ul.cal-dropdown{width: 100%!important;}
+	.cal-date-btn-outer{width:100%;min-width:100%;max-width:100%;padding-right: 15px!important;}
+	.cal-date-btn-outer .new-calender{width: 100%;margin: 10px 0px 0px 0px;}
+	.cal-date-btn-outer .new-calender input{text-indent:inherit;}
+	.cal-month-week-day-outer, .cal-date-btn-outer{text-align:center!important;}
+	.provider-cal-filter{margin-right:0px!important;}
+	.inventory-category-export-outer {width:100%;}
+    .inventory-category-export-outer .new-blue-btn{width:100%;margin-left:0px;margin-bottom:10px;}
+    .filter-wid-apply-btn, ul.cal-dropdown{width:273px!important;left:inherit;}
+    .cal-month-week-day-outer.provider-m-d-w{max-width:100%;width:100%;}
+    .field-mapping-outer .setting-field-outer .new-field-label div{width:100px;}
+    .browser-support{width:90%;}
+    .browser-support .browser-support-wrapper ul li img{height:40px;}
+    .browser-support .browser-support-wrapper ul li{height:85px;}
+    .browser-support .browser-support-wrapper ul li span{top:57px;}
+    #business_time{margin: 0px 0px 12px!important;}
+    .goFullScreen{width:100%;}
+    .appointment-container .setting-search-outer{margin-bottom:10px;}
+    .appointment-container .switch-accordian-row .setting-switch{position:absolute;}
+    .treatmentPlanTitle span{width:100%;}
+    .treatmentSection .treatmentContent .treatmentDetails{font-size:15px;}
+    .white-popup{width:90%;}
+}
+
+@media (min-width:480px) and (max-width:767px){
+	.edit-form-outer .row select{width:50%;float:left;}
+	.edit-form-outer .row > div > div{width:50%;float:left;}
+	#PatientNoteForm textarea, #PatientDocumentDescription{width:50%!important;float:left;}
+}
+
+@media(max-width:530px){
+	.profile-title .header-select-btn, .more-info-profile-dropdown{text-align: center;width: 100%;margin-bottom:10px;}
+	.search-with-dropdown{width:100%;}
+	.booking-search-outer{width: 52%;}
+	.booking-drop-down {width: 48%;}
+	.multiselect-container li{width:100%!important;}
+	.right-create-patient .header-select-btn{margin-bottom:5px;}
+	.right-create-patient{width:100%;margin:0px 0px 10px;}
+	.export-procedure, .export-procedure .table-row, .export-procedure .table-cell{display:block;}
+	.export-procedure .table-cell{border:none;padding:5px 0px;}
+	.export-procedure .table-row{display:table;width:100%;border-bottom:1px solid #ececec;padding:15px 0px;}
+	.export-procedure input{position:static;}
+	ul.cal-dropdown li{width:100%!important;}
+	.new-dropdown-menu li{width:100%!important;}
+	.new-dropdown-menu{margin-top:10px;}
+	.popup-header-btn{padding:4px 7px 4px;}
+	.something-wrong{left:5%;margin-left:0px;width:90%;}
+	.newInputFileldOuter.equip-field-outer{width:100%;padding:0px;margin-bottom:10px;}
+	.modal-dialog{margin:60px 20px!important;}
+	.provider-schedule-popup-height .fromandtoTime .add-round-btn{right:-12px!important;}
+	#Appointment_Booking-form-title .add-round-btn{right:7px;}
+	.juvly-title .new-blue-btn{margin-left:0px;width:100%;margin-top:10px;}
+}
+
+@media(max-width:480px){
+	.patinet-logo img{height:100px;margin:0px auto 50px;}
+	.timeline-content h2 {font-size: 16px;}
+    .title a{margin-bottom:10px;}
+    #apply-filter{margin:5px 0px;}
+	#appointment-form{padding:0 20px 20px!important;}
+	.med-history-left{display:none;}
+	.med-history .med-history-right-label label{display:block;color:#444;}
+	.app-history{margin-top:36px;}
+	.edit-form-outer textarea{width:100%;}
+	.export-pro img{margin-left:0px;margin-top:23px;}
+	.export-pro input[type="checkbox"]{margin-left:-9px;}
+	.returning-customers #container{margin-left:-39px;width:200px;}
+	.sales-left{min-width:273px;}
+	.view-sign{width:auto;}
+	.right-create-patient .header-select-btn{margin-left:0px;}
+	ul.merge-steps{margin-bottom:56px;}
+	.merge-pic{margin-right:10px;}
+	ul.merge-steps li .next-step{top: 68px;}
+	.default-input, .custom-input, .removable-input {width: 100%;margin-right: 0px;}
+	.add-field button{width:27px;text-align:center;}
+	.add-field{float: none;text-align: center;width: auto!important;margin-top:106px;}
+	.patient-alpha li{width:11%;}
+	.cus-pro-match{padding-top: 4px!important;}
+	.more-info-profile-dropdown {width: 100% !important;}
+	.date.this-month{margin-top: -127px;padding:0px!important;}
+	.dashboard-title #reportrange{margin-bottom:35px!important;margin-top:-70px;}
+	.dashboard-title .search{padding:0px 0px;}
+	.dashboard-title .col-sm-12.col-md-4{padding:0px!important;}
+	.dashboard-title .dash-filter-outer{float: left;width: 100%;margin-top:15px;padding:0px;}
+	.dashboard-title{margin: 0px -10px!important;}
+	.footer-static a, .footer-sticky a, .footer-static button, .footer-sticky button, .footer-static input, .footer-sticky input{width:100%!important;margin-bottom:10px!important;}
+	.report-title-discription{padding-right:0px;margin-bottom:40px;}
+	.juvly-title-span{display:block;margin-bottom:10px;}
+	.business-hours-outer .col-xs-4{padding:0px;}
+	.business-hours-outer .hours-time{width:38px;}
+	.business-hours-outer .hours-pm{width:38px;	padding-right:10px;}
+	.business-hours-outer .setting-week{font-size:11px;}
+	.business-hours-outer .new-check{margin:0px 2px;}
+	.health-links .line-btn{width:100%!important;margin:5px 0px;text-align:center;}
+	.add-doc{margin-top:5px;}
+	.cal-filter{padding-left:15px;}
+	.calendar-dropdown{margin-left:0px;}
+	ul.cal-dropdown, .calendar-dropdown .filter-wid-apply-btn{top:33px!important;}
+    .filter-wid-apply-btn ul.cal-dropdown{top:0px!important;}
+	.change-sig{width:100%;}
+	.change-sig button, .change-sig div{margin-bottom:5px;width:100%;margin-left:0px;}
+	.activity-row .activity-time{position:static;width:100%;float:left;padding:0px;}
+	.activity-detail > div{padding:0px;}
+	.text-left.data-usage .sales-goal-legend {position:relative;top:0px;}
+	.dashboard-wrapper .navbar-form.search.search{padding:0px;}
+	.xs-popup {width: 400px;}
+}

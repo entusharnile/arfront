@@ -1,0 +1,174 @@
+@media screen and (max-width:1280px){
+.wrapper{
+	width:95%;
+}
+}
+@media screen and (max-width:1170px){
+.wrapper{width:90%!important;}
+footer{
+	padding:20px 0px;
+	clear:both;
+	p{
+		display:block;
+	}
+	.Address{
+		margin-left:0px;
+		display:block;
+		text-align:center;
+		padding:10px 0px;
+	}
+	#social{
+		float:none;
+		
+		a{
+			height:auto;
+		}
+	}
+}
+}
+@media screen and (max-width:1024px){
+.half{
+	width:100%!important;
+	display:block;
+}
+input.half{
+	margin-top:20px;
+}
+.login-left{
+	display:none;
+}
+.login-right{
+	width:100%;
+}
+.login-outer{
+	float:none;
+	display:table;
+	margin:150px auto 100px !important;
+}
+.payment{
+	margin-top:70px!important;
+}
+.login-left.subscibe{display:block;width:100%;text-align:center;}
+
+.yearly-plan{
+    width: 100%;
+    }
+.billing, .subs-box{
+	margin-bottom:15px;
+}
+.dash-content.payment{margin-top:0px!important;}
+
+.plan{
+	padding:10px 24px;
+}
+.plan h2{
+	font-size:27px;
+}
+.plan h2 span{
+	font-size:20px;
+}
+.annual-plan h2{
+	font-size:24px;
+}
+.plan-option {
+    width: 37% !important;
+}
+.banner-image{width:90%;}
+}
+
+@media screen and (max-width:991px){
+	.ar-login-next{width:90%!important;}
+}
+@media screen and (max-width:767px){
+.login-main{
+	width:400px;
+	margin: 100px auto 10px !important;
+	
+	h1{
+		font-size:30px;
+	}
+	.first-name {
+		padding-right: 15px;
+	}
+	.last-name {
+		padding-left: 15px;
+	}
+}
+.login-title{
+	width:100%;
+	float:left;
+}
+.plan-info {
+    width: 100%;
+}
+.plan{
+	width:48%;
+	margin-bottom:20px;
+}
+.free-trail .form-group{
+	margin:0px;
+	margin-bottom:20px;
+}
+.free-trail .form-group .col-sm-6, .free-trail .form-group .col-sm-12{
+	padding:0px;
+}
+.member-section{
+	width:100%;float:left;
+}
+.signup{
+	width:100%;
+}
+
+.new-login, .ar-next{width:100%;position:initial;}
+.aestheticNextMain{position:initial;margin:0px;padding:50px;}
+}
+
+
+@media screen and (max-width:450px){
+.input-row input[type=text], .input-row input[type=password], .input-row select{
+	width:80%;
+}
+.nav li a{
+	margin:0px;
+}
+.nav li a.login{
+	padding:7px 11px;
+}
+.small-input{
+	width:100%;
+	float:none!important;
+}
+.header{
+	padding-top:55px;
+}
+.Phone-no{
+	margin-top:-55px;
+}
+.login-main {
+    display: table;
+    width: 85%;
+}
+.login-main input[type=submit], .login-main button[type=submit], .login-main a.back-btn {
+	width:100%;
+	margin-top:20px;
+	font-size:17px;
+}
+.backtologin, .resetpswd{
+	width:100%;
+}
+.plan-info, .plan{
+	width:100%;
+	display:table;
+}
+.sucess-btn, .danger-btn{
+	margin-bottom:20px!important;
+	width:100%!important;
+}
+.aestheticNextMain a{
+	width: 100%;
+    display:block;
+    margin: 0px 0px 20px!important;
+}
+.aestheticNextMain img{max-width:100%;height:auto;}
+}
+

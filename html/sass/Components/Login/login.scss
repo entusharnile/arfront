@@ -1,0 +1,22 @@
+.login-container{
+	background:$white-color;
+}
+
+.forgot-password {
+	padding: 20px 0px 30px;
+	font-size: 15px;
+	margin: 20px 0px 10px;
+
+	a {
+	color: #444444;
+	text-decoration: underline;
+	}
+}
+
+
+.ar-next{width:50%;float:right;position:fixed;right:0px;top:0px;bottom:0px;background-image:url(../images/login-bg.jpg); background-size:cover; background-repeat:no-repeat;}
+.aestheticNextMain{width:100%;position:absolute;z-index:1;margin-top:-125px;top:50%;text-align:center;padding:0px 25px;
+	p{clear:both;display:block;font-size:14px;color:#ffffff;margin:0px;}
+	a{padding:10px 20px;background:#276EFA;color:#ffffff;font-size:12px;}
+}
+

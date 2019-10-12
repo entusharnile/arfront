@@ -1,0 +1,124 @@
+.login-main{
+	width:450px;
+	display:table;
+	margin:auto;
+	clear:both;
+	padding:20px 0px;
+	height:445px;
+	
+	h1{
+		position:relative;
+		margin-bottom:50px;
+		font-weight:300;
+		font-size:$login-title-size;
+	}
+	
+	h1:after{
+		width:135px;
+		height:2px;
+		position:absolute;
+		content:'';
+		background:$login-blue-color;
+		left:0px;	
+		bottom:-15px;
+	}
+	
+	.login-title{
+		position: relative;
+		margin-bottom: 26px;
+		font-weight: 300;
+		font-size: 22px;
+		margin-top: 12px;
+	}
+	
+	.login-title::after {
+		width: 135px;
+		height: 2px;
+		position: absolute;
+		content: '';
+		background: #0075c0;
+		left: 0px;
+		bottom: -9px;
+	}
+	
+	label{
+		font-weight:normal;
+		font-size:$login-font-size;
+	}
+	
+	input, select{
+		border:1px solid #aaa;
+	}
+	
+	input[type=submit], button[type=submit], a.back-btn{
+		background:#0075c0;
+		border-radius:5px;
+		border:none;
+		width:293px;
+		height:53px;
+		text-align:center;
+		color:$white-color;
+		font-size:20px;
+		font-weight:bold;
+		margin:auto;
+		display:inherit;
+		margin-top:40px;
+	}
+	.login-main input[type=submit], .login-main button[type=submit], .login-main a.back-btn, .ar-login-btn {
+		background:$login-blue-color;
+		border-radius: 5px;
+		border: none;
+		width: 293px;
+		height: 53px;
+		text-align: center;
+		color:$white-color;
+		font-size: 20px;
+		font-weight: bold;
+		margin: auto;
+		display: inherit;
+		margin-top: 40px;
+	}
+	.login-main button[type=submit] i, .login-main a.back-btn i {
+		font-size: 18px;
+		margin-left: 5px;
+	}
+	.form-group {
+		margin-bottom: 15px;
+		
+		.backtologin, .resetpswd {
+			width: 49%;
+			
+			.back-btn {
+				width: auto!important;
+				line-height: 50px;
+				text-decoration: none;
+			}
+			
+		}
+		
+	}
+	
+	.first-name {
+		padding-right: 5px;
+	}
+	
+	.last-name {
+		padding-left: 5px;
+	}
+	
+	.required {
+		color: red;
+	}
+	
+}
+.submit input:after{
+	background:url(../images/btn-load.gif) #0075c0;
+	width:100px;
+	height:100px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	content:'';
+}
+
+

@@ -1,0 +1,73 @@
+footer{
+	background:#1f1f1f;
+	display:block;
+	padding:40px 0px;
+	color:#777;
+	font-size:13px;
+	
+	p{
+		text-align:center;
+		margin-top: 9px;
+		font-size:13px;
+		display:inline-block;
+		
+		a{
+			color:$white-color;
+		}
+	}
+	
+	.Address{
+		display:inline-block;
+		color:#fff;
+		font-size:17px;
+		margin-left:30px;
+		
+		span{
+			width:25px;
+			height:25px;
+			display:inline-block;
+			border-radius:50%;
+			border:1px solid $white-color;
+			text-align:center;
+			font-size:14px;
+			line-height:23px;
+			margin-left:12px;
+		}
+		
+		.footer-phone-num {
+			color:$white-color;
+		}
+		
+	}
+
+	
+	#social{
+		color:#777;
+		list-style:none;
+		display:block;
+		text-align:center;
+		float:right;
+		
+		li{
+			display:inline-block;
+			
+			a{
+				display:inline-block;
+				color:#777;
+				padding:0px 8px;
+				font-size:20px;
+				width:43px;
+				height:50px;
+				border-radius:50%;
+				line-height:32px;
+				margin:0px -3px;
+			}
+			a:hover{
+				border-color:#fff;
+				color:#fff;
+			}
+			
+		}
+	}
+}
+

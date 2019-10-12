@@ -1,0 +1,108 @@
+.factor_status {
+  padding-top: 3px;
+  margin-right: 50px;
+  float: right;
+  font-family: "Lato", sans-serif;
+  color: #667680;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.pos-stripe-outer {
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-left: 30px;
+}
+.pos-stripe-outer .pos-stripe-option {
+  display: inline-block;
+  vertical-align: top;
+  top: 0px;
+  position: absolute !important;
+  left: 0px;
+}
+.pos-stripe-outer .pos-stripe-discrip {
+  display: block;
+  font-size: 13px;
+  font-weight: normal;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  color: #667680;
+  line-height: 22px;
+}
+.pos-stripe-outer .pos-stripe-discrip .authenti-radio-label {
+  padding-top: 2px;
+  font-size: 14px;
+  color: #667680;
+}
+
+.authe-discription {
+  width: 100%;
+  float: left;
+  font-size: 13px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+.twofas-light-icons {
+  margin: 0px 0px 17px;
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+.twofas-light-icons a {
+  display: inline-block;
+  vertical-align: top;
+}
+.twofas-light-icons a img {
+  height: 49px;
+}
+
+.authe-icons {
+  width: 300px;
+  text-align: center;
+  padding: 4px 0px 0px !important;
+  clear: both;
+  display: inline-block;
+}
+.authe-icons a {
+  color: #0472b3;
+}
+.authe-icons a .barcode-title {
+  display: none;
+  font-size: 14px;
+  padding: 2px 0px 5px !important;
+  font-weight: 200;
+  width: 330px;
+  float: right;
+  background: black;
+  color: white;
+  position: absolute;
+  left: 30px;
+  top: 19px;
+}
+
+.barcode-img {
+  width: 300px;
+  text-align: center;
+}
+
+.w-150 {
+  width: 150px !important;
+}
+
+.w-200 {
+  width: 200px !important;
+}
+.factor-step {
+    padding-top: 0px!important;
+}
+.enable-disable-switch{margin-left:60px;}
+/*# sourceMappingURL=two-factor-authentication.css.map */
+.barcode-title{
+  background: #eee;
+  max-width: 313px;
+  padding: 5px 7px;
+  text-align: center;
+  @include border-radius(25px);
+}

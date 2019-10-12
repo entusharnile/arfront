@@ -1,0 +1,419 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="" name="description">
+<meta content="" name="author">
+<meta content="Page scroll animation using CSS animate" name="description">
+<meta content="css animation, loading effect, animate, scroll loading, scroll animation" 
+name="keywords">
+<meta content="Jinson Abraham" name="author">
+<title>AR-Patient Portal</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" 
+rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" 
+rel="stylesheet">
+<link href="css/common/bootstrap.css" rel="stylesheet">
+<link href="css/common/icons.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="main protected">
+	<header>
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
+					<span class="sr-only">Toggle navigation</span> 
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span><span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">
+					<img src="images/logo.png"/>
+				</a> 
+			</div>
+			
+			<div id="navbar" class="navbar-collapse collapse">
+				<div class="nav-outer">
+					<ul class="nav navbar-nav right-menus">
+						<li>
+							<a id="users-logs" class="users-logs show-desktop right-menus-a" href="/dashboard/user_logs" title="User Activities"></a>
+							<a id="users-logs" class="users-logs show-mobile" href="/dashboard/user_logs">View Users Activities</a>
+						</li>
+						<li>
+						<a id="noti-icon" class="noti-icon notification show-desktop right-menus-a" href="javascript:void(0);" title="Notifications"></a>
+						<a class="noti-icon notification show-mobile" href="/dashboard/notifications" title="Notifications">Notification</a>
+						<div id="popup" class="noti-popup no-display">
+							<div id="notty-title" class="noti-title">Notifications </div>
+							<div id="notty-content" class="noti-content">
+								<div class="read">
+									Your appointment on date 12/12/2017 01:00 PM 
+									with KProvider 1 is not synced
+								</div>
+								<div class="read">
+									Your appointment on date with is not synced
+								</div>
+								<div class="read">
+									Batch li-stock of <b>Have stocks</b> has hit 
+									low stock
+								</div>
+								<div class="read">
+									Batch ny-stock of <b>Have stocks</b> has hit 
+									low stock
+								</div>
+								<div class="read">
+									Batch 54545 of <b>Ttt</b> has hit low stock
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +19546637556
+								</div>
+								<div class="read">
+									New SMS received from +19546637556
+								</div>
+							</div>
+							<div id="notty-footer" class="noti-footer">
+								<a href="/dashboard/sms_notifications">See All</a>
+							</div>
+						</div>
+						</li>
+						<li class="arow-link-outer">
+							<span class="arow-link">
+								<div id="headerUserImage" class="user-picture"></div>
+								<span class="name-txt">Ganesh Kompella </span>
+							</span>
+						</li>
+						<li>
+							<a class="setting show-desktop right-menus-a" href="/settings/profile" title="Settings"></a>
+							<a class="setting show-mobile" href="/settings/profile">Settings</a> 
+						</li>
+						<li>
+							<a class="logout show-desktop right-menus-a" href="/accounts/logout" title="Logout"></a>
+							<a class="logout show-mobile" href="/accounts/logout"><i class="icon-Power-2"></i>Log Out</a> 
+						</li>
+					</ul>
+					<ul class="nav navbar-nav main-navbar">
+						<li class="active"><a href="/dashboard">Dashboard</a></li>
+						<li class=""><a href="/patients/manage">Clients</a> </li>
+						<li class=""><a href="/appointments/index">Appointments</a></li>
+						<li class=""><a href="/sales/index">Sales</a></li>
+						<li class=""><a href="/inventory/products/active">Inventory</a></li>
+						<li class=""><a href="/analytics/reports">Reports</a></li>
+						<li class=""><a href="/marketing/dashboard">Surveys</a></li>
+						<li class=""><a href="/MDRooms/pending">MD's Room</a></li>
+						<li class=""><a href="/ProvidersRooms/pending">Provider's Room</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	
+<div id="content">
+	<div class="container-fluid content setting-wrapper">
+	
+	<div class="setting-left-menu">
+	<div class="setting-title">Settings</div>
+	<ul class="new-setting-tabs">
+		<li class="new-setting-tabs-li">
+		<a class="new-setting-tabs-a active-menu" href="javascript:void(0);">Account 
+		Information <i class="fas fa-angle-down"></i></a>
+		<ul class="setting-submenu">
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a" data-loading="false" 
+			data-title="Profile" data-url="/settings/profile" 
+			href="javascript:void(0);" onclick="setting_menu(this)">Profile </a>
+			</li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a" data-loading="false" 
+			data-title="two_factor" data-url="/settings/two_factor" 
+			href="javascript:void(0);" onclick="setting_menu(this)">2FA Authentication
+			</a></li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a sel-submenu" data-loading="false" 
+			data-title="Personal Information" 
+			data-url="/settings/account_information" href="javascript:void(0);" 
+			onclick="setting_menu(this)">AR Account</a> </li>
+		</ul>
+		</li>
+		<li class="new-setting-tabs-li"><a class="new-setting-tabs-a " 
+		href="javascript:void(0);">Manage Your Clinics
+		<i class="fas fa-angle-right"></i></a>
+		<ul class="setting-submenu no-display">
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="true" 
+			data-title="Manage Clinics" data-url="/settings/clinics" 
+			href="javascript:void(0);" onclick="setting_menu(this)">Clinics</a>
+			</li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="true" 
+			data-title="Questionnares" data-url="/settings/questionnaires" 
+			href="javascript:void(0);" onclick="setting_menu(this)">Questionnaires</a>
+			</li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="true" 
+			data-title="Consent" data-url="/settings/consents" 
+			href="javascript:void(0);" onclick="setting_menu(this)">Consents</a>
+			</li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-title="Procedure Templates" 
+			data-url="/settings/procedure_templates" href="javascript:void(0);" 
+			onclick="setting_menu(this)">Procedure Templates</a> </li>
+		</ul>
+		</li>
+		<li class="new-setting-tabs-li"><a class="new-setting-tabs-a " 
+		href="javascript:void(0);">Appointments <i class="fas fa-angle-right">
+		</i></a>
+		<ul class="setting-submenu no-display">
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-title="Post treatment instructions" 
+			data-url="/settings/appointments_ajax" href="javascript:void(0);" 
+			onclick="setting_menu(this)">Appointment Emails &amp; SMS</a> </li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-title="Post treatment instructions" 
+			data-url="/appointments/Survey_email_sms" 
+			href="javascript:void(0);" onclick="setting_menu(this)">Survey Settings</a>
+			</li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-title="Post treatment instructions" 
+			data-url="/appointments/configure_uri" href="javascript:void(0);" 
+			onclick="setting_menu(this)">Configure URL’s</a> </li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-title="Post treatment instructions" 
+			data-url="/appointments/cancellation_policy" 
+			href="javascript:void(0);" onclick="setting_menu(this)">Cancellation 
+			Policy</a> </li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-title="Patient Portal  Access" 
+			data-url="/appointments/patient_portal" href="javascript:void(0);" 
+			onclick="setting_menu(this)">Patient Portal Access</a> </li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-url="/settings/appointment_reminder" 
+			href="javascript:void(0);" onclick="setting_menu(this)">Patient Appointment 
+			Reminders</a> </li>
+		</ul>
+		</li>
+		<li class="new-setting-tabs-li patients"><a class="new-setting-tabs-a " 
+		data-loading="false" 
+		data-url="/appointments/membership_and_wallet_setting" 
+		href="javascript:void(0);" onclick="setting_menu(this)">Patients </a>
+		</li>
+		<li class="new-setting-tabs-li"><a class="new-setting-tabs-a " 
+		href="javascript:void(0);">Teammates <i class="fas fa-angle-right"></i>
+		</a>
+		<ul class="setting-submenu no-display">
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="true" 
+			data-title="Post treatment instructions" data-url="/settings/user" 
+			href="javascript:void(0);" onclick="setting_menu(this)">Users</a>
+			</li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-title="Post treatment instructions" data-url="/settings/roles" 
+			href="javascript:void(0);" onclick="setting_menu(this)">User Role</a>
+			</li>
+		</ul>
+		</li>
+		<li class="new-setting-tabs-li"><a class="new-setting-tabs-a " 
+		href="javascript:void(0);">POS <i class="fas fa-angle-right"></i></a>
+		<ul class="setting-submenu no-display">
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-url="/settings/pos_dashboard" href="javascript:void(0);" 
+			onclick="setting_menu(this)">Dashboard</a> </li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="true" 
+			data-url="/settings/payments" href="javascript:void(0);" 
+			onclick="setting_menu(this)">Payments</a> </li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="true" 
+			data-url="/settings/payouts" href="javascript:void(0);" 
+			onclick="setting_menu(this)">Payouts</a> </li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-url="/settings/pos" href="javascript:void(0);" 
+			onclick="setting_menu(this)">POS Settings</a> </li>
+			<li class="new-setting-subtabs-li">
+			<a class="new-setting-subtabs-a " data-loading="false" 
+			data-url="/settings/payment_settings" href="javascript:void(0);" 
+			onclick="setting_menu(this)">Payment Settings</a> </li>
+		</ul>
+		</li>
+	</ul>
+</div>
+
+
+<div class="setting-setion">
+	
+	<div class="setting-search-outer">
+		<div class="search-bg col-xs-5">
+			<i class="fas fa-search"></i>
+			<input class="setting-search-input search-key" data-url="/settings/consents" placeholder="Search" value=""> 
+		</div>
+		<a data-url="/consents/add" class="new-blue-btn pull-right">Create Consent</a>
+	</div>
+	
+	<div class="table-responsive">
+		<table class="table-updated setting-table">
+			<thead class="table-updated-thead">				
+				<tr>
+					<th class="col-xs-8 table-updated-th sorting">Consents</th>				
+					<th class="col-xs-4 table-updated-th sorting text-center">Added By</th>
+				</tr>		
+			</thead>
+			<tbody id="sortable3" class="ajax_body ui-sortable">
+					
+		
+		<tr class="table-updated-tr edit_setting" id="liConsentDivId_122" data-order_by="0" data-url="/consents/add/122">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>ConSent 1</td>
+			<td class="col-xs-4 table-updated-td text-center">Ramsayqq Boltonqq</td>
+		</tr>
+			
+		<tr class="table-updated-tr edit_setting" id="liConsentDivId_127" data-order_by="0" data-url="/consents/add/127">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>"test" “test” (test) &lt;test&gt; „test“ «test»</td>
+			<td class="col-xs-4 table-updated-td text-center">ravi2 ravi2i</td>
+		</tr>
+			
+		<tr class="table-updated-tr edit_setting" id="liConsentDivId_128" data-order_by="0" data-url="/consents/add/128">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>अ आ इ ई उ ऊ ऋ ऌ ऍ ऎ ए ऐ ऑ ऒ ओ औ क ख ग घ ङ च छ ज झ ञ ट ठ ड ढ ण त  beauté</td>
+			<td class="col-xs-4 table-updated-td text-center">Ganesh Kompella</td>
+		</tr>
+			
+		<tr class="table-updated-tr edit_setting" id="liConsentDivId_130" data-order_by="0" data-url="/consents/add/130">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>Test new</td>
+			<td class="col-xs-4 table-updated-td text-center">Pavan Reddy</td>
+		</tr>
+			
+		<tr class="table-updated-tr edit_setting" id="liConsentDivId_131" data-order_by="0" data-url="/consents/add/131">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>Test 23</td>
+			<td class="col-xs-4 table-updated-td text-center">Pavan Reddy</td>
+		</tr>
+			
+		<tr class="table-updated-tr edit_setting" id="liConsentDivId_132" data-order_by="0" data-url="/consents/add/132">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>Test234</td>
+			<td class="col-xs-4 table-updated-td text-center">Pavan Reddy</td>
+		</tr>
+			
+		<tr class="table-updated-tr edit_setting" id="liConsentDivId_133" data-order_by="0" data-url="/consents/add/133">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>Test2456</td>
+			<td class="col-xs-4 table-updated-td text-center">Pavan Reddy</td>
+		</tr>
+			
+		<tr class="table-updated-tr edit_setting" id="liConsentDivId_134" data-order_by="0" data-url="/consents/add/134">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>Dinesh</td>
+			<td class="col-xs-4 table-updated-td text-center">Pavan Reddy</td>
+		</tr>
+			
+		<tr class="table-updated-tr edit_setting" id="liConsentDivId_118" data-order_by="1" data-url="/consents/add/118">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>PACK </td>
+			<td class="col-xs-4 table-updated-td text-center">ravi kiran</td>
+		</tr>
+			
+		<tr class="table-updated-tr edit_setting" id="liConsentDivId_117" data-order_by="2" data-url="/consents/add/117">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>disease name</td>
+			<td class="col-xs-4 table-updated-td text-center">ravi kiran</td>
+		</tr>
+			
+		<tr class="table-updated-tr edit_setting" id="liConsentDivId_112" data-order_by="3" data-url="/consents/add/112">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>ipad</td>
+			<td class="col-xs-4 table-updated-td text-center">Ramsay Bolton</td>
+		</tr>
+			
+		<tr class="table-updated-tr edit_setting" id="liConsentDivId_95" data-order_by="4" data-url="/consents/add/95">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>new start1</td>
+			<td class="col-xs-4 table-updated-td text-center">Ganesh Kompella</td>
+		</tr>
+			
+		<tr class="table-updated-tr edit_setting" id="liConsentDivId_68" data-order_by="5" data-url="/consents/add/68">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>new consent</td>
+			<td class="col-xs-4 table-updated-td text-center">adminn adminn</td>
+		</tr>
+			
+		<tr class="table-updated-tr edit_setting" id="liConsentDivId_70" data-order_by="6" data-url="/consents/add/70">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>add new patient consent</td>
+			<td class="col-xs-4 table-updated-td text-center">Ramsay Bolton</td>
+		</tr>
+			
+		<tr class="table-updated-tr edit_setting" id="liConsentDivId_59" data-order_by="7" data-url="/consents/add/59">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a> long consentlong consentlong consentlong consentlong consentlong consentlong consentlong consentlong consentlong consentlong consentlong consentlong consentlong consentlong consentlong consentlong consentlong consentlong consentlong consentlong conending</td>
+			<td class="col-xs-4 table-updated-td text-center">Ganesh Kompella</td>
+		</tr>
+			
+		<tr class="table-updated-tr edit_setting" id="liConsentDivId_116" data-order_by="8" data-url="/consents/add/116">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>hhhuuuhhhh</td>
+			<td class="col-xs-4 table-updated-td text-center">ravi kiran</td>
+		</tr>
+			
+		<tr class="table-updated-tr edit_setting" id="liConsentDivId_53" data-order_by="9" data-url="/consents/add/53">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>check now</td>
+			<td class="col-xs-4 table-updated-td text-center">test MD pass: test1010</td>
+		</tr>
+			
+		<tr class="table-updated-tr edit_setting" id="liConsentDivId_19" data-order_by="10" data-url="/consents/add/19">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>sdfsdfds ajay</td>
+			<td class="col-xs-4 table-updated-td text-center">Admin</td>
+		</tr>
+			
+		<tr class="table-updated-tr edit_setting" id="liConsentDivId_15" data-order_by="11" data-url="/consents/add/15">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>check patient filter</td>
+			<td class="col-xs-4 table-updated-td text-center">Admin</td>
+		</tr>
+			
+		<tr class="table-updated-tr edit_setting" id="liConsentDivId_4" data-order_by="12" data-url="/consents/add/4">
+			<td class="col-xs-8 table-updated-td Questionnaire-name"><a class="drag-dots"></a>newediteeee</td>
+			<td class="col-xs-4 table-updated-td text-center">Ganesh Kompella</td>
+		</tr>
+			
+			</tbody>
+		</table>	
+		<div class="no-record" style="display:none">
+			<div class="" style="float: left; width: 100%; font-size: 13px; text-align: center; margin-top: 0px; padding: 0px;">Sorry, No record found</div>
+		</div>
+	</div>
+	
+</div>
+		
+		
+
+
+	</div>
+</div>
+	
+
+<footer class="main-footer">
+	<div class="container-fluid">
+		<span class="pull-right">
+			©2018 Aesthetic Record. All Rights Reserved. 
+		</span>
+	</div>
+</footer>	
+	
+	
+</div>
+
+</body>
+
+</html>

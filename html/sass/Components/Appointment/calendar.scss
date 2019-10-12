@@ -1,0 +1,176 @@
+.cal-search{
+	background:#f7fbfd;
+	
+	svg{margin-left:9px;}
+	.setting-search-input{padding-left:31px;}
+}
+.calendar-btn{
+	border: none;
+    padding:0px;
+    height: 32px;
+    font-size: 13px;
+    color:$blue;
+    background-color: #fff;
+    @include border-radius(3px);
+	@include box-shadow(0, 1px, 2px, 0, rgba(0,0,0,0.15));
+	display:inline-block;
+	vertical-align:top;
+	line-height:33px;
+	
+	&.today-btn{min-width:100px;@include border-radius(3px 0px 0px 3px);margin-right:-2px;display: inline-block;
+    border-right: 1px solid #ececec;}
+	&.cal-date-btn{min-width:100px;@include border-radius(0px 3px 3px 0px);min-width:200px;color:#404040;}
+}
+.cal-arrow{
+	height: 32px;
+	display:inline-block;
+	vertical-align:top;
+	padding:0px 6px;
+	line-height:30px;
+}
+.calendar-dropdown{
+	border: none;
+    padding:0px 10px 0px 13px;
+    height: 32px;
+    font-size: 13px;
+    color:#404040;;
+    background-color: #fff;
+    @include border-radius(3px);
+	@include box-shadow(0, 1px, 2px, 0, rgba(0,0,0,0.15));
+	display:inline-block;
+	vertical-align:top;
+	line-height:33px;
+	margin-left:11px;
+	margin-bottom:10px;
+	text-align:left;
+	min-width:127px;
+	position:relative;
+	float:right;
+	
+	a{padding:0px 0px 0px 10px;}
+	
+	&.show ul{display:block;}
+}
+ul.cal-dropdown{
+	width:600px;
+	position:absolute;
+	right:0px;
+	top:45px;
+	background:#ffffff;
+	@include box-shadow(0, 1px, 2px, 0, rgba(0,0,0,0.15));
+    @include border-radius(3px);
+    z-index:1;
+    display:none;
+    max-height: 306px;
+    overflow-y: auto;
+    
+    li{
+		width:33%;
+		display:inline-block;
+		cursor:pointer;
+		vertical-align:top;
+		
+		a{
+			padding: 0px 10px;
+			outline: none;
+			display: block;
+			cursor:pointer;
+		
+			label{
+				margin:0px;
+				color:#667680;
+				font-weight:normal;
+				padding-left: 24px;
+				padding-right:20px;
+				border-bottom:1px solid #ececec;
+				cursor:pointer;
+				white-space: nowrap; 
+				overflow: hidden;
+				text-overflow: ellipsis;
+				
+				input{
+					margin-left:0px!important;
+					display: inline-block;
+					vertical-align: top;
+					margin-top: 7px;
+					position: absolute!important;
+					left: 0px;
+					visibility:hidden;
+					
+					&:checked{visibility:visible;}
+				}
+				span{
+					position: absolute;
+					right: 0px;
+					top: 9px;
+					height: 15px;
+					width: 15px;
+				}
+			}
+			
+			&:hover input{visibility:visible;}
+		}
+    }
+}
+ul.cal-dropdown.cal-service-dropdown{
+	li{width:49.5%;}
+}
+.cal-date-btn-outer{text-align:center;padding:0px;}
+.cal-filter{padding-left:0px;text-align:right;}
+.cal-title{
+	float: left;
+    font-size: 20px;
+    font-weight: 400;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 26px;
+    margin-top: 10px;
+}
+.clinicname-dropdown{
+	width:197px!important;
+	left:0px;
+	right:inherit;
+	
+	li{
+		width:100%!important;
+		
+		label{padding:0px!important;}
+	}
+}
+
+.existing-user{
+	width:100%;
+	display:block;
+	
+	a{margin-top:2px;}
+	img{height:22px;}
+	img.male-model{height:20px;}
+}
+.appo-booking-info{
+	width:100%;
+	display:block;
+	
+	span{
+		color:#667680;
+	}
+}
+.medical-pro-color {
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    right:0px;
+    top: 4px;
+    background: #ddd;
+}
+.add-services{
+	margin-bottom:20px;
+	overflow:inherit;
+	float:left;
+	width:100%;
+	
+	select{width:60%;background:url(../images/new-down-arrow.png) no-repeat right 9px #ffffff;border:none;}
+	input{width:19%;border-left:1px solid #ececec;padding-lefT:10px;}
+	.add-round-btn{top:0px;right:-13px;}
+}
+
+

@@ -1,0 +1,401 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="" name="description">
+<meta content="" name="author">
+<meta content="Page scroll animation using CSS animate" name="description">
+<meta content="css animation, loading effect, animate, scroll loading, scroll animation" 
+name="keywords">
+<meta content="Jinson Abraham" name="author">
+<title>AR-Patient Portal</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet"> 
+<link href="css/common/bootstrap.css" rel="stylesheet">
+<link href="css/common/icons.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<link href="css/index.css" rel="stylesheet" type="text/css"/>
+<link href="css/caleran.min.css" rel="stylesheet" type="text/css"/>
+<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+<link href="css/custom.css" rel="stylesheet"/>
+<script src="js/moment.min.js"></script>
+<script src="js/caleran.min.js"></script>
+<script type="text/javascript">
+	$(".caleran").caleran();
+</script>
+<script type="text/javascript">
+	$(".caleran").caleran({inline: true, startOnMonday: true});
+</script>
+<script type="text/javascript">
+	  $("#caleran-ex-1-1").caleran({showOn:"top",autoAlign:true});
+</script>
+</head>
+<body>
+
+<div class="main protected">
+	<header>
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
+					<span class="sr-only">Toggle navigation</span> 
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span><span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">
+					<img src="images/logo.png"/>
+				</a> 
+			</div>
+			
+			<div id="navbar" class="navbar-collapse collapse">
+				<div class="nav-outer">
+					<ul class="nav navbar-nav right-menus">
+						<li>
+							<a id="users-logs" class="users-logs show-desktop right-menus-a" href="/dashboard/user_logs" title="User Activities"></a>
+							<a id="users-logs" class="users-logs show-mobile" href="/dashboard/user_logs">View Users Activities</a>
+						</li>
+						<li>
+						<a id="noti-icon" class="noti-icon notification show-desktop right-menus-a" href="javascript:void(0);" title="Notifications"></a>
+						<a class="noti-icon notification show-mobile" href="/dashboard/notifications" title="Notifications">Notification</a>
+						<div id="popup" class="noti-popup no-display">
+							<div id="notty-title" class="noti-title">Notifications </div>
+							<div id="notty-content" class="noti-content">
+								<div class="read">
+									Your appointment on date 12/12/2017 01:00 PM 
+									with KProvider 1 is not synced
+								</div>
+								<div class="read">
+									Your appointment on date with is not synced
+								</div>
+								<div class="read">
+									Batch li-stock of <b>Have stocks</b> has hit 
+									low stock
+								</div>
+								<div class="read">
+									Batch ny-stock of <b>Have stocks</b> has hit 
+									low stock
+								</div>
+								<div class="read">
+									Batch 54545 of <b>Ttt</b> has hit low stock
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +19546637556
+								</div>
+								<div class="read">
+									New SMS received from +19546637556
+								</div>
+							</div>
+							<div id="notty-footer" class="noti-footer">
+								<a href="/dashboard/sms_notifications">See All</a>
+							</div>
+						</div>
+						</li>
+						<li class="arow-link-outer">
+							<span class="arow-link">
+								<div id="headerUserImage" class="user-picture"></div>
+								<span class="name-txt">Ganesh Kompella </span>
+							</span>
+						</li>
+						<li>
+							<a class="setting show-desktop right-menus-a" href="/settings/profile" title="Settings"></a>
+							<a class="setting show-mobile" href="/settings/profile">Settings</a> 
+						</li>
+						<li>
+							<a class="logout show-desktop right-menus-a" href="/accounts/logout" title="Logout"></a>
+							<a class="logout show-mobile" href="/accounts/logout"><i class="icon-Power-2"></i>Log Out</a> 
+						</li>
+					</ul>
+					<ul class="nav navbar-nav main-navbar">
+						<li class=""><a href="/dashboard">Dashboard</a></li>
+						<li class=""><a href="/patients/manage">Clients</a> </li>
+						<li class=""><a href="/appointments/index">Appointments</a></li>
+						<li class="active"><a href="/sales/index">Sales</a></li>
+						<li class=""><a href="/inventory/products/active">Inventory</a></li>
+						<li class=""><a href="/analytics/reports">Reports</a></li>
+						<li class=""><a href="/marketing/dashboard">Surveys</a></li>
+						<li class=""><a href="/MDRooms/pending">MD's Room</a></li>
+						<li class=""><a href="/ProvidersRooms/pending">Provider's Room</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	
+<div id="content">
+</div>
+
+
+<div class="wide-popup">
+	<div class="modal-blue-header front-end-popup-title">
+		<a href="#" class="popup-cross">×</a>
+		<span class="popup-blue-name">Template</span>
+		<div class="popup-btns">
+		<a href="#" class="line-btn popup-header-btn">Save</a>
+		<a href="#" class="line-btn popup-header-btn">Add Question</a>
+		</div>
+	</div>
+	
+	<div class="survey-outer">
+		<a class="arrow-slide-right" style="display:none;"><i class="fas fa-chevron-right"></i></a>
+		
+		<div class="survey-left col-md-2">
+			<div class="property-title">
+				<span class="properties-span">Properties</span>
+				<a class="arrow-slide-left">
+					<i class="fas fa-chevron-left"></i>
+				</a>
+			</div>
+			<div class="survey-actions">
+				<a href="#" class="survey-actions-a"><i class="far fa-trash-alt"></i></a>
+				<a href="#" class="survey-actions-a"><i class="far fa-copy"></i></a>
+			</div>
+			<div class="property-select-outer">
+				<div class="custom-select">
+					<select class="property-select" id="formElementType">
+						<option value="Textbox" selected="selected">Textbox</option>
+						<option value="Yes/No">Yes/No</option>
+						<option value="Single Choice">Single Choice</option>
+						<option value="Multiple Choice">Multiple Choice</option>
+						<option value="Opinion Scale">Opinion Scale</option>
+						<option value="File Upload">File Upload</option>
+					</select>
+					<div class="select-selected select-arrow-active">Textbox</div>
+					<div class="select-items">
+						<div>Textbox</div>
+						<div>Yes/No</div>
+						<div>Single Choice</div>
+						<div>Multiple Choice</div>
+						<div>Opinion Scale</div>
+						<div>File Upload</div>
+					</div>
+				</div>
+			</div>
+			<div class="new-custom-switch property-option">
+				Required
+				<label class="setting-switch pull-right">
+				  <input type="checkbox" id="two_step" name="data[User][two_step_verification]" value="1" class="setting-custom-switch-input"/>
+				  <span class="setting-slider "></span>
+				</label>
+			</div>	
+			<div class="new-custom-switch property-option">
+				Description
+				<label class="setting-switch pull-right">
+				  <input type="checkbox" id="two_step" name="data[User][two_step_verification]" value="1" class="setting-custom-switch-input"/>
+				  <span class="setting-slider "></span>
+				</label>
+			</div>
+		</div>
+		
+		<div class="survey-middle col-md-6">
+			<div class="edit-question-title-outer">
+				<input class="title-type-question" id="survey_title" type="Textbox" value="Untitled Procedure Template" placeholder="Type title here..."/>
+				<span class="survey-required" style="display:block;">*</span>
+				<a class="survey-title-drag-icon"><i class="" id="icon_effect1"></i> 
+				<span class="quest-title-number">Title</span></a>
+			</div>
+			
+			<div class="space first-space ui-sortable" id="questionArea">
+				<div class="edit-question-outer route selected-question" id="editquestionouter1">
+					<input class="type-question" type="Textbox" placeholder="Type question here..." value="Write your question here." id="box1"/>
+					<input id="descriptioBox1" class="type-subtitle" placeholder="Write your description here..." value="" type="text"/>
+					<span class="survey-required" style="display:none;" id="requiredBox1">*</span>
+					<a class="survey-drag-icon"><i class="far fa-file" id="icon_effect1"></i> <span class="quest-number">1</span></a>
+				</div>
+				
+				<div id="editquestionouter2" class="edit-question-outer route">
+					<input class="type-question" type="Yes/No" placeholder="Type question here..." value="Are you a juvly member?" id="box2"/>
+					<input id="descriptioBox2" class="type-subtitle" placeholder="Write your description here..." value="" type="text"/>
+						<a class="share-default-icon"><i class="fas fa-share-alt"></i></a>
+						<span class="survey-required" style="" id="requiredBox2">*</span>
+						<a class="survey-drag-icon">
+							<i class="fas fa-toggle-off" id="icon_effect2"></i> 
+							<span class="quest-number">2</span>
+						</a>
+						<div class="login-jump-outer">
+							<div class="logic-jump-header">
+								<i class="fas fa-share-alt share-header-icon"></i>
+								<span class="logic-jump-title">Logic Jump</span> 
+								<i class="pull-right fas no-margin loginjumponoff fa-angle-up"></i>
+							</div>
+							<div id="logicContent2" class="logic-content">
+								<div class="when-ans">
+									<span class="when-ans-span">When Answering</span>
+									<a class="header-select-btn line-btn add-logic-btn" href="#">Add Logic Jump</a>
+								</div>
+								<div class="if-else-outer">
+									<div id="logicInnerOuter2">
+										<div id="logicJumpInnerBox93" class="if-else-section right-field-outer logicJumpInnerBox">
+											<a href="#" class="icon-Close close-jump"></a>
+										<div class="table logic-row">
+											<div class="table-cell jump-label">If Selected</div>
+											<div class="table-cell">
+												<select class="jump-select-box logicAnswer">
+													<option>Select</option>
+													<option>Yes</option>
+													<option>No</option>
+												</select>
+											</div>
+											<div class="jump-label-2">Choose one Answer</div>
+										</div>
+										<div class="table logic-row">
+											<div class="table-cell jump-label">Then Jump to</div>
+											<div class="table-cell">
+												<select class="jump-select-box logicAnswerJump">
+													<option value="">Select</option>
+													<option value="Write your question here.">Write your question here.</option>
+													<option value="choose any one option in following.">choose any one option in following.</option>
+													<option value="What is your opinion.">What is your opinion.</option>
+													<option value="Upload your file here.">Upload your file here.</option>
+												</select>
+											</div>
+											<div class="jump-label-2">Choose one Answer</div>
+										</div>
+									</div>
+								</div>
+								<div class="if-else-section right-field-outer">
+									<div class="table logic-row">
+										<div class="table-cell jump-label">Else Jump to</div>
+										<div class="table-cell">
+											<select class="jump-select-box logicAnswerElse">
+												<option value="">Select</option>
+												<option value="Write your question here.">Write your question here.</option>
+											</select>
+										</div>
+										<div class="jump-label-2">Choose one Answer</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div id="editquestionouter3" class="edit-question-outer route">
+					<input class="type-question" type="Single Choice" placeholder="Type question here..." value="Single Choice" id="box3"/>
+					<input id="descriptioBox3" class="type-subtitle" placeholder="Write your description here..." value="" type="text"/>
+					<a class="share-default-icon"><i class="fas fa-share-alt"></i></a>
+					<span class="survey-required" style="" id="requiredBox2">*</span>
+					<div id="singlechoiceboxouter3">
+						<input id="singlechoicebox32" class="type-choice" placeholder="- Choice" value="a" type="text"/>
+						<input id="singlechoicebox33" class="type-choice" placeholder="- Choice" value="b" type="text"/>
+						<input id="singlechoicebox34" class="type-choice" placeholder="- Choice" value="c" type="text"/>
+						<input id="singlechoicebox35" class="type-choice" placeholder="- Choice" value="d" type="text"/>
+					</div>
+					<a class="survey-drag-icon">
+						<i class="far fa-dot-circle" id="icon_effect3"></i> 
+						<span class="quest-number">3</span>
+					</a>
+					<div class="login-jump-outer">
+						<div class="logic-jump-header"><i class="fas fa-share-alt"></i><span class="logic-jump-title">Logic Jump</span> <i data-id="3" class="pull-right fa fa-angle-down no-margin loginjumponoff"></i></div>
+					</div>
+				</div>
+				
+				<div id="editquestionouter4" class="edit-question-outer route">
+					<input class="type-question" type="Single Choice" placeholder="Type question here..." value="Multiselect" id="box3"/>
+					<input id="descriptioBox3" class="type-subtitle" placeholder="Write your description here..." value="" type="text"/>
+					<a class="share-default-icon"><i class="fas fa-share-alt"></i></a>
+					<span class="survey-required" style="" id="requiredBox2">*</span>
+					<div id="singlechoiceboxouter3">
+						<input id="singlechoicebox32" class="type-choice" placeholder="- Choice" value="a" type="text"/>
+						<input id="singlechoicebox33" class="type-choice" placeholder="- Choice" value="b" type="text"/>
+						<input id="singlechoicebox34" class="type-choice" placeholder="- Choice" value="c" type="text"/>
+						<input id="singlechoicebox35" class="type-choice" placeholder="- Choice" value="d" type="text"/>
+					</div>
+					<a class="survey-drag-icon">
+						<i class="far fa-check-square" id="icon_effect3"></i> 
+						<span class="quest-number">3</span>
+					</a>
+					<div class="login-jump-outer">
+						<div class="logic-jump-header"><i class="fas fa-share-alt"></i><span class="logic-jump-title">Logic Jump</span> <i data-id="3" class="pull-right fa fa-angle-down no-margin loginjumponoff"></i></div>
+					</div>
+				</div>
+				
+				<div id="editquestionouter5" class="edit-question-outer route">
+					<input class="type-question" type="Single Choice" placeholder="Type question here..." value="Opinion Scale" id="box3"/>
+					<input id="descriptioBox3" class="type-subtitle" placeholder="Write your description here..." value="" type="text"/>
+					<a class="share-default-icon"><i class="fas fa-share-alt"></i></a>
+					<span class="survey-required" style="" id="requiredBox2">*</span>
+					<a class="survey-drag-icon">
+						<i class="fas fa-ruler-horizontal" id="icon_effect3"></i> 
+						<span class="quest-number">3</span>
+					</a>
+					<div class="login-jump-outer">
+						<div class="logic-jump-header"><i class="fas fa-share-alt"></i><span class="logic-jump-title">Logic Jump</span> <i data-id="3" class="pull-right fa fa-angle-down no-margin loginjumponoff"></i></div>
+					</div>
+				</div>
+				
+				<div id="editquestionouter6" class="edit-question-outer route">
+					<input class="type-question" type="Single Choice" placeholder="Type question here..." value="" id="box3"/>
+					<input id="descriptioBox3" class="type-subtitle" placeholder="Write your description here..." value="" type="text"/>
+					<a class="share-default-icon"><i class="fas fa-share-alt"></i></a>
+					<span class="survey-required" style="" id="requiredBox2">*</span>
+					<a class="survey-drag-icon">
+						<i class="fas fa-file-upload" id="icon_effect3"></i> 
+						<span class="quest-number">3</span>
+					</a>
+				</div>
+				
+			</div>
+			
+			
+			
+		</div>
+		
+		<div class="survey-right col-md-6">
+			<div class="property-title text-right">
+				<a class="properties-span full-view"><i class="far fa-window-restore"></i> Full screen view</a>
+				<a class="properties-span editeble-view"><i class="far fa-edit"></i> Edit view</a>
+			</div>
+			<div class="title-half-preview">
+				<div class="report-title-question-outer break-word-content">
+					<div class="survey-title no-margin" id="preview_survey_title">Test Procedure Template</div>
+					<div class="view-title-number">Title <i class="fa fa-arrow-right"></i></div>
+				</div>
+			</div>
+			<div class="half-preview" id="half-preview">
+				
+				<div id="reportquestionouter1" class="report-question-outer preview-highlite" style="display: block;"><div class="survey-title no-margin" id="preview1">Enter  details here ...</div><div class="quest-discription" id="previewDescription1"></div><input class="report-input" placeholder="Write your answer here..." type="text"/><button id="rating-ok" class="report-btn" onclick="javasccript:jumpToRightQuestion(1,null);">OK <i class="fa fa-check"></i></button><div class="view-number">1 <i class="fa fa-arrow-right"></i></div></div>
+				
+				<div id="reportquestionouter2" class="report-question-outer" style="display:block;"><div class="survey-title no-margin" id="preview2">Yes No</div><div class="quest-discription" id="previewDescription2">select your option</div><div class=" multisel-outer-yesno2"><div class="multisel ynomultisel yescheckouter2 activated"><input id="radioyes2" onclick="javascript:selectYesOnBox(2,this);" class="servy-checkbox servy-radio preboxval" name="satisfied" type="radio" value="Yes"/><span class="multi-sel-alpha">A</span>	<label class="multisel-label" for="radioyes2">Yes</label><i class="fa fa-check"></i></div>	<div class="multisel ynomultisel nocheckouter2"><input id="radiono2" class="servy-checkbox servy-radio preboxval" onclick="javascript:selectYesOnBox(2,this);" name="satisfied" type="radio" value="No"/><span class="multi-sel-alpha">B</span><label class="multisel-label" for="radiono2">No</label><i class="fa fa-check"></i></div></div><button onclick="javasccript:jumpToRightQuestion(2,null);" id="rating-ok" class="report-btn">OK <i class="fa fa-check"></i></button><div class="view-number">2 <i class="fa fa-arrow-right"></i></div></div>
+				
+				<div id="reportquestionouter3" class="report-question-outer" style="display:block;"><div class="survey-title no-margin" id="preview3">Single Choice</div><div class="quest-discription" id="previewDescription3"></div><div class="col-sm-12 multisel-outer preview-single-selectouter3"><div class="multisel singlechboxouter" id="singleInputOuter32"><input onclick="javascript:selectSingleCheckBox(3,this);" id="previewsingleRadio32" class="servy-checkbox servy-radio preboxval" name="satisfied" type="radio" value="a"/><span id="previewsingleSpan32" class="multi-sel-alpha">A</span>	<label id="previewsingleLabel32" class="multisel-label" for="previewsingleRadio32">a</label><i class="fa fa-check"></i></div><div class="multisel singlechboxouter" id="singleInputOuter33"><input onclick="javascript:selectSingleCheckBox(3,this);" id="previewsingleRadio33" class="servy-checkbox servy-radio preboxval" name="satisfied" type="radio" value="b"/><span id="previewsingleSpan33" class="multi-sel-alpha">B</span>	<label id="previewsingleLabel33" class="multisel-label" for="previewsingleRadio33">b</label><i class="fa fa-check"></i></div><div class="multisel singlechboxouter" id="singleInputOuter34"><input onclick="javascript:selectSingleCheckBox(3,this);" id="previewsingleRadio34" class="servy-checkbox servy-radio preboxval" name="satisfied" type="radio" value="c"/><span id="previewsingleSpan34" class="multi-sel-alpha">C</span>	<label id="previewsingleLabel34" class="multisel-label" for="previewsingleRadio34">c</label><i class="fa fa-check"></i></div><div class="multisel singlechboxouter" id="singleInputOuter35"><input onclick="javascript:selectSingleCheckBox(3,this);" id="previewsingleRadio35" class="servy-checkbox servy-radio preboxval" name="satisfied" type="radio" value="d"/><span id="previewsingleSpan35" class="multi-sel-alpha">D</span>	<label id="previewsingleLabel35" class="multisel-label" for="previewsingleRadio35">d</label><i class="fa fa-check"></i></div></div><div class="view-number">3 <i class="fa fa-arrow-right"></i></div></div>
+				
+				<div id="reportquestionouter4" class="report-question-outer" style="display:block;"><div class="survey-title no-margin" id="preview4">Multiple choice</div><div class="quest-discription" id="previewDescription4"></div><div class="col-sm-12 multisel-outer preview-multi-selectouter4"><div class="multisel" id="multiselInputOuter42"><input onclick="javascript:selectMultiselChBox(4,this);" id="previewMultiRadio42" class="servy-checkbox servy-radio preboxval" name="satisfied" type="radio" value="abc"/><span id="previewMultiSpan42" class="multi-sel-alpha">A</span>	<label id="previewMultiLabel42" class="multisel-label" for="previewMultiRadio42">abc</label><i class="fa fa-check"></i></div><div class="multisel" id="multiselInputOuter43"><input onclick="javascript:selectMultiselChBox(4,this);" id="previewMultiRadio43" class="servy-checkbox servy-radio preboxval" name="satisfied" type="radio" value="xyz"/><span id="previewMultiSpan43" class="multi-sel-alpha">B</span>	<label id="previewMultiLabel43" class="multisel-label" for="previewMultiRadio43">xyz</label><i class="fa fa-check"></i></div><div class="multisel" id="multiselInputOuter44"><input onclick="javascript:selectMultiselChBox(4,this);" id="previewMultiRadio44" class="servy-checkbox servy-radio preboxval" name="satisfied" type="radio" value="aaa"/><span id="previewMultiSpan44" class="multi-sel-alpha">C</span>	<label id="previewMultiLabel44" class="multisel-label" for="previewMultiRadio44">aaa</label><i class="fa fa-check"></i></div><div class="multisel" id="multiselInputOuter45"><input onclick="javascript:selectMultiselChBox(4,this);" id="previewMultiRadio45" class="servy-checkbox servy-radio preboxval" name="satisfied" type="radio" value="bbb"/><span id="previewMultiSpan45" class="multi-sel-alpha">D</span>	<label id="previewMultiLabel45" class="multisel-label" for="previewMultiRadio45">bbb</label><i class="fa fa-check"></i></div></div><div class="view-number">4 <i class="fa fa-arrow-right"></i></div></div>
+				
+				<div id="reportquestionouter5" class="report-question-outer" style="display:block;"><div class="survey-title no-margin" id="preview5">Opinion scal</div><div class="quest-discription" id="previewDescription5"></div><ul class="survey-rate-outer" id="survey-rateouter5"><li id="question15" onclick="javascript:selectOpenionBox(5,this);" class="survey-li preboxval">1</li><li id="question25" onclick="javascript:selectOpenionBox(5,this);" class="survey-li preboxval">2</li><li id="question35" onclick="javascript:selectOpenionBox(5,this);" class="survey-li preboxval">3</li><li id="question45" onclick="javascript:selectOpenionBox(5,this);" class="survey-li preboxval">4</li><li id="question55" onclick="javascript:selectOpenionBox(5,this);" class="survey-li preboxval">5</li><li id="question65" onclick="javascript:selectOpenionBox(5,this);" class="survey-li preboxval">6</li><li id="question75" onclick="javascript:selectOpenionBox(5,this);" class="survey-li preboxval">7</li><li id="question85" onclick="javascript:selectOpenionBox(5,this);" class="survey-li preboxval">8</li><li id="question95" onclick="javascript:selectOpenionBox(5,this);" class="survey-li preboxval">9</li><li id="question105" onclick="javascript:selectOpenionBox(5,this);" class="survey-li preboxval">10</li></ul><div class="likeornot"><span>Not at all likely</span> <span class="pull-right">Extremely likely</span></div><div style="display:block;" id="why_choose_open_box5"><input class="report-input" placeholder="Write your answer here..." type="text"/><button id="rating-ok" class="report-btn">OK <i class="fa fa-check"></i></button></div><div class="view-number">5 <i class="fa fa-arrow-right"></i></div></div>
+				
+				<div id="reportquestionouter6" class="report-question-outer" style="display:block;"><div class="survey-title no-margin" id="preview6">...</div><div class="quest-discription" id="previewDescription6"></div><div class="profile_image_div" id="profile_image_div6"><div class="dropzone add_margin survey-dropzone dz-clickable"><div class="dz-default dz-message upload">Upload</div></div></div><div class="view-number">6 <i class="fa fa-arrow-right"></i></div></div>
+				
+			</div>
+		</div>
+		
+	</div>
+	
+</div>
+
+<footer class="main-footer">
+	<div class="container-fluid">
+		<span class="pull-right">
+			©2018 Aesthetic Record. All Rights Reserved. 
+		</span>
+	</div>
+</footer>
+</div>
+
+</body>
+</html>

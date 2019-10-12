@@ -1,0 +1,93 @@
+.cash-history-btn {
+    margin-top: -5px;
+}
+.cash-drawer-stats {
+    background: #ffffff;
+    float: left;
+    width: 100%;
+    @include box-shadow(0, 1px, 2px, 0, rgba(0,0,0,0.15));
+    margin-bottom: 20px;
+    display: table;
+    padding: 15px 25px;
+    @include border-radius(3px);
+}
+.cash-drawer-stats-title {
+    height: 28px;
+    font-size: 10px;
+    color: #667680;
+    text-transform: uppercase;
+    float: left;
+    width: 100%;
+}
+.cash-drawer-content {
+    float: left;
+    width: 100%;
+    font-size: 27px;
+    color: #404040;
+}
+.cashdrawer-submenu {
+    display: block;
+    float: left;
+    width: 100%;
+    padding-right: 30px;
+    
+    .cashdrawer-subtabs-li {
+		display: block;
+		margin-bottom: 13px;
+		
+		.cashdrawer-subtabs-a {
+			display: block;
+			padding: 6px 15px 6px;
+			color: #667680;
+			font-size: 16px;
+			text-align: left;
+			font-family: 'Lato', sans-serif;
+			font-weight: normal;
+			background: #ffffff;
+			
+			
+			&.sel-submenu, &:hover{
+				background:$blue;
+				@include border-radius(3px);
+				color:#ffffff;
+			}
+			
+			&.disable-submenu{
+				opacity:0.6;
+				cursor:no-drop;
+				
+				&:hover{
+					background:#ffffff;
+					color:#667680;
+				}
+			}			
+		}
+		&:last-child{
+			margin:0px;
+		}
+	}
+}
+
+.drawer-history-field {
+    width: 19%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0px 15px;
+}
+.positive {
+    color: green;
+}
+.negative {
+    color: red;
+}
+.cashdrw-filter{
+	float:right!important;
+}
+.cashdrw-filter-clinic{
+	min-width:195px;
+	float:right;
+}
+.cash-trans-outer {
+    max-height: 200px;
+    overflow: auto;
+}

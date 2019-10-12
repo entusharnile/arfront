@@ -1,0 +1,13 @@
+.popup-full-content{
+	display: table!important;
+    width:100%!important;
+    float: none!important;
+    padding:70px 15px 0px;
+}
+.provider-sche-popup{
+	background:#e6eef2;
+}
+.provider-clinic-filter li a:hover label{color:$blue;}
+.provider-clinic-filter li input{display:none!important;}
+.provider-clinic-filter li label{padding-left:0px!important;}
+

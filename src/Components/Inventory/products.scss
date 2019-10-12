@@ -1,0 +1,66 @@
+.prod-price-clinic-name{margin:15px 0px;}
+.custom-txt-rule-left-padding{padding-left:50px;}
+.product-list-outer{border-left:1px solid #e6e9eb;border-right:1px solid #e6e9eb;}
+.product-list-outer td{padding:7px 10px 7px 15px!important;}
+.textarea-height-50{height:50px;min-height:inherit;}
+.new-gift-card {
+    float: left;
+    width: 100%;
+    height: auto;
+    max-width:320px;
+    background-size: 100%;
+    background-position: left top;
+    position:relative;
+    @include border-radius(5px);
+    border:1px solid #ececec;
+    margin-bottom:10px;
+
+    .gift-card{
+		width: 100%;
+		float:left;
+	}
+	.gift-card-logo{
+		position: absolute;
+		top: 102px;
+		text-align: center;
+		width: 100%;
+		left:0px;
+
+		img{
+			max-height:40px;
+		}
+	}
+	.gift-amount{
+		position: absolute;
+		right: 0px;
+		top: 14px;
+		width: 89px;
+		font-family:'lato', Open Sans;
+
+		.gift-amount-span{
+			float: left;
+			font-size: 15px;
+			font-weight: bold;
+			color:#0080c9;
+		}
+		.gift-amount-label{
+			float: left;
+			font-size: 30px;
+			margin: 0px;
+			line-height: 37px;
+			font-weight: bold;
+			color:#0080c9;
+		}
+	}
+}
+.inventory-product-img{
+  max-width:50px;
+  max-height:70px;
+  margin-right:20px;
+}
+.inentory-product-name{max-width:250px;}
+.cursor-pointer{cursor: pointer !important;}
+.limited-time-in-month{float:left;width:110px;margin-top:4px;
+  select{float:left;width:50px;margin-right:10px;}
+  span{float:left;margin-top:2px;}
+}

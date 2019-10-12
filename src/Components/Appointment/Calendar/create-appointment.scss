@@ -1,0 +1,202 @@
+.create-appoint-popup{
+	background:#e6eef2;
+	position:fixed;
+	top:55px;
+	bottom:0px;
+	width:100%;
+	z-index:1;
+	overflow-y:scroll;
+	padding-top:50px;
+}
+.create-appoint-title{
+	padding:14px;
+	top: 56px;
+	border: none;
+	background: #e6eef2;
+    z-index: 1000;
+    text-align: center;
+    color: #3d454d;
+    min-height: 46px;
+    margin-bottom: 18px;
+    position: fixed;
+    width:100%;
+	
+	a{
+		color:$blue;
+		float:left;
+		
+		img{
+			display: inline-block;
+			vertical-align: top;
+			margin-top: 2px;
+			margin-right: 5px;
+		}
+	}
+}
+.popup-new-container {
+    width: 100%;
+    margin-top:0px;
+    height: 100%;
+    padding:0px 14px;
+}
+.popup-left-section {
+    background: #c2e0f2;
+    width: 336px;
+    padding: 20px 30px 70px!important;
+    vertical-align: top;
+    border-radius: 10px 0px 0px 10px;
+    overflow: hidden;
+    border: none;
+    font-weight: normal;
+    color: #404040;
+}
+.popup-left-title {
+    color: #667680;
+    font-weight: normal;
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #999;
+    margin-bottom: 30px;
+}
+.left-field-outer {
+    display: block;
+    margin-bottom: 20px;
+    
+    .popup-input-label {
+		font-size: 11px!important;
+		color: #667680!important;
+		display: block;
+		text-transform: uppercase;
+		font-weight: 300;
+	}
+	.popup-input-box {
+		font-size: 14px;
+		color: #404040;
+		display: block;
+		border-bottom: 1px dotted #a3bccc;
+		background: none;
+		width: 100%;
+		font-weight: normal;
+		padding-bottom: 5px;
+		min-height: 26px;
+	}
+}
+.popup-right-section {
+	border-radius: 0px 10px 10px 0px;
+	overflow: hidden;
+	background: #ffffff;
+	
+	.popup-right-form-outer {
+		width: 70%;
+		margin: auto;
+		display: table;
+		padding: 25px 0px 100px;
+		
+		.popup-right-section-title {
+			font-size: 22px;
+			color: #404040;
+			font-weight: normal;
+			margin-bottom: 40px;
+		}
+		
+		.popup-form .form-group {
+			margin-bottom: 18px;
+		}
+	}
+}
+.allow-double-booking{
+	width:100%;
+	float:left;
+	
+	label{font-weight:normal;display:contents;}
+}
+.save-appoint-btn{margin:10px 0px 0px;}
+.appoint-note{height:26px;min-height:inherit;}
+.add-another-service #add-more-service {
+    background: #ffffff;
+    color:$blue;
+}
+.appoint-note{top:-25px;}
+.appointment-detail-main{
+	width:673px;
+	margin-top:20px;
+	
+	.small-popup-content{max-height:460px;}
+	textarea{min-height:20px;}
+}
+.last-cancel-appint{font-size:11px;text-align:center;}
+
+#previous_appointments ul{list-style:none;display:block;}
+#previous_appointments ul li{display:block;padding:5px;}
+#previous_appointments{
+	height:auto;
+	overflow-y:auto;
+	overflow-x:hidden;
+	display:block;
+}
+.app_status_span {
+    display: inline-block;
+    padding: 1px 5px;
+    border-radius: 3px;
+    background: #999;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+   }
+.upcoming {
+    background: #38a100 none repeat scroll 0 0;
+    color: #fff;
+}
+.canceled {
+    background: #EA4335;
+    color: #fff;
+}
+.add-services{
+    margin-bottom:20px;
+    overflow:inherit;
+    float:left;
+    width:100%;
+    
+    select{width:60%;background:url(/../images/new-down-arrow.png) no-repeat right 9px #ffffff;border:none;display:inline-block;}
+    input{width:19%;border-left:1px solid #ececec;padding-lefT:10px;
+    	&:disabled{
+		    opacity: 0.5;
+		    cursor: not-allowed;
+		    background:#ffffff;
+		}
+    }
+    .add-round-btn{top:0px;right:-13px;}
+}
+.reschedule-msg{
+	font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    color: #951b1b;
+    display: block;
+}
+.appointment-service-name-outer{
+	margin-bottom:20px;
+	float:left;
+	width:100%;
+
+	.appointment-service-name{
+		position:relative;
+		padding-right:25px;
+		margin-bottom:15px;
+
+		.add-round-btn{top:0px;}
+	}
+}
+.add-service-btn{width:113px;text-align: center;position:absolute;top:-4px;right:0px;}
+.add-service-outer{float:left;width:100%;position:relative;padding-right:130px;}
+.create-appointment-container .new-loader {z-index: 1001}
+
+
+
+
+
+
+
+
+

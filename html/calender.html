@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="" name="description">
+<meta content="" name="author">
+<meta content="Page scroll animation using CSS animate" name="description">
+<meta content="css animation, loading effect, animate, scroll loading, scroll animation" 
+name="keywords">
+<meta content="Jinson Abraham" name="author">
+<title>AR-Patient Portal</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet"> 
+<link href="css/common/bootstrap.css" rel="stylesheet">
+<link href="css/common/icons.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<link href="css/index.css" rel="stylesheet" type="text/css"/>
+<link href="css/caleran.min.css" rel="stylesheet" type="text/css"/>
+<link href="css/custom.css" rel="stylesheet" type="text/css"/>
+<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+<link href="css/custom.css" rel="stylesheet"/>
+<script src="js/moment.min.js"></script>
+<script src="js/caleran.min.js"></script>
+<script type="text/javascript">
+	$(".caleran").caleran();
+</script>
+<script type="text/javascript">
+	$(".caleran").caleran({inline: true, startOnMonday: true});
+</script>
+<script type="text/javascript">
+	  $("#caleran-ex-1-1").caleran({showOn:"top",autoAlign:true});
+</script>
+</head>
+<body>
+
+<div class="main protected">
+	<header>
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
+					<span class="sr-only">Toggle navigation</span> 
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span><span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">
+					<img src="images/logo.png"/>
+				</a> 
+			</div>
+			
+			<div id="navbar" class="navbar-collapse collapse">
+				<div class="nav-outer">
+					<ul class="nav navbar-nav right-menus">
+						<li>
+							<a id="users-logs" class="users-logs show-desktop right-menus-a" href="/dashboard/user_logs" title="User Activities"></a>
+							<a id="users-logs" class="users-logs show-mobile" href="/dashboard/user_logs">View Users Activities</a>
+						</li>
+						<li>
+						<a id="noti-icon" class="noti-icon notification show-desktop right-menus-a" href="javascript:void(0);" title="Notifications"></a>
+						<a class="noti-icon notification show-mobile" href="/dashboard/notifications" title="Notifications">Notification</a>
+						<div id="popup" class="noti-popup no-display">
+							<div id="notty-title" class="noti-title">Notifications </div>
+							<div id="notty-content" class="noti-content">
+								<div class="read">
+									Your appointment on date 12/12/2017 01:00 PM 
+									with KProvider 1 is not synced
+								</div>
+								<div class="read">
+									Your appointment on date with is not synced
+								</div>
+								<div class="read">
+									Batch li-stock of <b>Have stocks</b> has hit 
+									low stock
+								</div>
+								<div class="read">
+									Batch ny-stock of <b>Have stocks</b> has hit 
+									low stock
+								</div>
+								<div class="read">
+									Batch 54545 of <b>Ttt</b> has hit low stock
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +19546637556
+								</div>
+								<div class="read">
+									New SMS received from +19546637556
+								</div>
+							</div>
+							<div id="notty-footer" class="noti-footer">
+								<a href="/dashboard/sms_notifications">See All</a>
+							</div>
+						</div>
+						</li>
+						<li class="arow-link-outer">
+							<span class="arow-link">
+								<div id="headerUserImage" class="user-picture"></div>
+								<span class="name-txt">Ganesh Kompella </span>
+							</span>
+						</li>
+						<li>
+							<a class="setting show-desktop right-menus-a" href="/settings/profile" title="Settings"></a>
+							<a class="setting show-mobile" href="/settings/profile">Settings</a> 
+						</li>
+						<li>
+							<a class="logout show-desktop right-menus-a" href="/accounts/logout" title="Logout"></a>
+							<a class="logout show-mobile" href="/accounts/logout"><i class="icon-Power-2"></i>Log Out</a> 
+						</li>
+					</ul>
+					<ul class="nav navbar-nav main-navbar">
+						<li class=""><a href="/dashboard">Dashboard</a></li>
+						<li class=""><a href="/patients/manage">Clients</a> </li>
+						<li class=""><a href="/appointments/index">Appointments</a></li>
+						<li class=""><a href="/sales/index">Sales</a></li>
+						<li class=""><a href="/inventory/products/active">Inventory</a></li>
+						<li class=""><a href="/analytics/reports">Reports</a></li>
+						<li class="active"><a href="/marketing/dashboard">Surveys</a></li>
+						<li class=""><a href="/MDRooms/pending">MD's Room</a></li>
+						<li class=""><a href="/ProvidersRooms/pending">Provider's Room</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	
+<div id="content">
+	<div class="container-fluid content">
+		<ul class="sub-menu text-right">
+			<h3 class="cal-title">Calender</h3>
+			<li><a href="#" class="active">Calendar</a></li>
+			<li><a href="#">Booking History</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Provider Schedule</a></li>
+			<li><a href="#">Equipment Schedule</a></li>
+			<li><a href="#">Resource Schedule</a></li>
+			<li><a href="#">Settings</a></li>
+		</ul>
+		<div class="row">
+			<div class="col-lg-3 col-md-12 col-sm-6">
+				<div class="search-bg cal-search">
+					<i class="fas fa-search"></i>
+					<input class="setting-search-input search-key" data-url="/settings/clinics" placeholder="Search" value=""> 
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-sm-6 cal-date-btn-outer">
+				<button class="calendar-btn today-btn">Today</button>
+				<button class="calendar-btn cal-date-btn">
+					<a href="#" class="cal-arrow pull-left"><img src="images/cal-left.svg"/></a>
+					17 October 2017
+					<a href="#" class="cal-arrow pull-right"><img src="images/cal-right.svg"/></a>
+				</button>
+			</div>
+			<div class="col-lg-5 col-md-7 col-sm-12 cal-filter">
+				<button class="calendar-dropdown">All Services <a href="#" class="cal-arrow pull-right"><img src="images/cal-down.png"/></a>
+				</button>
+				<button class="calendar-dropdown show">All Providers <a href="#" class="cal-arrow pull-right"><img src="images/cal-up.png"/></a>
+					<ul class="cal-dropdown cal-service-dropdown">
+						<li>
+							<a href="#">
+								<label class="checkbox">
+									<input type="checkbox" value="9751"> All Provider
+									<span style="background-color:#750808"></span>
+								</label>
+							</a>
+						</li><li><a tabindex="0"><label class="checkbox" title="Ajay Verma"><input type="checkbox" value="9703"> Ajay Verma<span style="background-color:#6ca6cd" class="filter-provider-span"></span></label></a></li><li><a tabindex="0"><label class="checkbox" title="beta kumar"><input type="checkbox" value="9630"> beta kumar<span style="background-color:#ae0001" class="filter-provider-span"></span></label></a></li><li><a tabindex="0"><label class="checkbox" title="Boris XX"><input type="checkbox" value="9658"> Boris XX<span style="background-color:#C71577" class="filter-provider-span"></span></label></a></li><li><a tabindex="0"><label class="checkbox" title="C Provider"><input type="checkbox" value="9753"> C Provider<span style="background-color:#9932CC" class="filter-provider-span"></span></label></a></li><li><a tabindex="0"><label class="checkbox" title="D Provider"><input type="checkbox" value="9754"> D Provider<span style="background-color:#632a01" class="filter-provider-span"></span></label></a></li><li><a tabindex="0"><label class="checkbox" title="Eugene Barkouski"><input type="checkbox" value="9779"> Eugene Barkouski<span style="background-color:#FF8C00" class="filter-provider-span"></span></label></a></li><li><a tabindex="0"><label class="checkbox" title="first2 kumar"><input type="checkbox" value="9644"> first2 kumar<span style="background-color:#c0c0c0" class="filter-provider-span"></span></label></a></li><li class="active"><a tabindex="0"><label class="checkbox" title="Ganesh Kompella"><input type="checkbox" value="9530"> Ganesh Kompella<span style="background-color:#FF1493" class="filter-provider-span"></span></label></a></li><li><a tabindex="0"><label class="checkbox" title="Heena Naaz"><input type="checkbox" value="9742"> Heena Naaz<span style="background-color:#FF1493" class="filter-provider-span"></span></label></a></li><li><a tabindex="0"><label class="checkbox" title="md md"><input type="checkbox" value="9629"> md md<span style="background-color:#4af79c" class="filter-provider-span"></span></label></a></li><li><a tabindex="0"><label class="checkbox" title="Medical Dir"><input type="checkbox" value="9733"> Medical Dir<span style="background-color:#1E90FF" class="filter-provider-span"></span></label></a></li><li><a tabindex="0"><label class="checkbox" title="Morgan Qwer"><input type="checkbox" value="9712"> Morgan Qwer<span style="background-color:#7b526c" class="filter-provider-span"></span></label></a></li><li><a tabindex="0"><label class="checkbox" title="new providerjuvly"><input type="checkbox" value="9743"> new providerjuvly<span style="background-color:#DC143C" class="filter-provider-span"></span></label></a></li><li><a tabindex="0"><label class="checkbox" title="new prov"><input type="checkbox" value="9684"> new prov<span style="background-color:#9f0101" class="filter-provider-span"></span></label></a></li><li><a tabindex="0"><label class="checkbox" title="New Prov"><input type="checkbox" value="9704"> New Prov<span style="background-color:#404040" class="filter-provider-span"></span></label></a></li><li><a tabindex="0"><label class="checkbox" title="new1 Provider"><input type="checkbox" value="9591"> new1 Provider<span style="background-color:#598a6f" class="filter-provider-span"></span></label></a></li><li><a tabindex="0"><label class="checkbox" title="Prov Ider"><input type="checkbox" value="9771"> Prov Ider<span style="background-color:#FF1493" class="filter-provider-span"></span></label></a></li><li><a tabindex="0"><label class="checkbox" title="Provider B"><input type="checkbox" value="9752"> Provider B<span style="background-color:#FF6347" class="filter-provider-span"></span></label></a></li><li><a tabindex="0"><label class="checkbox" title="Provider2 Provider2"><input type="checkbox" value="9642"> Provider2 Provider2<span style="background-color:#efb509" class="filter-provider-span"></span></label></a></li><li><a tabindex="0"><label class="checkbox" title="Provider3 Provider3"><input type="checkbox" value="9652"> Provider3 Provider3<span style="background-color:#fff8b6" class="filter-provider-span"></span></label></a></li><li><a tabindex="0"><label class="checkbox" title="Provider4 Provider4"><input type="checkbox" value="9687"> Provider4 Provider4<span style="background-color:#ffb90f" class="filter-provider-span"></span></label></a></li><li><a tabindex="0"><label class="checkbox" title="proxyz user"><input type="checkbox" value="9534"> proxyz user<span style="background-color:#2abe3d" class="filter-provider-span"></span></label></a></li><li><a tabindex="0"><label class="checkbox" title="rahul sati"><input type="checkbox" value="9556"> rahul sati<span style="background-color:#c66f6f" class="filter-provider-span"></span></label></a></li><li><a tabindex="0"><label class="checkbox" title="Ramsayqq Boltonqq"><input type="checkbox" value="9635"> Ramsayqq Boltonqq<span style="background-color:#6897bb" class="filter-provider-span"></span></label></a></li><li><a tabindex="0"><label class="checkbox" title="ravi Kiran"><input type="checkbox" value="9532"> ravi Kiran<span style="background-color:#00008B" class="filter-provider-span"></span></label></a></li><li><a tabindex="0"><label class="checkbox" title="ravi kiran"><input type="checkbox" value="9650"> ravi kiran<span style="background-color:#76588c" class="filter-provider-span"></span></label></a></li><li><a tabindex="0"><label class="checkbox" title="Rojer Trew"><input type="checkbox" value="9657"> Rojer Trew<span style="background-color:#2abe3d" class="filter-provider-span"></span></label></a></li><li><a tabindex="0"><label class="checkbox" title="Ryan Qwer"><input type="checkbox" value="9580"> Ryan Qwer<span style="background-color:#6897bb" class="filter-provider-span"></span></label></a></li><li><a tabindex="0"><label class="checkbox" title="Sanjolly Jain"><input type="checkbox" value="9558"> Sanjolly Jain<span style="background-color:#800000" class="filter-provider-span"></span></label></a></li><li><a tabindex="0"><label class="checkbox" title="satish d"><input type="checkbox" value="9578"> satish d<span style="background-color:#6BA5C2" class="filter-provider-span"></span></label></a></li><li><a tabindex="0"><label class="checkbox" title="sudheer kumart"><input type="checkbox" value="9549"> sudheer kumart<span style="background-color:#4B0082" class="filter-provider-span"></span></label></a></li></ul>
+				</button>
+				<button class="calendar-dropdown cal-clinic">juvly Downtown Columbus <a href="#" class="cal-arrow pull-right"><img src="images/cal-down.png"/></a>
+				<ul class="cal-dropdown clinicname-dropdown">
+					<li>
+						<a href="#">
+							<label class="checkbox">
+								New York Clinic
+							</label>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<label class="checkbox">
+								Cincinati
+							</label>
+						</a>
+					</li>
+				</ul>
+				</button>			
+			</div>
+		</div>
+		<div class="juvly-section full-width m-t-10">
+
+			
+			
+				
+				
+			
+						
+		</div>
+		
+	</div>			
+</div>
+
+<footer class="main-footer">
+	<div class="container-fluid">
+		<span class="pull-right">
+			©2018 Aesthetic Record. All Rights Reserved. 
+		</span>
+	</div>
+</footer>
+</div>
+
+
+
+
+ <script type="text/javascript">
+    $("#caleran-ex-7").caleran();
+    $(".caleran-type-selector").click(function(){
+      $("#caleran-ex-7").data("caleran").destroy();
+      $("#caleran-ex-7").caleran({
+        singleDate: $("input[name='caleran-type-selector']:checked").val() == "single" ? true : false
+      });
+    });
+  </script>
+  
+   <script type="text/javascript">
+          $("#caleran-ex-7").caleran({ranges: [
+              {
+                  title: "Today",
+                  startDate: moment(),
+                  endDate: moment()
+              },
+              {
+                  title: "Yesterday",
+                  startDate: moment().subtract(1,"days"),
+                  endDate: moment().subtract(1,"days")
+              },
+              {
+                  title: "This week",
+                  startDate: moment().startOf("week"),
+                  endDate: moment().endOf("week")
+              },
+              {
+                  title: "Last week",
+                  startDate: moment().subtract(1,"weeks").startOf("week"),
+                  endDate: moment().subtract(1,"weeks").endOf("week")
+              },
+              {
+                  title: "This month",
+                  startDate: moment().startOf("month"),
+                  endDate: moment().endOf("month")
+              },
+              {
+                  title: "Last month",
+                  startDate: moment().subtract(1,"months").startOf("month"),
+                  endDate: moment().subtract(1,"months").endOf("month")
+              },
+              {
+                  title: "This year",
+                  startDate: moment().startOf("year"),
+                  endDate: moment().endOf("year")
+              },
+              {
+                  title: "Last year",
+                  startDate: moment().subtract(1,"years").startOf("year"),
+                  endDate: moment().subtract(1,"years").endOf("year")
+              }
+          ]});
+      </script>
+</body>
+</html>

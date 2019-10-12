@@ -1,0 +1,131 @@
+.billing-stats {
+    text-align: center;
+}
+.portal-numbers {
+    font-size: 56px;
+    font-weight: bold;
+    color: #404040;
+    display: block;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 10px;
+}
+.patient-portal-label {
+    color: #667680;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 15px;
+}
+.setting-total-useage-label-outer {
+    position: absolute;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    z-index: 3;
+    width: 212px;
+    top: 97px;
+}
+.setting-total-useage, .setting-total-useage-label {
+    display: block;
+    font-size: 18px;
+}
+.setting-total-useage-label {
+    display: block;
+    margin-top: 0px;
+    font-size: 14px;
+}
+.data-usage {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+.setting-data-usage {
+    font-size: 18px;
+    color: #404040;
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+}
+.setting-free-used {
+    font-size: 14px;
+    color: #667680;
+    display: block;
+    margin-top: 10px;
+    font-weight: normal;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 20px;
+}
+.credit-balance {
+    font-size: 15px;
+    margin-top: 8px;
+}
+.accordion-table.your-billing {
+    
+    .accordion-head {
+		background: #fafafa;
+		font-weight: 600;
+		color: #252525;
+		font-size: 14px;
+		float:left;
+		width:100%;
+		
+		.accordian-section{
+			color: #252525;
+			font-size:13px;
+			float:left;
+			display:inline-block;
+			background: #fafafa;
+		}
+	}
+	.accordian-section{
+		color: #252525;
+		font-size:13px;
+		float:left;
+		display:inline-block;
+		background:#ffffff;
+		border-left:none;
+	}
+	.accordion-row{display:block;
+		.accordion-title{border:none;background:none;}
+	}
+	.dash-icon{
+		padding-left:20px;
+	
+		&:after{content: "";}
+	}
+}
+.sms-btn {
+    min-width: 90px;
+}
+.card-exp-date {
+    width: 45%;
+    float: left;
+}
+.setting-credit-card {
+    padding: 35px 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

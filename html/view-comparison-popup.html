@@ -1,0 +1,396 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="" name="description">
+<meta content="" name="author">
+<meta content="Page scroll animation using CSS animate" name="description">
+<meta content="css animation, loading effect, animate, scroll loading, scroll animation" 
+name="keywords">
+<meta content="Jinson Abraham" name="author">
+<title>AR-Patient Portal</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet"> 
+<link href="css/common/bootstrap.css" rel="stylesheet">
+<link href="css/common/icons.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<link href="css/index.css" rel="stylesheet" type="text/css"/>
+<link href="css/caleran.min.css" rel="stylesheet" type="text/css"/>
+<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+<link href="css/custom.css" rel="stylesheet"/>
+<script src="js/moment.min.js"></script>
+<script src="js/caleran.min.js"></script>
+<script type="text/javascript">
+	$(".caleran").caleran();
+</script>
+<script type="text/javascript">
+	$(".caleran").caleran({inline: true, startOnMonday: true});
+</script>
+<script type="text/javascript">
+	  $("#caleran-ex-1-1").caleran({showOn:"top",autoAlign:true});
+</script>
+</head>
+<body>
+
+<div class="main protected">
+	<header>
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
+					<span class="sr-only">Toggle navigation</span> 
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span><span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">
+					<img src="images/logo.png"/>
+				</a> 
+			</div>
+			
+			<div id="navbar" class="navbar-collapse collapse">
+				<div class="nav-outer">
+					<ul class="nav navbar-nav right-menus">
+						<li>
+							<a id="users-logs" class="users-logs show-desktop right-menus-a" href="/dashboard/user_logs" title="User Activities"></a>
+							<a id="users-logs" class="users-logs show-mobile" href="/dashboard/user_logs">View Users Activities</a>
+						</li>
+						<li>
+						<a id="noti-icon" class="noti-icon notification show-desktop right-menus-a" href="javascript:void(0);" title="Notifications"></a>
+						<a class="noti-icon notification show-mobile" href="/dashboard/notifications" title="Notifications">Notification</a>
+						<div id="popup" class="noti-popup no-display">
+							<div id="notty-title" class="noti-title">Notifications </div>
+							<div id="notty-content" class="noti-content">
+								<div class="read">
+									Your appointment on date 12/12/2017 01:00 PM 
+									with KProvider 1 is not synced
+								</div>
+								<div class="read">
+									Your appointment on date with is not synced
+								</div>
+								<div class="read">
+									Batch li-stock of <b>Have stocks</b> has hit 
+									low stock
+								</div>
+								<div class="read">
+									Batch ny-stock of <b>Have stocks</b> has hit 
+									low stock
+								</div>
+								<div class="read">
+									Batch 54545 of <b>Ttt</b> has hit low stock
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +19546637556
+								</div>
+								<div class="read">
+									New SMS received from +19546637556
+								</div>
+							</div>
+							<div id="notty-footer" class="noti-footer">
+								<a href="/dashboard/sms_notifications">See All</a>
+							</div>
+						</div>
+						</li>
+						<li class="arow-link-outer">
+							<span class="arow-link">
+								<div id="headerUserImage" class="user-picture"></div>
+								<span class="name-txt">Ganesh Kompella </span>
+							</span>
+						</li>
+						<li>
+							<a class="setting show-desktop right-menus-a" href="/settings/profile" title="Settings"></a>
+							<a class="setting show-mobile" href="/settings/profile">Settings</a> 
+						</li>
+						<li>
+							<a class="logout show-desktop right-menus-a" href="/accounts/logout" title="Logout"></a>
+							<a class="logout show-mobile" href="/accounts/logout"><i class="icon-Power-2"></i>Log Out</a> 
+						</li>
+					</ul>
+					<ul class="nav navbar-nav main-navbar">
+						<li class=""><a href="/dashboard">Dashboard</a></li>
+						<li class=""><a href="/patients/manage">Clients</a> </li>
+						<li class=""><a href="/appointments/index">Appointments</a></li>
+						<li class="active"><a href="/sales/index">Sales</a></li>
+						<li class=""><a href="/inventory/products/active">Inventory</a></li>
+						<li class=""><a href="/analytics/reports">Reports</a></li>
+						<li class=""><a href="/marketing/dashboard">Surveys</a></li>
+						<li class=""><a href="/MDRooms/pending">MD's Room</a></li>
+						<li class=""><a href="/ProvidersRooms/pending">Provider's Room</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	
+<div id="content">
+	<div class="container-fluid content setting-wrapper">
+
+
+	<div class="wide-popup">
+		<div class="modal-blue-header">
+			<a href="#" class="popup-cross">×</a>
+			<span class="popup-blue-name">View Comparison</span>
+		</div>
+		
+		<div class="wide-popup-wrapper time-line">
+			
+			<div class="table-responsive">
+	<div class="table com-noti-outer">
+    <div class="table-row com-notification">
+		<div class="table-cell" style="width:266px;"></div>
+        <div class="table-cell" style="width:266px;">
+           <span class="priv-text-color">Before Update</span>
+        </div>
+        <div class="table-cell" style="width:266px;">
+           <span class="priv-text-color">After Update</span>
+        </div>
+    </div>
+    
+    
+    <div class="table-row com-notification"><label class="table-cell com-noti-label">Service Name</label>
+        <div class="table-cell">
+            <span class="priv-text-color">3 service</span>
+        </div>
+        <div class="table-cell">
+                <span class="priv-text-color">3 service</span>
+        </div>
+    </div>
+    <div class="table-row com-notification"><label class="table-cell com-noti-label">Service Category</label>
+        <div class="table-cell">
+            <span class="priv-text-color">Category Customer iDoctorz</span>
+        </div>
+        <div class="table-cell">
+                <span class="priv-text-color">Category Customer iDoctorz</span>
+        </div>
+    </div>
+    <div class="table-row com-notification"><label class="table-cell com-noti-label">Available at clinics</label>
+        <div class="table-cell">
+                <span class="priv-text-color">a</span>
+        </div>
+        <div class="table-cell">
+                <span class="priv-text-color">a</span>
+        </div>
+    </div>
+    <div class="table-row com-notification"><label class="table-cell com-noti-label">Service dependent on devices</label>
+        <div class="table-cell">
+                <span class="priv-text-color"></span>
+        </div>
+        <div class="table-cell">
+                <span class="priv-text-color"></span>
+        </div>
+    </div>
+    <div class="table-row com-notification"><label class="table-cell com-noti-label">Book appointment for this service online</label>
+        <div class="table-cell">
+                <span class="priv-text-color">No</span>
+        </div>
+        <div class="table-cell">
+                <span class="priv-text-color">No</span>
+        </div>
+    </div>
+    <div class="table-row com-notification"><label class="table-cell com-noti-label">Card capture disable for this service</label>
+        <div class="table-cell">
+                <span class="priv-text-color">No</span>
+        </div>
+        <div class="table-cell">
+                <span class="priv-text-color">No</span>
+        </div>
+    </div>     
+    <div class="table-row com-notification"><label class="table-cell com-noti-label">Is this service a Free Consultation</label>
+        <div class="table-cell">
+                <span class="priv-text-color">No</span>
+        </div>
+        <div class="table-cell">
+                <span class="priv-text-color">No</span>
+        </div>
+    </div>     
+    <div class="table-row com-notification"><label class="table-cell com-noti-label">Questionnaires</label>
+        <div class="table-cell">
+                <span class="priv-text-color"></span>
+        </div>
+        <div class="table-cell">
+                <span class="priv-text-color"></span>
+        </div>
+    </div>
+    <div class="table-row com-notification"><label class="table-cell com-noti-label">Providers</label>
+        <div class="table-cell">
+                <span class="priv-text-color">A Provider</span>
+        </div>
+        <div class="table-cell">
+                <span class="priv-text-color">A Provider</span>
+        </div>
+    </div>
+    <div class="table-row com-notification"><label class="table-cell com-noti-label">Resources</label>
+        <div class="table-cell">
+                <span class="priv-text-color"></span>
+        </div>
+        <div class="table-cell">
+                <span class="priv-text-color"></span>
+        </div>
+    </div>
+    <div class="table-row com-notification"><label class="table-cell com-noti-label">Survey</label>
+        <div class="table-cell">
+                <span class="priv-text-color"></span>
+        </div>
+        <div class="table-cell">
+                <span class="priv-text-color"></span>
+        </div>
+    </div>
+    <div class="table-row com-notification"><label class="table-cell com-noti-label">Can't book with</label>
+        <div class="table-cell">
+                <span class="priv-text-color"></span>
+        </div>
+        <div class="table-cell">
+                <span class="priv-text-color"></span>
+        </div>
+    </div>
+    <div class="table-row com-notification"><label class="table-cell com-noti-label">Pre Treatment Instructions</label>
+        <div class="table-cell">
+                <span class="priv-text-color"></span>
+        </div>
+        <div class="table-cell">
+                <span class="priv-text-color"></span>
+        </div>
+    </div>
+    <div class="table-row com-notification"><label class="table-cell com-noti-label">Post Treatment Instructions</label>
+        <div class="table-cell">
+                <span class="priv-text-color"></span>
+        </div>
+        <div class="table-cell">
+                <span class="priv-text-color"></span>
+        </div>
+    </div>
+    <div class="table-row com-notification"><label class="table-cell com-noti-label">Duration</label>
+        <div class="table-cell">
+                <span class="priv-text-color">30</span>
+        </div>
+        <div class="table-cell">
+                <span class="priv-text-color">30</span>
+        </div>
+    </div>
+    <div class="table-row com-notification"><label class="table-cell com-noti-label">Description</label>
+        <div class="table-cell">
+                <span class="priv-text-color">sd</span>
+        </div>
+        <div class="table-cell">
+                <span class="priv-text-color">sd</span>
+        </div>
+    </div>
+    <div class="table-row com-notification"><label class="table-cell com-noti-label">Done By</label>
+        <div class="table-cell">
+                <span class="priv-text-color">Ganesh Kompella</span>
+        </div>
+        <div class="table-cell">
+                <span class="priv-text-color">Ganesh Kompella</span>
+        </div>
+    </div>
+    <div class="table-row com-notification"><label class="table-cell com-noti-label">Action Perform</label>
+        <div class="table-cell">
+                <span class="priv-text-color">Add</span>
+        </div>
+        <div class="table-cell">
+                <span class="priv-text-color">Update</span>
+        </div>
+    </div>
+        <div class="table-row com-notification"><label class="table-cell com-noti-label">Done On</label>
+        <div class="table-cell">
+                <span class="priv-text-color">01/01/2019 9:14 AM</span>
+        </div>
+        <div class="table-cell">
+                <span class="priv-text-color">01/01/2019 9:17 AM</span>
+        </div>
+    </div>
+    </div>
+    </div>
+			
+		</div>
+		
+		
+	</div>
+
+		
+	</div>			
+</div>
+
+<footer class="main-footer">
+	<div class="container-fluid">
+		<span class="pull-right">
+			©2018 Aesthetic Record. All Rights Reserved. 
+		</span>
+	</div>
+</footer>
+</div>
+
+
+
+
+ <script type="text/javascript">
+    $("#caleran-ex-7").caleran();
+    $(".caleran-type-selector").click(function(){
+      $("#caleran-ex-7").data("caleran").destroy();
+      $("#caleran-ex-7").caleran({
+        singleDate: $("input[name='caleran-type-selector']:checked").val() == "single" ? true : false
+      });
+    });
+  </script>
+  
+   <script type="text/javascript">
+          $("#caleran-ex-7").caleran({ranges: [
+              {
+                  title: "Today",
+                  startDate: moment(),
+                  endDate: moment()
+              },
+              {
+                  title: "Yesterday",
+                  startDate: moment().subtract(1,"days"),
+                  endDate: moment().subtract(1,"days")
+              },
+              {
+                  title: "This week",
+                  startDate: moment().startOf("week"),
+                  endDate: moment().endOf("week")
+              },
+              {
+                  title: "Last week",
+                  startDate: moment().subtract(1,"weeks").startOf("week"),
+                  endDate: moment().subtract(1,"weeks").endOf("week")
+              },
+              {
+                  title: "This month",
+                  startDate: moment().startOf("month"),
+                  endDate: moment().endOf("month")
+              },
+              {
+                  title: "Last month",
+                  startDate: moment().subtract(1,"months").startOf("month"),
+                  endDate: moment().subtract(1,"months").endOf("month")
+              },
+              {
+                  title: "This year",
+                  startDate: moment().startOf("year"),
+                  endDate: moment().endOf("year")
+              },
+              {
+                  title: "Last year",
+                  startDate: moment().subtract(1,"years").startOf("year"),
+                  endDate: moment().subtract(1,"years").endOf("year")
+              }
+          ]});
+      </script>
+</body>
+</html>

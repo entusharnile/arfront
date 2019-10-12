@@ -1,0 +1,132 @@
+.treatmentPlan{width:700px;}
+.create-treat-plan-btn{
+	width:100%;
+	float:left;
+	font-size:15px;
+	font-weight:bold;
+	text-align:center;
+	margin-bottom:30px;
+}
+.pick-template{text-transform:inherit;font-size:15px;}
+.treatment-table{
+	display:table;
+	width:100%;
+	
+		.treatment-tr{
+			display:table-row;
+			width:100%;
+			
+			.treatment-td{
+				display:table-cell;
+				padding:10px 0px!important;
+				border-top:1px solid #cccccc;
+				font-size:15px;
+			}
+			
+			&:first-child .treatment-td{border:none;}
+			
+			&.treatHeader{
+				.treatment-td{
+					padding-bottom:8px!important;
+					position:relative;
+					text-transform:uppercase;
+					font-size:10px;
+					font-weight:bold;
+				}
+			}
+		}
+}
+.add-product-outer{border-top:1px solid #cccccc;padding-top:30px;}
+.add-product-btn{
+	width:100%;
+	float:left;
+	font-size:15px;
+	font-weight:bold;
+	text-align:center;
+	margin-bottom:30px;
+	background:#e6eef2;
+	color:#667680;
+}
+.product-row{position:relative;margin-bottom:15px;
+	.remove-product{
+		position: absolute;
+		right: 17px;
+		top:13px;
+		
+		img{width:11px;}
+	}
+	.monthly-pro-remove{top:10px;}
+}
+.treat-plan-user{
+	float:left;
+	width:100%;
+	font-size:15px;
+	color:#444444;
+	padding-bottom:20px;
+	margin-bottom:18px;
+	border-bottom:1px solid #dddddd;
+	
+	.user-profile-img{
+		width:20px;
+		height:20px;
+		vertical-align:top;
+	}
+}
+.treat-text{font-size:15px;display:block;width:100%;}
+.sm-help{
+	width: 14px;
+	height: 14px;
+	line-height: 12px;
+	font-size:12px;
+	margin-top:3px;
+}
+.TP-total{
+	font-size:32px;
+	display:block;
+	font-weight:bold;
+	margin-bottom:20px;
+}
+.small-cross{
+	width: 11px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 4px;
+}
+.TP-discount-outer{
+	width:100%;
+	float:left;
+	border:1px solid #cccccc;
+	height:42px;
+	@include border-radius(3px);
+	box-shadow:0px 1px 1px 0 rgba(0,0,0,0.15) inset;
+	margin-bottom:20px;
+	max-width:200px;
+	
+	input{width:67px;height:30px;color:#444444;font-size:15px;display:inline-block;margin-top:5px;padding:0px 10px;}
+	.TP-discount-type{width:27px;height:32px;font-size:15px;color:#667680;font-weight:bold;display:inline-block;
+		vertical-align:top;text-align:center;padding:5px;margin-top:4px;@include border-radius(3px);
+		
+		&.active{background:#e6eef2;font-size:15px;color:$blue;}
+	}
+	.TP-discount-apply{width:62px;height:32px;@include border-radius(3px);color:#ffffff;background:$blue;font-size:15px;font-weight:bold;display:inline-block;vertical-align:top;text-align:center;padding:5px;margin:4px 4px 0px 0px;}
+}
+.save-TP{float:left;width:100%;font-size:15px;font-weight:bold;color:$blue;margin-top:0px;text-align:center;}
+.checkbox-text{position:relative;font-size:15px;color:#444444;display:block;padding-left:26px;margin-bottom:20px;
+	input{position:absolute;left:0px;top:1px;}
+}
+.TP-tax{width:70px;height:42px;margin-bottom:20px;background:#f0f0f0;color:#444444;font-size:15px;font-weight:bold;display:inline-block;@include border-radius(3px);padding-top:10px;text-align:center;}
+
+.start-program-main{width:590px;}
+.strt-prog-btn svg{font-size:20px;margin-right:5px;display: inline-block;vertical-align: top;}
+.perMonthStartProgram{float:left;width:100%;background:#f0f0f0;padding:30px 18px;}
+
+
+
+
+
+
+
+
+
+
+

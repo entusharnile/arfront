@@ -1,0 +1,126 @@
+.new-all-stats{
+	background: #ffffff;
+    float: left;
+    width: 100%;
+    @include box-shadow(0, 1px, 2px, 0, rgba(0,0,0,0.15));
+    margin-bottom: 20px;
+    display:table;
+    margin-top:10px;
+	@include border-radius(3px);
+	
+	&:first-child{
+		border-left:none!important;
+	}
+	
+	.stats-section{
+		border-left:1px solid #ececec;
+		padding: 23px;
+		display:table-cell;
+		width:20%;
+		vertical-align:top;
+		
+		.dash-box-title{
+			height:28px;
+			font-size:10px;
+			color:#667680;
+		}
+		.new-all-stats-content{
+			float:left;
+			width:100%;
+			font-size:20px;
+			color:#404040;
+			
+			span{
+				display: inline-block;
+				vertical-align: top;
+				font-size: 13px;
+				color: #667680;
+				padding: 10px 3px 0px;
+			}
+		}
+	}
+}
+.survey-table {
+    border: 1px dotted #e6e9eb;
+}
+.NPS-title {
+    font-size: 17px;
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: #404040;
+    padding: 25px 0px;
+}
+.stats-outer{
+	padding:35px 50px; 
+}
+#survey_list .juvly-container {
+    padding: 27px 50px 35px;
+}
+.min-w-160 {
+    min-width: 160px;
+}
+.min-w-120 {
+    min-width: 120px;
+}
+.nps-name {
+    max-width: 244px;
+}
+
+
+
+
+.survey-qus-ans{
+	float:left;
+	width:100%;
+	font-size:14px;
+	font-family: 'Lato', sans-serif;
+	padding:20px 0px;
+	background-image:url('../images/dotted-border.png');
+	background-repeat:repeat-x;
+	background-position:left bottom;
+	
+	.survey-ques{
+		float: left;
+		width: 100%;
+		position: relative;
+		color: #404040;
+		padding-left: 43px;
+		margin-bottom: 10px;
+		min-height: 20px;
+		font-size: 14px;
+		font-weight: 500;
+		
+		.que-label{
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			width: 43px;
+		}
+	}
+	.survey-ans {
+		float: left;
+		width: 100%;
+		position: relative;
+		color: #667680;
+		padding-left: 43px;
+		
+		.ans-label{
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			width: 43px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

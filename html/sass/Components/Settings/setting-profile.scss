@@ -1,0 +1,44 @@
+.profile-detail-left {
+    position: relative;
+    padding-left: 210px;
+}
+.setting-custom-switch.Sig-Pop-up {
+    margin-top: 22px;
+}
+.setting-custom-switch.syn-wid-google {
+    margin-top: 20px;
+}
+#img-src {
+    text-align: center;
+	
+	img {
+		height: 206px;
+	}
+}
+#show_signature_popup {
+    visibility: hidden;
+}
+.signature-subtitle {
+    margin: 10px 0px!important;
+}
+.img-src .input-outer {
+    border: 1px solid #ddd;
+	display: table;
+    border-radius: 3px;
+    height: 38px;
+    background: #ffffff;
+    position: relative;
+    width: 100%;
+	float:left;
+}
+#signature_image {
+    max-width: 100%;
+}
+.sig-div, .change-sig {
+    float: left;
+    margin-top: 18px;
+}
+.change-pwd-outer {
+    float: right;
+    padding-left: 25px;
+}

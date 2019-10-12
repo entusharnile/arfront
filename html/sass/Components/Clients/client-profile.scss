@@ -1,0 +1,529 @@
+.more-info-profile-dropdown ul {
+    padding: 0px!important;
+    right: 0px!important;
+    left: inherit!important;
+	@include box-shadow(0, 0px, 5px, 0, rgba(0,0,0,0.175));
+	
+	li a{
+		font-size: 13px!important;
+		text-transform: inherit;
+		border-bottom: 1px solid #dddddd;
+		display: block;
+		font-weight: normal;
+		white-space: nowrap;
+		height:33px;
+		line-height: 33px;
+		padding: 0px 20px;
+	}
+}
+.pro-pic-outer {
+    float: left;
+    width: 100%;
+    border-radius: 3px;
+    @include border-radius(3px);
+    text-align: center;
+    padding: 24px 24px 0px 188px;
+    text-align: left;
+    border: none;
+    position:relative;
+    
+    img{
+		max-height: 119px;
+		max-width:144px;
+		border: inherit;
+		box-shadow: inherit;
+		border-radius: 3px;
+		display: inline-block;
+		margin-bottom: 12px;
+		vertical-align: middle;
+		position:absolute;
+		left:24px;
+		top:24px;
+    }
+    .profile-img-info{
+		display:block;
+		width:100%;
+		
+		h3{margin-bottom:11px;}
+    }
+    h3{
+		font-size: 16px;
+		font-weight: 500;
+		color: #444444;
+		margin-bottom:5px;
+		margin-top: 0px;
+		display: block;
+    }
+}
+.member-type-outer{
+	display:block;
+	
+	img{
+		float:none;
+		display:inline-block;
+		margin-right:4px;
+		margin-bottom:0px;
+	}
+}
+.profile-actions {
+    border-color:$blue;
+    color: $blue;
+    background: none;
+    padding: 5px 7px 5px 16px;
+    font-size:13px!important;
+    height: 30px;
+}
+.client-setting{
+	display:block;
+	clear:both;
+	margin-bottom:8px;
+	
+	> span{
+		display:inline-block;
+		padding:3px 0px;
+	}
+}
+.about-form {
+    padding: 24px;
+    width: 100%;
+    float: left;
+    
+    a.popup-field-box{
+		color:$blue;
+    }
+}
+.access-portal-allrow {
+    border-bottom: 1px dotted #bfc9ce;
+    padding-bottom: 11px;
+    margin-bottom: 23px;
+    
+    .access-portal-row {
+		display: table;
+		width: 100%;
+		
+		.setting-switch{
+			margin-top:6px;
+		}
+		.access-portal-label {
+			width: 100px;
+			display: table-cell;
+			vertical-align: top;
+			font-size: 13px;
+			color: #5a5a5a;
+			padding: 7px 0px;
+		}
+		.access-portal-content{
+			display: table-cell;
+			vertical-align: top;
+			font-size: 13px;
+			color: #5a5a5a;
+			padding: 7px 0px;
+			word-break: break-all;
+			
+			#resend_portal_mail {
+				margin-top: -7px;
+			}
+			.line-btn{
+				font-size:13px;
+				padding:4px 10px;
+			}
+		}
+	}
+}
+.patient-right {
+    display: block;
+    padding-left: 15px;
+}
+.section-tab-outer {
+    padding: 0px 15px;
+    height: 49px;
+	border-bottom: 1px solid #dddddd;
+	display: block;
+	list-style: none;
+	margin-bottom: 0px;
+	
+	li{
+		display: inline-block;
+		
+		a{
+			color: #444444;
+			display: inline-block;
+			width: auto;
+			padding: 15px 10px;
+			font-size:13px;
+			
+			&.sel-merge-tab{
+				color:$blue;
+				border-bottom: 1px solid $blue;
+			}
+		}
+	}
+}
+
+
+.time-line {
+    display: block;
+    height: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    float: left;
+    width: 100%;
+    padding: 24px;
+    
+    .timeline-outer{
+		background: url(../images/divider.png) no-repeat center bottom 32px;
+		display: block;
+		
+		&:last-child{
+			background:none;
+		}
+		
+		> div{
+			padding: 20px;
+		}
+		
+		.procedure-name-time-top{
+			margin-bottom: -22px;
+			margin-top: -29px;
+			position: relative;
+			padding: 20px;
+			
+			.procedure-name-time {
+				display: table;
+				left: 50%;
+				margin-left: -18px;
+				padding-left: 44px;
+				position: absolute;
+				min-width: 280px;
+				background: url(../images/dot2.png) no-repeat left 9px;
+				padding-top:3px;
+				
+				.procedure-number {
+					font-family: 'Roboto Condensed', sans-serif;
+					font-weight: 600;
+					font-size:37px;
+					color: #444;
+					display: inline-block;
+					vertical-align: top;
+					line-height: 43px;
+				}
+				.pro-name-section {
+					display: inline-block;
+					vertical-align: top;
+					position: relative;
+					width: 290px;
+					margin-top: 4px;
+					
+					.pro-name {
+						color: #444;
+						display: block;
+						font-size: 18px;
+						font-weight: 600;
+						text-transform: uppercase;
+						
+						h4{
+							white-space: nowrap;
+							overflow: hidden;
+							text-overflow: ellipsis;
+							font-size: 15px;
+							font-weight: 600;
+						}
+					}
+					.pro-time {
+						font-size: 12px;
+						color: #888;
+					}
+				}
+			}
+		}
+		
+		&:first-child{
+			.procedure-name-time{
+			    background: url(../images/dot1.png) no-repeat left 9px;
+			 }
+		}
+    }
+}
+
+.invoice-btn {
+    background: #c2e0f2;
+    color: #404040;
+    height: 28px;
+    padding: 0 13px;
+    border: none;
+    text-transform:inherit;
+    font-weight: 400;
+    position: relative;
+    line-height: 26px;
+    margin:5px 5px 8px 10px;
+    @include border-radius(3px);
+    font-size:13px;
+    display:inline-block;
+}
+.proc-cost {
+    left: 50%;
+    margin-left: -309px;
+    position: absolute;
+    text-align: right;
+    top: 34px;
+    width: 279px;
+    font-weight: 500;
+    font-size: 17px;
+}
+.timeline-left{
+    padding-bottom: 50px!important;
+    border-right: 2px solid $blue;
+    text-align: right;
+}
+.timeline-right{
+    padding-bottom: 50px!important;
+    border-left: 2px solid $blue;
+    left: -2px;
+    position: relative;
+    text-align: left;
+}
+.left-big-img img {
+    margin-bottom: 0px;
+    height: 280px;
+}
+.time-line img {
+    max-width: 100%;
+}
+.timeline-detail {
+    text-align: left;
+    display: table;
+    margin: 20px 0;
+    width: 100%;
+    
+    h4 {
+		margin: 0px 0px 25px;
+		font-size: 16px;
+		text-transform: uppercase;
+		display: block;
+		color: $blue;
+	}
+}
+.profile-treat-sumry{
+	width:100%;
+	border: 1px solid #ddd;
+    margin: 0px;
+    @include border-radius(5px);
+    list-style:none;
+    float:left;
+	
+	li{
+		padding: 0px;
+		background: none;
+		border-bottom: 1px solid #ddd;
+		float: left;
+		width: 100%;
+		position: relative;
+		
+		label{ 
+			width:73%;
+			padding:8px 10px;
+			background:#F5F5F5;
+			border-right:1px solid #ddd;
+			font-weight:normal;
+			margin-bottom:0px;
+			display:inline-block;
+			vertical-align:top;
+		}
+		span{
+			width: 27%;
+			text-align: center;
+			padding: 8px 0px;
+			display:inline-block;
+			vertical-align:top;
+		}
+		label.sorry-no-record{ width:100%;text-align:center;}
+		span{ width:27%;text-align:center;padding:8px 0px;}
+		
+		&:last-child{
+			border: none;
+		}
+	}
+}
+.tracbi-outer {
+    float: left;
+    margin-top: 20px;
+    width: 100%;
+    
+    .provder-md {
+		width: 100%;
+		margin-bottom: 15px;
+		float: left;
+		
+		h5{
+			font-weight: bold;
+		}
+		label {
+			color: #667680;
+			font-weight: 400;
+		}
+		span {
+			color: #404040;
+			margin-bottom: 13px;
+			font-weight:normal;
+		}
+	}
+}
+.line-btn.sign-fill{
+	padding: 0px 0px 0px 7px!important;
+    height: 29px;
+    line-height: 26px;
+    font-weight:normal;
+    position:relative;
+    font-size:13px;
+    color:#666666;
+    overflow:hidden;
+    
+    &:hover{
+		background:#ffffff;
+    }
+    img{
+		margin-left:5px;
+		height:29px;
+		float:right;
+    }
+}
+.trac-right-btn-outer {
+    margin-bottom: 20px;
+    display: table;
+    margin: auto auto 20px;
+    max-width: 385px;
+    width: 100%;
+}
+.right-images {
+    display: table;
+    margin-bottom: 14px;
+    float: none;
+    margin: 0px auto 15px;
+    height: auto;
+    max-width: 385px;
+    
+    .images-half {
+		width: 49%;
+		float: left;
+		
+		img{
+			max-width: 100%;width: 100%;
+		}
+	}
+	.images-full {
+		width: 100%;
+		margin-top: 3px;
+		display: block;
+		float: left;
+		
+		img{
+			margin-top: 5px;
+		}
+	}
+}
+.marketing-photo {
+    position: relative;
+    top: 10px;
+    float: right;
+}
+.trac-info{
+	margin-top: -5px;
+	text-transform: capitalize;
+	font-size:13px;
+	line-height:20px!important;
+}
+.view-invoice{
+	margin-top:-4px;
+}
+
+.health-name-time{
+	left:0px;
+	margin-left:-19px;
+	height:50px;
+	top:-9px;    
+	margin-left:-33px!important;
+	left: 0px!important;
+}
+.health-sumry{
+	max-width:380px;
+	margin-bottom:20px;
+}
+.health-links a{
+	margin-right:10px;
+	margin-bottom:10px;
+}
+#Health_Timeline{
+	padding-left: 68px;
+	padding-top: 48px;
+	
+	div.timeline-outer {
+		background: url(../images/divider1.png) no-repeat left 22px bottom -80px;
+		
+		&:last-child{
+			background:none;
+			
+			.timeline-right{
+				padding-bottom:20px!important;
+			}			
+		}
+	}
+	.timeline-right {
+		padding-bottom:24px!important;
+	}
+}
+
+.title-health{visibility:hidden;height:37px;}
+.health-treat-sumry {
+    border: 1px solid #ddd;
+    margin: 0px;
+    display: block;
+    padding:0px;
+    margin-bottom:10px;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-webkit-border-radius:5px;
+    overflow:hidden;
+    
+    li {
+		display: block;
+		width: 100%;
+		padding: 0px;
+		background: none;
+		border-bottom: 1px solid #ddd;
+		
+		&:last-child{border:none;}
+	}
+}
+.health-treat-sumry-label{
+    width:100%;
+    padding: 8px 10px;
+    background: #ffffff;
+    border-right:none;
+    font-weight: normal;
+    color: #252525;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px;
+    display:block;
+}
+.health-treat-sumry-span{
+	width: 27%;
+    text-align: center;
+    padding: 8px 0px;
+    color: #666;
+    display: inline-block;
+}
+.health-links{
+	padding:10px 15px;
+	
+	.line-btn{width:auto!important;}
+}
+.health-btn{margin:0px 5px 0px 0px;}
+.health-trac-summry{margin-bottom:10px!important;text-transform:uppercase;border-radius:5px;overflow:hidden;}
+.health-md{margin-top:20px;margin-bottom:-10px;}
+.pro-name .health-name{font-size:15px;font-weight: 600;margin: 5px 0px;color: #2682c5;display:block;color:#5a5a5a;text-transform: uppercase;}
+
+.scroll-visibility{overflow-y:scroll;background:#daedf7;}
+.scroll-visibility::-webkit-scrollbar{
+	visibility:hidden;
+}

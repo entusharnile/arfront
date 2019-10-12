@@ -1,0 +1,199 @@
+.report-question-outer{
+	float:left;
+	width:100%;
+	position:relative;
+}
+.report-question{
+	font-size:20px;
+	font-weight:500;
+	float:left;
+	width:100%;
+	color:#777777;
+	margin-bottom:8px;
+}
+.report-input{
+	width:100%;
+	float:left;
+	border:none;
+	border-bottom:1px solid #dddddd;
+	height:60px;
+	outline:none;
+	font-size:22px;
+	margin-bottom:27px;
+	color:#666666;
+	font-weight:100;
+}
+.report-input::placeholder{
+	color:#cccccc;
+	font-weight:100;
+}
+.report-input::-ms-input-placeholder{
+    color: #cccccc;
+    font-weight:100;
+}
+.report-btn, .save-que, .back-ok{
+	background:#ffffff;
+	@include border-radius(3px);
+	@include box-shadow(0, 0px, 10px, 0, #cccccc);
+	float:left;
+	padding:9px 17px 9px 25px;
+	border:none;
+	font-size:17px;
+	font-weight:600;
+	color:#666666;
+	outline:none;
+	position:relative;
+}
+.report-btn:hover, .save-que:hover, .back-ok:hover {
+	background:$blue;
+	color:#ffffff;
+}
+.report-btn:after, .save-que:after, .back-ok:after {
+	position:absolute;
+	right:-100px;
+	top:10px;
+	font-size:14px;
+	color:#666666;
+	text-transform:inherit!important;
+	font-weight:400;
+}
+.report-btn i, .save-que i, .back-ok i{
+	font-size:20px;
+	margin-left: 4px;
+}
+.report-name{
+	margin-bottom:80px;
+}
+.empty-place{
+	border-bottom:1px solid #aaaaaa;
+	display:inline-block;
+	min-width:200px;
+	min-height:30px;
+	vertical-align:top;
+	color:$blue;
+	text-align:center;
+	margin-bottom:10px;
+}
+.empty-place.active{
+	color:$blue;
+}
+input.report-input:focus{
+	border-bottom:1px solid $blue;
+}
+select.report-select:focus{
+	border-bottom:1px solid $blue;
+	outline:none;
+}
+.custom-select {
+  position: relative;
+  font-family: Arial;
+  float:left;
+  margin-bottom:27px;
+}
+.custom-select select {
+  display: none;
+}
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 33px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #777777 transparent transparent transparent;
+}
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #777 transparent;
+  top: 27px;
+}
+.select-items div{
+  color: #444444;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color:#ffffff;
+  cursor: pointer;
+  user-select: none;
+  @include border-radius(5px);
+  background:#eeeeee;
+}
+.select-selected{
+	background:#ffffff;
+    color: #aaaaaa;
+    padding:14px 8px 14px 0px;
+    border:none;
+    border-bottom: 1px solid #dddddd;
+    border-color:#dddddd;
+    user-select: none;
+    @include border-radius(0px);
+    height:60px;
+    font-size:22px;
+    font-weight:100;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.select-selected:hover{
+	border-bottom: 1px solid $blue;
+}
+.select-items {
+  position: absolute;
+  background-color:#ffffff;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  height:300px;
+  overflow-y:auto;
+  padding:0px 0px 0px 15px;
+}
+.select-hide {
+  display: none;
+}
+.select-items div:hover, .same-as-selected {
+  background-color:$blue;
+  color:#ffffff;
+}
+.report-filling{
+	opacity:0.5;
+}
+.hide-name{
+	position:absolute;
+	width:100%;
+	height:100%;
+	z-index:1000;
+	display:none;
+	top:0px;
+	left:0px;
+}
+.hide-question{
+	position:absolute;
+	width:100%;
+	height:100%;
+	z-index:1000;
+	display:block;
+	top:0px;
+	left:0px;
+}
+.please-fill{
+	@include border-radius(3px);
+    position: absolute;
+    padding: 11px 0px;
+    background-color: rgba(153, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    display: block;
+    bottom: 0px;
+    left: 111px;
+    display:none;
+}
+.report-instruction{
+	float:left;
+	width:100%;
+	font-size:16px;
+	color:#777777;
+	font-style:italic;
+	margin-top:-7px;
+}

@@ -1,0 +1,29 @@
+.sales-accordian{
+	float:left;
+	
+	div{
+		float:left;
+	}
+	.sale-accordion-content{
+		width:100%;
+	}
+}
+.sales-accordian .accordion-head{
+	background: #daedf7;
+}
+.sales-accordian .accordion-head .accordian-section {
+    padding: 6px 13px;
+    font-size: 12px;
+    font-weight: normal;
+    height: 26px;
+    height: auto;
+    vertical-align: middle;
+    padding: 4px 10px 4px 15px;
+    text-transform: initial;
+    position: relative;
+    color: #404040;
+    border-left: 1px dotted #9db7c6;
+}
+.sales-accordian .accordion-head .accordian-section:first-child{
+	border-left:none !important;
+}

@@ -1,0 +1,268 @@
+ul.appointment-config-link{
+	background-image: url(../images/step-line.png);
+	background-repeat:repeat-y;
+	background-position:left 10px top 10px;
+	background-size:5px auto;
+	margin-top:22px;
+	
+	li{
+	
+		a{
+			position:relative;
+			text-transform:uppercase;
+			font-size:12px;
+			padding:22px 0px 22px 36px;
+			color:#404040;
+			
+			&.unselect:after{
+				content: '';
+				font-size: 27px !important;
+				position: absolute;
+				left:0px;
+				top:16px;
+				width:25px;
+				height:25px;
+				cursor:pointer;
+				background:#ffffff;
+				border:2px solid #707070;
+				@include border-radius(50px);
+			}
+			&.select{
+				color:$blue;
+			
+				&:after{
+					content: '';
+					font-size: 27px !important;
+					position: absolute;
+					left:0px;
+					top:16px;
+					width:25px;
+					height:25px;
+					cursor:pointer;
+					background:$blue;
+					border:2px solid $blue;
+					@include border-radius(50px);
+				}
+			}
+			&.complete{
+				color:#bfc9ce;
+			
+				&:after{
+					content: '';
+					font-size: 27px !important;
+					position: absolute;
+					left:0px;
+					top:16px;
+					width:25px;
+					height:25px;
+					cursor:pointer;
+					border:2px solid #bfc9ce;
+					@include border-radius(50px);
+					background: url(../images/step-check.png) no-repeat center #bfc9ce;
+					background-size:17px auto;
+				}
+			}
+		}
+		
+		&:first-child a{padding-top:0px;
+			&:after{top:-8px!important;}
+		}
+		&:last-child a{padding-bottom:0px;
+			&:after{top:16px!important;}
+		}
+	}
+}
+.appointment-container{
+	padding:20px 35px 30px;
+	float:left;
+	width:100%;
+}
+.appointmenTable{
+	th{padding:10px 10px 10px 15px!important;}
+	th, td{
+		border-left:none!important;
+		i{ 
+			position:initial;margin-top:0px;
+			margin-top: 0px!important;
+			display: inline-block;
+			vertical-align: top;
+		}
+	}
+}
+.appointment-footer{
+	width:100%;
+	float:left;
+	border-top:1px solid #cad2d6;
+	text-align:center;
+	padding-top:32px;
+	
+	.continueBtn{
+		width:200px;
+		max-width:100%;
+		display:inline-block;
+		padding:15px 0px;;
+		background:$blue;
+		color:#ffffff;
+		font-size:14px;
+		text-align:center;
+		@include border-radius(3px);
+	}
+}
+ul.appointment-tabs{
+	list-style:none;
+	display:block;
+	float:left;
+	margin:10px 0px 20px;
+	width:100%;
+	
+	li{
+		display:inline-block;
+		
+		a{
+			font-size:16px;
+			color:#667680;
+			display:block;
+			padding:0px 20px 15px;
+			border-bottom:2px solid #ffffff;
+		
+			&.active{border-bottom:2px solid $blue;color:$blue;}
+		}
+	}
+}
+ul.tabWithSwitch{
+	li{
+		width:auto;
+		display:inline-block;
+		
+		a{
+			padding:0px 0px 15px 9px;
+			font-size:15px;
+			
+			.setting-switch{
+				visibility:hidden;
+				margin-left:10px;
+			}
+			
+			&.active{
+				.setting-switch{
+					visibility:visible;
+				}
+			}
+		}
+	}
+}
+
+.newInputFileldOuter{
+	float:left;
+	width:100%;
+	position:relative;
+	margin-bottom:10px;
+	margin-top:15px;
+	
+	.newInputLabel{
+		float:left;
+		font-size:13px;
+		color:$blue;
+		background:#ffffff;
+		margin:0px 11px -8px;
+		position:absolute;
+		padding:0px 4px;
+		top: -9px;
+		z-index:1;
+		
+		.fieldRequired{color:$blue;}
+	}
+	.newInputField{
+		width:100%;
+		float:left;
+		color:#404040;
+		border:1px solid #cad2d6;
+		@include border-radius(3px);
+		height:36px;
+		padding:0px 15px;
+		font-size:14px;
+		background:#ffffff;
+	}
+	a.newInputField{padding:8px 15px;overflow:hidden;}
+	.newSelectField{
+		width:100%;
+		float:left;
+		color:#404040;
+		border:1px solid #cad2d6;
+		@include border-radius(3px);
+		background-image:url(../images/select-arrow2.png);
+		background-repeat:no-repeat;
+		background-position:right 8px center;
+		background-size:10px auto;
+		background-color:#ffffff;
+		height:36px;
+		padding:0px 15px;
+		font-size:14px;
+	}
+	.newtextareaField{
+		width:100%;
+		float:left;
+		color:#404040;
+		border:1px solid #cad2d6;
+		@include border-radius(3px);
+		height:150px;
+		padding:10px 15px;
+		font-size:14px;
+	}
+}
+.AppointmentSubtitle{
+	font-size:17px;
+	float:left;
+	width:100%;
+	margin:15px 0px 30px;
+	
+	.setting-switch{float:none;display:inline-block;vertical-align:top;margin:0px 5px;}
+}
+.snippets{
+	float:left;
+	width:100%;
+	font-size:14px;
+	
+	p{float:left;width:100%;margin-bottom:5px;}
+	.addAppointTime{color:#404040;}
+}
+.appointment-content{float:left;width:100%;min-height:255px;}
+.sm-switch{
+	height: 19px;
+	width: 39px;
+	margin-top:2px!important;
+	
+	.setting-slider:before{
+		height: 14px;
+		width: 14px;
+	}
+}
+.editField{position:absolute;right:-31px;top:6px;
+		img{height:23px;}
+}
+.appTimeSetting{position:relative;display:inline-block;clear:both;margin-bottom:30px;
+	.editField{top:0px;}
+}
+.easy-link.select{position:absolute;top:9px;right:10px;padding:0px;background:#ffffff;padding-left:10px;}
+.business-hours-outer.equipment-hours{
+	margin-top:0px!important;
+	
+	.datetimeparent{border-bottom:1px solid #cad2d6;float:left;width:100%;padding-top:23px;}
+	
+	.setting-input-box{
+		color:#404040;
+		border:1px solid #cad2d6;
+		@include border-radius(3px);
+		height:36px!important;
+		padding:0px 15px;
+		width:80px!important;
+		margin-right:10px!important;
+		margin-bottom:10px!important;
+	}
+	
+	.newInputLabel{margin:0px 3px -8px;padding:0px 2px}
+	.newSelectField{height:36px!important;margin-bottom:10px!important;}
+	.hours-pm{width:56px!important;padding-left:10px;margin-bottom:10px!important;}
+}
+.equip-field-outer{width:auto;margin:-10px 0px 0px;padding-left:0px;}
+.equipment-hours .add-round-btn{right:-30px;}

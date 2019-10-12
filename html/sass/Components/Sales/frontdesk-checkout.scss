@@ -1,0 +1,233 @@
+.payment-wallet{
+    width:100%!important;
+    display:table;
+
+	.take-payment-left{
+		width:70%;
+		display:table-cell;
+		vertical-align:top;
+	}
+	.take-payment-right{
+		width:30%;
+		background:#f7fbfd;
+		display:table-cell;
+		border-left:1px solid #ececec;
+		@include border-radius(0px 5px 5px 0px);
+		vertical-align:top;
+		position:relative;
+		padding:35px 20px;
+	}
+}
+.checkout-total{
+	width:100%;
+	text-align:center;
+	float:left;
+	margin-bottom:30px;
+	
+	.checkout-amount{
+		font-size:30px;
+		color:#404040;
+		font-weight:bold;
+		display:block;
+	}
+	.amount-tip{
+		display:block;
+		font-size:18px;
+		font-weight:300;
+		color:667680;
+	}
+}
+.choose-tip-main{
+	width:242px;
+	text-align:center;
+	margin:auto;
+	display:table;
+	margin-bottom:40px;
+	
+	ul{
+		list-style:none;
+		display:inline-block;
+		@include border-radius(3px);
+		border:1px solid $blue;
+		margin:0px;
+		float:left;
+		width:100%;
+		
+		li{
+			display:inline-block;
+			border-right:1px solid $blue;
+			float:left;
+			
+			a{
+				padding:10px 15px;
+				font-size:13px;
+				display:inline-block;
+				color:$blue;
+				
+				&.active{
+					background:$blue;
+					color:#ffffff;
+				}
+			}
+			
+			&:last-child{border:none;}
+		}
+	}
+	.customPayment{
+		float:right;
+		color:$blue;
+		font-size:13px;
+		text-decoration:underline;
+	}
+}
+.choose-payment-outer{
+    width:80%;
+    margin:auto;
+    display:table;
+    margin-bottom:30px;
+    
+    .payment-methods{
+		width:120px;
+		height:120px;
+		display:inline-block;
+		border:1px solid #ececec;
+		cursor:pointer;
+		@include border-radius(5px);
+		color:#404040;
+		
+		p{
+			margin-top:90px;
+			font-size:12px;
+			text-transform:uppercase;
+			text-align:center;
+			display:block;
+		}
+	}
+}
+
+
+.cash-method{
+    background-image:url(../images/payment-cash.png);
+    background-size:auto 36px;
+    background-repeat:no-repeat;
+    background-position:center 33px;
+}
+.cash-method.active{
+    background-image:url(../images/payment-cash-hover.png);
+    background-color:$blue;
+    color:#ffffff;
+}
+.card-method{
+    background-image:url(../images/payment-card.png);
+    background-size:auto 36px;
+    background-repeat:no-repeat;
+    background-position:center 33px;
+}
+.card-method.active{
+    background-image:url(../images/payment-card-hover.png);
+    background-color:$blue;
+    color:#ffffff;
+}
+.care-credit{
+    background-image:url(../images/payment-careCredit.png);
+    background-size:auto 36px;
+    background-repeat:no-repeat;
+    background-position:center 33px;
+}
+.care-credit.active{
+    background-image:url(../images/payment-careCredit-hover.png);
+    background-color:$blue;
+    color:#ffffff;
+}
+.wallet-method{
+    background-image:url(../images/payment-wallet.png);
+    background-size:auto 36px;
+    background-repeat:no-repeat;
+    background-position:center 33px;
+}
+.wallet-method.active{
+    background-image:url(../images/payment-wallet-hover.png);
+    background-color:$blue;
+    color:#ffffff;
+}
+
+.card-type{
+	width:200px;
+	ul{
+		li{width:50%;float:left;
+			a{display:block;padding:7px 15px}
+		}
+	}
+}
+.expiry-date input{
+    width:40%;
+    display:inline-block;
+    outline:none;
+    text-align:center;
+    color:$blue;
+    
+    span{
+		width:5px;
+		display:inline-block;
+	}
+}
+.save-card label{font-weight:normal;}
+.dollar{
+    position:relative;
+}
+.dollar input{
+    padding-left:12px;
+    position:relative;
+}
+.dollar:after{
+   position: absolute;
+   width: 22px;
+   height: 26px;
+   content: '$';
+   left: 0px;
+   color: #000;
+   top: 0px;
+   z-index: 10;
+}
+.percent{
+    position:relative;
+}
+.percent input{
+    padding-left:12px;
+    position:relative;
+}
+.percent:after{
+    position: absolute;
+   width: 22px;
+   height: 26px;
+   content: '%';
+   left: 0px;
+   color: #000;
+   top: 0px;
+   z-index: 10;
+}
+.payment-wallet .crossIcon{
+	top:6px;
+    right:12px;
+    position: absolute;
+    z-index:1;
+}
+.invoiceTotal{font-size:17px;color:$blue;}
+.current-amount-wallet{width:100%;float:left;font-size:12px;margin-top:5px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

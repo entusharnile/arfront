@@ -1,0 +1,334 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="" name="description">
+<meta content="" name="author">
+<meta content="Page scroll animation using CSS animate" name="description">
+<meta content="css animation, loading effect, animate, scroll loading, scroll animation" 
+name="keywords">
+<meta content="Jinson Abraham" name="author">
+<title>AR-Patient Portal</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet"> 
+<link href="css/common/bootstrap.css" rel="stylesheet">
+<link href="css/common/icons.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<link href="css/index.css" rel="stylesheet" type="text/css"/>
+<link href="css/caleran.min.css" rel="stylesheet" type="text/css"/>
+<link href="css/custom.css" rel="stylesheet" type="text/css"/>
+<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+<link href="css/custom.css" rel="stylesheet"/>
+<script src="js/moment.min.js"></script>
+<script src="js/caleran.min.js"></script>
+<script type="text/javascript">
+	$(".caleran").caleran();
+</script>
+<script type="text/javascript">
+	$(".caleran").caleran({inline: true, startOnMonday: true});
+</script>
+<script type="text/javascript">
+	  $("#caleran-ex-1-1").caleran({showOn:"top",autoAlign:true});
+</script>
+</head>
+<body>
+
+<div class="main protected">
+	<header>
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
+					<span class="sr-only">Toggle navigation</span> 
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span><span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">
+					<img src="images/logo.png"/>
+				</a> 
+			</div>
+			
+			<div id="navbar" class="navbar-collapse collapse">
+				<div class="nav-outer">
+					<ul class="nav navbar-nav right-menus">
+						<li>
+							<a id="users-logs" class="users-logs show-desktop right-menus-a" href="/dashboard/user_logs" title="User Activities"></a>
+							<a id="users-logs" class="users-logs show-mobile" href="/dashboard/user_logs">View Users Activities</a>
+						</li>
+						<li>
+						<a id="noti-icon" class="noti-icon notification show-desktop right-menus-a" href="javascript:void(0);" title="Notifications"></a>
+						<a class="noti-icon notification show-mobile" href="/dashboard/notifications" title="Notifications">Notification</a>
+						<div id="popup" class="noti-popup no-display">
+							<div id="notty-title" class="noti-title">Notifications </div>
+							<div id="notty-content" class="noti-content">
+								<div class="read">
+									Your appointment on date 12/12/2017 01:00 PM 
+									with KProvider 1 is not synced
+								</div>
+								<div class="read">
+									Your appointment on date with is not synced
+								</div>
+								<div class="read">
+									Batch li-stock of <b>Have stocks</b> has hit 
+									low stock
+								</div>
+								<div class="read">
+									Batch ny-stock of <b>Have stocks</b> has hit 
+									low stock
+								</div>
+								<div class="read">
+									Batch 54545 of <b>Ttt</b> has hit low stock
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +14156972918
+								</div>
+								<div class="read">
+									New SMS received from +19546637556
+								</div>
+								<div class="read">
+									New SMS received from +19546637556
+								</div>
+							</div>
+							<div id="notty-footer" class="noti-footer">
+								<a href="/dashboard/sms_notifications">See All</a>
+							</div>
+						</div>
+						</li>
+						<li class="arow-link-outer">
+							<span class="arow-link">
+								<div id="headerUserImage" class="user-picture"></div>
+								<span class="name-txt">Ganesh Kompella </span>
+							</span>
+						</li>
+						<li>
+							<a class="setting show-desktop right-menus-a" href="/settings/profile" title="Settings"></a>
+							<a class="setting show-mobile" href="/settings/profile">Settings</a> 
+						</li>
+						<li>
+							<a class="logout show-desktop right-menus-a" href="/accounts/logout" title="Logout"></a>
+							<a class="logout show-mobile" href="/accounts/logout"><i class="icon-Power-2"></i>Log Out</a> 
+						</li>
+					</ul>
+					<ul class="nav navbar-nav main-navbar">
+						<li class=""><a href="/dashboard">Dashboard</a></li>
+						<li class=""><a href="/patients/manage">Clients</a> </li>
+						<li class=""><a href="/appointments/index">Appointments</a></li>
+						<li class=""><a href="/sales/index">Sales</a></li>
+						<li class=""><a href="/inventory/products/active">Inventory</a></li>
+						<li class="active"><a href="/analytics/reports">Reports</a></li>
+						<li class=""><a href="/marketing/dashboard">Surveys</a></li>
+						<li class=""><a href="/MDRooms/pending">MD's Room</a></li>
+						<li class=""><a href="/ProvidersRooms/pending">Provider's Room</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	
+<div id="content">
+	<div class="container-fluid content setting-wrapper">
+		
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="merge-setion">
+
+					<div class="juvly-container bg-white-scetion">
+						<div class="juvly-title m-b-40">
+							Create Report
+							<a class="pull-right cancelAction"><img src="images/close.png"></a>
+						</div>
+					
+						<div class="juvly-acco-main">
+							<div class="juvly-accordion">
+								<a class="juvly-accordion-title" href="#accordion-1">Products</a>
+								<div class="juvly-accordion-content" id="accordion-1" style="display: none;">
+									<div class="juvly-accordion-option" id="1">
+										<div class="juvly-accordion-select"></div>
+										Received _____________ treatment in ______________ days
+									</div>
+									<div class="juvly-accordion-option" id="2">
+										<div class="juvly-accordion-unselect"></div>
+										People who received _____________ treatment but not _________________ treatment
+									</div>
+									<div class="juvly-accordion-option" id="3">
+										<div class="juvly-accordion-unselect"></div>
+										People who booked free consultation but never purchased anything
+									</div>
+									<div class="juvly-accordion-option" id="4">
+										<div class="juvly-accordion-unselect"></div>
+										Top 10 products of ____________ category Clinic wise
+									</div>
+									<div class="juvly-accordion-option" id="5">
+										<div class="juvly-accordion-unselect"></div>
+										People who used at least  ________  units of ______ product in any procedure
+									</div>
+								</div>
+							</div>
+
+							<div class="juvly-accordion">
+								<a class="juvly-accordion-title active" href="#accordion-2">Appointments</a>
+								<div class="juvly-accordion-content open" id="accordion-2" style="display: block;">
+									<div class="juvly-accordion-option" id="6">
+										<div class="juvly-accordion-unselect"></div>
+										Clients who have not visited in _______ days
+									</div>
+									<div class="juvly-accordion-option" id="7">
+										<div class="juvly-accordion-unselect"></div>
+										Most loyal : Clients who have visited _______ times or more in the last ________ days
+									</div>
+									<div class="juvly-accordion-option" id="8">
+										<div class="juvly-accordion-unselect"></div>
+										Top cancelers : Clients who have canceled booked appointments more than ______ times
+									</div>
+									<div class="juvly-accordion-option" id="9">
+										<div class="juvly-accordion-unselect"></div>
+										Top no showers : Clients who have no showed more than _______ times
+									</div>
+									<div class="juvly-accordion-option" id="10">
+										<div class="juvly-accordion-unselect"></div>
+										Clients have booked ____________ service in the last _____ days
+									</div>
+									<div class="juvly-accordion-option" id="11">
+										<div class="juvly-accordion-unselect"></div>
+										Average days between booking __________ service and the actual appointment date
+									</div>
+									<div class="juvly-accordion-option" id="12">
+										<div class="juvly-accordion-unselect"></div>
+										What days of the week is the following ___________ service booked more times (Mon - Sunday scale)
+									</div>
+								</div>
+							</div>
+							<div class="juvly-accordion">
+								<a class="juvly-accordion-title" href="#accordion-3">Clients</a>
+								<div class="juvly-accordion-content" id="accordion-3" style="">
+									<div class="juvly-accordion-option" id="13">
+										<div class="juvly-accordion-unselect"></div>
+										High spenders : Clients who have spent more than _______ Dollars in  the last _________ days / months / years
+									</div>
+									<div class="juvly-accordion-option" id="14">
+										<div class="juvly-accordion-unselect"></div>
+										Top complainers : Clients who have received more than ________ no of refunds in __________ days / months / years
+									</div>
+									<div class="juvly-accordion-option" id="15">
+										<div class="juvly-accordion-unselect"></div>
+										 All men over _______ years of age
+									</div>
+									<div class="juvly-accordion-option" id="16">
+										<div class="juvly-accordion-unselect"></div>
+										All women over ________ years of age
+									</div>
+									<div class="juvly-accordion-option" id="17">
+										<div class="juvly-accordion-unselect"></div>
+										Clients who have referral source __________
+									</div>
+								</div>
+							</div>
+							
+							<div class="juvly-accordion">
+								<a class="juvly-accordion-title" href="#accordion-4">Provider / Employee</a>
+								<div class="juvly-accordion-content" id="accordion-4" style="">
+									<div class="juvly-accordion-option" id="18">
+										<div class="juvly-accordion-unselect"></div>
+										Average sale per __________ provider 
+									</div>
+									<div class="juvly-accordion-option" id="19">
+										<div class="juvly-accordion-unselect"></div>
+										Total no of appointment hours worked ___________ provider per month
+									</div>
+								</div>
+							</div>
+						</div>
+						
+
+					</div>		
+					
+					
+					
+				</div>
+			</div>
+		</div>
+		
+	</div>			
+</div>
+
+<footer class="main-footer">
+	<div class="container-fluid">
+		<span class="pull-right">
+			©2018 Aesthetic Record. All Rights Reserved. 
+		</span>
+	</div>
+</footer>
+</div>
+
+
+
+
+ <script type="text/javascript">
+    $("#caleran-ex-7").caleran();
+    $(".caleran-type-selector").click(function(){
+      $("#caleran-ex-7").data("caleran").destroy();
+      $("#caleran-ex-7").caleran({
+        singleDate: $("input[name='caleran-type-selector']:checked").val() == "single" ? true : false
+      });
+    });
+  </script>
+  
+   <script type="text/javascript">
+          $("#caleran-ex-7").caleran({ranges: [
+              {
+                  title: "Today",
+                  startDate: moment(),
+                  endDate: moment()
+              },
+              {
+                  title: "Yesterday",
+                  startDate: moment().subtract(1,"days"),
+                  endDate: moment().subtract(1,"days")
+              },
+              {
+                  title: "This week",
+                  startDate: moment().startOf("week"),
+                  endDate: moment().endOf("week")
+              },
+              {
+                  title: "Last week",
+                  startDate: moment().subtract(1,"weeks").startOf("week"),
+                  endDate: moment().subtract(1,"weeks").endOf("week")
+              },
+              {
+                  title: "This month",
+                  startDate: moment().startOf("month"),
+                  endDate: moment().endOf("month")
+              },
+              {
+                  title: "Last month",
+                  startDate: moment().subtract(1,"months").startOf("month"),
+                  endDate: moment().subtract(1,"months").endOf("month")
+              },
+              {
+                  title: "This year",
+                  startDate: moment().startOf("year"),
+                  endDate: moment().endOf("year")
+              },
+              {
+                  title: "Last year",
+                  startDate: moment().subtract(1,"years").startOf("year"),
+                  endDate: moment().subtract(1,"years").endOf("year")
+              }
+          ]});
+      </script>
+</body>
+</html>

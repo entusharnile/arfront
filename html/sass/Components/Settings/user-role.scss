@@ -1,0 +1,48 @@
+.previlage-ouer-section {
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.privileges-submenu{
+	display:block;
+	float:left;
+	width:100%;
+	margin-left:-14px;
+}
+.privileges-subtabs-li{
+	display:block;
+	margin-bottom:10px;
+}
+.privileges-submenu > li:last-child{
+	margin:0px;
+}
+.privileges-subtabs-a{
+	display:block;
+	padding:8px 15px;
+	color:#667680;
+	font-size: 16px;
+	text-align:left;
+	font-family: 'Lato', sans-serif;
+    font-weight:normal;
+
+}
+.privileges-subtabs-a.sel-submenu, .privileges-subtabs-a:hover{
+	background:#f2f8fb;
+	border-radius:3px;
+	color:#0472b3;
+}
+.privileges-row{
+	display:block;
+	position:relative;
+	padding:0px 0px 13px 28px;
+	float:left;
+	width:100%;
+}
+.privileges-row *{
+	cursor:pointer;
+}
+.privileges-row .new-check{
+	position:absolute!important;
+	left:0px;
+	top:2px;
+}

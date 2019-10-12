@@ -1,0 +1,137 @@
+.pos-stripe-outer{
+    position: relative;
+    margin-top:40px;
+    margin-bottom:40px;
+    padding-left:30px;
+    }
+.pos-stripe-input{
+	float: left;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.pos-stripe-title{
+	display: block;
+	font-size: 22px;
+    font-weight:normal;
+    font-style:normal;
+    font-family: 'Lato', sans-serif;
+    color:#404040;
+    margin-bottom:15px;
+}
+.pos-stripe-discrip{
+	display: block;
+	font-size:13px;
+	font-weight:normal;
+	font-weight:400;
+	font-family: 'Lato', sans-serif;
+	color:#667680;
+	line-height:22px;
+}
+.pos-stripe-subtitle{
+    font-size: 17px;
+    font-weight: 300;
+    color: #252525;
+    margin:0px 0px 15px;
+}
+.pos-stripe-option{
+	display: inline-block;
+    vertical-align: top;
+    top: 0px;
+    position: absolute!important;
+    left: 0px;
+}
+.stripe-link {
+    color: #2682c5;
+    text-decoration: none!important;
+}
+
+
+.small-stripe-btn {
+    margin-left: 0px;
+    margin-right: 20px;
+    height: 29px;
+    padding-top: 4px;
+    line-height: 20px;
+}
+.new-white-btn.small-stripe-btn {
+    width: 100%;
+}
+.response, .yellow {
+    color: #f2b675!important;
+}
+.payment-response {
+    background: #f2b675;
+    display: inline-block;
+    vertical-align: top;
+    padding: 3px 10px;
+    border-radius: 30px;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    margin-top: 2px;
+    min-width: 80px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+}
+.small-popup-content-pos-disputes-settings{height: 180px}
+
+.show-payout-details, .show-dispute-details {
+    cursor: pointer !important;
+}
+.payout-payment-suceed {
+    margin-top: -4px;
+    margin-right: 10px;
+}
+
+.content-pos-dashboard, .content-pos-payment-settings {
+  .verification-field-warning {
+    background-color: #fff8f5;
+    height: 50px;
+    vertical-align: middle;
+    font-weight: 700;
+    font-size: 14px;
+    color: #2b2d50;
+    border-radius: 4px 4px 0px 0px;
+    -webkit-border-radius: 4px 4px 0px 0px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+  }
+  .alert {
+    padding: 15px;
+    margin-bottom: 21px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  }
+  .field-warning-color {
+    color: #ed5f74 !important;
+  }
+  #pos-dashboard-payments {
+    float: left;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+}
+.pos-content {
+  .loading-please-wait{
+    margin-top: 0px !important;
+  }
+}
+.error-color{
+  color : #e74c3c;
+}
+.pos-settings{
+  .global-connect {
+      padding: 19px 10px;
+      background: #f5f5f5;
+      margin-top: 24px;
+      border: 1px solid #ececec;
+      border-radius: 5px;
+  }
+}
+.cursor-pointer{
+  cursor: pointer !important;
+}
+
+div.setting-input-box.pos-dispute-file{color:#047ec3;}

@@ -1,0 +1,159 @@
+.sales-accordian{
+	float:left;
+
+	div{
+		float:left;
+	}
+	.sale-accordion-content{
+		width:100%;
+	}
+}
+.sales-accordian .accordion-head{
+	background: #daedf7;
+}
+.sales-accordian .accordion-head .accordian-section {
+    padding: 6px 13px;
+    font-size: 12px;
+    font-weight: normal;
+    height: 26px;
+    height: auto;
+    vertical-align: middle;
+    padding: 4px 10px 4px 15px;
+    text-transform: initial;
+    position: relative;
+    color: #404040;
+    border-left: 1px dotted #9db7c6;
+}
+.sales-accordian .accordion-head .accordian-section:first-child{
+	border-left:none !important;
+}
+.sales-accordian .accordion-discription-row > div:first-child{padding-left:40px;}
+#container.category-graph{
+	overflow: inherit !important;
+}
+text-left.data-usage{
+ .dash-box{
+   box-shadow: none;
+ }
+ .sales-goal-legend{
+   height: auto;
+   position: absolute;
+   right: -19px;
+   top: 70px;
+   width: 171px;
+
+
+   .legend-group{width:100%;
+     .legend-dot {
+         width: 12px;
+         height: 12px;
+         position: absolute;
+         left:0px;
+         top: 2px;
+         border-radius: 20px;
+         background: #047ec3;
+     }
+     .legend-price{
+       font-size: 18px;
+       color: #404040;
+       font-family: 'Lato', sans-serif;
+       font-weight: normal;
+       line-height: 14px;
+     }
+     .legend-clinic{
+         font-size: 14px;
+         color: #667680;
+         display: block;
+         margin-top: 10px;
+         font-weight: normal;
+         font-family: 'Lato', sans-serif;
+         margin-bottom: 20px;
+     }
+   }
+ }
+}
+.billing-stats {
+   text-align: center;
+}
+.billing-stats .portal-numbers {
+   margin-top: 0px;
+}
+.data-usage .dash-box{padding-left:0px!important;margin-left:-30px!important;}
+.data-usage .dash-box-content{margin:0px!important;}
+.data-usage .sales-date-price{left:78px;top: 100px;}
+.data-usage .sale-goal-date{display: block;font-size: 18px;color:#667680;}
+.data-usage .sale-goal-price{display: block;margin-top: 0px;font-size: 14px;color:#667680;}
+
+.monthly-net-sale-table{
+	.accordian-section{min-width:160px;float:none;}
+	.accordion-row > div.accordian-section:first-child{width:26%;}
+	.accordion-row > div.accordian-section:nth-child(5){width:24%;}
+	.accordion-discription-row > div.accordian-section:first-child{width:26%;padding-left:40px;
+	}
+
+	.accordion-discription-row > div.accordian-section:nth-child(5){width:24%;}
+	.accordion-row{float:none;display:table;
+		.accordion-title{display:table-row;border-top:1px solid #ececec;
+			.accordian-section{min-height:45px;}
+			& > div:first-child{width:26%;}
+			& > div:nth-child(5){width:24%;}
+		}
+	}
+}
+
+.employee-sale-table{
+	& > div{float:none;display:table;}
+	.accordian-section{min-width:113px;float:none;}
+	.accordion-head > div:first-child{width:200px;}
+	.accordion-head > div:nth-child(6){width:186px;}
+	.accordion-head > div:nth-child(7){width:112px;}
+
+	.accordion-title > div:first-child{width:200px;}
+	.accordion-title > div:nth-child(6){width:186px;}
+	.accordion-title > div:nth-child(7){width:112px;}
+
+	.accordion-discription-row > div:first-child{width:200px;padding-left:40px;max-width:114px;}
+	.accordion-discription-row > div:nth-child(6){width:186px;}
+	.accordion-discription-row > div:nth-child(7){width:112px;}
+}
+.short-term-table{
+	 tr{
+		 > td:nth-child(2){text-align:left!important}
+		 > td:nth-child(3){text-align:left!important}
+ 		}
+}
+.sale-invoice-table{
+	tr{
+		> td:nth-last-child(1){text-align:right!important}
+		> td:nth-last-child(2){text-align:right!important}
+		> td:nth-last-child(3){text-align:right!important}
+		> td:nth-last-child(4){text-align:right!important}
+		> td:nth-last-child(5){text-align:right!important}
+		> th:nth-last-child(1){text-align:right!important}
+		> th:nth-last-child(2){text-align:right!important}
+		> th:nth-last-child(3){text-align:right!important}
+		> th:nth-last-child(4){text-align:right!important}
+		> th:nth-last-child(5){text-align:right!important}
+		> td.no-record{text-align:center!important;}
+	 }
+}
+.sale-graph{
+	padding-bottom:10px;
+
+	.highcharts-axis-labels text{
+		text-decoration:none!important;color:#404040!important;fill:#404040!important;
+		tspan{color:#404040;fill:#404040;}
+	}
+	.highcharts-label text{
+		text-decoration:none!important;
+		tspan{color:#404040;fill:#404040;}
+	}
+}
+.category-graph{
+	.highcharts-container{margin-left:0px!important;}
+}
+.churnFilter{
+	width: 211px;
+	text-align: left;
+	button{width:100%;float:left;text-align:left;}
+}

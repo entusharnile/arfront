@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="" name="description">
+<meta content="" name="author">
+<meta content="Page scroll animation using CSS animate" name="description">
+<meta content="css animation, loading effect, animate, scroll loading, scroll animation" 
+name="keywords">
+<meta content="Jinson Abraham" name="author">
+<title>AR-Patient Portal</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" 
+rel="stylesheet">
+
+<link href="css/common/bootstrap.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<link href="css/index.css" type="text/css" rel="stylesheet">
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="css/icons.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div class="main guest">
+<div class="header">		
+		<div class="wrapper">
+			<a href="https://www.aestheticrecord.com/" class="logo"><img src="images/logo.png?v=123"></a>
+			<div class="header-right">	
+				<ul class="nav">
+					<li><a href="https://www.aestheticrecord.com/">Home</a></li>
+					<li><a href="/accounts/login" class="login">Login</a></li>
+					<li><a href="/FreeTrial" class="login">Get Started</a></li>
+				</ul>
+			</div>
+	</div>	
+</div>
+
+<div class="login-container">
+<div class="login-main">
+		<h1>Login to Aesthetic Record</h1>
+		<form action="/" id="UserLoginForm" method="post" accept-charset="utf-8">
+			<div class="no-display">
+				<input type="hidden" name="_method" value="POST"/>
+			</div>		
+			<div class="form-group">
+				<label for="usr">Email address:</label>
+				<input name="data[User][email_id]" class="form-control validate[[required],custom[email]]" placeholder="Email address" maxlength="500" type="text" id="UserEmailId" />			
+			</div>
+			<div class="form-group">
+				<label for="pwd">Password:</label>
+				<input name="data[User][password]" class="form-control  validate[required]" placeholder="Password" type="password" id="UserPassword" />					
+			</div>
+			<div class="form-group">
+				<div class="no-display">
+					<div class="g-recaptcha" data-sitekey="6LehI2kUAAAAADh_OK5PilLpX-uWW03-HKeOGqYK"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LehI2kUAAAAADh_OK5PilLpX-uWW03-HKeOGqYK&amp;co=aHR0cDovL2JldGEuYWVzdGhldGljcmVjb3JkLmNvbTo4MA..&amp;hl=en&amp;v=v1541614764654&amp;size=normal&amp;cb=ho02qpugbz8a" width="304" height="78" role="presentation" name="a-4l1zmr3q0d9w" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div>
+					<span id="captcha" style="margin-left:1px;color:#2086C8;font-size:13px;min-height:30px;display:block;"></span>
+				</div>
+				<div class="submit"><input class="" type="submit" value="Login"><img src="images/btn-load.gif"/></div>
+			</div>
+			<div class="text-center forgot-password"><a href="/accounts/reset_password">Forgot Password?</a></div>
+		
+			<div id="filterModal" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">×</button>
+							<h4 class="modal-title" id="model_title">Account Locked</h4>
+						</div>
+						<div id="errorwindow" class="modal-body add-patient-form filter-patient"></div>
+						<div class="modal-footer" style="clear:both;border-top:1px solid #3c454c;">
+							<div class="col-md-12 text-left" id="footer-btn">
+								<button type="button" class="btn defaut-btn login-close-btn" data-dismiss="modal">Close</button>
+								<!-- Action Btns -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+	</form>
+</div>
+</div>
+
+
+<footer>
+	<div class="wrapper">
+		<p>© 2018 Aesthetic Record. All Rights Reserved <a href="https://www.aestheticrecord.com/terms-of-service/" target="_blank">Terms of Service</a> <a class="ar-policy-link" href="https://www.aestheticrecord.com/ar-policies/" target="_blank">AR Policies</a></p>
+				
+		<ul id="social">
+		<li><a target="_blank" href="https://twitter.com/Aesthetic_Rec"><i class="fa fa-twitter"></i> </a></li> 						 
+		<li><a target="_blank" href="https://www.facebook.com/aesthetic.rec/"><i class="fa fa-facebook"></i> </a></li> 																								 
+		<li><a target="_blank" href="https://www.youtube.com/channel/UCY2W0j0DbqLsg4qomXL0c1g"><i class="fa fa-youtube-play"></i> </a></li> 																																				 
+		<li><a target="_blank" href="https://plus.google.com/b/110237484009069856390/110237484009069856390"><i class="fa fa-google-plus"></i> </a></li> 																														<li><a target="_blank" href="https://www.instagram.com/aestheticrecord/"><i class="fa fa-instagram"></i> </a></li>																	
+		</ul>
+	
+	</div>
+</footer>
+</div>
+
+</body>
+</html>	
+	
